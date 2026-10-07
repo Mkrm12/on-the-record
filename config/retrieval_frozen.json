@@ -1,0 +1,74 @@
+{
+  "frozen_at": "2026-09-27T21:08:14",
+  "adopted_arms": [],
+  "reason": "nothing was established on test and mrr@10, recall@10 point downwards, so nothing is adopted.",
+  "embedding_recipe": "BAAI/bge-small-en-v1.5|full|v2",
+  "config": {
+    "dense": true,
+    "sparse": true,
+    "speaker": true,
+    "dense_limit": 50,
+    "sparse_limit": 50,
+    "speaker_limit": 50,
+    "fused_limit": 100,
+    "rrf_k": 60,
+    "weights": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "ef_search": 100,
+    "statement_timeout_ms": 5000,
+    "sparse_coverage": 0.4,
+    "max_terms": 24,
+    "k1": 1.2,
+    "b": 0.75,
+    "pool": 20,
+    "rerank": "blend",
+    "rerank_k": 60,
+    "expand_radius": 4,
+    "lexicon_ttl_s": 3600.0,
+    "common_df": 50,
+    "common_df_ratio": 0.0005553087516659262,
+    "speaker_date_aware": true,
+    "stored_lexicon": true,
+    "exact_scan_max_rows": 0,
+    "collapse_span": 4,
+    "set_pool": null,
+    "debate_boost": 0,
+    "debate_speeches": 3,
+    "stock_penalty": 1.0,
+    "rerank_text_mode": "sentence",
+    "dense_index": "halfvec"
+  },
+  "note": "Retrieval is frozen. After this it changes only for a bug fix, with the dev harness re-run and the change logged (endgame.md \u00a73). The hash below names this exact configuration.",
+  "config_hash": "e69ba727ab6ceddb",
+  "amendments": [
+    {
+      "date": "2026-10-05",
+      "changed": {
+        "dense_index": [
+          null,
+          "vector"
+        ]
+      },
+      "previous_hash": "e57c6cdfd8793d76",
+      "config_hash": "651d5094ea4e4e92",
+      "reason": "T3 (B-03): SearchConfig gained dense_index (which HNSW index form the dense leg's ORDER BY is written for), and a frozen file must now name every knob, since one it does not name would be decided by a default nobody froze. This names the form the configuration was measured and frozen on. No behaviour changes.",
+      "evidence": "pg_indexes on hansard_v2, 2026-10-05: chunk_embedding_idx = USING hnsw (embedding vector_cosine_ops) WITH (m='16', ef_construction='64'), the only HNSW index E1 Stages A-C and every E3 run searched."
+    },
+    {
+      "date": "2026-10-05",
+      "changed": {
+        "dense_index": [
+          "vector",
+          "halfvec"
+        ]
+      },
+      "previous_hash": "651d5094ea4e4e92",
+      "config_hash": "e69ba727ab6ceddb",
+      "reason": "T3 (B-03), at the owner's request (2026-10-05): the ten-year index. The halfvec expression index is 43% smaller (1,168 vs 2,044 B/vector on hansard_v2's 1,422,379 vectors), which is what lets a ~12.2M-vector index (~13 GiB, against ~23 GiB at full precision) be held in memory once Docker has ~24 GB. Only candidate SELECTION changes: the dense leg still ranks its 50 candidates by full-precision distance, and the exact and speaker legs are untouched.",
+      "evidence": "Pre-registered rule, all parts passed. reports/t3_index_ab.json (223 dev questions, both indexes live, exact float32 scan as truth): recall@10 0.8516 vs 0.8480, recall@50 0.8031 vs 0.8030, dense-leg p50 6.71 vs 8.34 ms, p95 9.97 vs 12.96 ms; on the 94 retrieval-route items @10 0.9106 vs 0.8840. Production deck path (reports/cards_dev_t3_vector.json vs cards_dev_t3_halfvec.json, 78 card-route items): best evidence status worse on 0, better on 2 (hum0091 not retrieved -> citable, adv0024 not retrieved -> outside window); 41 of 78 hit lists identical; integrity clean. The vector run reproduced reports/cards_dev_r03_after.json exactly (78/78)."
+    }
+  ]
+}

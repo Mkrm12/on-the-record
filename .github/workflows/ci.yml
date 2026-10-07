@@ -1,0 +1,98 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Least privilege: the workflow only reads the repository.
+permissions:
+  contents: read
+
+# A newer push to the same branch or PR supersedes a run that is still going.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Cheap and needs no database, so it runs in parallel with the tests and fails fast.
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          # The secret scan asks git which files are tracked, so it needs the index, not a sparse copy.
+          fetch-depth: 1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          enable-cache: true
+
+      - name: Lint
+        run: uvx ruff@0.16.9 check src scripts tests gpu tools
+
+      - name: No credentials in tracked files
+        run: uv run --no-project python scripts/check_secrets.py
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    services:
+      postgres:
+        image: pgvector/pgvector:0.8.6-pg16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: hansard
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d hansard"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      PG_DSN: postgresql://postgres:postgres@127.0.0.1:5432/hansard
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          enable-cache: true
+
+      - name: Install dependencies from the lockfile
+        run: uv sync --locked
+
+      # A fresh install is db/schema.sql (the baseline the container loads) followed by the migrations.
+      - name: Apply the baseline schema
+        run: |
+          command -v psql >/dev/null || sudo apt-get install -y --no-install-recommends postgresql-client
+          psql "$PG_DSN" -v ON_ERROR_STOP=1 -f db/schema.sql
+
+      - name: Apply migrations
+        run: uv run python -m app.migrate
+
+      - name: Migrations are complete and idempotent
+        run: |
+          uv run python -m app.migrate | tee /dev/stderr | grep -q "done: 0 applied"
+
+      # Tests that need loaded data skip on this empty database; the schema, unit and write-path tests run.
+      - name: Run the tests
+        run: uv run pytest -q
+
+      # The GPU project's logic also runs here: the embedding worker (queue paging, resume, HNSW drop/rebuild) against
+      # this container, and the HTTP service (validation, limits, queueing, shutdown) against a fake engine. numpy is
+      # added for this step only and torch is not installed, so the tests that need a GPU are deselected.
+      - name: Run the GPU project tests that need no GPU
+        run: |
+          uv run --with numpy pytest -c gpu/pyproject.toml gpu/tests -k "not test_gpu" -q

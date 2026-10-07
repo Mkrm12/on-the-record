@@ -1,0 +1,2 @@
+# One line-ending convention for every checkout. SQL files are mounted into a Linux container.
+* text=auto eol=lf

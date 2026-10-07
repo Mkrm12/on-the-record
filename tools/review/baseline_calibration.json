@@ -1,0 +1,506 @@
+{
+ "_about": "Claude's blind UMBRELA grades for the 100 calibration pairs, authored from data/review/blind_worksheet.json (built from a pack that provably carried no judge grades: see scripts/blind_worksheet.py). Entries are in worksheet queue order; `item` and `sid` are checked against that order when the baseline is assembled, so a re-drawn sample cannot silently re-label anything.",
+ "_rubric": "3 the passage is about the question and states the answer; 2 it states the answer among other material or indirectly; 1 it is on the question's subject matter but does not answer; 0 it does not help at all. A shared name with no shared subject matter is 0, not 1: being by the right speaker is not being about the right thing.",
+ "_fields": "n ordinal, item gold id, sid first 8 characters of the speech id, grade 0-3, summary what the passage says in plain English, why one sentence for the grade, marks verbatim spans to highlight (resolved to offsets when the pack is built), mark_kind answer|near_miss|none",
+ "annotations": [
+  {"n": 1, "item": "db0229", "sid": "FE814B4C", "grade": 1,
+   "summary": "A tabled Commons oral question from Charlotte Nichols asking what steps are being taken to support UK nationals overseas who are at risk from covid-19.",
+   "why": "Same broad subject (covid-19 in the Commons in March 2020) but a different debate on a different date, and a tabled question text cannot show who led off.",
+   "marks": ["What steps he is taking to support UK nationals based overseas who are at risk from covid-19."], "mark_kind": "near_miss"},
+
+  {"n": 2, "item": "adv0028", "sid": "9B711AFF", "grade": 2,
+   "summary": "A Conservative peer attacks the Government's record on retail and hospitality and cites UKHospitality's figure of 90,000 hospitality jobs lost since the 'jobs tax'.",
+   "why": "It carries the figure the question mis-states, 90,000 rather than 89, said by a Conservative, so it settles the question but amid a great deal of other material.",
+   "marks": ["UKHospitality has reported that 90,000 jobs have been lost in hospitality since the jobs tax was introduced"], "mark_kind": "answer"},
+
+  {"n": 3, "item": "old0016", "sid": "B47910BF", "grade": 1,
+   "summary": "Perran Moon asks Treasury Ministers to work with the business department to make Cornwall an industrial strategy zone.",
+   "why": "It is the right member raising a matter, but at Topical Questions rather than Business questions, so it does not answer the question as scoped (this is I-38).",
+   "marks": ["would Treasury Ministers consider working with the Department for Business and Trade to make Cornwall an industrial strategy zone?"], "mark_kind": "near_miss"},
+
+  {"n": 4, "item": "hum0084", "sid": "F57473E2", "grade": 2,
+   "summary": "A Liberal Democrat MP argues that the only purpose of a mandatory ID is to let people be asked for it, which turns a free society into a permissions-based one.",
+   "why": "It answers 'what is the point' directly, but only from the opposing side and as an intervention put to another member rather than an account of the case for ID.",
+   "marks": ["The only purpose of having an ID of this kind", "a mandatory ID", "is to enable people to ask for it"], "mark_kind": "answer"},
+
+  {"n": 5, "item": "old0010", "sid": "204C3F87", "grade": 1,
+   "summary": "A Conservative peer presses the Minister on a million young people not in work or training, and claims employment costs have depressed entry-level hiring.",
+   "why": "The claim is being put TO the Minister by an opposition peer, so the passage shows the claim being made and not whether the Government accepts it.",
+   "marks": ["the harmful policies they have introduced, be it national insurance contributions for employers, the national living wage, or other measures that have depressed entry-level job creation"], "mark_kind": "near_miss"},
+
+  {"n": 6, "item": "hum0061", "sid": "73DB31DE", "grade": 1,
+   "summary": "An MP warns about the cumulative effect on Jewish people of banning Maccabi Tel Aviv fans, and asks why other clubs' rioting fans are treated differently.",
+   "why": "It is one of the two debates the question compares, but nothing in the text says which came first in the record.",
+   "marks": ["with the decision to ban the Maccabi fans from coming to the UK"], "mark_kind": "near_miss"},
+
+  {"n": 7, "item": "adv0003", "sid": "ADF2E167", "grade": 1,
+   "summary": "A Conservative peer argues that lifting children out of poverty takes more than extending benefits, because some children are let down by money and others by the adults around them.",
+   "why": "Same subject area as the question (benefits and child poverty) but it contains neither Sir Ashley Fox nor any claim that benefits are not paid for by taxpayers.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 8, "item": "hum0094", "sid": "D1F48822", "grade": 2,
+   "summary": "A Liberal Democrat MP contrasts the 4.6 billion already spent on the cancelled 2010 ID card scheme with the 1.8 billion cost attached to digital ID.",
+   "why": "It supplies one of the three things asked for, the cost figure, but not who produced it nor whether the Government accepts it.",
+   "marks": ["1.8 billion cost associated with digital IDs could be much better spent"], "mark_kind": "answer"},
+
+  {"n": 9, "item": "db0263", "sid": "0B30E1F2", "grade": 0,
+   "summary": "A Green MP asks the Minister when business rates will be reformed, citing village pubs in his constituency facing large increases.",
+   "why": "Different debate, date and subject: nothing here touches a debate on vicars and rural parishes.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 10, "item": "hum0064", "sid": "A7B12CF1", "grade": 0,
+   "summary": "A Liberal Democrat MP criticises moving asylum seekers between unsuitable accommodation and sets out his party's plan to end hotel use in six months.",
+   "why": "It does contrast Government and Liberal Democrat positions, but on asylum accommodation, not on local government reorganisation.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 11, "item": "hum0067", "sid": "2E207C29", "grade": 1,
+   "summary": "A Labour backbencher opens a petition debate arguing that water privatisation has failed and that full public ownership is needed.",
+   "why": "Squarely on the subject, but it is a backbencher's case for public ownership and says nothing about whether the Government supports it.",
+   "marks": ["Enough of all this: full public ownership is what is needed."], "mark_kind": "near_miss"},
+
+  {"n": 12, "item": "adv0020", "sid": "9B6D9923", "grade": 3,
+   "summary": "A minister says NATS has confirmed the disruption was a technical issue and does not believe it was cyber-related, while assuring the House about cyber defences.",
+   "why": "It is about exactly this matter and states the fact that settles the question: NATS blamed a technical fault, not a cyber-attack.",
+   "marks": ["While NATS has confirmed that this was a technical issue", "it does not believe it to be cyber-related"], "mark_kind": "answer"},
+
+  {"n": 13, "item": "hum0100", "sid": "D5E05B8F", "grade": 1,
+   "summary": "The Deputy Speaker notifies the House of Royal Assent to three Acts: unauthorised entry to football matches, sentencing, and Holocaust memorial.",
+   "why": "On the subject of bills completing their passage in 2026, but the Crime and Policing Bill is simply not in the list, so it settles nothing.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 14, "item": "adv0027", "sid": "5003558C", "grade": 2,
+   "summary": "A Conservative MP attacks digital ID as inconsistent and insecure, and says the OBR reckons the scheme will cost 1.8 billion pounds while Ministers brief that this is inaccurate.",
+   "why": "It attributes the cost to the OBR and gives the real figure, 1.8 billion rather than 18, but inside a long speech about many other things.",
+   "marks": ["The OBR, as I say, reckons the scheme will cost", "1.8 billion"], "mark_kind": "answer"},
+
+  {"n": 15, "item": "db0240", "sid": "744F89D1", "grade": 0,
+   "summary": "A Conservative peer moves an amendment to the Crime and Policing Bill about cash-only businesses and business rates, quoting an earlier exchange on the subject.",
+   "why": "Wrong House, wrong date and wrong debate; the only link to the question is the word 'business'.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 16, "item": "adv0035", "sid": "6BAC9B38", "grade": 3,
+   "summary": "Wendy Morton says the Falkland Islands are British and will remain so for as long as the Islanders wish, reaffirming their right to self-determination, and presses the Foreign Secretary on Argentina.",
+   "why": "It is the named speaker on the exact subject, and it states the opposite of the premise: she put the decision with the Islanders, not the UK Government.",
+   "marks": ["they will remain British for as long as the Falkland Islanders wish them to be", "their right to self-determination"], "mark_kind": "answer"},
+
+  {"n": 17, "item": "hum0031", "sid": "EA876D1F", "grade": 0,
+   "summary": "A peer moves an amendment to the Fisheries Bill so that fishing effort must not overexploit stocks, arguing sustainability should come before fleet viability.",
+   "why": "A different bill, House and year entirely; no medical training and no Helen Morgan.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 18, "item": "db0294", "sid": "668E6111", "grade": 2,
+   "summary": "The Minister for Trade Policy winds up the Trade Bill's second reading debate, thanking Members and promising to answer their points.",
+   "why": "It is from the very sitting the division belongs to and identifies the Bill, but it never mentions the division or the reasoned amendment.",
+   "marks": ["I was the Minister responsible for taking the Trade Bill through Committee"], "mark_kind": "answer"},
+
+  {"n": 19, "item": "hum0017", "sid": "DBB2A7A3", "grade": 1,
+   "summary": "A Conservative MP asks whether any Agriculture Minister has ever met a farmer who denied that grade 3b land grows arable crops as well as 3a.",
+   "why": "It mentions meeting a farmer, but the speaker is an MP rather than a peer and the subject is land classification, not whether reforms can be paid for.",
+   "marks": ["Has any Agriculture Minister ever met a farmer who has denied that 3b land is just as good for growing arable crops as 3a land?"], "mark_kind": "near_miss"},
+
+  {"n": 20, "item": "adv0013", "sid": "DD73885F", "grade": 1,
+   "summary": "An SNP MP responds to Flybe's collapse, giving the Scottish job numbers and pressing the Government on refunds and the regional connectivity review.",
+   "why": "The Scottish job figures are here, but said by an SNP backbencher, so the passage cannot show what the Chancellor said.",
+   "marks": ["Of the 2,000 Flybe staff, about 300 were based in Scotland, with 130 of them in my constituency at Glasgow airport."], "mark_kind": "near_miss"},
+
+  {"n": 21, "item": "hum0082", "sid": "7C7BC251", "grade": 0,
+   "summary": "An MP asks whether the Lord Mandelson affair raises questions about the hold over the Government of someone he calls a byword for sleaze.",
+   "why": "Nothing to do with chalk streams or with any member's recurring interest in them.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 22, "item": "hum0034", "sid": "C38A81CC", "grade": 1,
+   "summary": "A minister closes an exchange on an attack on a Hatzola ambulance, after which the record moves to a programme motion for the Tobacco and Vapes Bill.",
+   "why": "The Bill the question asks about appears, but only as procedural timetabling, with no contribution from Baroness Fox of Buckley.",
+   "marks": ["That the following provisions shall apply to the Tobacco and Vapes Bill"], "mark_kind": "near_miss"},
+
+  {"n": 23, "item": "adv0011", "sid": "A0ED5380", "grade": 0,
+   "summary": "Ed Davey condemns the US action in Venezuela, quoting Margaret Thatcher on not walking into other people's countries, and warns about the precedent for China and Russia.",
+   "why": "The right speaker but the wrong subject: no MI5 or GCHQ assessment and no Chinese embassy.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 24, "item": "hum0059", "sid": "DD73885F", "grade": 2,
+   "summary": "An SNP MP reacts to Flybe's collapse, describing staff losing their jobs abruptly and asking what happens to passengers and regional routes.",
+   "why": "It answers only indirectly: the collapse is plainly just-happened, but the text itself never gives a date.",
+   "marks": ["this is horrendous news for the employees of Flybe, who have lost their jobs in an abrupt, public and distressing manner"], "mark_kind": "answer"},
+
+  {"n": 25, "item": "old0015", "sid": "33E15CAB", "grade": 1,
+   "summary": "A shadow minister opens on knife crime, notes the Government's ambition to halve it, and says crime fell by more than half under the last Government.",
+   "why": "It names the ambition but gives no figure for how far knife crime has fallen since it was set; the 50% it does cite is a different Government and all crime.",
+   "marks": ["Given the Government's ambition to reduce knife crime by half"], "mark_kind": "near_miss"},
+
+  {"n": 26, "item": "hum0008", "sid": "76D5451A", "grade": 2,
+   "summary": "A Conservative MP speaks against the alcohol duty rise, calling the pub and hospitality sector, alongside whisky, the lifeblood of the Scottish economy.",
+   "why": "A Conservative does make that claim about that sector, so it answers indirectly, but in the Finance Bill debate and with 'lifeblood' rather than 'cornerstone'.",
+   "marks": ["an important industry that is the lifeblood of the Scottish economy"], "mark_kind": "answer"},
+
+  {"n": 27, "item": "hum0011", "sid": "A47A265B", "grade": 2,
+   "summary": "A Liberal Democrat MP describes parcels lost and undelivered across rural Wales, blames Evri's business model, and notes customers cannot choose their delivery company.",
+   "why": "The argument the question asks about is here in the closing line, though it is about choosing a delivery company rather than switching supplier.",
+   "marks": ["A frustration for customers is that they often cannot choose their delivery comp"], "mark_kind": "answer"},
+
+  {"n": 28, "item": "hum0034", "sid": "850C7E51", "grade": 0,
+   "summary": "A Conservative peer withdraws an amendment to the Children's Wellbeing and Schools Bill, thanking Baroness Fox of Buckley and arguing that pandemic lessons were not learned.",
+   "why": "It shares only her name: the debate is a schools bill, and nothing here concerns the tobacco bill.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 29, "item": "hum0060", "sid": "2F7F8AC1", "grade": 0,
+   "summary": "A Cabinet Office minister answers on the Northern Ireland Protocol, defending the Government's good faith and Lord Frost's role.",
+   "why": "The criticism it refers to is Baroness Hayter's, not Baroness Blackstone's, and nothing here concerns how long anyone had sat in the Lords.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 30, "item": "db0285", "sid": "F9B33848", "grade": 0,
+   "summary": "The Leader of the House announces forthcoming Commons business and the date of the state opening of Parliament.",
+   "why": "A business statement three months later; it says nothing about the Finance Bill committee division.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 31, "item": "hum0098", "sid": "E6A766B1", "grade": 0,
+   "summary": "In a Railways Bill committee sitting a member confirms that a point was debated in the previous group.",
+   "why": "It reads like an answer only because it is stripped of context: the subject is a railways amendment, not Diego Garcia.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 32, "item": "db0240", "sid": "B9742DFB", "grade": 1,
+   "summary": "The Leader of the House gives the Commons its business for the following fortnight and the date the House rises for Christmas.",
+   "why": "The right recurring debate and the right speaking role, but three months before the sitting the question asks about.",
+   "marks": ["The business for the week commencing 8 December will include:"], "mark_kind": "near_miss"},
+
+  {"n": 33, "item": "db0290", "sid": "CA626AE8", "grade": 3,
+   "summary": "A justice minister replies late at night in the Sentencing Bill's committee, accepting the case on gambling addiction but resisting Amendment 95 as unnecessary.",
+   "why": "It is from the very debate asked for, on the right day and in the right House, and it names the amendment that was pressed.",
+   "marks": ["although we agree wholeheartedly with the spirit of Amendment 95, we do not believe that legislation is needed"], "mark_kind": "answer"},
+
+  {"n": 34, "item": "db0276", "sid": "EB4C94BA", "grade": 1,
+   "summary": "An MP presents a constituents' petition urging the Government to help the Terminally Ill Adults (End of Life) Bill make progress before the Session ends.",
+   "why": "The right Bill but the wrong occasion: a petition presentation in March, not the second reading sitting the division belongs to.",
+   "marks": ["while they respect the need for scrutiny of the Terminally Ill Adults (End of Life) Bill"], "mark_kind": "near_miss"},
+
+  {"n": 35, "item": "db0291", "sid": "358B0EC2", "grade": 0,
+   "summary": "The Leader of the House sets out Commons business for the first week of June 2020.",
+   "why": "Wrong House, wrong year and wrong subject entirely.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 36, "item": "adv0034", "sid": "06F83B54", "grade": 0,
+   "summary": "A Conservative peer supports an amendment on accurate recording of sex in police data, arguing that self-declared identity breaks risk assessment.",
+   "why": "Richard Burgon is not in it and neither is a Government amendment; the words 'support the amendment' are the only link.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 37, "item": "db0234", "sid": "EBD2303B", "grade": 0,
+   "summary": "An MP argues that protecting children online is a moral imperative, drawing parallels with Victorian child protection legislation.",
+   "why": "A different debate, subject and year; nothing about the Coronavirus Bill.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 38, "item": "db0247", "sid": "CA2BA919", "grade": 0,
+   "summary": "An MP opens a Westminster Hall debate on a national service specification for adult cerebral palsy, drawing on his daughter's condition.",
+   "why": "It is an opening speech, but to a different debate on a different subject two years later.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 39, "item": "hum0072", "sid": "DD0034C5", "grade": 3,
+   "summary": "A crossbench peer moves an amendment to the leasehold bill that would let the Secretary of State set up an independent statutory regulator of property agents.",
+   "why": "A peer, the leasehold bill and property agents, with the proposal stated outright.",
+   "marks": ["It would empower the Secretary of State to establish an independent statutory regulator of property agents who sell and manage leasehold property."], "mark_kind": "answer"},
+
+  {"n": 40, "item": "hum0018", "sid": "5D434CBB", "grade": 1,
+   "summary": "A Conservative peer lists the injustices facing leaseholders in unsafe buildings, including that they cannot sell and move when they need to.",
+   "why": "It complains that these owners cannot move, but says nothing about first-time buyers stuck renting, so the compound claim is not there.",
+   "marks": ["Unlike other home owners, these leaseholders cannot sell and move if they need to move for a new job or if their family has grown."], "mark_kind": "near_miss"},
+
+  {"n": 41, "item": "adv0019", "sid": "BC3F1B09", "grade": 1,
+   "summary": "A Liberal Democrat MP demands a timeline and correspondence showing who in Government was involved in dropping the Official Secrets Act prosecution.",
+   "why": "The same China-and-security controversy, but about the collapsed espionage case, not about any decision on the Royal Mint Court embassy.",
+   "marks": ["our intelligence allies are now also questioning whether the UK can be trusted to counter China"], "mark_kind": "near_miss"},
+
+  {"n": 42, "item": "hum0042", "sid": "0A1C3341", "grade": 1,
+   "summary": "A Labour MP contrasts money that saved jobs at Grangemouth with an SNP decision to buy buses from China rather than Falkirk.",
+   "why": "Scottish job losses and the SNP are both here, but the airline collapse the question is about is not.",
+   "marks": ["what does the Leader of the House make of the SNP abandoning Scottish workers, communities and industry?"], "mark_kind": "near_miss"},
+
+  {"n": 43, "item": "old0004", "sid": "AC1EFABD", "grade": 1,
+   "summary": "A Labour peer welcomes a statutory instrument extending combined authority finance powers to combined county authorities.",
+   "why": "Local government finance, but it gives no figure for transition costs and is not about reorganisation into unitary authorities.",
+   "marks": ["this SI puts in place the financial mechanism to enable that"], "mark_kind": "near_miss"},
+
+  {"n": 44, "item": "adv0012", "sid": "9AAC7B90", "grade": 0,
+   "summary": "Sarah Jones asks why the Secretary of State did not consult victims' organisations before publishing a statement on Northern Ireland legacy issues.",
+   "why": "The right speaker on an unrelated subject; there is no planning decision and no Chinese embassy.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 45, "item": "hum0006", "sid": "3D3F2F36", "grade": 1,
+   "summary": "A Conservative peer praises Margaret Thatcher's record on public spending and argues the country needs the same single-mindedness now.",
+   "why": "It is about Margaret Thatcher, but not the remark about not walking into other people's countries, so it cannot identify who quoted it.",
+   "marks": ["we recently celebrated the centenary of the birth of Margaret Thatcher"], "mark_kind": "near_miss"},
+
+  {"n": 46, "item": "db0244", "sid": "CF27FE0C", "grade": 1,
+   "summary": "A Labour peer warns of firms failing and high unemployment, and argues the crisis calls the philosophy of universal credit into question.",
+   "why": "Strongly on the subject of unemployment support, but it is a different debate three weeks earlier and does not show who opened anything.",
+   "marks": ["a rising and probably quite high level of unemployment. This calls into question the philosophy of universal credit."], "mark_kind": "near_miss"},
+
+  {"n": 47, "item": "db0288", "sid": "B6C749F3", "grade": 0,
+   "summary": "A crossbench peer explains why the Commons reasons for rejecting his trade union political funds amendment do not persuade him.",
+   "why": "The same ping-pong mechanism but a different Bill, House and date; the Bill the division belongs to never appears.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 48, "item": "hum0040", "sid": "49B5EDFB", "grade": 3,
+   "summary": "A Conservative peer cites price competitiveness rankings and an Oxford Economics study, and asks why the Government is contemplating a holiday tax at all.",
+   "why": "A Conservative front-bencher calling the visitor levy a holiday tax, in a debate dedicated to it: that is the answer stated outright.",
+   "marks": ["why are the Government contemplating a holiday tax at all?"], "mark_kind": "answer"},
+
+  {"n": 49, "item": "db0280", "sid": "182CBFF5", "grade": 0,
+   "summary": "A housing minister moves the Surrey structural changes order, which would create two unitary councils for the county.",
+   "why": "It mentions 14 January 2026 only as the day the order was laid; the sitting is 2 March and no division is identified.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 50, "item": "hum0049", "sid": "F038F4F3", "grade": 2,
+   "summary": "A Labour peer marks International Women's Day and warns that low-paid women will suffer unless the Government goes beyond what it has published on statutory sick pay in the coronavirus crisis.",
+   "why": "A concern about coronavirus support for workers is stated plainly, though inside a debate about something else.",
+   "marks": ["beyond what they have already published on statutory sick pay in this coronavirus crisis, many women in part-time and unprotected sectors could see very challenging times this summer and beyond"], "mark_kind": "answer"},
+
+  {"n": 51, "item": "hum0074", "sid": "35085354", "grade": 1,
+   "summary": "A Labour MP describes a constituent billed 525 pounds by a management company for an extension built 30 years before she moved in, and asks for faster leasehold reform.",
+   "why": "Leasehold abuse, but nothing about deferment rates and nothing that identifies which House debated them.",
+   "marks": ["these sorts of behaviour by companies like Shenstone are exactly why we need to tackle the leasehold crisis"], "mark_kind": "near_miss"},
+
+  {"n": 52, "item": "hum0048", "sid": "070AC1AD", "grade": 1,
+   "summary": "A Labour MP argues that child poverty is not a matter of merit and describes children in cold, overcrowded homes.",
+   "why": "The right Bill and subject, but this is an MP in the Commons, so it cannot report what peers said for and against.",
+   "marks": ["More than 1 million children live in households unable to afford even the most basic necessities of life."], "mark_kind": "near_miss"},
+
+  {"n": 53, "item": "adv0036", "sid": "0A014465", "grade": 0,
+   "summary": "A Conservative peer cites an academic misconduct case at Cambridge and asks whether the Government will consult on giving the Office for Students the power to intervene.",
+   "why": "Only the word 'consulting' connects it: different speaker, department and subject.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 54, "item": "hum0039", "sid": "4DD41964", "grade": 1,
+   "summary": "A minister winds up on the Employment Rights Bill, quoting research that stronger employment law has had pro-employment effects and attacking the Opposition's record.",
+   "why": "A minister replying in an employment debate, but no amendment is moved here and this is not a seasonal work debate.",
+   "marks": ["I remind the shadow Minister, the hon. Member for Arundel and South Downs (Andrew Griffith), who made a number of contributions, of my opening remarks."], "mark_kind": "near_miss"},
+
+  {"n": 55, "item": "old0003", "sid": "28D59114", "grade": 1,
+   "summary": "A DUP MP asks the Minister about the Irish Government pushing returnees back to Northern Ireland and about Irish court rulings on returns to the UK.",
+   "why": "Immigration and returns, but the speaker is a backbencher and neither the Immigration Act 1971 nor deporting foreign national offenders appears.",
+   "marks": ["can the Minister say something about what the Irish Republic's Government said this week about pushing back returnees to Northern Ireland?"], "mark_kind": "near_miss"},
+
+  {"n": 56, "item": "hum0037", "sid": "B4BA20E8", "grade": 0,
+   "summary": "An MP describes a constructed wetland filtering phosphates and microplastics, and flood funding for Somerset.",
+   "why": "Environmental policy in the broadest sense, but no Finch judgment, no end-use emissions and no climate minister.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 57, "item": "hum0033", "sid": "1ABBDE90", "grade": 1,
+   "summary": "A Conservative front-bencher supports the infected blood compensation regulations and asks about the timetable for affected people and estates.",
+   "why": "The right subject, but a different speaker, and nothing about how long anyone had known people who were infected.",
+   "marks": ["Victims were told that compensation must be in place without delay, and that is starting to become a reality for those who were infected."], "mark_kind": "near_miss"},
+
+  {"n": 58, "item": "old0022", "sid": "393A13C1", "grade": 0,
+   "summary": "A Conservative peer distinguishes the merits of Clause 191 from the process by which it was inserted into the Crime and Policing Bill, treating the substance as a conscience matter.",
+   "why": "A different Bill and clause; the Terminally Ill Adults Bill is not mentioned at all.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 59, "item": "old0015", "sid": "1F9C386D", "grade": 3,
+   "summary": "A justice minister says knife crime is down 8% under this Government, points to investment in early intervention and promises a cross-Government strategy.",
+   "why": "A minister states the percentage fall under this Government in a reply dedicated to knife crime, which is what the question asks for.",
+   "marks": ["knife crime is down 8% under this Labour Government"], "mark_kind": "answer"},
+
+  {"n": 60, "item": "hum0035", "sid": "B1DE66A3", "grade": 1,
+   "summary": "A Conservative peer calls the Maccabi Tel Aviv fan ban shameful and asks when the Government first learned the safety advisory group intended to advise it.",
+   "why": "The right ban and the right controversy, but this is an opposition peer questioning the Minister rather than the policing minister answering.",
+   "marks": ["Can the Minister tell us when the Government were first told by the safety advisory group that it was intending to advise a ban on Maccabi Tel Aviv fans attending this football match?"], "mark_kind": "near_miss"},
+
+  {"n": 61, "item": "db0294", "sid": "0B22E82A", "grade": 0,
+   "summary": "Keir Starmer asks the Prime Minister to enshrine a duty of candour in law, drawing on the infected blood scandal.",
+   "why": "The right name four years later; no Trade Bill and no division.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 62, "item": "db0235", "sid": "E284366F", "grade": 0,
+   "summary": "A minister opens debate on two statutory instruments strengthening alternative dispute resolution for consumers.",
+   "why": "A minister opening a Lords SI debate, but a different instrument on a different day; mesothelioma payments do not appear.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 63, "item": "adv0027", "sid": "D1F48822", "grade": 2,
+   "summary": "A Liberal Democrat MP contrasts the 4.6 billion spent on the abandoned ID card scheme with the 1.8 billion cost attached to digital ID.",
+   "why": "It gives the true figure that corrects the premise but does not attribute it to the OBR.",
+   "marks": ["1.8 billion cost associated with digital IDs could be much better spent"], "mark_kind": "answer"},
+
+  {"n": 64, "item": "adv0035", "sid": "E68C5AF9", "grade": 1,
+   "summary": "A Lords minister says Argentina understands the UK's position and quotes the Foreign Secretary that the Islanders' right of self-determination is paramount.",
+   "why": "The same subject and the same principle, but spoken by a Government minister, so it cannot show what Wendy Morton said.",
+   "marks": ["Their right of self-determination is paramount, grounded in international law and we will resolutely uphold it"], "mark_kind": "near_miss"},
+
+  {"n": 65, "item": "hum0064", "sid": "9D8BA2BA", "grade": 1,
+   "summary": "A Conservative peer questions the power to merge local government pension funds and notes in passing that the House will soon consider local government reorganisation.",
+   "why": "Reorganisation is mentioned only as something coming later, and the passage contrasts nobody's position with anybody else's.",
+   "marks": ["In another Bill before your Lordships' House, we will shortly contemplate local government reorganisation."], "mark_kind": "near_miss"},
+
+  {"n": 66, "item": "db0268", "sid": "87F1A65C", "grade": 1,
+   "summary": "The Deputy Speaker notifies the Commons of Royal Assent to four Acts, among them the Border Security, Asylum and Immigration Act 2025.",
+   "why": "It names the Bill the question is about, but as a Royal Assent notice in the other House a month later, so no debate is identified.",
+   "marks": ["Border Security, Asylum and Immigration Act 2025"], "mark_kind": "near_miss"},
+
+  {"n": 67, "item": "hum0062", "sid": "33A1AB0D", "grade": 0,
+   "summary": "A Home Office minister replies on an amendment about offences against shop workers, noting his union membership and earlier attempts to legislate.",
+   "why": "The right Bill but nothing about jury trials, so there is no criticism of either kind to compare.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 68, "item": "hum0024", "sid": "559FAAFC", "grade": 1,
+   "summary": "The Work and Pensions Secretary says 1.5 billion pounds over three years will go to a youth guarantee and apprenticeships, and that youth hubs are being expanded to more areas.",
+   "why": "Exactly the right subject, but it gives neither a number of hubs nor any locations, only 'more areas of the country'.",
+   "marks": ["We are expanding the number of youth hubs to more areas of the country"], "mark_kind": "near_miss"},
+
+  {"n": 69, "item": "hum0083", "sid": "A3FBD0B9", "grade": 0,
+   "summary": "A Conservative front-bencher accuses the Minister of misquoting business groups over scrapping a cap in the Employment Rights Bill.",
+   "why": "The phrase 'scrap the cap' is bait: this is a cap in an employment bill, not the two-child benefit cap.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 70, "item": "hum0101", "sid": "004DC06C", "grade": 0,
+   "summary": "A bishop supports an amendment on fair recovery of benefit overpayments, warning that deductions could push claimants deeper into poverty.",
+   "why": "The words 'for the record' are the only link; the Armed Forces Bill appears nowhere.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 71, "item": "hum0075", "sid": "9449FC95", "grade": 2,
+   "summary": "An MP welcomes moving to zero high-risk vendors and asks the Minister to confirm whether the Government classifies Huawei as one.",
+   "why": "It shows MPs debating the Huawei cap in the Commons, which answers the question indirectly without discussing the Lords.",
+   "marks": ["The moving to 0% of high-risk vendors seems good common sense to me."], "mark_kind": "answer"},
+
+  {"n": 72, "item": "hum0029", "sid": "394562D6", "grade": 2,
+   "summary": "Dan Jarvis quotes the deputy national security adviser's statements that China poses wide-ranging threats and runs large-scale espionage operations against the UK.",
+   "why": "It is the named speaker making a point about the intelligence assessments in this row, though framed around the spying case rather than the embassy.",
+   "marks": ["in each of the three statements the DNSA makes it crystal clear that China poses wide-ranging threats to the UK"], "mark_kind": "answer"},
+
+  {"n": 73, "item": "db0255", "sid": "DB0DB8E9", "grade": 0,
+   "summary": "A Home Office minister answers on the earned settlement pathway, blaming inherited asylum pressures and inviting consultation responses.",
+   "why": "A different debate, date and subject; China and human rights do not appear.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 74, "item": "hum0050", "sid": "5B7C45C5", "grade": 0,
+   "summary": "A Foreign Office minister answers on repatriating stranded British citizens, noting that charter manifests and closed airspace constrain flights.",
+   "why": "'Air traffic' appears only as a scheduling constraint in 2020; there is no air traffic control failure here.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 75, "item": "db0293", "sid": "7AC31FF0", "grade": 0,
+   "summary": "A culture minister moves broadcasting quota regulations, noting the Commons approved them earlier in November.",
+   "why": "Wrong House and date, and no division is identified.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 76, "item": "adv0027", "sid": "E47A11AB", "grade": 1,
+   "summary": "A Conservative MP asks the Prime Minister whether an unfunded digital ID costing the public billions counts as a fair choice, alongside benefits and taxes.",
+   "why": "On the cost of digital ID, but it says only 'billions' and never mentions the OBR, so it cannot confirm or correct the figure.",
+   "marks": ["Is it a fair choice to introduce an unfunded and unwanted digital ID that will cost the public billions of pounds?"], "mark_kind": "near_miss"},
+
+  {"n": 77, "item": "db0269", "sid": "B4218942", "grade": 0,
+   "summary": "A tabled Commons question from Neil Parish asking when the Government will publish the national food strategy.",
+   "why": "The right member two months earlier, but a tabled question is not the Agriculture Bill report stage.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 78, "item": "hum0038", "sid": "820785FE", "grade": 0,
+   "summary": "An MP sets out written answers he says were untrue about how many irregular migrants have absconded.",
+   "why": "Nothing about WASPI, the ombudsman or the Department for Work and Pensions.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 79, "item": "adv0025", "sid": "5C8CFAA5", "grade": 1,
+   "summary": "Rebecca Paul attacks the overnight visitor levy as Labour's holiday tax, citing job losses and a UKHospitality estimate of 33,000 more to come.",
+   "why": "The right speaker opposing the levy, but no amendment of hers is moved or defeated anywhere in the passage.",
+   "marks": ["Let us call this what it is", "Labour's holiday tax"], "mark_kind": "near_miss"},
+
+  {"n": 80, "item": "hum0053", "sid": "6EEAE1AC", "grade": 1,
+   "summary": "A Labour MP says teachers were demoralised by the former Education Secretary and welcomes the new one's broader curriculum.",
+   "why": "The right statement and debate, but the speaker is an MP and the remark about 33 years is nowhere in the text.",
+   "marks": ["I am glad that the new Education Secretary has a very different approach"], "mark_kind": "near_miss"},
+
+  {"n": 81, "item": "hum0069", "sid": "2DD87915", "grade": 0,
+   "summary": "A Liberal Democrat MP sets out estimates of Brexit's cost to GDP, investment and tax revenue.",
+   "why": "No medical training bill and no party position on one.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 82, "item": "hum0030", "sid": "DA8D9EA7", "grade": 1,
+   "summary": "A Conservative peer asks whether treating nicotine as tobacco-derived collapses the Bill's distinction between tobacco and vaping products.",
+   "why": "The right Bill and a live drafting point, but a different speaker and no mention of the Windsor Framework.",
+   "marks": ["are we now arguing that vaping products are, in fact, tobacco products because the nicotine in them is derived from tobacco?"], "mark_kind": "near_miss"},
+
+  {"n": 83, "item": "hum0051", "sid": "1658561E", "grade": 1,
+   "summary": "A Conservative MP asks the consumer rights Minister to campaign on refund rights, naming travel firms refusing to refund holidays and flights.",
+   "why": "A complaint about flights and refunds, but the 2,000 cancelled flights are not in it and the passage never states a party.",
+   "marks": ["rip-off travel companies that are refusing to refund constituents for their holidays or flights"], "mark_kind": "near_miss"},
+
+  {"n": 84, "item": "db0284", "sid": "EB9BCBF8", "grade": 0,
+   "summary": "A Labour MP discusses animal testing and the right to protest in a debate on Public Order Act regulations.",
+   "why": "A different debate five years later with no connection to a business of the House division.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 85, "item": "adv0034", "sid": "F85A1A30", "grade": 0,
+   "summary": "A Liberal Democrat MP responds to the Budget, welcoming Scottish investment while warning about oil and gas job losses.",
+   "why": "Richard Burgon appears only as the member she follows; nothing about supporting any amendment.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 86, "item": "adv0008", "sid": "5B348130", "grade": 0,
+   "summary": "Kemi Badenoch attacks the Chancellor over threshold freezes and quotes ExxonMobil's UK chair on industrial decline.",
+   "why": "The right speaker but nothing about Swanwick or flight processing.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 87, "item": "db0231", "sid": "F451040B", "grade": 0,
+   "summary": "An MP quotes a petitioner on water ownership and says successive Governments failed to consider public ownership.",
+   "why": "A different debate and subject; the Public Office (Accountability) Bill is not here.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 88, "item": "hum0046", "sid": "4D4A4F2B", "grade": 3,
+   "summary": "An MP says Ministers claim there is no evidence that lower-volume fracking carries the same risk, and argues the Preston New Road earthquake in the Government's own records shows there is.",
+   "why": "It states the Government's position on fracking safety and the case against it side by side, in a debate dedicated to the ban.",
+   "marks": ["Ministers tell us that the evidence base is not there to show that lower-volume fracking carries the same risk as fracking for shale gas, but I say gently to the Government that the evidence is there, and it is sitting in their own records."], "mark_kind": "answer"},
+
+  {"n": 89, "item": "db0280", "sid": "F21DC36C", "grade": 1,
+   "summary": "A DUP peer argues that the assisted dying Bill's drafting does not guarantee informed consent, against Lord Falconer's rejection of an amendment.",
+   "why": "A Lords bill debate with contested amendments in mid-January, but on the 23rd about the 16th, so it cannot identify a division on the 14th.",
+   "marks": ["He rejected Amendment 42 in the name of the noble Baroness, Lady Finlay, which would require patients to be fully informed."], "mark_kind": "near_miss"},
+
+  {"n": 90, "item": "adv0020", "sid": "6CE7D644", "grade": 0,
+   "summary": "An MP opens the Christmas adjournment debate with constituency matters: council spending, parking and fly-tipping.",
+   "why": "No air traffic disruption and no NATS.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 91, "item": "hum0072", "sid": "9D3D24E3", "grade": 1,
+   "summary": "A Conservative peer makes second reading points on the telecoms leasehold property bill, asking about high-risk vendors and the 2025 connectivity target.",
+   "why": "'Leasehold' is in the Bill's title but the subject is telecoms infrastructure, and property agents never come up.",
+   "marks": ["The intention of the Bill is relatively clear: it is a focused, tight piece of legislation."], "mark_kind": "near_miss"},
+
+  {"n": 92, "item": "old0016", "sid": "B1F72377", "grade": 1,
+   "summary": "Perran Moon closes a Westminster Hall debate on global tin availability, thanking colleagues and discussing the Cornish industrial growth fund.",
+   "why": "The right member, but summing up a debate he secured rather than raising anything at Business questions.",
+   "marks": ["I thank everybody who has contributed to this debate."], "mark_kind": "near_miss"},
+
+  {"n": 93, "item": "db0297", "sid": "B69E4125", "grade": 0,
+   "summary": "A Conservative MP speaks in a Westminster Hall debate on the under-10-metre fishing fleet, thanking rescue services and local figures.",
+   "why": "A different debate eight days earlier, with no division in it.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 94, "item": "hum0029", "sid": "BC5F82C7", "grade": 2,
+   "summary": "The Security Minister responds to the collapse of the Official Secrets Act prosecution, welcoming the committee's report and saying it found no evidence of ministerial interference.",
+   "why": "The right speaker on this row, making a point about the security committees' findings, though about the prosecution rather than the embassy.",
+   "marks": ["the JCNSS's report has reinforced two fundamental points that the Government have made throughout"], "mark_kind": "answer"},
+
+  {"n": 95, "item": "db0252", "sid": "76C141E6", "grade": 0,
+   "summary": "An MP raises a proposed 1,900-acre solar and battery scheme spanning his constituency.",
+   "why": "Wrong House, subject and year; craftspeople and EU travel are absent.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 96, "item": "db0258", "sid": "7CA8292E", "grade": 0,
+   "summary": "A Labour MP argues in a 2020 Budget debate that regional inequality must be central to economic strategy.",
+   "why": "Shares only the word 'economy'; there is no Office for the Impact Economy here.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 97, "item": "db0261", "sid": "15B71995", "grade": 1,
+   "summary": "A Conservative MP asks how to get press coverage for backbench debates, citing an excellent Ukraine debate initiated by Sir Bernard Jenkin on 4 December.",
+   "why": "It does name who initiated a Ukraine debate, but the wrong one on the wrong date, which is exactly the trap.",
+   "marks": ["a particularly outstanding debate on Ukraine, which was initiated by my hon. Friend the Member for Harwich and North Essex (Sir Bernard Jenkin) on Thursday 4 December"], "mark_kind": "near_miss"},
+
+  {"n": 98, "item": "db0232", "sid": "348E5375", "grade": 0,
+   "summary": "A Labour MP speaks on NHS workforce pressure and cancer care, thanking local fundraisers.",
+   "why": "Health in general, but nothing about the Infected Blood Inquiry's recommendations.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 99, "item": "db0229", "sid": "8700473C", "grade": 0,
+   "summary": "A peer asks whether the shared prosperity fund's objectives will survive covid-19, especially for inner cities.",
+   "why": "Wrong House and debate; 'covid-19' appears only as a passing qualifier.",
+   "marks": [], "mark_kind": "none"},
+
+  {"n": 100, "item": "hum0002", "sid": "9DCEC254", "grade": 1,
+   "summary": "An energy minister says he cannot comment on the merits of Jackdaw and Rosebank, and that the Secretary of State will decide on consent in due course.",
+   "why": "The right minister on the Rosebank consents, but the passage never says what the Scottish courts did to them.",
+   "marks": ["In both the Jackdaw and Rosebank cases, the Secretary of State will make a decision on whether to agree to these being consented in due course."], "mark_kind": "near_miss"}
+ ]
+}
