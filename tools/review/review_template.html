@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gold set v2 review</title>
+<style>
+  :root {
+    --bg: #11131a; --panel: #181b24; --panel2: #1f2330; --line: #2b3040;
+    --ink: #e7eaf2; --dim: #98a0b5; --accent: #6ea8fe; --good: #57c98a;
+    --warn: #e0b341; --bad: #e06a6a; --mono: ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --markA: rgba(87,201,138,.30); --markN: rgba(224,179,65,.28);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f6f7fa; --panel: #fff; --panel2: #eef1f6; --line: #d8dde8;
+      --ink: #1a1d26; --dim: #5c6379; --accent: #2b62c4; --good: #1f8a52;
+      --warn: #8a6a10; --bad: #b23b3b;
+      --markA: rgba(31,138,82,.22); --markN: rgba(138,106,16,.20);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { position: sticky; top: 0; z-index: 10; background: var(--panel);
+           border-bottom: 1px solid var(--line); padding: 10px 16px; }
+  .bar { height: 6px; background: var(--panel2); border-radius: 3px; overflow: hidden; margin-top: 8px; }
+  .bar > i { display: block; height: 100%; background: var(--accent); width: 0; transition: width .2s; }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .grow { flex: 1 1 auto; }
+  main { max-width: 1060px; margin: 0 auto; padding: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+          padding: 16px 18px; margin-bottom: 14px; }
+  h1 { font-size: 15px; margin: 0; font-weight: 650; letter-spacing: .01em; }
+  h2 { font-size: 20px; margin: 0 0 10px; line-height: 1.35; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+  .tag { font: 600 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .04em;
+         padding: 5px 8px; border-radius: 5px; background: var(--panel2); color: var(--dim); }
+  .tag.critical { background: #4a1f1f; color: #ffb4b4; }
+  .tag.major { background: #4a3a15; color: #ffd98a; }
+  .tag.heldout { background: #123a2a; color: #8fe3b8; }
+  :root:not([data-theme="dark"]) .tag.critical { background: #fbe0e0; color: #9c2b2b; }
+  :root:not([data-theme="dark"]) .tag.major { background: #fbf0d4; color: #7a5c0c; }
+  :root:not([data-theme="dark"]) .tag.heldout { background: #d8f2e5; color: #14623f; }
+  .label { font: 600 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em;
+           color: var(--dim); margin: 16px 0 6px; }
+  .ev { background: var(--panel2); border-left: 3px solid var(--accent);
+        padding: 10px 12px; border-radius: 0 6px 6px 0; margin-bottom: 8px; }
+  .ev .meta { font: 12px var(--mono); color: var(--dim); margin-bottom: 6px; }
+  mark { color: inherit; padding: 1px 0; border-radius: 2px; box-decoration-break: clone; }
+  mark.answer { background: var(--markA); box-shadow: 0 0 0 1px rgba(87,201,138,.5); }
+  mark.near { background: var(--markN); box-shadow: 0 0 0 1px rgba(224,179,65,.5); }
+  ul { margin: 0; padding-left: 20px; }
+  li.vital::marker { color: var(--bad); }
+  .forbid li { color: var(--bad); }
+  pre { font: 12px/1.5 var(--mono); background: var(--panel2); padding: 10px 12px;
+        border-radius: 6px; overflow-x: auto; margin: 0; white-space: pre-wrap; }
+  button, select, input, textarea { font: inherit; color: inherit; background: var(--panel2);
+        border: 1px solid var(--line); border-radius: 6px; padding: 7px 11px; }
+  button { cursor: pointer; }
+  button:hover { border-color: var(--accent); }
+  button.on { background: var(--accent); border-color: var(--accent); color: #0b1020; font-weight: 600; }
+  button.suggest { border-color: var(--good); border-style: dashed; }
+  button.primary { background: var(--good); border-color: var(--good); color: #06180f; font-weight: 600; }
+  button.small { padding: 5px 9px; font-size: 13px; }
+  textarea { width: 100%; min-height: 76px; resize: vertical; font: 14px/1.5 inherit; }
+  kbd { font: 600 11px var(--mono); background: var(--panel2); border: 1px solid var(--line);
+        border-bottom-width: 2px; border-radius: 4px; padding: 2px 5px; }
+  .muted { color: var(--dim); }
+  .grades { display: flex; gap: 8px; flex-wrap: wrap; }
+  .done { color: var(--good); font-weight: 600; }
+  .hint { font-size: 12.5px; color: var(--dim); margin-top: 14px; }
+  .sect { border-top: 1px solid var(--line); margin-top: 20px; padding-top: 6px; }
+  .verdicts { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 6px; }
+  .verdict { background: var(--panel2); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+  .verdict .who { font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--dim); }
+  .verdict .val { font-size: 19px; font-weight: 650; margin: 4px 0 6px; }
+  .verdict .why { font-size: 13.5px; color: var(--ink); }
+  .verdict.agree { border-color: var(--good); }
+  .verdict.differ { border-color: var(--warn); }
+  .verdict.mine { border-color: var(--accent); }
+  .verdict.absent .val { color: var(--dim); font-weight: 400; font-size: 15px; }
+  .plain { background: var(--panel2); border-left: 3px solid var(--good); padding: 10px 12px;
+           border-radius: 0 6px 6px 0; font-size: 14.5px; }
+  .banner { border: 1px solid var(--warn); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px;
+            font-size: 13.5px; }
+  .legend { font: 11.5px var(--mono); color: var(--dim); margin-top: 6px; }
+  /* The live calibration panel: the gate, recomputed from whatever the owner has decided so far. */
+  #gate { font: 12.5px var(--mono); }
+  #gate b { font-weight: 700; }
+  .pass { color: var(--good); } .fail { color: var(--bad); }
+  @media (max-width: 640px) { main { padding: 12px; } h2 { font-size: 17px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>Gold set v2 &mdash; owner review</h1>
+    <span class="muted" id="phase"></span>
+    <span class="grow"></span>
+    <select id="filter" title="Filter the queue"></select>
+    <button id="approve" class="primary" title="Accept every baseline decision you have not already decided yourself">Approve all</button>
+    <button id="export">Save decisions</button>
+  </div>
+  <div class="bar"><i id="progress"></i></div>
+  <div class="row muted" style="margin-top:6px;font-size:12.5px">
+    <span id="counter"></span><span class="grow"></span><span id="eta"></span>
+  </div>
+  <div class="row" id="gate" style="margin-top:6px"></div>
+</header>
+<main id="app"></main>
+
+<script id="pack" type="application/json">__PACK__</script>
+<script>
+"use strict";
+const PACK = JSON.parse(document.getElementById("pack").textContent);
+const KEY = "goldset-review-" + PACK.gold_hash;
+const BASE = PACK.baseline || { kappa: {}, items: {}, problems: [] };
+const JUDGE = PACK.judge || { model: "", grades: {} };
+const POINTS = { minor: 1, major: 3, critical: 5 };
+
+let state = { decisions: {}, grades: {}, notes: {}, edits: {}, weights: {}, cursor: 0, threshold: 2 };
+try {
+  const saved = localStorage.getItem(KEY);
+  if (saved) state = Object.assign(state, JSON.parse(saved));
+} catch (e) { /* private window or blocked storage: review still works, it just will not resume */ }
+if (!state.weights) state.weights = {};
+if (!state.threshold) state.threshold = 2;
+
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* see above */ }
+}
+
+let filter = "all";
+function queue() {
+  if (filter === "all") return PACK.queue;
+  if (filter === "todo") return PACK.queue.filter(e => !decided(e));
+  if (filter === "disagreement") return PACK.queue.filter(differs);
+  return PACK.queue.filter(e => e.phase === filter);
+}
+function decided(entry) {
+  return entry.kind === "kappa" ? state.grades[entry.id] !== undefined : !!state.decisions[entry.id];
+}
+// Disagreement is measured against whichever grade is currently authoritative: the owner's once they
+// have given one, the baseline's until then.
+function currentGrade(id) {
+  if (state.grades[id] !== undefined) return state.grades[id];
+  return BASE.kappa[id] ? BASE.kappa[id].grade : undefined;
+}
+function differs(entry) {
+  if (entry.kind !== "kappa") return false;
+  const mine = currentGrade(entry.id), theirs = JUDGE.grades[entry.id];
+  return mine !== undefined && theirs !== undefined && mine !== theirs;
+}
+
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// Highlights arrive as [start, end] offsets into the ORIGINAL text, resolved server-side against the
+// real characters. Matching strings in the browser would fail silently on a curly quote and show an
+// unmarked passage, which reads exactly like "nothing in here answers it".
+function marked(text, spans, kind) {
+  text = String(text == null ? "" : text);
+  if (!spans || !spans.length) return esc(text);
+  const cls = kind === "near_miss" ? "near" : "answer";
+  let out = "", at = 0;
+  for (const [start, end] of spans) {
+    if (start < at || start > text.length) continue;
+    out += esc(text.slice(at, start)) + `<mark class="${cls}">` + esc(text.slice(start, end)) + "</mark>";
+    at = end;
+  }
+  return out + esc(text.slice(at));
+}
+
+const GRADE_WORDS = {
+  3: "3 &mdash; answers it, and is about it",
+  2: "2 &mdash; answers it, among other things",
+  1: "1 &mdash; on topic, does not answer",
+  0: "0 &mdash; irrelevant",
+};
+const DECISION_WORDS = { keep: "Keep", edit: "Edit", drop: "Drop", verified: "Verified" };
+
+// --- agreement, recomputed live ----------------------------------------------------------------------
+// Cohen's kappa over whatever pairs currently carry both a grade from you and a grade from the judge.
+function kappaOver(pairs, project) {
+  const a = [], b = [];
+  for (const [mine, theirs] of pairs) { a.push(project(mine)); b.push(project(theirs)); }
+  const n = a.length;
+  if (!n) return { kappa: null, n: 0, agreement: null };
+  let observed = 0;
+  for (let i = 0; i < n; i++) if (a[i] === b[i]) observed++;
+  observed /= n;
+  const levels = [...new Set([...a, ...b])];
+  let expected = 0;
+  for (const level of levels) {
+    expected += (a.filter(v => v === level).length / n) * (b.filter(v => v === level).length / n);
+  }
+  const kappa = expected === 1 ? 1 : (observed - expected) / (1 - expected);
+  return { kappa: Math.round(kappa * 1e4) / 1e4, n, agreement: Math.round(observed * 1e4) / 1e4 };
+}
+
+// `ownGradesOnly` distinguishes the number that counts (yours) from the provisional one (the baseline's).
+function agreement(ownGradesOnly) {
+  const pairs = [];
+  for (const entry of PACK.queue) {
+    if (entry.kind !== "kappa") continue;
+    const theirs = JUDGE.grades[entry.id];
+    if (theirs === undefined) continue;
+    const mine = ownGradesOnly ? state.grades[entry.id] : currentGrade(entry.id);
+    if (mine === undefined) continue;
+    pairs.push([mine, theirs]);
+  }
+  const t = state.threshold;
+  return {
+    four: kappaOver(pairs, g => g),
+    binary: kappaOver(pairs, g => (g >= t ? 1 : 0)),
+    n: pairs.length,
+  };
+}
+
+function renderGate() {
+  const own = agreement(true), all = agreement(false);
+  const shown = own.n ? own : all;
+  const source = own.n ? `your ${own.n} grade${own.n === 1 ? "" : "s"}`
+                       : `the baseline's ${all.n} (you have graded none yet)`;
+  const t = state.threshold;
+  const b = shown.binary, f = shown.four;
+  const verdict = b.kappa === null ? "" : b.kappa >= 0.6
+    ? `<span class="pass">PASSES</span> &mdash; usable for recall, MRR and binary nDCG`
+    : `<span class="fail">DOES NOT PASS</span> &mdash; not usable for ranking metrics`;
+  document.getElementById("gate").innerHTML = `
+    <span>Judge <b>${esc(JUDGE.model || "?")}</b> vs ${esc(source)}:</span>
+    <span>relevance gate at <b>&ge; ${t}</b> &rarr; kappa <b>${b.kappa === null ? "n/a" : b.kappa}</b> ${verdict}</span>
+    <span class="muted">four-level kappa ${f.kappa === null ? "n/a" : f.kappa}
+      ${f.kappa !== null && f.kappa < 0.6 ? "(so graded nDCG stays off)" : ""}</span>
+    <span class="grow"></span>
+    <span>relevant at &ge;
+      <select id="threshold" title="Which grade counts as a relevant answer">
+        ${[1, 2, 3].map(v => `<option value="${v}" ${v === t ? "selected" : ""}>${v}</option>`).join("")}
+      </select></span>`;
+  const sel = document.getElementById("threshold");
+  if (sel) sel.onchange = () => { state.threshold = Number(sel.value); save(); render(); };
+}
+
+function plainEnglish(note) {
+  if (!note || !note.summary) return "";
+  return `<div class="label">What this passage actually says</div>
+    <div class="plain">${esc(note.summary)}</div>`;
+}
+
+// Claude's reading, the judge's, and yours. Yours is the one the gate is computed from, and it is
+// shown last so the column you are responsible for is the one you end on.
+function verdicts(entry) {
+  const isKappa = entry.kind === "kappa";
+  const mine = isKappa ? BASE.kappa[entry.id] : BASE.items[entry.id];
+  const theirs = isKappa ? JUDGE.grades[entry.id] : undefined;
+  const yours = isKappa ? state.grades[entry.id] : state.decisions[entry.id];
+  if (!mine && theirs === undefined && yours === undefined) return "";
+
+  const parts = [];
+  if (mine) {
+    const value = isKappa ? GRADE_WORDS[mine.grade] : esc(DECISION_WORDS[mine.decision] || mine.decision);
+    let cls = "verdict";
+    if (isKappa && theirs !== undefined) cls += mine.grade === theirs ? " agree" : " differ";
+    parts.push(`<div class="${cls}">
+      <div class="who">Claude &mdash; blind baseline</div>
+      <div class="val">${value}</div>
+      <div class="why">${esc(mine.why || "")}</div>
+      ${(mine.checks && mine.checks.length)
+        ? `<ul style="margin-top:8px">${mine.checks.map(c => `<li class="why">${esc(c)}</li>`).join("")}</ul>` : ""}
+    </div>`);
+  }
+  if (isKappa) {
+    const model = JUDGE.model ? esc(JUDGE.model) : "the judge";
+    if (theirs !== undefined) {
+      const ref = yours !== undefined ? yours : (mine ? mine.grade : undefined);
+      const cls = "verdict" + (ref === undefined ? "" : ref === theirs ? " agree" : " differ");
+      const gap = ref === undefined ? null : Math.abs(ref - theirs);
+      parts.push(`<div class="${cls}">
+        <div class="who">${model} &mdash; LLM judge</div>
+        <div class="val">${GRADE_WORDS[theirs]}</div>
+        <div class="why">${gap === null ? "" : gap === 0 ? "Agrees with the grade on the left."
+          : gap === 1 ? "One grade apart." : `${gap} grades apart.`}
+          ${(ref !== undefined && (ref >= state.threshold) === (theirs >= state.threshold))
+            ? "Same relevance call, which is what the gate counts."
+            : ref === undefined ? "" : "<b>Different relevance call.</b>"}</div>
+      </div>`);
+    } else {
+      parts.push(`<div class="verdict absent">
+        <div class="who">${model} &mdash; LLM judge</div>
+        <div class="val">no grade returned for this pair</div>
+        <div class="why">Unjudged is not zero: nothing was recorded, so it is left out of the agreement figure.</div>
+      </div>`);
+    }
+  }
+  parts.push(`<div class="verdict ${yours !== undefined ? "mine" : "absent"}">
+    <div class="who">You &mdash; the one that counts</div>
+    <div class="val">${yours === undefined ? "not decided yet"
+      : isKappa ? GRADE_WORDS[yours] : esc(DECISION_WORDS[yours] || yours)}</div>
+    <div class="why">${yours === undefined
+      ? "Until you decide, the gate above is computed from the baseline and is provisional."
+      : "The gate above is computed from your grades, not Claude's."}</div>
+  </div>`);
+  return `<div class="label">The readings</div><div class="verdicts">${parts.join("")}</div>`;
+}
+
+function renderItem(entry) {
+  const it = PACK.items[entry.id];
+  const note = BASE.items[entry.id];
+  const heldout = it.split === "heldout";
+  const d = state.decisions[it.id] || "";
+  const weight = state.weights[it.id] || it.criticality;
+  const parts = [];
+  parts.push(`<div class="card">
+    <div class="tags">
+      <span class="tag ${esc(weight)}">${esc(weight)}${weight !== it.criticality
+        ? ` (was ${esc(it.criticality)})` : ""} &middot; ${POINTS[weight] || "?"} pts</span>
+      <span class="tag">${esc(it.category)}</span>
+      <span class="tag">${esc(it.expected_behaviour)}</span>
+      ${it.window ? `<span class="tag">${esc(it.window)}</span>` : ""}
+      ${it.house ? `<span class="tag">${esc(it.house)}</span>` : ""}
+      ${heldout ? `<span class="tag heldout">held out &mdash; no system results shown</span>` : ""}
+      <span class="tag">${esc(it.provenance)}</span>
+    </div>
+    <h2>${esc(it.question)}</h2>`);
+
+  if (note) parts.push(plainEnglish(note));
+
+  if (it.evidence && it.evidence.length) {
+    parts.push(`<div class="label">Evidence (${it.evidence.length}) &mdash; the highlight is where the claim is made</div>`);
+    it.evidence.forEach((e, i) => {
+      const spans = note && note.evidence_spans ? note.evidence_spans[i] : null;
+      const body = (spans && spans.length)
+        ? marked(e.context || e.quote, spans, note.mark_kind)
+        : highlightQuote(e.context || e.quote, e.quote);
+      parts.push(`<div class="ev"><div class="meta">${esc(e.speaker || "unnamed")}${
+        e.party ? " (" + esc(e.party) + ")" : ""}${e.office ? " &mdash; " + esc(e.office) : ""} &middot; ${
+        esc(e.house || "")} ${esc(e.section || "")} &middot; ${esc(e.date || "")} &middot; ${
+        esc(e.heading || "")}</div>${body}</div>`);
+    });
+  }
+  if (it.nuggets && it.nuggets.length) {
+    parts.push(`<div class="label">Nuggets &mdash; vital ones are what an answer must contain</div><ul>`);
+    for (const n of it.nuggets)
+      parts.push(`<li class="${n.vital ? "vital" : ""}">${esc(n.text)}${n.vital ? "" : " <span class=\"muted\">(okay)</span>"}</li>`);
+    parts.push(`</ul>`);
+  }
+  if (it.forbidden_claims && it.forbidden_claims.length) {
+    parts.push(`<div class="label">Must NOT be asserted</div><ul class="forbid">`);
+    for (const f of it.forbidden_claims) parts.push(`<li>${esc(f)}</li>`);
+    parts.push(`</ul>`);
+  }
+  if (it.expected_structured_facts && Object.keys(it.expected_structured_facts).length) {
+    parts.push(`<div class="label">Gold answer, straight from SQL</div><pre>${
+      esc(JSON.stringify(it.expected_structured_facts, null, 2))}</pre>`);
+  }
+  if (it.absence_candidates && it.absence_candidates.length) {
+    parts.push(`<div class="label">Closest passages found &mdash; confirm none of them answers it</div>`);
+    for (const c of it.absence_candidates)
+      parts.push(`<div class="ev"><div class="meta">${esc(c.house || "")} &middot; ${esc(c.date || "")}</div>${esc(c.body)}</div>`);
+  }
+  if (it.findings && it.findings.length) {
+    parts.push(`<div class="label">Automatic checks flagged</div><ul>`);
+    for (const f of it.findings) parts.push(`<li>${esc(f)}</li>`);
+    parts.push(`</ul>`);
+  }
+  if (it.notes) parts.push(`<div class="label">Notes</div><div class="muted">${esc(it.notes)}</div>`);
+
+  parts.push(verdicts(entry));
+
+  parts.push(`<div class="sect"></div>
+    <div class="label">Your decision${note ? ` &mdash; the dashed button is the baseline` : ""}</div>
+    <div class="row">
+      ${["keep", "edit", "drop", "verified"].map((act, i) => `<button data-act="${act}" class="${
+        d === act ? "on" : (note && note.decision === act && !d ? "suggest" : "")}"><kbd>${i + 1}</kbd> ${
+        DECISION_WORDS[act]}</button>`).join("")}
+    </div>
+    <div class="label">Weighting &mdash; what this item is worth when a system is scored</div>
+    <div class="row">
+      ${["minor", "major", "critical"].map(c => `<button class="small ${weight === c ? "on" : ""}"
+        data-weight="${c}">${c} &middot; ${POINTS[c]} pts</button>`).join("")}
+      ${weight !== it.criticality
+        ? `<button class="small" data-weight="${esc(it.criticality)}" title="Put it back">reset to ${esc(it.criticality)}</button>`
+        : `<span class="muted" style="font-size:12.5px">as generated</span>`}
+    </div>
+    <div class="label">Edited question / note (optional)</div>
+    <textarea id="edit" placeholder="Leave blank to keep the question as written.">${esc(state.edits[it.id] || "")}</textarea>
+  </div>`);
+  return parts.join("");
+}
+
+// Fallback for an item with no baseline span: mark the stored quote inside its surrounding speech.
+function highlightQuote(text, quote) {
+  if (!quote) return esc(text);
+  const i = String(text).indexOf(quote);
+  if (i < 0) return esc(text);
+  return marked(text, [[i, i + quote.length]], "answer");
+}
+
+function renderKappa(entry) {
+  const p = PACK.kappa[entry.id];
+  const note = BASE.kappa[entry.id];
+  const g = state.grades[entry.id];
+  const parts = [`<div class="card">
+    <div class="tags"><span class="tag">calibration</span>
+      <span class="tag">${esc(p.item_id)}</span>
+      <span class="tag">baseline written before the judge ran</span></div>
+    <h2>${esc(p.question)}</h2>`];
+
+  if (note) parts.push(plainEnglish(note));
+
+  parts.push(`<div class="label">Passage &mdash; ${esc(p.speaker || "unnamed")}${
+    p.party ? " (" + esc(p.party) + ")" : ""} &middot; ${esc(p.house || "")} &middot; ${
+    esc(p.date || "")} &middot; ${esc(p.heading || "")}</div>
+    <div class="ev">${note ? marked(p.passage, note.spans, note.mark_kind) : esc(p.passage)}</div>`);
+
+  if (note) {
+    parts.push(`<div class="legend">${
+      note.mark_kind === "answer" ? "Green marks where the passage answers the question."
+      : note.mark_kind === "near_miss" ? "Amber marks the closest the passage gets &mdash; it does not answer."
+      : "Nothing is marked: the passage does not carry the claim at all."}</div>`);
+  }
+
+  parts.push(verdicts(entry));
+
+  parts.push(`<div class="label">Your grade &mdash; how well does this passage answer the question?${
+    note ? " (the dashed button is the baseline)" : ""}</div>
+    <div class="grades">
+      ${[3, 2, 1, 0].map(v => `<button data-grade="${v}" class="${
+        g === v ? "on" : (note && note.grade === v && g === undefined ? "suggest" : "")}"><kbd>${v}</kbd> ${
+        GRADE_WORDS[v].replace(/^\d &mdash; /, "")}</button>`).join("")}
+    </div>
+    <div class="hint">Grade what the passage does for the question, not whether the speaker is right.
+      Only the <b>&ge; ${state.threshold}</b> boundary feeds the gate, so if you are torn between 0 and 1
+      it does not change the number &mdash; the 1/2 boundary is the one that matters.</div>
+  </div>`);
+  return parts.join("");
+}
+
+function render() {
+  const q = queue();
+  const app = document.getElementById("app");
+  const problems = (BASE.problems && BASE.problems.length)
+    ? `<div class="banner">The baseline did not match this pack, so it is not shown:
+       <ul>${BASE.problems.slice(0, 5).map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>` : "";
+  if (!q.length) { app.innerHTML = problems +
+    `<div class="card"><h2>Nothing in this filter.</h2></div>`; updateHeader(q); return; }
+  state.cursor = Math.max(0, Math.min(state.cursor, q.length - 1));
+  const entry = q[state.cursor];
+  app.innerHTML = problems + (entry.kind === "kappa" ? renderKappa(entry) : renderItem(entry)) + `
+    <div class="row">
+      <button id="prev"><kbd>&larr;</kbd> Previous</button>
+      <button id="next">Next <kbd>&rarr;</kbd></button>
+      <button id="accept" class="suggest"><kbd>a</kbd> Accept the baseline for this one</button>
+      <span class="grow"></span>
+      <span class="muted">${decided(entry) ? '<span class="done">decided</span>' : "not yet decided"}</span>
+    </div>
+    <div class="hint">Keys: <kbd>1</kbd>&ndash;<kbd>4</kbd> decide (or <kbd>0</kbd>&ndash;<kbd>3</kbd> to grade),
+      <kbd>a</kbd> accept the baseline, <kbd>&larr;</kbd><kbd>&rarr;</kbd> move, <kbd>e</kbd> edit box,
+      <kbd>s</kbd> save decisions. Everything autosaves in this browser; <b>Save decisions</b> writes the
+      file the next session reads.</div>`;
+
+  app.querySelectorAll("[data-act]").forEach(b => b.onclick = () => decide(entry, b.dataset.act));
+  app.querySelectorAll("[data-grade]").forEach(b => b.onclick = () => grade(entry, Number(b.dataset.grade)));
+  app.querySelectorAll("[data-weight]").forEach(b => b.onclick = () => reweight(entry, b.dataset.weight));
+  const box = document.getElementById("edit");
+  if (box) box.oninput = () => { state.edits[entry.id] = box.value; save(); };
+  document.getElementById("prev").onclick = () => move(-1);
+  document.getElementById("next").onclick = () => move(1);
+  document.getElementById("accept").onclick = () => acceptOne(entry);
+  updateHeader(q);
+}
+
+function updateHeader(q) {
+  // Progress and the estimate count only the REQUIRED queue. Counting the optional tail as well would
+  // have told the owner the review was four hours when the part that has to be done is ninety minutes,
+  // and an estimate that overstates the work is the one people stop believing.
+  const required = PACK.queue.filter(e => !e.phase.startsWith("optional"));
+  const done = required.filter(decided).length;
+  const extra = PACK.queue.length - required.length;
+  const extraDone = PACK.queue.filter(e => e.phase.startsWith("optional")).filter(decided).length;
+  document.getElementById("progress").style.width = (100 * done / required.length) + "%";
+  document.getElementById("counter").textContent =
+    `${done} of ${required.length} required decided` +
+    (extra ? ` (+${extraDone} of ${extra} optional)` : "") +
+    (q.length ? ` · item ${state.cursor + 1} of ${q.length} in this filter` : "");
+  document.getElementById("phase").textContent = q.length ? q[state.cursor].phase : "";
+
+  const perItem = e => e.kind === "kappa" ? PACK.seconds_per_kappa : PACK.seconds_per_item;
+  const left = Math.round(required.filter(e => !decided(e)).reduce((s, e) => s + perItem(e), 0) / 60);
+  document.getElementById("eta").textContent =
+    left > 0 ? `about ${left} min of required review left` : "required review done";
+  renderGate();
+}
+
+function decide(entry, act) { state.decisions[entry.id] = act; save(); advance(); }
+function grade(entry, g) { state.grades[entry.id] = g; save(); advance(); }
+// Re-weighting is not a decision: it changes what the item is worth, and must not skip you past it.
+function reweight(entry, weight) { state.weights[entry.id] = weight; save(); render(); }
+function advance() { if (state.cursor < queue().length - 1) state.cursor++; render(); }
+function move(d) { state.cursor += d; render(); }
+
+function baselineFor(entry) {
+  return entry.kind === "kappa" ? BASE.kappa[entry.id] : BASE.items[entry.id];
+}
+function acceptOne(entry) {
+  const note = baselineFor(entry);
+  if (!note) return;
+  if (entry.kind === "kappa") { if (note.grade !== undefined) grade(entry, note.grade); }
+  else if (note.decision) decide(entry, note.decision);
+}
+// Approve all fills in only what you have NOT already decided: an explicit decision of yours is never
+// overwritten by a baseline, whichever order you worked in.
+function approveAll() {
+  let filled = 0;
+  for (const entry of PACK.queue) {
+    if (decided(entry)) continue;
+    const note = baselineFor(entry);
+    if (!note) continue;
+    if (entry.kind === "kappa") {
+      if (note.grade === undefined) continue;
+      state.grades[entry.id] = note.grade;
+    } else {
+      if (!note.decision) continue;
+      state.decisions[entry.id] = note.decision;
+    }
+    filled++;
+  }
+  save(); render();
+  const button = document.getElementById("approve");
+  button.textContent = filled ? `Approved ${filled}` : "Nothing left to approve";
+  setTimeout(() => { button.textContent = "Approve all"; }, 2200);
+}
+
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "TEXTAREA" || e.target.tagName === "INPUT" || e.target.tagName === "SELECT"
+      || e.metaKey || e.ctrlKey) return;
+  const q = queue(); if (!q.length) return;
+  const entry = q[state.cursor];
+  if (e.key === "ArrowRight" || e.key === "j") { move(1); e.preventDefault(); }
+  else if (e.key === "ArrowLeft" || e.key === "k") { move(-1); e.preventDefault(); }
+  else if (e.key === "e") { const b = document.getElementById("edit"); if (b) { b.focus(); e.preventDefault(); } }
+  else if (e.key === "s") { exportDecisions(); e.preventDefault(); }
+  else if (e.key === "a") { acceptOne(entry); e.preventDefault(); }
+  else if (entry.kind === "kappa" && "0123".includes(e.key)) { grade(entry, Number(e.key)); e.preventDefault(); }
+  else if (entry.kind !== "kappa" && "1234".includes(e.key)) {
+    decide(entry, ["keep", "edit", "drop", "verified"][Number(e.key) - 1]); e.preventDefault();
+  }
+});
+
+function exportDecisions() {
+  // The saved agreement is computed from YOUR grades only. The baseline is a starting point written by
+  // an assistant that also wrote the judge's rubric, so scoring the judge against it would be the
+  // system marking its own homework; once you have graded, only your grades count.
+  const own = agreement(true);
+  const accepted = PACK.queue.filter(e => e.kind === "kappa" && state.grades[e.id] !== undefined
+    && BASE.kappa[e.id] && state.grades[e.id] === BASE.kappa[e.id].grade).length;
+  const overridden = PACK.queue.filter(e => e.kind === "kappa" && state.grades[e.id] !== undefined
+    && BASE.kappa[e.id] && state.grades[e.id] !== BASE.kappa[e.id].grade).length;
+  const payload = {
+    gold_hash: PACK.gold_hash, split_hash: PACK.split_hash, reviewed_at: new Date().toISOString(),
+    reviewer: "owner", baseline: false, source: "review tool",
+    decisions: state.decisions, edits: state.edits, owner_grades: state.grades,
+    weights: state.weights,
+    relevance_threshold: state.threshold,
+    agreement: {
+      judge_model: JUDGE.model,
+      graded_by: "owner",
+      compared: own.n,
+      four_level: own.four,
+      binarised: own.binary,
+      threshold: state.threshold,
+      gate: 0.6,
+      usable_for_ranking: own.binary.kappa !== null && own.binary.kappa >= 0.6,
+      usable_for_graded_ndcg: own.four.kappa !== null && own.four.kappa >= 0.6,
+    },
+    baseline_comparison: { accepted, overridden },
+    counts: {
+      decided: Object.keys(state.decisions).length, graded: Object.keys(state.grades).length,
+      reweighted: Object.keys(state.weights).length, queue: PACK.queue.length,
+    },
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "gold_v2_review.json";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+document.getElementById("export").onclick = exportDecisions;
+document.getElementById("approve").onclick = approveAll;
+
+const sel = document.getElementById("filter");
+for (const [value, text] of PACK.filters)
+  sel.appendChild(Object.assign(document.createElement("option"), { value, textContent: text }));
+sel.onchange = () => { filter = sel.value; state.cursor = 0; render(); };
+
+render();
+</script>
+</body>
+</html>

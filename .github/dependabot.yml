@@ -1,0 +1,41 @@
+# Dependency updates arrive as pull requests rather than as a surprise during a session.
+version: 2
+updates:
+  # The root project.
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    groups:
+      root-dependencies:
+        patterns: ["*"]
+    commit-message:
+      prefix: "chore(deps)"
+
+  # The GPU project is a separate uv project on purpose: it has torch and the root must never import it.
+  - package-ecosystem: "uv"
+    directory: "/gpu"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3
+    groups:
+      gpu-dependencies:
+        patterns: ["*"]
+    commit-message:
+      prefix: "chore(deps-gpu)"
+
+  # Workflow actions are pinned to commit SHAs in ci.yml, which is the safe way to use them and also the way that
+  # silently goes stale.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "chore(ci)"

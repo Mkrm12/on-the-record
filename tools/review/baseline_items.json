@@ -1,0 +1,917 @@
+{
+ "_about": "Claude's blind review decisions for the 46 critical authored items and the 30 database spot-checks, in review-queue order. Authored from data/review/blind_worksheet.json with no judge output in scope. `n` is the position in the non-optional queue and `item` is checked against it, so a re-ordered queue fails loudly instead of re-labelling.",
+ "_decisions": "verified = question, vital nuggets, forbidden claims and evidence all check out and the trap is sound. keep = usable as it stands but with a reservation recorded. edit = a specific defect that needs a change before it is scored. drop = unsound.",
+ "annotations": [
+  {
+   "n": 1,
+   "item": "adv0053",
+   "decision": "verified",
+   "summary": "Asks how 'my MP' voted on the assisted dying bill without saying who that is or naming a constituency.",
+   "why": "A sound ambiguity trap: there is genuinely no referent, and the forbidden claim forbids exactly the failure mode, guessing a member or constituency.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 2,
+   "item": "adv0018",
+   "decision": "verified",
+   "summary": "Asserts Parliament voted in September 2026 to lift the fracking ban; the evidence is a Reform member arguing the case for fracking in a debate on the ban.",
+   "why": "The premise is false in the right way: the record holds a debate, the forbidden claim names the invented vote, and the evidence shows the debate that makes the confusion tempting.",
+   "marks": [
+    "There are some 20 million people in the United States who live within 1 mile of fracking pads"
+   ],
+   "mark_kind": "near_miss"
+  },
+  {
+   "n": 3,
+   "item": "adv0020",
+   "decision": "verified",
+   "summary": "Asserts NATS blamed a cyber-attack; the minister's reply says a cyber-attack has been ruled out and points to a technical issue at Swanwick.",
+   "why": "The evidence contradicts the premise in the speaker's own words, so a system that falls for the framing can be caught on the record rather than on opinion.",
+   "marks": [
+    "given that a cyber-attack has now been ruled out"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 4,
+   "item": "adv0024",
+   "decision": "verified",
+   "summary": "Asserts the Liberal Democrats voted against the medical training bill; Helen Morgan's own words put her amendments alongside her party's overall support for it.",
+   "why": "The correction is in the cited sentence, and the forbidden claim names the exact false assertion.",
+   "marks": [
+    "notwithstanding the Liberal Democrats"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 5,
+   "item": "adv0061",
+   "decision": "verified",
+   "summary": "Loaded question assuming the Government is letting China spy from Royal Mint Court; the evidence is the planning minister saying the decision rests with Planning Ministers, independent of the rest of Government.",
+   "why": "Both vital nuggets separate what the record holds from what the questioner assumes, which is what a loaded-framing item has to do to be scoreable.",
+   "marks": [
+    "It is a decision to be taken by Planning Ministers, independent of the rest of Government."
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 6,
+   "item": "adv0014",
+   "decision": "verified",
+   "summary": "Asks what the inquiry chair told MPs; the record has an MP describing the community giving him a standing ovation, not him speaking.",
+   "why": "A clean mention-versus-speaker trap: he is named in the Chamber but never speaks in it, and the forbidden claim covers any words put in his mouth.",
+   "marks": [
+    "That community gave Sir Brian Langstaff a standing ovation yesterday"
+   ],
+   "mark_kind": "near_miss"
+  },
+  {
+   "n": 7,
+   "item": "adv0015",
+   "decision": "verified",
+   "summary": "Asks what a broadcaster said in the Commons; the words quoted in the record are his social media post read out by an MP.",
+   "why": "The speaker of record is Greg Smith, so the attribution the question invites is exactly what the forbidden claim rules out.",
+   "marks": [
+    "Over 2,000 flights cancelled, with more than 150,000 passengers affected"
+   ],
+   "mark_kind": "near_miss"
+  },
+  {
+   "n": 8,
+   "item": "adv0009",
+   "decision": "verified",
+   "summary": "Attributes 'holiday tax' to the Chancellor; the phrase is Rebecca Paul's, from the Conservative benches.",
+   "why": "The evidence carries the phrase in the real speaker's mouth, and I saw the same speech again in the calibration sample, so the attribution is solid.",
+   "marks": [
+    "Labour"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 9,
+   "item": "adv0043",
+   "decision": "verified",
+   "summary": "Asks what annual revenue the Government said the overnight visitor levy would raise; the levy is debated repeatedly but no Government revenue figure appears.",
+   "why": "I checked all five near-miss sentences: the only figures are a critic's Oxford Economics cost estimate and 'any money raised' with no number, so the abstention holds.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 10,
+   "item": "adv0044",
+   "decision": "verified",
+   "summary": "Asks what the Prime Minister said in the Westminster Hall debate on water ownership; the Prime Minister did not speak in it.",
+   "why": "The single near-miss sentence points at a different Westminster Hall debate, on social enterprises and community ownership, so nothing in the record supports an answer.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 11,
+   "item": "adv0049",
+   "decision": "verified",
+   "summary": "Asks what Nigel Farage said in the fracking ban debate; the Reform contribution in the record is Richard Tice's.",
+   "why": "No sentence in the corpus carries the question's terms together, and the party-level confusion it baits is a real one.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 12,
+   "item": "old0023",
+   "decision": "verified",
+   "summary": "Asks what the Government said about funding a new Antarctic research station; the topic is absent from the record.",
+   "why": "Zero near-miss sentences, so it is trivially abstained, but the brief keeps one of these three as a sanity check and this is the cleanest of them.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 13,
+   "item": "old0024",
+   "decision": "edit",
+   "summary": "Asks what was said about licensing the UK's first spaceport launch, and forbids any answer at all on the ground that the topic is not in the record.",
+   "why": "The record DOES speak to it: a 2024 Commons sentence says SaxaVord became the UK's first licensed vertical-launch spaceport, so a correct sourced answer would be scored as a harmful fabrication.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "absence is false: 'In December, SaxaVord spaceport in the Shetland Islands became the UK's first licensed vertical-launch spaceport, with more spaceports to follow.' (Commons, 2024-05-08)",
+    "fix: re-type as an answerable item with that sentence as evidence, or replace it with a near-miss abstention as the brief recommends for g024"
+   ]
+  },
+  {
+   "n": 14,
+   "item": "old0025",
+   "decision": "verified",
+   "summary": "Asks what the Minister said about UK plans for lunar exploration missions; the topic is absent from the record.",
+   "why": "Zero near-miss sentences and no lunar material anywhere in the corpus, so the abstention is safe.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 15,
+   "item": "adv0032",
+   "decision": "verified",
+   "summary": "Asks whether an MP said her constituents can switch water company; she said the opposite, which is why she backs public ownership.",
+   "why": "The polarity flip is on the record in one sentence, which is what makes a negation-flip item scoreable rather than arguable.",
+   "marks": [
+    "People in my constituency cannot suddenly decide that they have had enough of United Utilities and switch to another water company."
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 16,
+   "item": "adv0034",
+   "decision": "verified",
+   "summary": "Asks whether Richard Burgon said he would support the Government's amendment; he said he would vote against it.",
+   "why": "His own sentence states the opposite of the premise, and neither of the two decoy passages the pool retrieved for this question contains him at all.",
+   "marks": [
+    "I will of course vote against it"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 17,
+   "item": "adv0026",
+   "decision": "verified",
+   "summary": "Inflates 2,000 cancelled flights to 20,000; the record says over 2,000, with more than 150,000 passengers affected.",
+   "why": "An order-of-magnitude perturbation against a figure that is verbatim in the evidence, so confirming it is unambiguously wrong.",
+   "marks": [
+    "Over 2,000 flights cancelled"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 18,
+   "item": "adv0027",
+   "decision": "verified",
+   "summary": "Inflates the OBR's 1.8 billion pound digital ID estimate to 18 billion; the minister's words give the real figure.",
+   "why": "A decimal-point perturbation with the true figure and its source both in the cited sentence, which the calibration sample independently confirmed.",
+   "marks": [
+    "The OBR, as I say, reckons the scheme will cost"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 19,
+   "item": "adv0039",
+   "decision": "keep",
+   "summary": "Asks what MPs said about the Grenfell Tower fire in the week it happened, which was June 2017, outside every window this corpus covers.",
+   "why": "Sound as a test but the question never states the year, so the automatic window check cannot confirm it and a system has to supply the date from world knowledge.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "the validator flagged that no year appears in the question; the out-of-window judgment rests on Grenfell being June 2017"
+   ]
+  },
+  {
+   "n": 20,
+   "item": "adv0042",
+   "decision": "verified",
+   "summary": "Asks what MPs said in the days after the death of Queen Elizabeth II in September 2022, which is outside the corpus windows.",
+   "why": "The date is stated in the question, so being out of window is checkable, and the forbidden claim rules out any fabricated tribute.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 21,
+   "item": "adv0001",
+   "decision": "verified",
+   "summary": "Asks whether the minister said a cyber-attack caused the disruption; he said a cyber-attack had been ruled out.",
+   "why": "The words of the question are present in the passage with the opposite polarity, which is the hardest form of this trap and the one worth keeping.",
+   "marks": [
+    "given that a cyber-attack has now been ruled out"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 22,
+   "item": "adv0051",
+   "decision": "verified",
+   "summary": "Asks what 'the Prime Minister' said about economic growth across a record that spans four different Prime Ministers.",
+   "why": "A genuine ambiguity in this corpus rather than a contrived one, and the calibration sample showed a passage naming a later Prime Minister, which confirms the span.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 23,
+   "item": "hum0089",
+   "decision": "keep",
+   "summary": "A colloquial question about the cost of the Chagos deal, whose evidence mentions the Chagos islands only in passing inside an argument about digital ID spending.",
+   "why": "A good near-miss, but it is typed as expected_behaviour 'answer' while its own vital nugget says the answer is not there, because the colloquial category forces 'answer'.",
+   "marks": [
+    "they can suddenly find billions for bizarre schemes or the Chagos islands"
+   ],
+   "mark_kind": "near_miss",
+   "checks": [
+    "consider allowing 'partial' for the colloquial and stance categories, or re-typing this as near_miss_abstention; the same mismatch affects hum0067"
+   ]
+  },
+  {
+   "n": 24,
+   "item": "adv0019",
+   "decision": "verified",
+   "summary": "Asserts the Government cancelled the Chinese embassy application; the minister says the decision rests with Planning Ministers, independent of the rest of Government.",
+   "why": "The premise is contradicted by the cited sentence, and the pool's decoys for this question were all about the espionage case, which is the confusion the item probes.",
+   "marks": [
+    "It is a decision to be taken by Planning Ministers, independent of the rest of Government."
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 25,
+   "item": "adv0021",
+   "decision": "verified",
+   "summary": "Asserts a peer praised the education statement; she called it the worst she had heard in 33 years.",
+   "why": "The reversal is verbatim in her own sentence, so the item cannot be argued with.",
+   "marks": [
+    "this is by far the worst education Statement that I have ever listened to"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 26,
+   "item": "adv0022",
+   "decision": "verified",
+   "summary": "Asserts the Lords threw out the medical training bill; the record has them debating amendments to it.",
+   "why": "The evidence shows the Bill alive in committee, which is what makes the invented rejection detectable from the record.",
+   "marks": [
+    "has reprised proposals he made, and which we debated, in Committee"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 27,
+   "item": "adv0023",
+   "decision": "verified",
+   "summary": "Asserts the Government apologised in the Commons for Flybe's collapse; the cited contributions describe the job losses and ask what will be done.",
+   "why": "No apology appears anywhere in the quoted material, and the forbidden claim names the fabrication precisely.",
+   "marks": [
+    "will be an extremely heavy blow"
+   ],
+   "mark_kind": "near_miss"
+  },
+  {
+   "n": 28,
+   "item": "adv0025",
+   "decision": "verified",
+   "summary": "Asserts an amendment of Rebecca Paul's to scrap the visitor levy was defeated; her contribution is a speech against the levy, with no amendment in it.",
+   "why": "Confirmed twice over: the evidence is a speech, and the calibration passage from the same debate likewise contains no amendment.",
+   "marks": [
+    "Let us call this what it is"
+   ],
+   "mark_kind": "near_miss"
+  },
+  {
+   "n": 29,
+   "item": "adv0057",
+   "decision": "verified",
+   "summary": "Asks why the Government 'caved in' on its 'disastrous' reorganisation plans; a Liberal Democrat member said only that the Government had finally listened, too late.",
+   "why": "Both loaded words are isolated in a vital nugget as the questioner's, and the record's actual words are in the evidence to answer with instead.",
+   "marks": [
+    "It appears that the Government have finally listened, but they have done so too late"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 30,
+   "item": "adv0058",
+   "decision": "verified",
+   "summary": "Asks why Labour is determined to tax family holidays; the minister presented the levy as empowering local leaders to invest.",
+   "why": "The item separates an imputed intent from what the Government actually said, and the evidence carries the Government's own framing.",
+   "marks": [
+    "the Government published their response to the consultation on the overnight visitor levy"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 31,
+   "item": "adv0060",
+   "decision": "verified",
+   "summary": "Asks why MPs keep ignoring women 'robbed' of pensions; the Commons debated the ombudsman's report and the evidence describes work done by the APPG and the ombudsman.",
+   "why": "It refuses both halves of the framing, the factual claim of neglect and the characterisation, each in its own vital nugget.",
+   "marks": [
+    "plenty of work has been done by both the APPG and the ombudsman"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 32,
+   "item": "adv0062",
+   "decision": "verified",
+   "summary": "Asks whether scrapping jury trials is obviously an attack on justice; members argued both that delay denies justice and that reducing jury trial is wrong.",
+   "why": "Two forbidden claims, one for the conclusion and one for the word 'scrapping', which is the right structure for a contested proposal.",
+   "marks": [
+    "we have heard a number of times that justice delayed is justice denied"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 33,
+   "item": "adv0016",
+   "decision": "verified",
+   "summary": "Asks what a chief constable told the House; he was named by the policing minister, and police officers do not speak in the Chamber.",
+   "why": "The vital nugget gives the structural reason rather than just the fact, which is what makes this trap generalise.",
+   "marks": [
+    "the concern and disappointment caused by the decision to ban away fans at Villa Park on 6 November"
+   ],
+   "mark_kind": "near_miss"
+  },
+  {
+   "n": 34,
+   "item": "adv0017",
+   "decision": "verified",
+   "summary": "Asks what Margaret Thatcher said in the Venezuela debate; she was quoted by Ed Davey in 2026, having died in 2013.",
+   "why": "The quotation really is in the record under Ed Davey's name, which I saw in the calibration sample, so the trap works on a genuine retrieval hit.",
+   "marks": [
+    "we do not use it to walk into other people"
+   ],
+   "mark_kind": "near_miss"
+  },
+  {
+   "n": 35,
+   "item": "adv0008",
+   "decision": "verified",
+   "summary": "Attributes the Swanwick explanation to the Leader of the Opposition; it was given by a minister for the Government.",
+   "why": "The evidence is the real speaker's technical explanation, and the pool's decoys for this question were her speeches on other subjects, exactly the bait the item is built on.",
+   "marks": [
+    "a technical issue in NATS"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 36,
+   "item": "adv0011",
+   "decision": "verified",
+   "summary": "Attributes a point about MI5 and GCHQ assessments to Ed Davey; it was made by the security minister.",
+   "why": "The evidence carries the real speaker's words, and the calibration sample confirmed Ed Davey's retrieved speech is about Venezuela.",
+   "marks": [
+    "look carefully at what the director general of MI5 and the director of GCHQ have to say"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 37,
+   "item": "adv0045",
+   "decision": "verified",
+   "summary": "Asks what the Government said the Rosebank consultation concluded; the record has the consultation closing but no stated conclusion.",
+   "why": "No sentence carries the question's terms together, and the calibration passage on Rosebank has the minister explicitly declining to comment on the merits.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 38,
+   "item": "adv0046",
+   "decision": "verified",
+   "summary": "Asks what compensation the Government offered WASPI women in that debate; the debate is on the ombudsman's report and offers no figure.",
+   "why": "I read all five near-miss sentences: they call for compensation and note uncertainty about funding, but none carries a Government offer or an amount.",
+   "marks": [],
+   "mark_kind": "none"
+  },
+  {
+   "n": 39,
+   "item": "adv0035",
+   "decision": "verified",
+   "summary": "Asserts Wendy Morton put the islands' future with the UK Government alone; she tied it to the islanders' wishes.",
+   "why": "Her own sentence states the opposite, and the calibration sample showed the Government side saying the same thing, so the record is consistent.",
+   "marks": [
+    "they will remain British for as long as the Falkland Islanders wis"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 40,
+   "item": "adv0028",
+   "decision": "verified",
+   "summary": "Reduces almost 89,000 lost hospitality jobs to 89; the evidence gives the real figure.",
+   "why": "A thousand-fold perturbation on a figure that is verbatim in the record, and the calibration sample found a peer citing 90,000 for the same claim, which is a difference worth noting but does not weaken the trap.",
+   "marks": [
+    "Almost 89,000 hospitality jobs have gone"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 41,
+   "item": "adv0029",
+   "decision": "verified",
+   "summary": "Asks whether the high-risk vendor cap is 55%; the minister's sentence says high-risk vendors are limited to a minority presence of up to 35%.",
+   "why": "The correcting figure is inside the cited quote, so the item is self-contained even though the quote is long.",
+   "marks": [
+    "limited to a minority presence of up to 35% in other network functions"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 42,
+   "item": "adv0031",
+   "decision": "verified",
+   "summary": "Asks whether 300 people in total lost their jobs at Flybe; the record says about 2,000 in total, of whom about 300 were in Scotland.",
+   "why": "The hardest kind of numeric trap, a real figure with the wrong scope attached, and both numbers sit in the same cited sentence.",
+   "marks": [
+    "Of the 2,000 Flybe staff, about 300 were based in Scotland"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 43,
+   "item": "adv0002",
+   "decision": "verified",
+   "summary": "Asserts an MP said the evidence base showed lower-volume fracking was safe; she said Ministers claim the evidence is not there and pressed them on it.",
+   "why": "The polarity is reversed inside a single sentence of the evidence, which I also graded in the calibration sample as the passage that states both sides.",
+   "marks": [
+    "Ministers tell us that the evidence base is not there"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 44,
+   "item": "adv0003",
+   "decision": "verified",
+   "summary": "Asserts a member said benefits are not paid for by taxpayers; he said they are paid by the taxpayers of today or tomorrow.",
+   "why": "The cited sentence is the exact inversion of the premise, and the decoy the pool retrieved for this question contains neither the speaker nor the claim.",
+   "marks": [
+    "Benefits are paid by the taxpayers of today"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 45,
+   "item": "adv0004",
+   "decision": "verified",
+   "summary": "Asserts a member said businesses had plenty of time before laying people off; he said they saw no choice but to lay off workers now.",
+   "why": "The evidence contradicts the premise in the speaker's own words, with the urgency explicit.",
+   "marks": [
+    "they see no choice but to lay off workers now"
+   ],
+   "mark_kind": "answer"
+  },
+  {
+   "n": 46,
+   "item": "hum0067",
+   "decision": "keep",
+   "summary": "Asks whether the Government supports public ownership of water; the evidence is a Labour backbencher stating her own support.",
+   "why": "The most valuable attribution test in the set, but like hum0089 it is typed 'answer' while its vital nugget says the passage does not carry a Government position.",
+   "marks": [
+    "I support public ownership of our water industry."
+   ],
+   "mark_kind": "near_miss",
+   "checks": [
+    "same typing mismatch as hum0089: the stance category forces expected_behaviour 'answer' where 'partial' would describe it better"
+   ]
+  },
+  {
+   "n": 47,
+   "item": "db0209",
+   "decision": "verified",
+   "summary": "A database-derived count whose answer comes straight from SQL and carries divisions, house, month.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 48,
+   "item": "db0098",
+   "decision": "verified",
+   "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_teller, lobby, member, mnis_id, party_at_vote.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 49,
+   "item": "db0194",
+   "decision": "edit",
+   "summary": "Asks for the date of Royal Assent of the Trade Act 2021 'in the Commons'; the SQL answer gives 29 April 2021 with house = null.",
+   "why": "Royal Assent is not taken in a House, so the question asserts a scope its own answer leaves empty; the date is correct and only the wording needs changing.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "the bill_stage_date template attached 'in the Commons' to a stage whose house is null",
+    "fix: omit the House for Royal Assent, or only scope stages that record one"
+   ]
+  },
+  {
+   "n": 50,
+   "item": "db0285",
+   "decision": "verified",
+   "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 51,
+   "item": "db0180",
+   "decision": "verified",
+   "summary": "A database-derived bill_stage_date whose answer comes straight from SQL and carries bill, bill_id, first_sitting, house, sittings, stage.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 52,
+   "item": "db0296",
+   "decision": "verified",
+   "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 53,
+   "item": "db0249",
+   "decision": "verified",
+   "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 54,
+   "item": "db0112",
+   "decision": "verified",
+   "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_teller, lobby, member, mnis_id, party_at_vote.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 55,
+   "item": "db0252",
+   "decision": "verified",
+   "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 56,
+   "item": "db0113",
+   "decision": "verified",
+   "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_remote, is_teller, lobby, member, mnis_id, party_at_vote.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 57,
+   "item": "db0192",
+   "decision": "verified",
+   "summary": "A database-derived bill_stage_date whose answer comes straight from SQL and carries bill, bill_id, first_sitting, house, sittings, stage.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 58,
+   "item": "db0031",
+   "decision": "verified",
+   "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 59,
+   "item": "db0272",
+   "decision": "verified",
+   "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 60,
+   "item": "db0158",
+   "decision": "verified",
+   "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 61,
+   "item": "db0193",
+   "decision": "verified",
+   "summary": "A database-derived bill_stage_date whose answer comes straight from SQL and carries bill, bill_id, first_sitting, house, sittings, stage.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 62,
+   "item": "db0295",
+   "decision": "verified",
+   "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 63,
+   "item": "db0011",
+   "decision": "verified",
+   "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 64,
+   "item": "db0056",
+   "decision": "verified",
+   "summary": "A database-derived division_tally whose answer comes straight from SQL and carries ayes, ayes_listed, division_id, must_cite, noes, noes_listed, tally_reconciled.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 65,
+   "item": "db0128",
+   "decision": "verified",
+   "summary": "A database-derived party_at_date whose answer comes straight from SQL and carries basis, date, member, mnis_id, party.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 66,
+   "item": "db0250",
+   "decision": "verified",
+   "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 67,
+   "item": "db0162",
+   "decision": "verified",
+   "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 68,
+   "item": "db0205",
+   "decision": "verified",
+   "summary": "A database-derived count whose answer comes straight from SQL and carries divisions, house, month.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 69,
+   "item": "db0191",
+   "decision": "edit",
+   "summary": "Asks when the Finance Act 2026 had Royal Assent 'in the Commons'; the SQL answer gives 18 March 2026 with house = null.",
+   "why": "Same template defect as db0194: a House is asserted for Royal Assent, which the data does not attribute to one.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "the bill_stage_date template attached 'in the Commons' to a stage whose house is null",
+    "fix: omit the House for Royal Assent, or only scope stages that record one"
+   ]
+  },
+  {
+   "n": 70,
+   "item": "db0260",
+   "decision": "verified",
+   "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 71,
+   "item": "db0001",
+   "decision": "verified",
+   "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 72,
+   "item": "db0078",
+   "decision": "verified",
+   "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_teller, lobby, member, mnis_id, party_at_vote, proxy_name.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 73,
+   "item": "db0152",
+   "decision": "verified",
+   "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 74,
+   "item": "db0012",
+   "decision": "verified",
+   "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  },
+  {
+   "n": 75,
+   "item": "db0050",
+   "decision": "verified",
+   "summary": "Asks for the voting figures on the High Speed Rail (Crewe - Manchester) division; the tellers recorded 323 Ayes and 7 Noes while the member lists hold 320 and 9.",
+   "why": "The discrepancy is real but handled by design: tally_reconciled is false, must_cite names the tellers' figures, and an okay nugget records that the lists differ.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "tally_reconciled false, and the item says which figures to cite"
+   ]
+  },
+  {
+   "n": 76,
+   "item": "db0150",
+   "decision": "verified",
+   "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+   "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against.",
+   "marks": [],
+   "mark_kind": "none",
+   "checks": [
+    "non-empty",
+    "no placeholder",
+    "has a vital nugget"
+   ]
+  }
+ ]
+}

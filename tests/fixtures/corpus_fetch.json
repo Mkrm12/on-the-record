@@ -1,0 +1,769 @@
+{
+ "contributions_page": {
+  "SearchTerms": null,
+  "SpokenResultCount": 0,
+  "WrittenResultCount": 0,
+  "CorrectionsResultCount": 0,
+  "DivisionsResultCount": 0,
+  "Results": [
+   {
+    "MemberName": "Justin Madders",
+    "MemberId": 4418,
+    "AttributedTo": "Justin Madders",
+    "ItemId": 50346676,
+    "ContributionExtId": "7A7186FREDACTEDC6-99BE7C1A3731",
+    "ContributionText": " I am grateful for the intervention, and I absolutely will take that point. All stakeholders ought to be informed at the appropriate point, particularly when th",
+    "ContributionTextFull": "I am grateful for the intervention, and I absolutely will take that point. All stakeholders ought to be informed at the appropriate point, particularly when the",
+    "HRSTag": "hs_Para",
+    "HansardSection": "DQ-DS",
+    "Timecode": "REDACTEDT20:40:46",
+    "DebateSection": " National Highways: M49 Severnside Junction",
+    "DebateSectionId": 5399798,
+    "DebateSectionExtId": "80295DFA-776B-4434-998A-5F7AEA95CFDF",
+    "SittingDate": "REDACTEDT00:00:00",
+    "Section": "Commons Chamber",
+    "House": "Commons",
+    "OrderInDebateSection": 8,
+    "DebateSectionOrder": 24,
+    "Rank": 0
+   },
+   {
+    "MemberName": "Claire Young",
+    "MemberId": 5140,
+    "AttributedTo": "Claire Young",
+    "ItemId": 50346675,
+    "ContributionExtId": "10A841D2-0F9A-4162-8C8D-E87F34D4D438",
+    "ContributionText": " I thank the Minister for giving way. I would just like to clarify one point. He said that it would have been appropriate for me to be notified earlier. Probabl",
+    "ContributionTextFull": "I thank the Minister for giving way. I would just like to clarify one point. He said that it would have been appropriate for me to be notified earlier. Probably",
+    "HRSTag": "hs_Para",
+    "HansardSection": "DQ-DS",
+    "Timecode": "REDACTEDT20:39:02",
+    "DebateSection": " National Highways: M49 Severnside Junction",
+    "DebateSectionId": 5399798,
+    "DebateSectionExtId": "80295DFA-776B-4434-998A-5F7AEA95CFDF",
+    "SittingDate": "REDACTEDT00:00:00",
+    "Section": "Commons Chamber",
+    "House": "Commons",
+    "OrderInDebateSection": 7,
+    "DebateSectionOrder": 24,
+    "Rank": 0
+   }
+  ],
+  "TotalResultCount": 788
+ },
+ "calendar_month": [
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  },
+  {
+   "House": "Commons",
+   "ItemDate": "REDACTEDT00:00:00",
+   "Metadata": null
+  }
+ ],
+ "sections_for_day": [
+  "Debate",
+  "WestHall",
+  "WMS",
+  "GEN"
+ ],
+ "hansard_divisions": {
+  "Results": [
+   {
+    "Id": 69703,
+    "Time": "17:11:00",
+    "Date": "REDACTEDT17:11:00",
+    "DivisionHasTime": true,
+    "ExternalId": "7D5B4A42-C59E-4A4B-A1A9-262AE407FCE1",
+    "AyesCount": 258,
+    "NoesCount": 109,
+    "House": "Lords",
+    "DebateSection": "Financial Services and Markets Bill [HL]",
+    "DebateSectionSource": "2",
+    "Number": "1",
+    "DebateSectionExtId": "15E3B9BD-BAREDACTEDA7-D7DE59361845",
+    "MemberVotedAye": null,
+    "TextBeforeVote": "Division on Amendment 1",
+    "TextAfterVote": "Amendment 1 agreed.",
+    "EVELType": null,
+    "EVELInfo": null,
+    "EVELAyesCount": null,
+    "EVELNoesCount": null,
+    "IsCommitteeDivision": false
+   }
+  ],
+  "TotalResultCount": 13
+ },
+ "commons_division_search": [
+  {
+   "DivisionId": 792,
+   "Date": "REDACTEDT18:28:00",
+   "PublicationUpdated": "REDACTEDT18:49:03",
+   "Number": 50,
+   "IsDeferred": false,
+   "EVELType": "",
+   "EVELCountry": "",
+   "Title": "Liaison Committee (Membership): Amendment (a) (Harriet Harman)",
+   "AyeCount": 262,
+   "NoCount": 323,
+   "DoubleMajorityAyeCount": null,
+   "DoubleMajorityNoCount": null,
+   "AyeTellers": null,
+   "NoTellers": null,
+   "Ayes": [],
+   "Noes": [],
+   "FriendlyDescription": null,
+   "FriendlyTitle": null,
+   "NoVoteRecorded": [],
+   "RemoteVotingStart": "REDACTEDT18:28:06",
+   "RemoteVotingEnd": "REDACTEDT18:43:06"
+  },
+  {
+   "DivisionId": 791,
+   "Date": "REDACTEDT17:49:00",
+   "PublicationUpdated": "REDACTEDT18:07:11",
+   "Number": 49,
+   "IsDeferred": false,
+   "EVELType": "",
+   "EVELCountry": "",
+   "Title": "Trade Bill: Second Reading",
+   "AyeCount": 355,
+   "NoCount": 254,
+   "DoubleMajorityAyeCount": null,
+   "DoubleMajorityNoCount": null,
+   "AyeTellers": null,
+   "NoTellers": null,
+   "Ayes": [],
+   "Noes": [],
+   "FriendlyDescription": null,
+   "FriendlyTitle": null,
+   "NoVoteRecorded": [],
+   "RemoteVotingStart": "REDACTEDT17:46:35",
+   "RemoteVotingEnd": "REDACTEDT18:01:35"
+  }
+ ],
+ "commons_division_detail": {
+  "DivisionId": 792,
+  "Date": "REDACTEDT18:28:00",
+  "PublicationUpdated": "REDACTEDT18:49:03",
+  "Number": 50,
+  "IsDeferred": false,
+  "EVELType": "",
+  "EVELCountry": "",
+  "Title": "Liaison Committee (Membership): Amendment (a) (Harriet Harman)",
+  "AyeCount": 262,
+  "NoCount": 323,
+  "DoubleMajorityAyeCount": null,
+  "DoubleMajorityNoCount": null,
+  "AyeTellers": null,
+  "NoTellers": null,
+  "Ayes": [
+   {
+    "MemberId": 62,
+    "Name": "Alan Whitehead",
+    "Party": "Labour",
+    "SubParty": null,
+    "PartyColour": "d50000",
+    "PartyAbbreviation": "Lab",
+    "MemberFrom": "Southampton, Test",
+    "ListAs": "Whitehead, Dr Alan",
+    "ProxyName": null
+   },
+   {
+    "MemberId": 76,
+    "Name": "Damian Green",
+    "Party": "Conservative",
+    "SubParty": null,
+    "PartyColour": "0063ba",
+    "PartyAbbreviation": "Con",
+    "MemberFrom": "Ashford",
+    "ListAs": "Green, Damian",
+    "ProxyName": null
+   }
+  ],
+  "Noes": [
+   {
+    "MemberId": 18,
+    "Name": "Cheryl Gillan",
+    "Party": "Conservative",
+    "SubParty": null,
+    "PartyColour": "0063ba",
+    "PartyAbbreviation": "Con",
+    "MemberFrom": "Chesham and Amersham",
+    "ListAs": "Gillan, Dame Cheryl",
+    "ProxyName": null
+   },
+   {
+    "MemberId": 39,
+    "Name": "John Whittingdale",
+    "Party": "Conservative",
+    "SubParty": null,
+    "PartyColour": "0063ba",
+    "PartyAbbreviation": "Con",
+    "MemberFrom": "Maldon",
+    "ListAs": "Whittingdale, Mr John",
+    "ProxyName": null
+   }
+  ],
+  "FriendlyDescription": null,
+  "FriendlyTitle": null,
+  "NoVoteRecorded": [
+   {
+    "MemberId": 4757,
+    "Name": "Shaun Bailey",
+    "Party": "Conservative",
+    "SubParty": null,
+    "PartyColour": "0063ba",
+    "PartyAbbreviation": "Con",
+    "MemberFrom": "West Bromwich West",
+    "ListAs": "Bailey, Shaun",
+    "ProxyName": null
+   },
+   {
+    "MemberId": 4107,
+    "Name": "Harriett Baldwin",
+    "Party": "Conservative",
+    "SubParty": null,
+    "PartyColour": "0063ba",
+    "PartyAbbreviation": "Con",
+    "MemberFrom": "West Worcestershire",
+    "ListAs": "Baldwin, Harriett",
+    "ProxyName": null
+   }
+  ],
+  "RemoteVotingStart": "REDACTEDT18:28:06",
+  "RemoteVotingEnd": "REDACTEDT18:43:06"
+ },
+ "lords_division_search": [
+  {
+   "divisionId": 3719,
+   "date": "REDACTEDT00:00:00",
+   "number": 1,
+   "notes": null,
+   "title": "Financial Services and Markets Bill [HL]",
+   "isWhipped": true,
+   "isGovernmentContent": true,
+   "authoritativeContentCount": 258,
+   "authoritativeNotContentCount": 109,
+   "divisionHadTellers": true,
+   "tellerContentCount": 258,
+   "tellerNotContentCount": 109,
+   "memberContentCount": 256,
+   "memberNotContentCount": 107,
+   "sponsoringMemberId": 5430,
+   "isHouse": true,
+   "isInquorate": false,
+   "amendmentMotionNotes": "<p>Lord Pitt-Watson moved amendment 1, in clause 16, page 21, line 17, after &ldquo;principles&rdquo; to insert &ldquo;and the climate and environment regulatory principle&rdquo;. The House divided:</p>",
+   "isGovernmentWin": true,
+   "remoteVotingStart": "REDACTEDT17:11:53",
+   "remoteVotingEnd": "REDACTEDT17:19:53",
+   "divisionWasExclusivelyRemote": false,
+   "contentTellers": [
+    {
+     "memberId": 4153,
+     "name": "Lord Kennedy of Southwark",
+     "listAs": "Kennedy of Southwark, L.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4508,
+     "name": "Baroness Anderson of Stoke-on-Trent",
+     "listAs": "Anderson of Stoke-on-Trent, B.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    }
+   ],
+   "notContentTellers": [
+    {
+     "memberId": 4311,
+     "name": "Baroness Williams of Trafford",
+     "listAs": "Williams of Trafford, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4553,
+     "name": "Baroness Scott of Bybrook",
+     "listAs": "Scott of Bybrook, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    }
+   ],
+   "contents": [
+    {
+     "memberId": 62,
+     "name": "Lord Whitehead",
+     "listAs": "Whitehead, L.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 140,
+     "name": "Baroness Hodge of Barking",
+     "listAs": "Hodge of Barking, B.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    }
+   ],
+   "notContents": [
+    {
+     "memberId": 36,
+     "name": "Baroness Laing of Elderslie",
+     "listAs": "Laing of Elderslie, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 57,
+     "name": "Lord Young of Cookham",
+     "listAs": "Young of Cookham, L.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    }
+   ]
+  }
+ ],
+ "bills_sittings": {
+  "items": [
+   {
+    "id": 18502,
+    "stageId": 3,
+    "billStageId": 21076,
+    "billId": 4030,
+    "date": "REDACTEDT00:00:00"
+   },
+   {
+    "id": 18642,
+    "stageId": 1,
+    "billStageId": 21230,
+    "billId": 4301,
+    "date": "REDACTEDT00:00:00"
+   }
+  ],
+  "totalResults": 74,
+  "itemsPerPage": 2
+ },
+ "bill_detail": {
+  "longTitle": "A Bill to make provision about railways and railway services; and for connected purposes.",
+  "summary": null,
+  "sponsors": [
+   {
+    "member": {
+     "memberId": 4038,
+     "name": "Heidi Alexander",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "house": "Commons",
+     "memberPhoto": "https://members-api.parliament.uk/api/Members/4038/Thumbnail",
+     "memberPage": "https://members.parliament.uk/member/4038/contact",
+     "memberFrom": "Swindon South"
+    },
+    "organisation": {
+     "name": "Department for Transport",
+     "url": "https://www.gov.uk/government/organisations/department-for-transport"
+    },
+    "sortOrder": 1
+   },
+   {
+    "member": {
+     "memberId": 4972,
+     "name": "Lord Hendy of Richmond Hill",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "house": "Lords",
+     "memberPhoto": "https://members-api.parliament.uk/api/Members/4972/Thumbnail",
+     "memberPage": "https://members.parliament.uk/member/4972/contact",
+     "memberFrom": "Life peer"
+    },
+    "organisation": {
+     "name": "Department for Transport",
+     "url": "https://www.gov.uk/government/organisations/department-for-transport"
+    },
+    "sortOrder": 2
+   }
+  ],
+  "promoters": [],
+  "petitioningPeriod": null,
+  "petitionInformation": null,
+  "agent": null,
+  "billId": 4030,
+  "shortTitle": "Railways Bill",
+  "formerShortTitle": null,
+  "currentHouse": "Lords",
+  "originatingHouse": "Commons",
+  "lastUpdate": "REDACTEDT12:17:45.7234814",
+  "billWithdrawn": null,
+  "isDefeated": false,
+  "billTypeId": 1,
+  "introducedSessionId": 39,
+  "includedSessionIds": [
+   39,
+   40
+  ],
+  "isAct": false,
+  "currentStage": {
+   "id": 21076,
+   "stageId": 3,
+   "sessionId": 40,
+   "description": "Committee stage",
+   "abbreviation": "CS",
+   "house": "Lords",
+   "stageSittings": [
+    {
+     "id": 18500,
+     "stageId": 3,
+     "billStageId": 21076,
+     "billId": 4030,
+     "date": "REDACTEDT00:00:00"
+    },
+    {
+     "id": 18501,
+     "stageId": 3,
+     "billStageId": 21076,
+     "billId": 4030,
+     "date": "REDACTEDT00:00:00"
+    },
+    {
+     "id": 18502,
+     "stageId": 3,
+     "billStageId": 21076,
+     "billId": 4030,
+     "date": "REDACTEDT00:00:00"
+    },
+    {
+     "id": 18503,
+     "stageId": 3,
+     "billStageId": 21076,
+     "billId": 4030,
+     "date": "REDACTEDT00:00:00"
+    },
+    {
+     "id": 18504,
+     "stageId": 3,
+     "billStageId": 21076,
+     "billId": 4030,
+     "date": "REDACTEDT00:00:00"
+    },
+    {
+     "id": 18505,
+     "stageId": 3,
+     "billStageId": 21076,
+     "billId": 4030,
+     "date": "REDACTEDT00:00:00"
+    },
+    {
+     "id": 18506,
+     "stageId": 3,
+     "billStageId": 21076,
+     "billId": 4030,
+     "date": "REDACTEDT00:00:00"
+    }
+   ],
+   "sortOrder": 13
+  }
+ },
+ "bill_stages": {
+  "items": [
+   {
+    "id": 20280,
+    "stageId": 6,
+    "sessionId": 39,
+    "description": "1st reading",
+    "abbreviation": "1R",
+    "house": "Commons",
+    "stageSittings": [
+     {
+      "id": 17503,
+      "stageId": 6,
+      "billStageId": 20280,
+      "billId": 4030,
+      "date": "REDACTEDT00:00:00"
+     }
+    ],
+    "sortOrder": 1
+   },
+   {
+    "id": 20281,
+    "stageId": 7,
+    "sessionId": 39,
+    "description": "2nd reading",
+    "abbreviation": "2R",
+    "house": "Commons",
+    "stageSittings": [
+     {
+      "id": 17575,
+      "stageId": 7,
+      "billStageId": 20281,
+      "billId": 4030,
+      "date": "REDACTEDT00:00:00"
+     }
+    ],
+    "sortOrder": 2
+   }
+  ],
+  "totalResults": 13,
+  "itemsPerPage": 2
+ },
+ "member_profile": {
+  "value": {
+   "id": 4514,
+   "nameListAs": "Starmer, Sir Keir",
+   "nameDisplayAs": "Sir Keir Starmer",
+   "nameFullTitle": "Rt Hon Sir Keir Starmer",
+   "nameAddressAs": null,
+   "latestParty": {
+    "id": 15,
+    "name": "Labour",
+    "abbreviation": "Lab",
+    "backgroundColour": "d50000",
+    "foregroundColour": "ffffff",
+    "isLordsMainParty": true,
+    "isLordsSpiritualParty": true,
+    "governmentType": 0,
+    "isIndependentParty": false
+   },
+   "gender": "M",
+   "latestHouseMembership": {
+    "membershipFrom": "Holborn and St Pancras",
+    "membershipFromId": 4105,
+    "house": 1,
+    "membershipStartDate": "REDACTEDT00:00:00",
+    "membershipEndDate": "REDACTEDT00:00:00",
+    "membershipEndReason": "Resignation (Chiltern)",
+    "membershipEndReasonNotes": null,
+    "membershipEndReasonId": 9,
+    "membershipStatus": null
+   },
+   "thumbnailUrl": "https://members-api.parliament.uk/api/Members/4514/Thumbnail"
+  },
+  "links": [
+   {
+    "rel": "self",
+    "href": "/Members/4514",
+    "method": "GET"
+   },
+   {
+    "rel": "overview",
+    "href": "/Members/4514",
+    "method": "GET"
+   },
+   {
+    "rel": "synopsis",
+    "href": "/Members/4514/Synopsis",
+    "method": "GET"
+   },
+   {
+    "rel": "contactInformation",
+    "href": "/Members/4514/Contact",
+    "method": "GET"
+   }
+  ]
+ },
+ "member_biography": {
+  "value": {
+   "representations": [
+    {
+     "constituencyStart": "REDACTEDT00:00:00",
+     "constituencyEnd": null,
+     "house": 1,
+     "name": "Holborn and St Pancras",
+     "id": 4105,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": "Elected 1 time",
+     "additionalInfoLink": null
+    },
+    {
+     "constituencyStart": "REDACTEDT00:00:00",
+     "constituencyEnd": "REDACTEDT00:00:00",
+     "house": 1,
+     "name": "Holborn and St Pancras",
+     "id": 3536,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": "Elected 3 times",
+     "additionalInfoLink": null
+    }
+   ],
+   "electionsContested": [],
+   "houseMemberships": [
+    {
+     "house": 1,
+     "name": "Commons",
+     "id": 1,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": "Sir Keir Starmer",
+     "additionalInfoLink": null
+    }
+   ],
+   "governmentPosts": [
+    {
+     "house": 1,
+     "name": "Prime Minister and First Lord of the Treasury",
+     "id": 1267,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": "Prime Minister",
+     "additionalInfoLink": "https://www.gov.uk/government/organisations/prime-ministers-office-10-downing-street"
+    }
+   ],
+   "oppositionPosts": [
+    {
+     "house": 1,
+     "name": "Leader of HM Official Opposition",
+     "id": 4,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": "HM Official Opposition",
+     "additionalInfoLink": null
+    },
+    {
+     "house": 1,
+     "name": "Shadow Secretary of State for Exiting the European Union",
+     "id": 1315,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": "Department for Exiting the European Union ",
+     "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-exiting-the-european-union"
+    }
+   ],
+   "otherPosts": [
+    {
+     "house": 1,
+     "name": "Leader of the Labour Party",
+     "id": 789,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": null,
+     "additionalInfoLink": null
+    }
+   ],
+   "partyAffiliations": [
+    {
+     "house": 1,
+     "name": "Labour",
+     "id": 15,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": null,
+     "additionalInfoLink": null
+    }
+   ],
+   "committeeMemberships": [
+    {
+     "house": 1,
+     "name": "Home Affairs Committee",
+     "id": 83,
+     "startDate": "REDACTEDT00:00:00",
+     "endDate": "REDACTEDT00:00:00",
+     "additionalInfo": null,
+     "additionalInfoLink": null
+    }
+   ]
+  },
+  "links": [
+   {
+    "rel": "self",
+    "href": "/Members/4514/Biography",
+    "method": "GET"
+   },
+   {
+    "rel": "overview",
+    "href": "/Members/4514",
+    "method": "GET"
+   },
+   {
+    "rel": "synopsis",
+    "href": "/Members/4514/Synopsis",
+    "method": "GET"
+   },
+   {
+    "rel": "contactInformation",
+    "href": "/Members/4514/Contact",
+    "method": "GET"
+   }
+  ]
+ },
+ "corrections_empty": {
+  "SearchTerms": null,
+  "SpokenResultCount": 0,
+  "WrittenResultCount": 0,
+  "CorrectionsResultCount": 0,
+  "DivisionsResultCount": 0,
+  "Results": [],
+  "TotalResultCount": 0
+ }
+}

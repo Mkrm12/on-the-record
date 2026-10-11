@@ -1,0 +1,860 @@
+{
+ "commons": {
+  "2428": {
+   "DivisionId": 2428,
+   "Date": "2026-09-11T14:30:00",
+   "PublicationUpdated": "2026-09-14T12:23:58",
+   "Number": 75,
+   "IsDeferred": false,
+   "EVELType": "",
+   "EVELCountry": "",
+   "Title": "Terminally Ill Adults (End of Life) Bill: Second Reading",
+   "AyeCount": 270,
+   "NoCount": 286,
+   "DoubleMajorityAyeCount": null,
+   "DoubleMajorityNoCount": null,
+   "AyeTellers": [
+    {
+     "MemberId": 4456,
+     "Name": "Jeff Smith",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Manchester Withington",
+     "ListAs": "Smith, Jeff",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 4610,
+     "Name": "Bambos Charalambous",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Southgate and Wood Green",
+     "ListAs": "Charalambous, Bambos",
+     "ProxyName": null
+    }
+   ],
+   "NoTellers": [
+    {
+     "MemberId": 5309,
+     "Name": "Katrina Murray",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Cumbernauld and Kirkintilloch",
+     "ListAs": "Murray, Katrina",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 4716,
+     "Name": "Ruth Jones",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Newport West and Islwyn",
+     "ListAs": "Jones, Ruth",
+     "ProxyName": null
+    }
+   ],
+   "Ayes": [
+    {
+     "MemberId": 177,
+     "Name": "Gareth Thomas",
+     "Party": "Labour",
+     "SubParty": "Co-op",
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Harrow West",
+     "ListAs": "Thomas, Gareth",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 178,
+     "Name": "John McDonnell",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Hayes and Harlington",
+     "ListAs": "McDonnell, John",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 221,
+     "Name": "Dan Norris",
+     "Party": "Independent",
+     "SubParty": null,
+     "PartyColour": "909090",
+     "PartyAbbreviation": "Ind",
+     "MemberFrom": "North East Somerset and Hanham",
+     "ListAs": "Norris, Dan",
+     "ProxyName": "Damien Egan"
+    },
+    {
+     "MemberId": 4595,
+     "Name": "Gareth Snell",
+     "Party": "Labour",
+     "SubParty": "Co-op",
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Stoke-on-Trent Central",
+     "ListAs": "Snell, Gareth",
+     "ProxyName": null
+    }
+   ],
+   "Noes": [
+    {
+     "MemberId": 39,
+     "Name": "John Whittingdale",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Maldon",
+     "ListAs": "Whittingdale, Sir John",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 40,
+     "Name": "Bernard Jenkin",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Harwich and North Essex",
+     "ListAs": "Jenkin, Sir Bernard",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 54,
+     "Name": "Julian Lewis",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "New Forest East",
+     "ListAs": "Lewis, Sir Julian",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 4595,
+     "Name": "Gareth Snell",
+     "Party": "Labour",
+     "SubParty": "Co-op",
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Stoke-on-Trent Central",
+     "ListAs": "Snell, Gareth",
+     "ProxyName": null
+    }
+   ],
+   "FriendlyDescription": null,
+   "FriendlyTitle": null,
+   "NoVoteRecorded": [
+    {
+     "MemberId": 5131,
+     "Name": "Jack Abbott",
+     "Party": "Labour",
+     "SubParty": "Co-op",
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Ipswich",
+     "ListAs": "Abbott, Jack",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 4212,
+     "Name": "Debbie Abrahams",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Oldham East and Saddleworth",
+     "ListAs": "Abrahams, Debbie",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 4623,
+     "Name": "Tonia Antoniazzi",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Gower",
+     "ListAs": "Antoniazzi, Tonia",
+     "ProxyName": null
+    }
+   ],
+   "RemoteVotingStart": null,
+   "RemoteVotingEnd": null
+  },
+  "2414": {
+   "DivisionId": 2414,
+   "Date": "2026-09-02T19:19:00",
+   "PublicationUpdated": "2026-09-03T13:38:46",
+   "Number": 62,
+   "IsDeferred": false,
+   "EVELType": "",
+   "EVELCountry": "",
+   "Title": "Representation of the People Bill: Report Stage: New Clause 67",
+   "AyeCount": 105,
+   "NoCount": 410,
+   "DoubleMajorityAyeCount": null,
+   "DoubleMajorityNoCount": null,
+   "AyeTellers": [
+    {
+     "MemberId": 5347,
+     "Name": "David Reed",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Exmouth and Exeter East",
+     "ListAs": "Reed, David",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5351,
+     "Name": "Gregory Stafford",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Farnham and Bordon",
+     "ListAs": "Stafford, Gregory",
+     "ProxyName": null
+    }
+   ],
+   "NoTellers": [
+    {
+     "MemberId": 5029,
+     "Name": "Emma Foody",
+     "Party": "Labour",
+     "SubParty": "Co-op",
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Cramlington and Killingworth",
+     "ListAs": "Foody, Emma",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5236,
+     "Name": "Jade Botterill",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Ossett and Denby Dale",
+     "ListAs": "Botterill, Jade",
+     "ProxyName": null
+    }
+   ],
+   "Ayes": [
+    {
+     "MemberId": 39,
+     "Name": "John Whittingdale",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Maldon",
+     "ListAs": "Whittingdale, Sir John",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 40,
+     "Name": "Bernard Jenkin",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Harwich and North Essex",
+     "ListAs": "Jenkin, Sir Bernard",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 54,
+     "Name": "Julian Lewis",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "New Forest East",
+     "ListAs": "Lewis, Sir Julian",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5231,
+     "Name": "Adnan Hussain",
+     "Party": "Independent",
+     "SubParty": null,
+     "PartyColour": "909090",
+     "PartyAbbreviation": "Ind",
+     "MemberFrom": "Blackburn",
+     "ListAs": "Hussain, Mr Adnan",
+     "ProxyName": null
+    }
+   ],
+   "Noes": [
+    {
+     "MemberId": 146,
+     "Name": "Barry Gardiner",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Brent West",
+     "ListAs": "Gardiner, Barry",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 163,
+     "Name": "Stephen Timms",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "East Ham",
+     "ListAs": "Timms, Sir Stephen",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 165,
+     "Name": "Clive Efford",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Eltham and Chislehurst",
+     "ListAs": "Efford, Clive",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5231,
+     "Name": "Adnan Hussain",
+     "Party": "Independent",
+     "SubParty": null,
+     "PartyColour": "909090",
+     "PartyAbbreviation": "Ind",
+     "MemberFrom": "Blackburn",
+     "ListAs": "Hussain, Mr Adnan",
+     "ProxyName": null
+    }
+   ],
+   "FriendlyDescription": null,
+   "FriendlyTitle": null,
+   "NoVoteRecorded": [
+    {
+     "MemberId": 172,
+     "Name": "Diane Abbott",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Hackney North and Stoke Newington",
+     "ListAs": "Abbott, Ms Diane",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5097,
+     "Name": "Bayo Alaba",
+     "Party": "Independent",
+     "SubParty": null,
+     "PartyColour": "909090",
+     "PartyAbbreviation": "Ind",
+     "MemberFrom": "Southend East and Rochford",
+     "ListAs": "Alaba, Mr Bayo",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5312,
+     "Name": "Sadik Al-Hassan",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "North Somerset",
+     "ListAs": "Al-Hassan, Sadik",
+     "ProxyName": null
+    }
+   ],
+   "RemoteVotingStart": null,
+   "RemoteVotingEnd": null
+  },
+  "2424": {
+   "DivisionId": 2424,
+   "Date": "2026-09-09T00:00:00",
+   "PublicationUpdated": "2026-09-09T16:57:19",
+   "Number": 72,
+   "IsDeferred": true,
+   "EVELType": "",
+   "EVELCountry": "",
+   "Title": "Draft Plant Health, Seeds, Seed Potatoes and Plant Propagating Material  (Amendment) (Northern Ireland) Regulations 2026",
+   "AyeCount": 371,
+   "NoCount": 100,
+   "DoubleMajorityAyeCount": null,
+   "DoubleMajorityNoCount": null,
+   "AyeTellers": null,
+   "NoTellers": null,
+   "Ayes": [
+    {
+     "MemberId": 146,
+     "Name": "Barry Gardiner",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Brent West",
+     "ListAs": "Gardiner, Barry",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 163,
+     "Name": "Stephen Timms",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "East Ham",
+     "ListAs": "Timms, Sir Stephen",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 165,
+     "Name": "Clive Efford",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Eltham and Chislehurst",
+     "ListAs": "Efford, Clive",
+     "ProxyName": null
+    }
+   ],
+   "Noes": [
+    {
+     "MemberId": 39,
+     "Name": "John Whittingdale",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Maldon",
+     "ListAs": "Whittingdale, Sir John",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 40,
+     "Name": "Bernard Jenkin",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Harwich and North Essex",
+     "ListAs": "Jenkin, Sir Bernard",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 54,
+     "Name": "Julian Lewis",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "New Forest East",
+     "ListAs": "Lewis, Sir Julian",
+     "ProxyName": null
+    }
+   ],
+   "FriendlyDescription": null,
+   "FriendlyTitle": null,
+   "NoVoteRecorded": [
+    {
+     "MemberId": 172,
+     "Name": "Diane Abbott",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Hackney North and Stoke Newington",
+     "ListAs": "Abbott, Ms Diane",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5120,
+     "Name": "Shockat Adam",
+     "Party": "Independent",
+     "SubParty": null,
+     "PartyColour": "909090",
+     "PartyAbbreviation": "Ind",
+     "MemberFrom": "Leicester South",
+     "ListAs": "Adam, Shockat",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5097,
+     "Name": "Bayo Alaba",
+     "Party": "Independent",
+     "SubParty": null,
+     "PartyColour": "909090",
+     "PartyAbbreviation": "Ind",
+     "MemberFrom": "Southend East and Rochford",
+     "ListAs": "Alaba, Mr Bayo",
+     "ProxyName": null
+    }
+   ],
+   "RemoteVotingStart": null,
+   "RemoteVotingEnd": null
+  },
+  "2413": {
+   "DivisionId": 2413,
+   "Date": "2026-09-02T19:04:00",
+   "PublicationUpdated": "2026-09-02T21:37:43",
+   "Number": 61,
+   "IsDeferred": false,
+   "EVELType": "",
+   "EVELCountry": "",
+   "Title": "Representation of the People Bill: Report Stage: New Clause 65",
+   "AyeCount": 166,
+   "NoCount": 346,
+   "DoubleMajorityAyeCount": null,
+   "DoubleMajorityNoCount": null,
+   "AyeTellers": [
+    {
+     "MemberId": 5347,
+     "Name": "David Reed",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Exmouth and Exeter East",
+     "ListAs": "Reed, David",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5351,
+     "Name": "Gregory Stafford",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Farnham and Bordon",
+     "ListAs": "Stafford, Gregory",
+     "ProxyName": null
+    }
+   ],
+   "NoTellers": [
+    {
+     "MemberId": 5029,
+     "Name": "Emma Foody",
+     "Party": "Labour",
+     "SubParty": "Co-op",
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Cramlington and Killingworth",
+     "ListAs": "Foody, Emma",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5236,
+     "Name": "Jade Botterill",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Ossett and Denby Dale",
+     "ListAs": "Botterill, Jade",
+     "ProxyName": null
+    }
+   ],
+   "Ayes": [
+    {
+     "MemberId": 39,
+     "Name": "John Whittingdale",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Maldon",
+     "ListAs": "Whittingdale, Sir John",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 40,
+     "Name": "Bernard Jenkin",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "Harwich and North Essex",
+     "ListAs": "Jenkin, Sir Bernard",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 54,
+     "Name": "Julian Lewis",
+     "Party": "Conservative",
+     "SubParty": null,
+     "PartyColour": "0063ba",
+     "PartyAbbreviation": "Con",
+     "MemberFrom": "New Forest East",
+     "ListAs": "Lewis, Sir Julian",
+     "ProxyName": null
+    }
+   ],
+   "Noes": [
+    {
+     "MemberId": 146,
+     "Name": "Barry Gardiner",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Brent West",
+     "ListAs": "Gardiner, Barry",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 163,
+     "Name": "Stephen Timms",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "East Ham",
+     "ListAs": "Timms, Sir Stephen",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 165,
+     "Name": "Clive Efford",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Eltham and Chislehurst",
+     "ListAs": "Efford, Clive",
+     "ProxyName": null
+    }
+   ],
+   "FriendlyDescription": null,
+   "FriendlyTitle": null,
+   "NoVoteRecorded": [
+    {
+     "MemberId": 172,
+     "Name": "Diane Abbott",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "Hackney North and Stoke Newington",
+     "ListAs": "Abbott, Ms Diane",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5097,
+     "Name": "Bayo Alaba",
+     "Party": "Independent",
+     "SubParty": null,
+     "PartyColour": "909090",
+     "PartyAbbreviation": "Ind",
+     "MemberFrom": "Southend East and Rochford",
+     "ListAs": "Alaba, Mr Bayo",
+     "ProxyName": null
+    },
+    {
+     "MemberId": 5312,
+     "Name": "Sadik Al-Hassan",
+     "Party": "Labour",
+     "SubParty": null,
+     "PartyColour": "d50000",
+     "PartyAbbreviation": "Lab",
+     "MemberFrom": "North Somerset",
+     "ListAs": "Al-Hassan, Sadik",
+     "ProxyName": null
+    }
+   ],
+   "RemoteVotingStart": null,
+   "RemoteVotingEnd": null
+  }
+ },
+ "lords": {
+  "3707": {
+   "divisionId": 3707,
+   "date": "2026-09-07T00:00:00",
+   "number": 2,
+   "notes": null,
+   "title": "Financial Services and Markets Bill [HL]",
+   "isWhipped": true,
+   "isGovernmentContent": false,
+   "authoritativeContentCount": 246,
+   "authoritativeNotContentCount": 165,
+   "divisionHadTellers": true,
+   "tellerContentCount": 246,
+   "tellerNotContentCount": 165,
+   "memberContentCount": 244,
+   "memberNotContentCount": 163,
+   "sponsoringMemberId": 4284,
+   "isHouse": true,
+   "isInquorate": false,
+   "amendmentMotionNotes": "<p>Baroness Neville Rolfe moved amendment 10 to leave out clause 3. The House divided:</p>",
+   "isGovernmentWin": false,
+   "remoteVotingStart": "2026-09-07T17:31:11",
+   "remoteVotingEnd": "2026-09-07T17:39:11",
+   "divisionWasExclusivelyRemote": false,
+   "contentTellers": [
+    {
+     "memberId": 4311,
+     "name": "Baroness Williams of Trafford",
+     "listAs": "Williams of Trafford, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4553,
+     "name": "Baroness Scott of Bybrook",
+     "listAs": "Scott of Bybrook, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    }
+   ],
+   "notContentTellers": [
+    {
+     "memberId": 4508,
+     "name": "Baroness Anderson of Stoke-on-Trent",
+     "listAs": "Anderson of Stoke-on-Trent, B.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4153,
+     "name": "Lord Kennedy of Southwark",
+     "listAs": "Kennedy of Southwark, L.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    }
+   ],
+   "contents": [
+    {
+     "memberId": 8,
+     "name": "Baroness May of Maidenhead",
+     "listAs": "May of Maidenhead, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 14,
+     "name": "Lord Redwood",
+     "listAs": "Redwood, L.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 36,
+     "name": "Baroness Laing of Elderslie",
+     "listAs": "Laing of Elderslie, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4311,
+     "name": "Baroness Williams of Trafford",
+     "listAs": "Williams of Trafford, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4553,
+     "name": "Baroness Scott of Bybrook",
+     "listAs": "Scott of Bybrook, B.",
+     "memberFrom": "Life peer",
+     "party": "Conservative",
+     "partyColour": "0063ba",
+     "partyAbbreviation": "Con",
+     "partyIsMainParty": true
+    }
+   ],
+   "notContents": [
+    {
+     "memberId": 62,
+     "name": "Lord Whitehead",
+     "listAs": "Whitehead, L.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 140,
+     "name": "Baroness Hodge of Barking",
+     "listAs": "Hodge of Barking, B.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 181,
+     "name": "Lord Cryer",
+     "listAs": "Cryer, L.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4508,
+     "name": "Baroness Anderson of Stoke-on-Trent",
+     "listAs": "Anderson of Stoke-on-Trent, B.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    },
+    {
+     "memberId": 4153,
+     "name": "Lord Kennedy of Southwark",
+     "listAs": "Kennedy of Southwark, L.",
+     "memberFrom": "Life peer",
+     "party": "Labour",
+     "partyColour": "d50000",
+     "partyAbbreviation": "Lab",
+     "partyIsMainParty": true
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,107 @@
+{
+  "judge_model": "deepseek-flash",
+  "graded_by": "claude (blind baseline)",
+  "calibration_pairs": 100,
+  "judge_graded_of_those": 99,
+  "verdict": {
+    "gate": 0.6,
+    "threshold": 2,
+    "four_level": {
+      "kappa": 0.5316,
+      "n": 99,
+      "agreement": 0.7071,
+      "expected_agreement": 0.3747,
+      "passes_gate": false
+    },
+    "binarised": {
+      "kappa": 0.6897,
+      "n": 99,
+      "threshold": 2,
+      "agreement": 0.9192,
+      "expected_agreement": 0.7396,
+      "both_relevant": 11,
+      "neither_relevant": 80,
+      "only_first_relevant": 8,
+      "only_second_relevant": 0,
+      "passes_gate": true
+    },
+    "usable_for_ranking": true,
+    "usable_for_graded_ndcg": false,
+    "verdict": "usable for recall, MRR and binary nDCG; NOT for graded nDCG"
+  },
+  "cohen_kappa": {
+    "kappa": 0.5316,
+    "n": 99,
+    "agreement": 0.7071,
+    "expected_agreement": 0.3747,
+    "passes_gate": false
+  },
+  "binary_agreement": {
+    "kappa": 0.6897,
+    "n": 99,
+    "threshold": 2,
+    "agreement": 0.9192,
+    "expected_agreement": 0.7396,
+    "both_relevant": 11,
+    "neither_relevant": 80,
+    "only_first_relevant": 8,
+    "only_second_relevant": 0,
+    "passes_gate": true
+  },
+  "confusion": {
+    "n": 99,
+    "table": {
+      "0": {
+        "0": 41,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "1": {
+        "0": 17,
+        "1": 22,
+        "2": 0,
+        "3": 0
+      },
+      "2": {
+        "0": 1,
+        "1": 6,
+        "2": 5,
+        "3": 0
+      },
+      "3": {
+        "0": 0,
+        "1": 1,
+        "2": 4,
+        "3": 2
+      }
+    },
+    "off_by": {
+      "0": 70,
+      "1": 27,
+      "2": 2
+    },
+    "exact": 70,
+    "adjacent_or_better": 97,
+    "severe": 2
+  },
+  "baseline_distribution": {
+    "0": 41,
+    "1": 39,
+    "2": 13,
+    "3": 7
+  },
+  "judge_distribution": {
+    "0": 59,
+    "1": 29,
+    "2": 9,
+    "3": 2
+  },
+  "gate": {
+    "threshold": 0.6,
+    "applies_to": "binarised relevance at grade >= 2, which is what recall, MRR and nDCG read",
+    "passes": true,
+    "four_level_passes": false,
+    "meaning": "the binarised gate decides whether the judge may be used for ranking metrics at all; the four-level one decides only whether graded nDCG may be reported"
+  }
+}
