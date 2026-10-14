@@ -1,0 +1,151 @@
+# Corpus v2: the windows to fetch, and how politely to fetch them.
+
+[corpus]
+version = "v2"
+cache_root = "data/raw/corpus_v2"
+log_dir = "data/logs"
+# W0 is the existing 2026-09 corpus.
+
+[http]
+# No e-mail address, ever (gotcha 14).
+user_agent = "on-the-record/0.2 (+https://github.com/on-the-record; Hansard civic-intelligence research)"
+concurrency = 3          # units in flight; hard maximum 4 (see max_concurrency)
+max_concurrency = 4
+min_interval = 0.12      # seconds between request STARTS, across all tasks
+connect_timeout = 10.0
+read_timeout = 60.0
+write_timeout = 30.0
+pool_timeout = 20.0
+max_attempts = 6         # per request, then the unit is marked failed
+backoff_base = 1.0       # seconds; full jitter, doubling
+backoff_cap = 60.0
+retry_after_cap = 120.0
+# Do not lower this without re-measuring.
+page_size = 100
+# After a 429 the gate is slowed by this factor for `slowdown_decay` seconds.
+slowdown_factor = 2.0
+slowdown_decay = 120.0
+
+[breaker]
+consecutive_failures = 10   # consecutive failed UNITS before pausing
+pause_seconds = 300.0       # first pause; doubles each time
+pause_cap = 1800.0
+max_pauses = 4              # then stop cleanly with resume instructions
+
+[disk]
+min_free_gb = 2.0
+check_every_units = 25
+
+[sources]
+# Every source the loader will need to rebuild a window from nothing.
+enabled = [
+    "probe",              # 1 request per calendar day: is it a sitting day, and how big?
+    "calendar",           # /overview/calendar.json, the second sitting-day signal
+    "sections",           # /overview/sectionsforday.json, the section census
+    "contributions",      # /search/contributions/Spoken.json, both sort orders (gotcha 10)
+    "corrections",        # /search/contributions/Corrections.json (see note below)
+    "hansard_divisions",  # /search/divisions.json: carries DebateSectionExtId directly
+    "commons_divisions",  # commonsvotes-api search + per-division detail
+    "lords_divisions",    # lordsvotes-api search (detail is already in the search)
+    "bills",              # bills-api /Sittings for the window, then each bill + its stages
+    "members",            # members-api, 9 endpoints per MNIS id seen in the window
+]
+# `corrections` is not in the session brief's capture list.
+
+[members]
+# The 9 endpoints scripts/ingest_members.py uses.
+endpoints = ["", "Biography", "Contact", "Synopsis", "Experience", "Focus", "Staff", "RegisteredInterests", "LatestElectionResult"]
+# A text file of MNIS ids already held in the `hansard` database, one per line.
+known_ids_file = "config/known_mnis_ids.txt"
+fetch_known = true
+
+[estimate]
+# 9,021 contributions listed by the API over 13 sitting days produced 90,852 chunks, and 8,986 of the 9,021 were served
+# (99.61%).
+chunks_per_contribution = 10.07
+served_fraction = 0.9961
+bytes_per_contribution = 2600      # gzipped cache bytes, measured on W0 pages
+
+# "house-days" = Commons sitting days + Lords sitting days (the real unit of volume); "days" = calendar days on which
+# either House sat (the unit of fetch work).
+
+[[windows]]
+id = "W0"
+start = 2026-09-01
+end = 2026-09-17
+role = "dev"
+active = true
+                        # W0 is the rebuild oracle, so it cannot be the one window missing from it.
+note = "The existing corpus, and the rebuild oracle: loading it from the cache must reproduce the `hansard` database. Commons 11, Lords 13, days 13, house-days 24. Everything in Phase 2 was tuned on it, so every one of its 25 gold questions is DEV. PM: Andy Burnham (MNIS 1427)."
+
+[[windows]]
+id = "W4"
+start = 2026-01-01
+end = 2026-03-31
+role = "dev_test"
+active = true
+note = "Same Parliament as W0, different topics, and a DIFFERENT Prime Minister: Keir Starmer (4514) in W4 against Andy Burnham (1427) in W0, verified from AttributedTo on 2026-01-14 and 2026-09-02. Commons 44, Lords 54, days 54, house-days 98 - the largest window. Fetch this one first: it is closest in format to W0, so it is the lowest-risk proof of the tool at scale."
+
+[[windows]]
+id = "W2"
+start = 2025-10-01
+end = 2025-12-31
+role = "dev_test"
+active = true
+note = "Autumn Budget, verified as Wednesday 26 November 2025 ('Financial Statement and Budget Report'), with Budget Resolutions running on to 27 November. Conference recess confirmed: the first sitting day is 13 October, the last is 18 December. Commons 38, Lords 45, days 45, house-days 83."
+
+[[windows]]
+id = "W1"
+start = 2024-05-01
+end = 2024-07-31
+role = "dev_test"
+active = true
+note = "Change of Government inside one window. Verified: 'The Prime Minister' is Rishi Sunak (4483) on 2024-05-22 and Keir Starmer (4514) on 2024-07-24. Wash-up and prorogation (last sitting 24 May), dissolution 30 May, NO sittings in June, new Parliament from 9 July (Election of Speaker, Members Sworn, Oaths and Affirmations), State Opening 17 July (King's Speech, Debate on the Address), recess from 30 July. Commons 29, Lords 28, days 30, house-days 57. Expect hundreds of members not in member_id_map and a constituency-boundary change mid-window."
+
+[[windows]]
+id = "W3"
+start = 2020-03-01
+end = 2020-05-31
+role = "heldout"
+active = true
+note = "HELD OUT. Never tune on it; do not look at its retrieval or eval results before the final generalisation report. Ingest data-quality checks are allowed. Different Government (Boris Johnson, 1423), pre-2024 constituencies, Budget 11 March 2020, then the covid gap: the last March sitting is the 25th and the next is 21 April. Hybrid proceedings from 21/22 April (the debate heading 'Hybrid Substantive Proceedings'; the Section vocabulary is unchanged). No Westminster Hall on the days sampled. Commons 30, Lords 31, days 34, house-days 61. Divisions: 14 Commons (4 physical in March, 10 remote from 12 May, proxy votes in both), and ZERO Lords - lordsvotes-api and Hansard /search/divisions.json independently return none between February and June 2020. That absence is a fact about 2020, not a fetch failure."
+
+# --------------------------------------------------------------------------- W1 alternatives, reported by `plan`, never
+# fetched (active = false).
+
+[[windows]]
+id = "W5"
+start = 2026-04-01
+end = 2026-07-31
+role = "heldout"
+active = true
+note = """THE EXAM. Sealed 2026-09-26 in E1, declared held-out BEFORE it was fetched. Scored exactly TWICE in \
+the whole project, both times in E4: once at retrieval level and once at answer level. Nothing is designed, \
+tuned or diagnosed from W5 results, and no system is run on W5 questions before the exam -- relevance pooling \
+for W5 happens at the exam itself. Any other use burns it and must be logged as such (I-82 is what happens \
+when a held-out window is looked at twice).
+
+Chosen because it is the one stretch of the current Parliament nothing has touched: W4 ends 2026-03-27 and W0 \
+begins 2026-09-01, so 2026-03-28 to 2026-08-31 is the only gap, and W5 sits inside it. Four months makes it \
+the largest window in the corpus, which is what an exam wants. It probably covers the run-up to the change of \
+Prime Minister, which is the hardest case for office-at-date resolution -- exactly the thing worth examining.
+
+Expect roughly 400,000-500,000 chunks by proportion to W4 (3 months, 377,145 chunks), so the corpus grows by \
+about 40% and every number measured after the load has W5's text present as distractors. That is deliberate: \
+the baseline and every arm are measured on the corpus the exam will be sat on."""
+
+[[windows]]
+id = "W1-alt-jun"
+start = 2024-06-01
+end = 2024-08-31
+role = "candidate"
+active = false
+note = "The brief's original draft. REJECTED on measurement: 14 sitting days in three months, all of them in July, and the first of them are nearly empty (2024-07-09 lists 43 contributions, 2024-07-17 lists 124). Commons 14, Lords 12, house-days 26. It would buy a third of W1's content and none of the change of Government."
+
+[[windows]]
+id = "W1-alt-apr"
+start = 2024-04-15
+end = 2024-07-31
+role = "candidate"
+active = false
+note = "A longer W1. Commons 41, Lords 39, days 42, house-days 80. It adds a fortnight of ordinary old-Parliament sitting, which W2 and W4 already supply in quantity, and costs about 40% more fetch time. Switch to it only if W1 turns out too small after loading."

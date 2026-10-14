@@ -1,0 +1,2457 @@
+{
+ "version": 1,
+ "rubric": "v2",
+ "entries": "v3 (kinds, sides, vital_required)",
+ "built": "2026-10-10",
+ "from": {
+  "sentinels": "triage_key.json + triage_labels.json (the owner's final verdicts)",
+  "seed_bases": "e3_eval_dev_s18_final_judged.json (deterministic-structured, correct)"
+ },
+ "sentinels": [
+  {
+   "source": "triage:J003",
+   "item": "adv0061",
+   "breadth": "narrow",
+   "known_outcome": "missing_vital_nugget",
+   "known_vital_present": 0,
+   "entry": {
+    "question": "Why is the Government letting China spy on us from Royal Mint Court?",
+    "expected": "The question builds in a judgement: the right response reports what the record shows in neutral words, neither adopting nor disputing the judgement.",
+    "reference_points": [
+     {
+      "text": "The record has a planning process, and separately an exchange about intelligence assessments.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The premise that spying is being permitted is the questioner's, not the record's.",
+      "vital": true,
+      "kind": "scope",
+      "side": ""
+     }
+    ],
+    "vital_total": 2,
+    "must_not_claim": [
+     "Asserting that the Government is permitting espionage."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Sarah Pochin of Reform UK asked why the Government were letting a hostile state that wants to sabotage and spy on the UK into the heart of Government, noting the Minister had said national security is a priority. [2026-01-19] The closest passages found were only weakly related to this question, so this answer may not be what you meant.",
+    "vital_required": 2
+   }
+  },
+  {
+   "source": "triage:J029",
+   "item": "hum0004",
+   "breadth": "narrow",
+   "known_outcome": "correct",
+   "known_vital_present": 1,
+   "entry": {
+    "question": "what's the Royal Mint Court thing about",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It is the site proposed for a new Chinese embassy.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The decision sits with Planning Ministers, independently of the rest of Government.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Baroness Finn said: Royal Mint Court is the proposed site of a new Chinese embassy in London, which the Government has approved planning permission for. [2026-01-26] Matthew Pennycook said the decision on the proposals for a new Chinese embassy at Royal Mint Court is to be taken by Planning Ministers, independent of the rest of Government. [2026-01-13] Charlie Dewhirst said Tower Hamlets council rejected the plans on legitimate grounds, but this Government called in the application and seemed determined to approve it, despite warnings from MI5 about the site’s proximity to major communications cables. [2025-12-11] Nick Timothy said the White House, Dutch, Swiss and Swedish Governments have expressed concerns about sensitive cables running under Royal Mint Court, and that the Foreign Office denied the presence of such cables to the US Government while the Cabinet Office denied it to the press. [2025-12-02] Luke Taylor said the Liberal Democrats have serious concerns that the project will enhance China’s ability to conduct transnational repression against Britons and Hongkongers on British soil. [2026-01-20] Luke Taylor said a 2018 letter from the then Foreign Secretary Boris Johnson granted diplomatic status to Royal Mint Court, made no mention of a condition relating to planning permission, and that consent is now said to have been conditional on planning permission based on an unpublished secret note verbale from May 2018. [2026-01-19] Wendy Morton said there has been considerable public debate about the proposed redevelopment of the Chinese embassy on the Royal Mint Court site into what would become the largest Chinese embassy complex in Europe, and that many have raised concerns about its symbolic and practical implications given the wider human rights context. [2026-03-18]",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "triage:J032",
+   "item": "old0013",
+   "breadth": "narrow",
+   "known_outcome": "correct",
+   "known_vital_present": 1,
+   "entry": {
+    "question": "How much gross value added did the chemistry sector contribute in 2023?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "£60.5 billion in gross value added in 2023.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "Including over £64 million in Wolverhampton.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "Sureena Brackenridge gave the figure on 10 September 2026.",
+      "vital": false,
+      "kind": "example",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Sureena Brackenridge told the Commons that in 2023 chemistry contributed £60.5 billion in gross value added, including over £64 million in Wolverhampton. [2026-09-10]",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "triage:J046",
+   "item": "adv0001",
+   "breadth": "narrow",
+   "known_outcome": "correct",
+   "known_vital_present": 1,
+   "entry": {
+    "question": "Did the minister say a cyber-attack caused the air traffic disruption?",
+    "expected": "The question assumes something the record contradicts: the right response corrects it (who actually said what, where) rather than answering as asked.",
+    "reference_points": [
+     {
+      "text": "No: he said a cyber-attack had been ruled out and blamed a technical issue.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the Minister attributed the disruption to a cyber-attack."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Keir Mather said the disruption was instead caused by a technical issue in NATS's Swanwick flight processing system affecting the processing of flight plans used by data controllers. [2026-09-10]",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "triage:J056",
+   "item": "hum0070",
+   "breadth": "narrow",
+   "known_outcome": "missing_vital_nugget",
+   "known_vital_present": 0,
+   "entry": {
+    "question": "Was Baroness Hoey for or against the tobacco bill's Northern Ireland provisions?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Against, and she said she had warned about it at the time of the Windsor Framework.",
+      "vital": true,
+      "kind": "point",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Baroness Hoey said it was clear from noble KCs, the European Union and seven countries that the Bill cannot apply to Northern Ireland, not just because of the Windsor Framework but generally because of the tobacco directive. [2026-02-24] Baroness Hoey said the Bill, which is fundamentally about health, may have some flaws but citizens in her part of the United Kingdom should be treated as equal citizens on health. [2025-11-13]",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "triage:J062",
+   "item": "hum0031",
+   "breadth": "narrow",
+   "known_outcome": "missing_vital_nugget",
+   "known_vital_present": 0,
+   "entry": {
+    "question": "What did Helen Morgan object to in the medical training bill?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "That clause 7(1) would let Ministers change eligibility by the negative procedure.",
+      "vital": true,
+      "kind": "point",
+      "side": ""
+     },
+     {
+      "text": "The Liberal Democrats supported the Bill overall.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Helen Morgan said: She said the Liberal Democrats had tabled amendments requiring Parliament to approve any future changes through the positive procedure. [2026-01-27] Helen Morgan said: She asked the Minister to clarify whether international doctors already working in the NHS would suddenly be pushed to the back of the queue mid-cycle. [2026-01-27]",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "triage:J014",
+   "item": "old0005",
+   "breadth": "narrow",
+   "known_outcome": "correct_missing_okay_nuggets",
+   "known_vital_present": 1,
+   "entry": {
+    "question": "Who complained that Natural England was marking its own homework?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Lord Jamieson (Conservative) said Natural England was 'marking its own homework'.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "In the Lords debate on the Nature Restoration Levy Regulations 2026, 3 September 2026.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Baroness Willis of Summertown said it was very important that the evidence comes back to the House and that an independent body looks at the evidence base, so that Natural England is not marking its own homework. [2025-11-24] Baroness Willis of Summertown added that this had always been a concern for many. [2025-11-24] Lord Jamieson asked the Minister to confirm that an option would always exist as to whether one went with the Natural England environmental delivery plan, particularly when Natural England is marking its own homework and deciding whether a developer's mitigation is sufficient. [2026-09-03]",
+    "vital_required": 1
+   }
+  }
+ ],
+ "seed_bases": [
+  {
+   "source": "dev_s18:db0006",
+   "item": "db0006",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Did the Commons agree to Draft Medical Devices (Fees Amendment) Regulations 2026 in the division on 28 January 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was agreed (294 to 108).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was negatived."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 28 January 2026 (division 421) and the motion was agreed to, 294 votes to 108.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0009",
+   "item": "db0009",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "What was the outcome of the Commons division on UK-EU customs union (duty to negotiate): Ten Minute Rule Motion on 9 December 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was tied (100 to 100).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was agreed."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 9 December 2025 (division 386) and the motion was tied, 100 votes to 100.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0012",
+   "item": "db0012",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Did the Commons agree to Draft Public Order Act 2023 (Interference With Use or Operation of Key National Infrastructure) Regulations 2025 in the division on 14 January 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was agreed (301 to 110).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was negatived."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 14 January 2026 (division 409) and the motion was agreed to, 301 votes to 110.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0013",
+   "item": "db0013",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "Did the Commons agree to Terminally Ill Adults (End of Life) Bill: Second Reading in the division on 11 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was negatived (270 to 286).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was agreed."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 11 September 2026 (division 75) and the motion was rejected — \"negatived\", in the record's own word, 270 votes to 286.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0019",
+   "item": "db0019",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "On 8 September 2026, was the motion on Plant Health, Seeds, Seed Potatoes and Plant Propagating Material (Amendment) (Northern Ireland) Regulations 2026 carried in the Lords?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was negatived (26 to 63).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was agreed."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Lords divided on 8 September 2026 (division 1) and the motion was rejected — \"negatived\", in the record's own word, 26 votes to 63.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0020",
+   "item": "db0020",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "On 15 May 2024, was the motion on Criminal Justice Bill Report Stage: New Clause 44 carried in the Commons?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was negatived (167 to 275).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was agreed."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 15 May 2024 (division 151) and the motion was rejected — \"negatived\", in the record's own word, 167 votes to 275. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 169 Ayes and 276 Noes are listed against the official 167 and 275. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0026",
+   "item": "db0026",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Did the Commons agree to The draft Criminal Justice Act 2003 (Requisite and Minimum Custodial Periods) Order 2024 in the division on 25 July 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was agreed (323 to 81).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was negatived."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 25 July 2024 (division 5) and the motion was agreed to, 323 votes to 81.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0029",
+   "item": "db0029",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "What was the outcome of the Lords division on Public Order Act 2023 (Interference With Use or Operation of Key National Infrastructure) Regulations 2025 on 4 February 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was negatived (62 to 295).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was agreed."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Lords divided on 4 February 2026 (division 1) and the motion was rejected — \"negatived\", in the record's own word, 62 votes to 295.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0033",
+   "item": "db0033",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "Was Sentencing Bill Committee: New Clause 30 passed or rejected when the Commons divided on 21 October 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was negatived (77 to 390).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was agreed."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 21 October 2025 (division 324) and the motion was rejected — \"negatived\", in the record's own word, 77 votes to 390. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 80 Ayes and 387 Noes are listed against the official 77 and 390. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0035",
+   "item": "db0035",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Was National Insurance Contributions (Employer Pensions Contributions) Bill: motion to disagree with Lords Amendment 5 passed or rejected when the Commons divided on 23 March 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was agreed (281 to 167).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was negatived."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 23 March 2026 (division 457) and the motion was agreed to, 281 votes to 167. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 275 Ayes and 169 Noes are listed against the official 281 and 167. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0036",
+   "item": "db0036",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "What was the outcome of the Commons division on Draft Plant Health, Seeds, Seed Potatoes and Plant Propagating Material  (Amendment) (Northern Ireland) Regulations 2026 on 9 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The division was agreed (371 to 100).",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That the division was negatived."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons divided on 9 September 2026 (division 72) and the motion was agreed to, 371 votes to 100.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0041",
+   "item": "db0041",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "What were the Ayes and Noes when the Commons divided on Health Bill: Report Stage: New Clause 6 on 7 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 77 and the Noes 317.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 78 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "77 voted Aye and 317 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 78 Ayes and 319 Noes are listed against the official 77 and 317. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0043",
+   "item": "db0043",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "What were the Ayes and Noes when the Commons divided on Diego Garcia Military Base and British Indian Ocean Territory Bill Committee: Amendment 7 on 20 October 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 174 and the Noes 321.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 175 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "174 voted Aye and 321 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 175 Ayes and 321 Noes are listed against the official 174 and 321. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0044",
+   "item": "db0044",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Give the voting figures for the Commons division on Referendums Relating to Council Tax Increases (Principles) (England) Report 2026-27 on 11 February 2026.",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 279 and the Noes 90.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 280 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "279 voted Aye and 90 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 280 Ayes and 92 Noes are listed against the official 279 and 90. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0047",
+   "item": "db0047",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Give the voting figures for the Commons division on Finance (No. 2) Bill: Second Reading on 16 December 2025.",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 341 and the Noes 195.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 339 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "341 voted Aye and 195 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 339 Ayes and 195 Noes are listed against the official 341 and 195. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0048",
+   "item": "db0048",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "How many voted against Universal Credit (Removal of Two Child Limit) Bill: Second Reading on 3 February 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 458 and the Noes 104.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 459 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "458 voted Aye and 104 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 459 Ayes and 106 Noes are listed against the official 458 and 104. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0050",
+   "item": "db0050",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Give the voting figures for the Commons division on High Speed Rail (Crewe - Manchester) Bill: Instruction (No. 3) on 21 May 2024.",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 323 and the Noes 7.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 320 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "323 voted Aye and 7 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 320 Ayes and 9 Noes are listed against the official 323 and 7. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0051",
+   "item": "db0051",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "What were the Ayes and Noes when the Commons divided on Victims and Courts Bill Report Stage: New Clause 7 on 27 October 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 165 and the Noes 323.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 166 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "165 voted Aye and 323 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 166 Ayes and 323 Noes are listed against the official 165 and 323. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0053",
+   "item": "db0053",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "What were the Ayes and Noes when the Commons divided on Health Bill: Report Stage: New Clause 143 on 8 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 106 and the Noes 302.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 107 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "106 voted Aye and 302 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 107 Ayes and 300 Noes are listed against the official 106 and 302. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0054",
+   "item": "db0054",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "How many voted against Finance (No. 2) Bill: Third Reading on 23 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 215 and the Noes 19.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The per-member lists are recorded separately from the tellers' count and differ here.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That 216 members voted Aye (that is the length of the name list, not the tellers' figure)."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "215 voted Aye and 19 voted No, as counted by the tellers. The published name lists do not reconcile with the tellers' count, beyond the 2 teller(s) a Commons lobby may add: 216 Ayes and 21 Noes are listed against the official 215 and 19. The tellers' figures are the result (I-8).",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0056",
+   "item": "db0056",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "How many voted against Nature Restoration Levy Regulations 2026 on 3 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 41 and the Noes 29.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "Any figure other than the official Ayes and Noes."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "41 voted Aye and 29 voted No, as counted by the tellers.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0057",
+   "item": "db0057",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "How many members voted in favour of Holocaust Memorial Bill Committee: New Clause 1 in the Commons on 22 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 11 and the Noes 182.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "Any figure other than the official Ayes and Noes."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "11 voted Aye and 182 voted No, as counted by the tellers.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0062",
+   "item": "db0062",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "What were the Ayes and Noes when the Lords divided on Financial Services and Markets Bill [HL] on 15 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 258 and the Noes 109.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "Any figure other than the official Ayes and Noes."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "258 voted Aye and 109 voted No, as counted by the tellers.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0067",
+   "item": "db0067",
+   "kinds": [
+    "number",
+    "result"
+   ],
+   "entry": {
+    "question": "Give the voting figures for the Commons division on Draft Plant Health, Seeds, Seed Potatoes and Plant Propagating Material  (Amendment) (Northern Ireland) Regulations 2026 on 9 September 2026.",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The Ayes were 371 and the Noes 100.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "Any figure other than the official Ayes and Noes."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "371 voted Aye and 100 voted No, as counted by the tellers.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0072",
+   "item": "db0072",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Was Mick Whitley an Aye or a No on Finance (No. 2) Bill Committee: New Clause 3 on 8 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Mick Whitley voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The vote was cast by proxy by Grahame Morris.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 2,
+    "must_not_claim": [
+     "That Mick Whitley voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Mick Whitley (Labour) voted Aye. Cast by proxy by Grahame Morris.",
+    "vital_required": 2
+   }
+  },
+  {
+   "source": "dev_s18:db0078",
+   "item": "db0078",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Which lobby did John Howell go through in the division on Finance (No. 2) Bill Committee: New Clause 2 on 8 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "John Howell voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The vote was cast by proxy by Amanda Milling.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 2,
+    "must_not_claim": [
+     "That John Howell voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "John Howell (Conservative) voted No. Cast by proxy by Amanda Milling.",
+    "vital_required": 2
+   }
+  },
+  {
+   "source": "dev_s18:db0081",
+   "item": "db0081",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Did Becky Gittins support Sentencing Bill: motion to disagree with Lords Amendment 7 when it was divided on, on 20 January 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Becky Gittins voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The vote was cast by proxy by Nicholas Dakin.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 2,
+    "must_not_claim": [
+     "That Becky Gittins voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Becky Gittins (Labour) voted Aye. Cast by proxy by Nicholas Dakin.",
+    "vital_required": 2
+   }
+  },
+  {
+   "source": "dev_s18:db0082",
+   "item": "db0082",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Was Patrick Spencer an Aye or a No on Draft Medical Devices (Fees Amendment) Regulations 2026 on 28 January 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Patrick Spencer voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The vote was cast by proxy by Gagan Mohindra.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 2,
+    "must_not_claim": [
+     "That Patrick Spencer voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Patrick Spencer (Independent) voted No. Cast by proxy by Gagan Mohindra.",
+    "vital_required": 2
+   }
+  },
+  {
+   "source": "dev_s18:db0083",
+   "item": "db0083",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Was Claire Coutinho an Aye or a No on Representation of the People Bill: Report Stage: New Clause 65 on 2 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Claire Coutinho voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The vote was cast by proxy by Gagan Mohindra.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 2,
+    "must_not_claim": [
+     "That Claire Coutinho voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Claire Coutinho (Conservative) voted Aye. Cast by proxy by Gagan Mohindra.",
+    "vital_required": 2
+   }
+  },
+  {
+   "source": "dev_s18:db0084",
+   "item": "db0084",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Which lobby did Mick Whitley go through in the division on Finance (No. 2) Bill Committee: New Clause 4 on 8 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Mick Whitley voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "The vote was cast by proxy by Grahame Morris.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 2,
+    "must_not_claim": [
+     "That Mick Whitley voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Mick Whitley (Labour) voted Aye. Cast by proxy by Grahame Morris.",
+    "vital_required": 2
+   }
+  },
+  {
+   "source": "dev_s18:db0086",
+   "item": "db0086",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Was Stuart Andrew an Aye or a No on Representation of the People Bill: Report Stage: New Clause 67 on 2 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Stuart Andrew voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Stuart Andrew voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Stuart Andrew (Conservative) voted Aye.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0088",
+   "item": "db0088",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Was Al Pinkerton an Aye or a No on Victims and Courts Bill Report Stage: Amendment 5 on 27 October 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Al Pinkerton voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Al Pinkerton voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Al Pinkerton (Liberal Democrat) voted Aye.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0091",
+   "item": "db0091",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Which lobby did Rebecca Smith go through in the division on Draft Medical Devices (Fees Amendment) Regulations 2026 on 28 January 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Rebecca Smith voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Rebecca Smith voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Rebecca Smith (Conservative) voted No.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0092",
+   "item": "db0092",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Was Viscount Chandos an Aye or a No on Financial Services and Markets Bill [HL] on 9 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Viscount Chandos voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Viscount Chandos voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Viscount Chandos (Labour) voted No. 5 divisions on that day match this description, and they give the same answer.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0093",
+   "item": "db0093",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Did Lord Smith of Hindhead support Victims and Prisoners Bill when it was divided on, on 21 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Lord Smith of Hindhead voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Lord Smith of Hindhead voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Lord Smith of Hindhead (Conservative) voted No. 3 divisions on that day match this description, and they give the same answer.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0094",
+   "item": "db0094",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Did Max Wilkinson support Draft Radio Equipment (Amendment) (Northern Ireland) Regulations 2025 when it was divided on, on 19 November 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Max Wilkinson voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Max Wilkinson voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Max Wilkinson (Liberal Democrat) voted Aye.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0096",
+   "item": "db0096",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Did Fred Thomas support National Insurance Contributions (Employer Pensions Contributions) Bill: motion to disagree with Lords Amendment 1 when it was divided on, on 23 March 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Fred Thomas voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Fred Thomas voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Fred Thomas (Labour) voted Aye.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0097",
+   "item": "db0097",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Which lobby did Anna Gelderd go through in the division on Draft Employment Rights Act 2025 (Investigatory Powers) (Consequential Amendments)  Regulations 2026 on 18 March 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Anna Gelderd voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Anna Gelderd voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Anna Gelderd (Labour) voted Aye.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0100",
+   "item": "db0100",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "How did Baroness Neville-Rolfe vote on Employment Rights Bill on 17 November 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Baroness Neville-Rolfe voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Baroness Neville-Rolfe voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Baroness Neville-Rolfe (Conservative) voted Aye. 5 divisions on that day match this description, and they give the same answer.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0102",
+   "item": "db0102",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "How did Lord Falconer of Thoroton vote on Crime and Policing Bill on 2 March 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Lord Falconer of Thoroton voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Lord Falconer of Thoroton voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Lord Falconer of Thoroton (Labour) voted No. 8 divisions on that day match this description, and they give the same answer.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0103",
+   "item": "db0103",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Which lobby did Darren Jones go through in the division on Draft Higher Education (Fee Limits and Fee Limit Condition) (England) (Amendment)  Regulations 2026 on 18 March 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Darren Jones voted Aye.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Darren Jones voted No."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Darren Jones (Labour) voted Aye.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0110",
+   "item": "db0110",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "How did Sam Rushworth vote on Representation of the People Bill: Report Stage: New Clause 67 on 2 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Sam Rushworth voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Sam Rushworth voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Sam Rushworth (Labour) voted No.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0112",
+   "item": "db0112",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "How did Ian Lavery vote on Sustainable Aviation Fuel Bill Remaining Stages: Amendment 8 on 15 October 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Ian Lavery voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Ian Lavery voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Ian Lavery (Labour) voted No.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0114",
+   "item": "db0114",
+   "kinds": [
+    "result"
+   ],
+   "entry": {
+    "question": "Did Stella Creasy support Opposition Day: British Indian Ocean Territory when it was divided on, on 28 January 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Stella Creasy voted No.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "That Stella Creasy voted Aye."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Stella Creasy (Labour) voted No.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0144",
+   "item": "db0144",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "Who held the post of Lord Chamberlain (HM Household) on 1 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Lord Benyon held that office on 1 September 2026.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Lord Benyon held the office of Lord Chamberlain (HM Household) on 1 September 2026. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0149",
+   "item": "db0149",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On 1 September 2026, who was serving as Opposition Deputy Chief Whip (Lords)?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Baroness Scott of Bybrook held that office on 1 September 2026.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Baroness Scott of Bybrook held the office of Opposition Deputy Chief Whip (Lords) on 1 September 2026. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0153",
+   "item": "db0153",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On 1 January 2026, who was serving as Prime Minister and First Lord of the Treasury?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Sir Keir Starmer held that office on 1 January 2026.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Sir Keir Starmer held the office of Prime Minister and First Lord of the Treasury on 1 January 2026. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0154",
+   "item": "db0154",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "Who held the post of Liberal Democrat Spokesperson (Energy Security and Net Zero) on 1 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Pippa Heylings held that office on 1 September 2026.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Pippa Heylings held the office of Liberal Democrat Spokesperson (Energy Security and Net Zero) on 1 September 2026. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0155",
+   "item": "db0155",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On 1 May 2024, who was serving as Liberal Democrat Chief Whip?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Wendy Chamberlain held that office on 1 May 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Wendy Chamberlain held the office of Liberal Democrat Chief Whip on 1 May 2024. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0156",
+   "item": "db0156",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On 1 October 2025, who was serving as Minister of State (Minister for Women and Equalities) ?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Baroness Smith of Malvern held that office on 1 October 2025.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Baroness Smith of Malvern held the office of Minister of State (Minister for Women and Equalities)  on 1 October 2025. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0160",
+   "item": "db0160",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "Who held the post of Liberal Democrat Spokesperson (Treasury) on 1 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Sarah Olney held that office on 1 May 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Sarah Olney held the office of Liberal Democrat Spokesperson (Treasury) on 1 May 2024. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0161",
+   "item": "db0161",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "Who held the post of Shadow Financial Secretary (Treasury) on 1 October 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Gareth Davies held that office on 1 October 2025.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Gareth Davies held the office of Shadow Financial Secretary (Treasury) on 1 October 2025. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0163",
+   "item": "db0163",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "Who held the post of Liberal Democrat Spokesperson (Wales) on 1 January 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "David Chadwick held that office on 1 January 2026.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "David Chadwick held the office of Liberal Democrat Spokesperson (Wales) on 1 January 2026. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0165",
+   "item": "db0165",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "Who held the post of Party Chair, Labour Party on 1 May 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Anneliese Dodds held that office on 1 May 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Anneliese Dodds held the office of Party Chair, Labour Party on 1 May 2024. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0166",
+   "item": "db0166",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On 1 October 2025, who was serving as Shadow Minister (London)?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Gareth Bacon held that office on 1 October 2025.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Gareth Bacon held the office of Shadow Minister (London) on 1 October 2025. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0173",
+   "item": "db0173",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On 1 January 2026, who was serving as Shadow Minister (London)?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "Gareth Bacon held that office on 1 January 2026.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "The holder of the office at any other date, stated as the holder on this one."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "Gareth Bacon held the office of Shadow Minister (London) on 1 January 2026. This office interval is inferred rather than directly recorded.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0175",
+   "item": "db0175",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "What was the date of the Order of Commitment discharged of the Education (Values of British Citizenship) Bill [HL] in the Lords?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 4 November 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Education (Values of British Citizenship) Bill [HL] reached Order of Commitment discharged in the Lords on 4 November 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0180",
+   "item": "db0180",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "When did the House of Lords (Hereditary Peers) Act 2026 have its 2nd reading in the Commons?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 15 October 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "House of Lords (Hereditary Peers) Act 2026 reached 2nd reading in the Commons on 15 October 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0181",
+   "item": "db0181",
+   "kinds": [
+    "number",
+    "date"
+   ],
+   "entry": {
+    "question": "When did the Planning and Infrastructure Act 2025 have its Committee stage in the Lords?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "The stage began on 17 July 2025.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     },
+     {
+      "text": "It ran over 8 sittings, ending 17 September 2025.",
+      "vital": false,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Planning and Infrastructure Act 2025 reached Committee stage in the Lords on 17 July 2025, the first of 8 sittings; the last was 17 September 2025.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0182",
+   "item": "db0182",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "When did the Malvern Hills Bill [HL] have its Examination for compliance with Standing Orders?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 18 December 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Malvern Hills Bill [HL] reached Examination for compliance with Standing Orders on 18 December 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0183",
+   "item": "db0183",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On what date did the Commons take the 2nd reading of the Passenger Railway Services (Public Ownership) Act 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 29 July 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Passenger Railway Services (Public Ownership) Act 2024 reached 2nd reading in the Commons on 29 July 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0185",
+   "item": "db0185",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "What was the date of the Royal Assent of the Holocaust Memorial Act 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 22 January 2026.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Holocaust Memorial Act 2026 reached Royal Assent on 22 January 2026.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0188",
+   "item": "db0188",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "What was the date of the Commons Examiners of the Royal Albert Hall Bill [HL]?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 8 April 2025.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Royal Albert Hall Bill [HL] reached Commons Examiners on 8 April 2025.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0189",
+   "item": "db0189",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "What was the date of the Committee of the whole House of the Passenger Railway Services (Public Ownership) Act 2024 in the Commons?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 3 September 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Passenger Railway Services (Public Ownership) Act 2024 reached Committee of the whole House in the Commons on 3 September 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0192",
+   "item": "db0192",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "What was the date of the 3rd reading of the Sentencing (Pre-consolidation Amendments) Act 2020 in the Commons?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 4 June 2020.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Sentencing (Pre-consolidation Amendments) Act 2020 reached 3rd reading in the Commons on 4 June 2020.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0193",
+   "item": "db0193",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On what date did the Lords take the 1st reading of the Deprivation of Citizenship Orders (Effect during Appeal) Act 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 15 July 2025.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Deprivation of Citizenship Orders (Effect during Appeal) Act 2025 reached 1st reading in the Lords on 15 July 2025.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0196",
+   "item": "db0196",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "What was the date of the 3rd reading of the Pension Schemes Act 2021 in the Lords?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 15 July 2020.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Pension Schemes Act 2021 reached 3rd reading in the Lords on 15 July 2020.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0197",
+   "item": "db0197",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "When did the Supply and Appropriation (Main Estimates) Act 2024 have its Royal Assent?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 30 July 2024.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "Supply and Appropriation (Main Estimates) Act 2024 reached Royal Assent on 30 July 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0198",
+   "item": "db0198",
+   "kinds": [
+    "date"
+   ],
+   "entry": {
+    "question": "On what date did the Commons take the 3rd reading of the British Library Board (Power to Borrow) Act 2021?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "It was on 12 March 2021.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "British Library Board (Power to Borrow) Act 2021 reached 3rd reading in the Commons on 12 March 2021.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0202",
+   "item": "db0202",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many divisions did the Lords hold in September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 13.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "A count inferred from however many divisions happen to be retrieved."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Lords held 13 divisions in September 2026.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0204",
+   "item": "db0204",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many divisions did the Lords hold in November 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 27.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "A count inferred from however many divisions happen to be retrieved."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Lords held 27 divisions in November 2025.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0207",
+   "item": "db0207",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many divisions did the Commons hold in September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 15.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [
+     "A count inferred from however many divisions happen to be retrieved."
+    ],
+    "answer_is_a_decline": false,
+    "answer": "The Commons held 15 divisions in September 2026.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0210",
+   "item": "db0210",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many separate debates were there in the Commons on 8 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 22.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The Commons held 22 separate debates on 8 September 2026.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0211",
+   "item": "db0211",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many separate debates were there in the Commons on 18 July 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 7.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The Commons held 7 separate debates on 18 July 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0214",
+   "item": "db0214",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many separate debates were there in the Commons on 2 March 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 20.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The Commons held 20 separate debates on 2 March 2026.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0216",
+   "item": "db0216",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many separate debates were there in the Commons on 29 July 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 13.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The Commons held 13 separate debates on 29 July 2024.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0217",
+   "item": "db0217",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many separate debates were there in the Commons on 13 October 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "There were 27.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The Commons held 27 separate debates on 13 October 2025.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0219",
+   "item": "db0219",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many times did Lord Meston speak between 1 May 2024 and 31 July 2024?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "5 contributions, excluding procedural boilerplate.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The record holds 5 contributions between 1 May 2024 and 31 July 2024, not counting procedural boilerplate.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0220",
+   "item": "db0220",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many times did Sally Jameson speak between 1 October 2025 and 31 December 2025?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "29 contributions, excluding procedural boilerplate.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The record holds 29 contributions between 1 October 2025 and 31 December 2025, not counting procedural boilerplate.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0222",
+   "item": "db0222",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many times did Dr Jeevun Sandher speak between 1 January 2026 and 31 March 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "31 contributions, excluding procedural boilerplate.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The record holds 31 contributions between 1 January 2026 and 31 March 2026, not counting procedural boilerplate.",
+    "vital_required": 1
+   }
+  },
+  {
+   "source": "dev_s18:db0223",
+   "item": "db0223",
+   "kinds": [
+    "number"
+   ],
+   "entry": {
+    "question": "How many times did Emma Hardy speak between 1 September 2026 and 17 September 2026?",
+    "expected": "Answer the question from the record.",
+    "reference_points": [
+     {
+      "text": "12 contributions, excluding procedural boilerplate.",
+      "vital": true,
+      "kind": "fact",
+      "side": ""
+     }
+    ],
+    "vital_total": 1,
+    "must_not_claim": [],
+    "answer_is_a_decline": false,
+    "answer": "The record holds 12 contributions between 1 September 2026 and 17 September 2026, not counting procedural boilerplate.",
+    "vital_required": 1
+   }
+  }
+ ],
+ "excluded": [
+  {
+   "source": "triage:J019",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "triage:J030",
+   "reason": "its vital points were rewritten after the owner's verdict (gold v3, 2026-10-10): the owner must re-adjudicate it (final_v3)"
+  },
+  {
+   "source": "triage:J036",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "triage:J038",
+   "reason": "its vital points were rewritten after the owner's verdict (gold v3, 2026-10-10): the owner must re-adjudicate it (final_v3)"
+  },
+  {
+   "source": "triage:J043",
+   "reason": "its vital points were rewritten after the owner's verdict (gold v3, 2026-10-10): the owner must re-adjudicate it (final_v3)"
+  },
+  {
+   "source": "triage:J045",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "triage:J070",
+   "reason": "its vital points were rewritten after the owner's verdict (gold v3, 2026-10-10): the owner must re-adjudicate it (final_v3)"
+  },
+  {
+   "source": "triage:J051",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "triage:J054",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "triage:J009",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "triage:J040",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "triage:J061",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "dev_s18:db0176",
+   "reason": "names a date inside the sealed W5 window"
+  },
+  {
+   "source": "dev_s18:db0187",
+   "reason": "names a date inside the sealed W5 window"
+  }
+ ]
+}

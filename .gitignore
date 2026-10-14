@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info
+.venv
+
+# Local secrets (the template .env.example is tracked)
+.env
+.env.*
+!.env.example
+
+# Caches and editor state
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+
+# Database dumps and logs
+*.dump
+*.sql.gz
+*.log
+
+# The corpus cache and run outputs are rebuilt locally (Hansard is under the Open Parliament Licence)
+/data/
+reports/*.partial.jsonl
+
+# Assistant settings never belong in the repository
+.claude/

@@ -1,0 +1,29 @@
+{
+  "split": "heldout",
+  "scored_at": "2026-09-25T18:57:10",
+  "unlocked_with": "--final-exam",
+  "changes": {},
+  "queries": 36,
+  "metrics": {
+    "baseline": {
+      "recall@100": 0.488648080314747,
+      "recall@10": 0.44308777642110975,
+      "mrr@10": 0.40555555555555556,
+      "ndcg@10": 0.3648676606176083
+    },
+    "chosen": {
+      "recall@100": 0.488648080314747,
+      "recall@10": 0.44308777642110975,
+      "mrr@10": 0.40555555555555556,
+      "ndcg@10": 0.3648676606176083
+    }
+  },
+  "comparison": {
+    "mean": 0.0,
+    "low": 0.0,
+    "high": 0.0,
+    "p": 1.0,
+    "established": false
+  },
+  "note": "W3 has now been scored. It is burned as a held-out set: re-tuning on it is not allowed, and a second look is not a second independent result."
+}

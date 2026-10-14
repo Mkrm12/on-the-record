@@ -1,0 +1,28 @@
+# One line-ending convention for every checkout. SQL files are mounted into a Linux container.
+* text=auto eol=lf
+
+# H-45 / D-045: what a release archive (`git archive` of a tag) leaves out, so the gold, the exam's code and the
+# working history never reach a server. scripts/release_archive.py opens every archive and refuses one that still
+# holds any of these; CI runs it on every push.
+tests/** export-ignore
+logs/** export-ignore
+reports/** export-ignore
+tools/review/** export-ignore
+tools/mirror/** export-ignore
+src/goldset/human_items.py export-ignore
+src/goldset/adversarial_items.py export-ignore
+src/goldset/w5_items.py export-ignore
+src/goldset/authored.py export-ignore
+scripts/build_gold.py export-ignore
+scripts/build_gold_w5.py export-ignore
+scripts/audit_w5_items.py export-ignore
+scripts/w5_blind_worksheet.py export-ignore
+# Every script that holds, repairs or reads the gold, and all of W5's tooling (review pass 2, 2026-10-12).
+scripts/*gold*.py export-ignore
+scripts/*w5*.py export-ignore
+CLAUDE.md export-ignore
+# ...and gold or W5 data wherever it sits (a pattern without a slash matches a file name at any depth)
+gold*.json export-ignore
+*w5*.json export-ignore
+*w5*.jsonl export-ignore
+*w5*.md export-ignore

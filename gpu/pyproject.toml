@@ -1,0 +1,42 @@
+[project]
+name = "on-the-record-gpu"
+version = "0.1.0"
+description = "GPU embedding worker for On the Record (kept out of the root environment on purpose)"
+requires-python = ">=3.12"
+dependencies = [
+    "torch",
+    "sentence-transformers",
+    "psycopg[binary]>=3.2",
+    "pgvector>=0.3.6",
+    "rich>=15.0.0",
+    "fastapi>=0.115",
+    "uvicorn>=0.32",  # the plain build (h11); the [standard] extras add nothing on a loopback service
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "httpx>=0.28.1",  # FastAPI's TestClient
+]
+
+[tool.uv]
+package = false  # scripts, not an installable package
+
+# PyTorch's CUDA wheels come from PyTorch's own index. cu128 (CUDA 12.8) is the newest CUDA 12 build that supports the
+# RTX 3070 (sm_86) and runs on driver 591.86 (CUDA 13.1).
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+filterwarnings = [
+    # Starlette 1.6 says its TestClient should move from httpx to a package called httpx2.
+    "ignore:Using `httpx` with `starlette.testclient` is deprecated",
+    "ignore:The anyio.abc.BlockingPortal alias is deprecated",  # raised inside starlette.testclient itself
+]
