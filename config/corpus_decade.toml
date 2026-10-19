@@ -1,0 +1,364 @@
+# It EXTENDS corpus_v2.toml and only adds windows: the gaps around W0-W5, cut into calendar quarters, role `corpus`
+# (loaded and searchable, never evaluated, no gold).
+
+extends = "corpus_v2.toml"
+
+[[windows]]
+id = "C2015Q1"
+start = 2015-01-01
+end = 2015-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2015Q2"
+start = 2015-04-01
+end = 2015-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2015Q3"
+start = 2015-07-01
+end = 2015-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2015Q4"
+start = 2015-10-01
+end = 2015-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2016Q1"
+start = 2016-01-01
+end = 2016-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2016Q2"
+start = 2016-04-01
+end = 2016-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2016Q3"
+start = 2016-07-01
+end = 2016-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2016Q4"
+start = 2016-10-01
+end = 2016-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2017Q1"
+start = 2017-01-01
+end = 2017-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2017Q2"
+start = 2017-04-01
+end = 2017-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2017Q3"
+start = 2017-07-01
+end = 2017-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2017Q4"
+start = 2017-10-01
+end = 2017-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2018Q1"
+start = 2018-01-01
+end = 2018-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2018Q2"
+start = 2018-04-01
+end = 2018-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2018Q3"
+start = 2018-07-01
+end = 2018-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2018Q4"
+start = 2018-10-01
+end = 2018-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2019Q1"
+start = 2019-01-01
+end = 2019-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2019Q2"
+start = 2019-04-01
+end = 2019-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2019Q3"
+start = 2019-07-01
+end = 2019-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2019Q4"
+start = 2019-10-01
+end = 2019-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2020Q1"
+start = 2020-01-01
+end = 2020-02-29
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2020Q2"
+start = 2020-06-01
+end = 2020-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2020Q3"
+start = 2020-07-01
+end = 2020-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2020Q4"
+start = 2020-10-01
+end = 2020-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2021Q1"
+start = 2021-01-01
+end = 2021-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2021Q2"
+start = 2021-04-01
+end = 2021-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2021Q3"
+start = 2021-07-01
+end = 2021-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2021Q4"
+start = 2021-10-01
+end = 2021-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2022Q1"
+start = 2022-01-01
+end = 2022-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2022Q2"
+start = 2022-04-01
+end = 2022-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2022Q3"
+start = 2022-07-01
+end = 2022-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2022Q4"
+start = 2022-10-01
+end = 2022-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2023Q1"
+start = 2023-01-01
+end = 2023-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2023Q2"
+start = 2023-04-01
+end = 2023-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2023Q3"
+start = 2023-07-01
+end = 2023-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2023Q4"
+start = 2023-10-01
+end = 2023-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2024Q1"
+start = 2024-01-01
+end = 2024-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2024Q2"
+start = 2024-04-01
+end = 2024-04-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2024Q3"
+start = 2024-08-01
+end = 2024-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2024Q4"
+start = 2024-10-01
+end = 2024-12-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2025Q1"
+start = 2025-01-01
+end = 2025-03-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2025Q2"
+start = 2025-04-01
+end = 2025-06-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2025Q3"
+start = 2025-07-01
+end = 2025-09-30
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2026Q3"
+start = 2026-08-01
+end = 2026-08-31
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."
+
+[[windows]]
+id = "C2026Q3b"
+start = 2026-09-18
+end = 2026-09-29
+role = "corpus"
+active = true
+note = "Ten-year corpus extension: loaded and searchable, never evaluated."

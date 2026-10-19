@@ -1,0 +1,1013 @@
+{
+  "gold_hash": "a82899b834b0cbcb",
+  "split_hash": "57a8a201053a72b7",
+  "reviewed_at": "2026-09-24T20:51:47+00:00",
+  "reviewer": "claude",
+  "source": "scripts/baseline_review.py",
+  "baseline": true,
+  "blindness": {
+    "how": "the grades were written from a review pack that carried no judge output: scripts/blind_worksheet.py extracts the queue through a field allow-list and re-checks its own output for any grade-shaped key before writing it",
+    "authored_before_judging": true,
+    "grades_unchanged_since": "the annotations in tools/review/baseline_*.json were not edited after the judge's grades existed",
+    "what_this_does_not_prove": "the baseline and the judge's rubric were written by the same assistant, so agreement between them is not independent evidence that either is right. The owner's grades supersede the baseline wherever they are given, and the gate in the review tool is recomputed from the owner's grades alone."
+  },
+  "decisions": {
+    "adv0053": "verified",
+    "adv0018": "verified",
+    "adv0020": "verified",
+    "adv0024": "verified",
+    "adv0061": "verified",
+    "adv0014": "verified",
+    "adv0015": "verified",
+    "adv0009": "verified",
+    "adv0043": "verified",
+    "adv0044": "verified",
+    "adv0049": "verified",
+    "old0023": "verified",
+    "old0024": "edit",
+    "old0025": "verified",
+    "adv0032": "verified",
+    "adv0034": "verified",
+    "adv0026": "verified",
+    "adv0027": "verified",
+    "adv0039": "keep",
+    "adv0042": "verified",
+    "adv0001": "verified",
+    "adv0051": "verified",
+    "hum0089": "keep",
+    "adv0019": "verified",
+    "adv0021": "verified",
+    "adv0022": "verified",
+    "adv0023": "verified",
+    "adv0025": "verified",
+    "adv0057": "verified",
+    "adv0058": "verified",
+    "adv0060": "verified",
+    "adv0062": "verified",
+    "adv0016": "verified",
+    "adv0017": "verified",
+    "adv0008": "verified",
+    "adv0011": "verified",
+    "adv0045": "verified",
+    "adv0046": "verified",
+    "adv0035": "verified",
+    "adv0028": "verified",
+    "adv0029": "verified",
+    "adv0031": "verified",
+    "adv0002": "verified",
+    "adv0003": "verified",
+    "adv0004": "verified",
+    "hum0067": "keep",
+    "db0209": "verified",
+    "db0098": "verified",
+    "db0194": "edit",
+    "db0285": "verified",
+    "db0180": "verified",
+    "db0296": "verified",
+    "db0249": "verified",
+    "db0112": "verified",
+    "db0252": "verified",
+    "db0113": "verified",
+    "db0192": "verified",
+    "db0031": "verified",
+    "db0272": "verified",
+    "db0158": "verified",
+    "db0193": "verified",
+    "db0295": "verified",
+    "db0011": "verified",
+    "db0056": "verified",
+    "db0128": "verified",
+    "db0250": "verified",
+    "db0162": "verified",
+    "db0205": "verified",
+    "db0191": "edit",
+    "db0260": "verified",
+    "db0001": "verified",
+    "db0078": "verified",
+    "db0152": "verified",
+    "db0012": "verified",
+    "db0050": "verified",
+    "db0150": "verified"
+  },
+  "owner_grades": {
+    "k:db0229:FE814B4C-480B-471E-BA22-00D3985A35A8": 1,
+    "k:adv0028:9B711AFF-432C-4488-8925-57A9BA8D0357": 2,
+    "k:old0016:B47910BF-7E9B-428A-8C1C-C737368B90DA": 1,
+    "k:hum0084:F57473E2-3D02-41D6-ACB3-5A2CA41716D5": 2,
+    "k:old0010:204C3F87-A77C-45C3-9487-26F65C68A640": 1,
+    "k:hum0061:73DB31DE-AEE9-4EB1-83A0-F4BDDD69502B": 1,
+    "k:adv0003:ADF2E167-241B-4F1B-ACDE-D13D2D9B7262": 1,
+    "k:hum0094:D1F48822-8116-4D69-AC64-D4FE42E22C85": 2,
+    "k:db0263:0B30E1F2-C7EA-4FE4-AB06-E975C76553EA": 0,
+    "k:hum0064:A7B12CF1-8E28-48F9-B2A7-4B0E56194CC5": 0,
+    "k:hum0067:2E207C29-FF61-40ED-B65C-3B781A037A24": 1,
+    "k:adv0020:9B6D9923-C1DC-4669-966E-C2133D8EF683": 3,
+    "k:hum0100:D5E05B8F-C93B-4890-8CDA-A0678FB84648": 1,
+    "k:adv0027:5003558C-5263-4847-BB68-7D86CF12814D": 2,
+    "k:db0240:744F89D1-DAC4-491A-94B8-3FD6F60BAE64": 0,
+    "k:adv0035:6BAC9B38-6A3B-4229-98E0-DF49B27E47E8": 3,
+    "k:hum0031:EA876D1F-0557-4B75-8249-882EA5EFAD21": 0,
+    "k:db0294:668E6111-A05A-40B5-A940-3B5B6AFB36C5": 2,
+    "k:hum0017:DBB2A7A3-44E9-4C0D-B095-514C599B14BB": 1,
+    "k:adv0013:DD73885F-5BF3-4455-93FB-230FAE23B375": 1,
+    "k:hum0082:7C7BC251-77F5-466B-AC4D-964A8ED50B85": 0,
+    "k:hum0034:C38A81CC-D9C4-41AC-BDBE-461956CE031F": 1,
+    "k:adv0011:A0ED5380-BE8C-4738-BE9A-A881A55C4FF1": 0,
+    "k:hum0059:DD73885F-5BF3-4455-93FB-230FAE23B375": 2,
+    "k:old0015:33E15CAB-AFD9-40BE-ADCC-62FB8ED65F06": 1,
+    "k:hum0008:76D5451A-3B3A-4E15-B5B8-4D522412E287": 2,
+    "k:hum0011:A47A265B-E3C6-4AE2-8027-8F4AE6BB9F6E": 2,
+    "k:hum0034:850C7E51-45A8-4429-A0E3-F3A4471AC3C8": 0,
+    "k:hum0060:2F7F8AC1-E51D-41FA-80FB-E8601820785E": 0,
+    "k:db0285:F9B33848-B7D9-44C9-BE20-1CE3EC50A3E6": 0,
+    "k:hum0098:E6A766B1-39EB-4481-87DD-D6BFD8071132": 0,
+    "k:db0240:B9742DFB-6CAC-4965-924A-A82806FD6679": 1,
+    "k:db0290:CA626AE8-97A1-4B2E-A9EB-AFCD6508BCE3": 3,
+    "k:db0276:EB4C94BA-1AA7-4B17-9097-7D30272A1FB1": 1,
+    "k:db0291:358B0EC2-2D42-4F6C-BE5A-AE626F133DA0": 0,
+    "k:adv0034:06F83B54-1720-4718-B792-0854CD1C7BB5": 0,
+    "k:db0234:EBD2303B-B38A-4463-84FB-3663EC68A186": 0,
+    "k:db0247:CA2BA919-F23F-4742-8E93-B682FBD43986": 0,
+    "k:hum0072:DD0034C5-9794-4ED3-9887-1BA938D48260": 3,
+    "k:hum0018:5D434CBB-1CE9-41D2-8AA0-88A8AA3A1D67": 1,
+    "k:adv0019:BC3F1B09-13B3-4521-A04C-714DEF336D57": 1,
+    "k:hum0042:0A1C3341-3135-4D17-8540-05C174F75C1D": 1,
+    "k:old0004:AC1EFABD-89D3-4347-B106-D745792769D6": 1,
+    "k:adv0012:9AAC7B90-B70D-46A5-8899-0F16CE818B42": 0,
+    "k:hum0006:3D3F2F36-F605-4571-B10D-BC67905B839D": 1,
+    "k:db0244:CF27FE0C-2B8E-442D-A066-322F8E21B0EB": 1,
+    "k:db0288:B6C749F3-0B44-4D42-AB9B-6196A6BEB79C": 0,
+    "k:hum0040:49B5EDFB-D700-4CE3-91C9-69C24413F67C": 3,
+    "k:db0280:182CBFF5-58C7-43FF-A423-893A90761094": 0,
+    "k:hum0049:F038F4F3-E948-4258-9692-A62420882E3E": 2,
+    "k:hum0074:35085354-7B4C-41F7-A51B-4B22212AA4B6": 1,
+    "k:hum0048:070AC1AD-758B-4DDA-9BE4-55530270027B": 1,
+    "k:adv0036:0A014465-314C-483E-838B-3B15A498E0F0": 0,
+    "k:hum0039:4DD41964-587B-4864-99BF-02D1F094B33E": 1,
+    "k:old0003:28D59114-EFCF-4437-8B9A-96880CDE3062": 1,
+    "k:hum0037:B4BA20E8-F8A3-4F50-99A6-32A82953233C": 0,
+    "k:hum0033:1ABBDE90-332A-4D7F-8B46-77682E8E1E9F": 1,
+    "k:old0022:393A13C1-C82B-46AB-BCA6-3E93CC178E1D": 0,
+    "k:old0015:1F9C386D-7817-47BE-9E9A-7834FA20D1E7": 3,
+    "k:hum0035:B1DE66A3-4A3B-40AE-A5BB-BB9D2FCB0034": 1,
+    "k:db0294:0B22E82A-69C8-4324-8DDE-FAFACF97F123": 0,
+    "k:db0235:E284366F-E684-455A-8498-803E30B4F7B7": 0,
+    "k:adv0027:D1F48822-8116-4D69-AC64-D4FE42E22C85": 2,
+    "k:adv0035:E68C5AF9-0914-47E9-A0C6-5672C5226CE1": 1,
+    "k:hum0064:9D8BA2BA-7ED0-4DF4-A22C-0DC96D39CB25": 1,
+    "k:db0268:87F1A65C-9E51-4CB0-9C1B-2EFA210B3C54": 1,
+    "k:hum0062:33A1AB0D-E432-4DC6-A403-DD634C0A54D6": 0,
+    "k:hum0024:559FAAFC-B7FE-43FC-9BE4-96B503128E69": 1,
+    "k:hum0083:A3FBD0B9-D654-4A60-BFC5-782A6E14817A": 0,
+    "k:hum0101:004DC06C-973D-40C0-A2DE-904DE9F972C1": 0,
+    "k:hum0075:9449FC95-8B8E-41AE-9C47-A740DCAF7196": 2,
+    "k:hum0029:394562D6-0D55-445B-8C43-744244697C5A": 2,
+    "k:db0255:DB0DB8E9-A0D1-420A-BA2D-488CEA9C935D": 0,
+    "k:hum0050:5B7C45C5-2EDA-4B52-90E4-B6B088EEDA9E": 0,
+    "k:db0293:7AC31FF0-B7FE-4470-94EF-9A1A92930B5A": 0,
+    "k:adv0027:E47A11AB-A09C-4C80-962C-435C4B312A9B": 1,
+    "k:db0269:B4218942-CDD5-4758-83A9-DE309714F1D8": 0,
+    "k:hum0038:820785FE-B2A8-4F13-8AE5-BFB57CE45DAF": 0,
+    "k:adv0025:5C8CFAA5-F430-49A7-989B-7934BD052D36": 1,
+    "k:hum0053:6EEAE1AC-A26A-450E-9949-6A6442998224": 1,
+    "k:hum0069:2DD87915-3828-473B-A5DF-7E50AF853008": 0,
+    "k:hum0030:DA8D9EA7-EFB7-4358-9141-75E4B91F4D26": 1,
+    "k:hum0051:1658561E-43D8-4FE6-9DA4-C4CFA7D69136": 1,
+    "k:db0284:EB9BCBF8-25F6-41DD-868A-96021C425AFD": 0,
+    "k:adv0034:F85A1A30-6B22-4E6F-A929-00C35059AB3D": 0,
+    "k:adv0008:5B348130-20E1-444D-814B-067F4F3477F7": 0,
+    "k:db0231:F451040B-7EF6-451E-8B35-A4176D5DF90A": 0,
+    "k:hum0046:4D4A4F2B-159C-4346-9F48-0265841985A6": 3,
+    "k:db0280:F21DC36C-E366-4CFA-BFF3-C00594DCC2C2": 1,
+    "k:adv0020:6CE7D644-25F3-4013-AADB-A9E5B9FAC925": 0,
+    "k:hum0072:9D3D24E3-2BB0-438F-87D3-268C04047D5C": 1,
+    "k:old0016:B1F72377-37CB-4A38-ADD2-D27BFF14BB51": 1,
+    "k:db0297:B69E4125-15E0-40AD-9A98-1EA68CFB028D": 0,
+    "k:hum0029:BC5F82C7-0294-4989-8FEF-E715B530C1F9": 2,
+    "k:db0252:76C141E6-3271-45FD-A1DF-5B310603BB64": 0,
+    "k:db0258:7CA8292E-DD1F-48D3-829E-666CD46488AD": 0,
+    "k:db0261:15B71995-709A-4264-84A9-4EDFD91F32B0": 1,
+    "k:db0232:348E5375-6AF4-46E5-9203-A6670EC03863": 0,
+    "k:db0229:8700473C-87F4-4500-ACF9-614188454649": 0,
+    "k:hum0002:9DCEC254-582B-48D8-B996-A60704EF6925": 1
+  },
+  "edits": {},
+  "rationales": {
+    "adv0053": {
+      "summary": "Asks how 'my MP' voted on the assisted dying bill without saying who that is or naming a constituency.",
+      "why": "A sound ambiguity trap: there is genuinely no referent, and the forbidden claim forbids exactly the failure mode, guessing a member or constituency."
+    },
+    "adv0018": {
+      "summary": "Asserts Parliament voted in September 2026 to lift the fracking ban; the evidence is a Reform member arguing the case for fracking in a debate on the ban.",
+      "why": "The premise is false in the right way: the record holds a debate, the forbidden claim names the invented vote, and the evidence shows the debate that makes the confusion tempting."
+    },
+    "adv0020": {
+      "summary": "Asserts NATS blamed a cyber-attack; the minister's reply says a cyber-attack has been ruled out and points to a technical issue at Swanwick.",
+      "why": "The evidence contradicts the premise in the speaker's own words, so a system that falls for the framing can be caught on the record rather than on opinion."
+    },
+    "adv0024": {
+      "summary": "Asserts the Liberal Democrats voted against the medical training bill; Helen Morgan's own words put her amendments alongside her party's overall support for it.",
+      "why": "The correction is in the cited sentence, and the forbidden claim names the exact false assertion."
+    },
+    "adv0061": {
+      "summary": "Loaded question assuming the Government is letting China spy from Royal Mint Court; the evidence is the planning minister saying the decision rests with Planning Ministers, independent of the rest of Government.",
+      "why": "Both vital nuggets separate what the record holds from what the questioner assumes, which is what a loaded-framing item has to do to be scoreable."
+    },
+    "adv0014": {
+      "summary": "Asks what the inquiry chair told MPs; the record has an MP describing the community giving him a standing ovation, not him speaking.",
+      "why": "A clean mention-versus-speaker trap: he is named in the Chamber but never speaks in it, and the forbidden claim covers any words put in his mouth."
+    },
+    "adv0015": {
+      "summary": "Asks what a broadcaster said in the Commons; the words quoted in the record are his social media post read out by an MP.",
+      "why": "The speaker of record is Greg Smith, so the attribution the question invites is exactly what the forbidden claim rules out."
+    },
+    "adv0009": {
+      "summary": "Attributes 'holiday tax' to the Chancellor; the phrase is Rebecca Paul's, from the Conservative benches.",
+      "why": "The evidence carries the phrase in the real speaker's mouth, and I saw the same speech again in the calibration sample, so the attribution is solid."
+    },
+    "adv0043": {
+      "summary": "Asks what annual revenue the Government said the overnight visitor levy would raise; the levy is debated repeatedly but no Government revenue figure appears.",
+      "why": "I checked all five near-miss sentences: the only figures are a critic's Oxford Economics cost estimate and 'any money raised' with no number, so the abstention holds."
+    },
+    "adv0044": {
+      "summary": "Asks what the Prime Minister said in the Westminster Hall debate on water ownership; the Prime Minister did not speak in it.",
+      "why": "The single near-miss sentence points at a different Westminster Hall debate, on social enterprises and community ownership, so nothing in the record supports an answer."
+    },
+    "adv0049": {
+      "summary": "Asks what Nigel Farage said in the fracking ban debate; the Reform contribution in the record is Richard Tice's.",
+      "why": "No sentence in the corpus carries the question's terms together, and the party-level confusion it baits is a real one."
+    },
+    "old0023": {
+      "summary": "Asks what the Government said about funding a new Antarctic research station; the topic is absent from the record.",
+      "why": "Zero near-miss sentences, so it is trivially abstained, but the brief keeps one of these three as a sanity check and this is the cleanest of them."
+    },
+    "old0024": {
+      "summary": "Asks what was said about licensing the UK's first spaceport launch, and forbids any answer at all on the ground that the topic is not in the record.",
+      "why": "The record DOES speak to it: a 2024 Commons sentence says SaxaVord became the UK's first licensed vertical-launch spaceport, so a correct sourced answer would be scored as a harmful fabrication."
+    },
+    "old0025": {
+      "summary": "Asks what the Minister said about UK plans for lunar exploration missions; the topic is absent from the record.",
+      "why": "Zero near-miss sentences and no lunar material anywhere in the corpus, so the abstention is safe."
+    },
+    "adv0032": {
+      "summary": "Asks whether an MP said her constituents can switch water company; she said the opposite, which is why she backs public ownership.",
+      "why": "The polarity flip is on the record in one sentence, which is what makes a negation-flip item scoreable rather than arguable."
+    },
+    "adv0034": {
+      "summary": "Asks whether Richard Burgon said he would support the Government's amendment; he said he would vote against it.",
+      "why": "His own sentence states the opposite of the premise, and neither of the two decoy passages the pool retrieved for this question contains him at all."
+    },
+    "adv0026": {
+      "summary": "Inflates 2,000 cancelled flights to 20,000; the record says over 2,000, with more than 150,000 passengers affected.",
+      "why": "An order-of-magnitude perturbation against a figure that is verbatim in the evidence, so confirming it is unambiguously wrong."
+    },
+    "adv0027": {
+      "summary": "Inflates the OBR's 1.8 billion pound digital ID estimate to 18 billion; the minister's words give the real figure.",
+      "why": "A decimal-point perturbation with the true figure and its source both in the cited sentence, which the calibration sample independently confirmed."
+    },
+    "adv0039": {
+      "summary": "Asks what MPs said about the Grenfell Tower fire in the week it happened, which was June 2017, outside every window this corpus covers.",
+      "why": "Sound as a test but the question never states the year, so the automatic window check cannot confirm it and a system has to supply the date from world knowledge."
+    },
+    "adv0042": {
+      "summary": "Asks what MPs said in the days after the death of Queen Elizabeth II in September 2022, which is outside the corpus windows.",
+      "why": "The date is stated in the question, so being out of window is checkable, and the forbidden claim rules out any fabricated tribute."
+    },
+    "adv0001": {
+      "summary": "Asks whether the minister said a cyber-attack caused the disruption; he said a cyber-attack had been ruled out.",
+      "why": "The words of the question are present in the passage with the opposite polarity, which is the hardest form of this trap and the one worth keeping."
+    },
+    "adv0051": {
+      "summary": "Asks what 'the Prime Minister' said about economic growth across a record that spans four different Prime Ministers.",
+      "why": "A genuine ambiguity in this corpus rather than a contrived one, and the calibration sample showed a passage naming a later Prime Minister, which confirms the span."
+    },
+    "hum0089": {
+      "summary": "A colloquial question about the cost of the Chagos deal, whose evidence mentions the Chagos islands only in passing inside an argument about digital ID spending.",
+      "why": "A good near-miss, but it is typed as expected_behaviour 'answer' while its own vital nugget says the answer is not there, because the colloquial category forces 'answer'."
+    },
+    "adv0019": {
+      "summary": "Asserts the Government cancelled the Chinese embassy application; the minister says the decision rests with Planning Ministers, independent of the rest of Government.",
+      "why": "The premise is contradicted by the cited sentence, and the pool's decoys for this question were all about the espionage case, which is the confusion the item probes."
+    },
+    "adv0021": {
+      "summary": "Asserts a peer praised the education statement; she called it the worst she had heard in 33 years.",
+      "why": "The reversal is verbatim in her own sentence, so the item cannot be argued with."
+    },
+    "adv0022": {
+      "summary": "Asserts the Lords threw out the medical training bill; the record has them debating amendments to it.",
+      "why": "The evidence shows the Bill alive in committee, which is what makes the invented rejection detectable from the record."
+    },
+    "adv0023": {
+      "summary": "Asserts the Government apologised in the Commons for Flybe's collapse; the cited contributions describe the job losses and ask what will be done.",
+      "why": "No apology appears anywhere in the quoted material, and the forbidden claim names the fabrication precisely."
+    },
+    "adv0025": {
+      "summary": "Asserts an amendment of Rebecca Paul's to scrap the visitor levy was defeated; her contribution is a speech against the levy, with no amendment in it.",
+      "why": "Confirmed twice over: the evidence is a speech, and the calibration passage from the same debate likewise contains no amendment."
+    },
+    "adv0057": {
+      "summary": "Asks why the Government 'caved in' on its 'disastrous' reorganisation plans; a Liberal Democrat member said only that the Government had finally listened, too late.",
+      "why": "Both loaded words are isolated in a vital nugget as the questioner's, and the record's actual words are in the evidence to answer with instead."
+    },
+    "adv0058": {
+      "summary": "Asks why Labour is determined to tax family holidays; the minister presented the levy as empowering local leaders to invest.",
+      "why": "The item separates an imputed intent from what the Government actually said, and the evidence carries the Government's own framing."
+    },
+    "adv0060": {
+      "summary": "Asks why MPs keep ignoring women 'robbed' of pensions; the Commons debated the ombudsman's report and the evidence describes work done by the APPG and the ombudsman.",
+      "why": "It refuses both halves of the framing, the factual claim of neglect and the characterisation, each in its own vital nugget."
+    },
+    "adv0062": {
+      "summary": "Asks whether scrapping jury trials is obviously an attack on justice; members argued both that delay denies justice and that reducing jury trial is wrong.",
+      "why": "Two forbidden claims, one for the conclusion and one for the word 'scrapping', which is the right structure for a contested proposal."
+    },
+    "adv0016": {
+      "summary": "Asks what a chief constable told the House; he was named by the policing minister, and police officers do not speak in the Chamber.",
+      "why": "The vital nugget gives the structural reason rather than just the fact, which is what makes this trap generalise."
+    },
+    "adv0017": {
+      "summary": "Asks what Margaret Thatcher said in the Venezuela debate; she was quoted by Ed Davey in 2026, having died in 2013.",
+      "why": "The quotation really is in the record under Ed Davey's name, which I saw in the calibration sample, so the trap works on a genuine retrieval hit."
+    },
+    "adv0008": {
+      "summary": "Attributes the Swanwick explanation to the Leader of the Opposition; it was given by a minister for the Government.",
+      "why": "The evidence is the real speaker's technical explanation, and the pool's decoys for this question were her speeches on other subjects, exactly the bait the item is built on."
+    },
+    "adv0011": {
+      "summary": "Attributes a point about MI5 and GCHQ assessments to Ed Davey; it was made by the security minister.",
+      "why": "The evidence carries the real speaker's words, and the calibration sample confirmed Ed Davey's retrieved speech is about Venezuela."
+    },
+    "adv0045": {
+      "summary": "Asks what the Government said the Rosebank consultation concluded; the record has the consultation closing but no stated conclusion.",
+      "why": "No sentence carries the question's terms together, and the calibration passage on Rosebank has the minister explicitly declining to comment on the merits."
+    },
+    "adv0046": {
+      "summary": "Asks what compensation the Government offered WASPI women in that debate; the debate is on the ombudsman's report and offers no figure.",
+      "why": "I read all five near-miss sentences: they call for compensation and note uncertainty about funding, but none carries a Government offer or an amount."
+    },
+    "adv0035": {
+      "summary": "Asserts Wendy Morton put the islands' future with the UK Government alone; she tied it to the islanders' wishes.",
+      "why": "Her own sentence states the opposite, and the calibration sample showed the Government side saying the same thing, so the record is consistent."
+    },
+    "adv0028": {
+      "summary": "Reduces almost 89,000 lost hospitality jobs to 89; the evidence gives the real figure.",
+      "why": "A thousand-fold perturbation on a figure that is verbatim in the record, and the calibration sample found a peer citing 90,000 for the same claim, which is a difference worth noting but does not weaken the trap."
+    },
+    "adv0029": {
+      "summary": "Asks whether the high-risk vendor cap is 55%; the minister's sentence says high-risk vendors are limited to a minority presence of up to 35%.",
+      "why": "The correcting figure is inside the cited quote, so the item is self-contained even though the quote is long."
+    },
+    "adv0031": {
+      "summary": "Asks whether 300 people in total lost their jobs at Flybe; the record says about 2,000 in total, of whom about 300 were in Scotland.",
+      "why": "The hardest kind of numeric trap, a real figure with the wrong scope attached, and both numbers sit in the same cited sentence."
+    },
+    "adv0002": {
+      "summary": "Asserts an MP said the evidence base showed lower-volume fracking was safe; she said Ministers claim the evidence is not there and pressed them on it.",
+      "why": "The polarity is reversed inside a single sentence of the evidence, which I also graded in the calibration sample as the passage that states both sides."
+    },
+    "adv0003": {
+      "summary": "Asserts a member said benefits are not paid for by taxpayers; he said they are paid by the taxpayers of today or tomorrow.",
+      "why": "The cited sentence is the exact inversion of the premise, and the decoy the pool retrieved for this question contains neither the speaker nor the claim."
+    },
+    "adv0004": {
+      "summary": "Asserts a member said businesses had plenty of time before laying people off; he said they saw no choice but to lay off workers now.",
+      "why": "The evidence contradicts the premise in the speaker's own words, with the urgency explicit."
+    },
+    "hum0067": {
+      "summary": "Asks whether the Government supports public ownership of water; the evidence is a Labour backbencher stating her own support.",
+      "why": "The most valuable attribution test in the set, but like hum0089 it is typed 'answer' while its vital nugget says the passage does not carry a Government position."
+    },
+    "db0209": {
+      "summary": "A database-derived count whose answer comes straight from SQL and carries divisions, house, month.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0098": {
+      "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_teller, lobby, member, mnis_id, party_at_vote.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0194": {
+      "summary": "Asks for the date of Royal Assent of the Trade Act 2021 'in the Commons'; the SQL answer gives 29 April 2021 with house = null.",
+      "why": "Royal Assent is not taken in a House, so the question asserts a scope its own answer leaves empty; the date is correct and only the wording needs changing."
+    },
+    "db0285": {
+      "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0180": {
+      "summary": "A database-derived bill_stage_date whose answer comes straight from SQL and carries bill, bill_id, first_sitting, house, sittings, stage.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0296": {
+      "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0249": {
+      "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0112": {
+      "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_teller, lobby, member, mnis_id, party_at_vote.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0252": {
+      "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0113": {
+      "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_remote, is_teller, lobby, member, mnis_id, party_at_vote.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0192": {
+      "summary": "A database-derived bill_stage_date whose answer comes straight from SQL and carries bill, bill_id, first_sitting, house, sittings, stage.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0031": {
+      "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0272": {
+      "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0158": {
+      "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0193": {
+      "summary": "A database-derived bill_stage_date whose answer comes straight from SQL and carries bill, bill_id, first_sitting, house, sittings, stage.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0295": {
+      "summary": "A database-derived multi_speech whose answer comes straight from SQL and carries debate_id, division_id, heading, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0011": {
+      "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0056": {
+      "summary": "A database-derived division_tally whose answer comes straight from SQL and carries ayes, ayes_listed, division_id, must_cite, noes, noes_listed, tally_reconciled.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0128": {
+      "summary": "A database-derived party_at_date whose answer comes straight from SQL and carries basis, date, member, mnis_id, party.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0250": {
+      "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0162": {
+      "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0205": {
+      "summary": "A database-derived count whose answer comes straight from SQL and carries divisions, house, month.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0191": {
+      "summary": "Asks when the Finance Act 2026 had Royal Assent 'in the Commons'; the SQL answer gives 18 March 2026 with house = null.",
+      "why": "Same template defect as db0194: a House is asserted for Royal Assent, which the data does not attribute to one."
+    },
+    "db0260": {
+      "summary": "A database-derived who_spoke whose answer comes straight from SQL and carries debate_id, heading, mnis_id, opened_by, party.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0001": {
+      "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0078": {
+      "summary": "A database-derived division_vote whose answer comes straight from SQL and carries division_id, is_teller, lobby, member, mnis_id, party_at_vote, proxy_name.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0152": {
+      "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0012": {
+      "summary": "A database-derived division_result whose answer comes straight from SQL and carries ayes, date, division_id, division_number, house, noes, result.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "db0050": {
+      "summary": "Asks for the voting figures on the High Speed Rail (Crewe - Manchester) division; the tellers recorded 323 Ayes and 7 Noes while the member lists hold 320 and 9.",
+      "why": "The discrepancy is real but handled by design: tally_reconciled is false, must_cite names the tellers' figures, and an okay nugget records that the lists differ."
+    },
+    "db0150": {
+      "summary": "A database-derived office_held_at_date whose answer comes straight from SQL and carries date, holder, mnis_id, office, office_key.",
+      "why": "The SQL answer is present, non-empty, free of placeholders and has a vital nugget to score against."
+    },
+    "k:db0229:FE814B4C-480B-471E-BA22-00D3985A35A8": {
+      "summary": "A tabled Commons oral question from Charlotte Nichols asking what steps are being taken to support UK nationals overseas who are at risk from covid-19.",
+      "why": "Same broad subject (covid-19 in the Commons in March 2020) but a different debate on a different date, and a tabled question text cannot show who led off."
+    },
+    "k:adv0028:9B711AFF-432C-4488-8925-57A9BA8D0357": {
+      "summary": "A Conservative peer attacks the Government's record on retail and hospitality and cites UKHospitality's figure of 90,000 hospitality jobs lost since the 'jobs tax'.",
+      "why": "It carries the figure the question mis-states, 90,000 rather than 89, said by a Conservative, so it settles the question but amid a great deal of other material."
+    },
+    "k:old0016:B47910BF-7E9B-428A-8C1C-C737368B90DA": {
+      "summary": "Perran Moon asks Treasury Ministers to work with the business department to make Cornwall an industrial strategy zone.",
+      "why": "It is the right member raising a matter, but at Topical Questions rather than Business questions, so it does not answer the question as scoped (this is I-38)."
+    },
+    "k:hum0084:F57473E2-3D02-41D6-ACB3-5A2CA41716D5": {
+      "summary": "A Liberal Democrat MP argues that the only purpose of a mandatory ID is to let people be asked for it, which turns a free society into a permissions-based one.",
+      "why": "It answers 'what is the point' directly, but only from the opposing side and as an intervention put to another member rather than an account of the case for ID."
+    },
+    "k:old0010:204C3F87-A77C-45C3-9487-26F65C68A640": {
+      "summary": "A Conservative peer presses the Minister on a million young people not in work or training, and claims employment costs have depressed entry-level hiring.",
+      "why": "The claim is being put TO the Minister by an opposition peer, so the passage shows the claim being made and not whether the Government accepts it."
+    },
+    "k:hum0061:73DB31DE-AEE9-4EB1-83A0-F4BDDD69502B": {
+      "summary": "An MP warns about the cumulative effect on Jewish people of banning Maccabi Tel Aviv fans, and asks why other clubs' rioting fans are treated differently.",
+      "why": "It is one of the two debates the question compares, but nothing in the text says which came first in the record."
+    },
+    "k:adv0003:ADF2E167-241B-4F1B-ACDE-D13D2D9B7262": {
+      "summary": "A Conservative peer argues that lifting children out of poverty takes more than extending benefits, because some children are let down by money and others by the adults around them.",
+      "why": "Same subject area as the question (benefits and child poverty) but it contains neither Sir Ashley Fox nor any claim that benefits are not paid for by taxpayers."
+    },
+    "k:hum0094:D1F48822-8116-4D69-AC64-D4FE42E22C85": {
+      "summary": "A Liberal Democrat MP contrasts the 4.6 billion already spent on the cancelled 2010 ID card scheme with the 1.8 billion cost attached to digital ID.",
+      "why": "It supplies one of the three things asked for, the cost figure, but not who produced it nor whether the Government accepts it."
+    },
+    "k:db0263:0B30E1F2-C7EA-4FE4-AB06-E975C76553EA": {
+      "summary": "A Green MP asks the Minister when business rates will be reformed, citing village pubs in his constituency facing large increases.",
+      "why": "Different debate, date and subject: nothing here touches a debate on vicars and rural parishes."
+    },
+    "k:hum0064:A7B12CF1-8E28-48F9-B2A7-4B0E56194CC5": {
+      "summary": "A Liberal Democrat MP criticises moving asylum seekers between unsuitable accommodation and sets out his party's plan to end hotel use in six months.",
+      "why": "It does contrast Government and Liberal Democrat positions, but on asylum accommodation, not on local government reorganisation."
+    },
+    "k:hum0067:2E207C29-FF61-40ED-B65C-3B781A037A24": {
+      "summary": "A Labour backbencher opens a petition debate arguing that water privatisation has failed and that full public ownership is needed.",
+      "why": "Squarely on the subject, but it is a backbencher's case for public ownership and says nothing about whether the Government supports it."
+    },
+    "k:adv0020:9B6D9923-C1DC-4669-966E-C2133D8EF683": {
+      "summary": "A minister says NATS has confirmed the disruption was a technical issue and does not believe it was cyber-related, while assuring the House about cyber defences.",
+      "why": "It is about exactly this matter and states the fact that settles the question: NATS blamed a technical fault, not a cyber-attack."
+    },
+    "k:hum0100:D5E05B8F-C93B-4890-8CDA-A0678FB84648": {
+      "summary": "The Deputy Speaker notifies the House of Royal Assent to three Acts: unauthorised entry to football matches, sentencing, and Holocaust memorial.",
+      "why": "On the subject of bills completing their passage in 2026, but the Crime and Policing Bill is simply not in the list, so it settles nothing."
+    },
+    "k:adv0027:5003558C-5263-4847-BB68-7D86CF12814D": {
+      "summary": "A Conservative MP attacks digital ID as inconsistent and insecure, and says the OBR reckons the scheme will cost 1.8 billion pounds while Ministers brief that this is inaccurate.",
+      "why": "It attributes the cost to the OBR and gives the real figure, 1.8 billion rather than 18, but inside a long speech about many other things."
+    },
+    "k:db0240:744F89D1-DAC4-491A-94B8-3FD6F60BAE64": {
+      "summary": "A Conservative peer moves an amendment to the Crime and Policing Bill about cash-only businesses and business rates, quoting an earlier exchange on the subject.",
+      "why": "Wrong House, wrong date and wrong debate; the only link to the question is the word 'business'."
+    },
+    "k:adv0035:6BAC9B38-6A3B-4229-98E0-DF49B27E47E8": {
+      "summary": "Wendy Morton says the Falkland Islands are British and will remain so for as long as the Islanders wish, reaffirming their right to self-determination, and presses the Foreign Secretary on Argentina.",
+      "why": "It is the named speaker on the exact subject, and it states the opposite of the premise: she put the decision with the Islanders, not the UK Government."
+    },
+    "k:hum0031:EA876D1F-0557-4B75-8249-882EA5EFAD21": {
+      "summary": "A peer moves an amendment to the Fisheries Bill so that fishing effort must not overexploit stocks, arguing sustainability should come before fleet viability.",
+      "why": "A different bill, House and year entirely; no medical training and no Helen Morgan."
+    },
+    "k:db0294:668E6111-A05A-40B5-A940-3B5B6AFB36C5": {
+      "summary": "The Minister for Trade Policy winds up the Trade Bill's second reading debate, thanking Members and promising to answer their points.",
+      "why": "It is from the very sitting the division belongs to and identifies the Bill, but it never mentions the division or the reasoned amendment."
+    },
+    "k:hum0017:DBB2A7A3-44E9-4C0D-B095-514C599B14BB": {
+      "summary": "A Conservative MP asks whether any Agriculture Minister has ever met a farmer who denied that grade 3b land grows arable crops as well as 3a.",
+      "why": "It mentions meeting a farmer, but the speaker is an MP rather than a peer and the subject is land classification, not whether reforms can be paid for."
+    },
+    "k:adv0013:DD73885F-5BF3-4455-93FB-230FAE23B375": {
+      "summary": "An SNP MP responds to Flybe's collapse, giving the Scottish job numbers and pressing the Government on refunds and the regional connectivity review.",
+      "why": "The Scottish job figures are here, but said by an SNP backbencher, so the passage cannot show what the Chancellor said."
+    },
+    "k:hum0082:7C7BC251-77F5-466B-AC4D-964A8ED50B85": {
+      "summary": "An MP asks whether the Lord Mandelson affair raises questions about the hold over the Government of someone he calls a byword for sleaze.",
+      "why": "Nothing to do with chalk streams or with any member's recurring interest in them."
+    },
+    "k:hum0034:C38A81CC-D9C4-41AC-BDBE-461956CE031F": {
+      "summary": "A minister closes an exchange on an attack on a Hatzola ambulance, after which the record moves to a programme motion for the Tobacco and Vapes Bill.",
+      "why": "The Bill the question asks about appears, but only as procedural timetabling, with no contribution from Baroness Fox of Buckley."
+    },
+    "k:adv0011:A0ED5380-BE8C-4738-BE9A-A881A55C4FF1": {
+      "summary": "Ed Davey condemns the US action in Venezuela, quoting Margaret Thatcher on not walking into other people's countries, and warns about the precedent for China and Russia.",
+      "why": "The right speaker but the wrong subject: no MI5 or GCHQ assessment and no Chinese embassy."
+    },
+    "k:hum0059:DD73885F-5BF3-4455-93FB-230FAE23B375": {
+      "summary": "An SNP MP reacts to Flybe's collapse, describing staff losing their jobs abruptly and asking what happens to passengers and regional routes.",
+      "why": "It answers only indirectly: the collapse is plainly just-happened, but the text itself never gives a date."
+    },
+    "k:old0015:33E15CAB-AFD9-40BE-ADCC-62FB8ED65F06": {
+      "summary": "A shadow minister opens on knife crime, notes the Government's ambition to halve it, and says crime fell by more than half under the last Government.",
+      "why": "It names the ambition but gives no figure for how far knife crime has fallen since it was set; the 50% it does cite is a different Government and all crime."
+    },
+    "k:hum0008:76D5451A-3B3A-4E15-B5B8-4D522412E287": {
+      "summary": "A Conservative MP speaks against the alcohol duty rise, calling the pub and hospitality sector, alongside whisky, the lifeblood of the Scottish economy.",
+      "why": "A Conservative does make that claim about that sector, so it answers indirectly, but in the Finance Bill debate and with 'lifeblood' rather than 'cornerstone'."
+    },
+    "k:hum0011:A47A265B-E3C6-4AE2-8027-8F4AE6BB9F6E": {
+      "summary": "A Liberal Democrat MP describes parcels lost and undelivered across rural Wales, blames Evri's business model, and notes customers cannot choose their delivery company.",
+      "why": "The argument the question asks about is here in the closing line, though it is about choosing a delivery company rather than switching supplier."
+    },
+    "k:hum0034:850C7E51-45A8-4429-A0E3-F3A4471AC3C8": {
+      "summary": "A Conservative peer withdraws an amendment to the Children's Wellbeing and Schools Bill, thanking Baroness Fox of Buckley and arguing that pandemic lessons were not learned.",
+      "why": "It shares only her name: the debate is a schools bill, and nothing here concerns the tobacco bill."
+    },
+    "k:hum0060:2F7F8AC1-E51D-41FA-80FB-E8601820785E": {
+      "summary": "A Cabinet Office minister answers on the Northern Ireland Protocol, defending the Government's good faith and Lord Frost's role.",
+      "why": "The criticism it refers to is Baroness Hayter's, not Baroness Blackstone's, and nothing here concerns how long anyone had sat in the Lords."
+    },
+    "k:db0285:F9B33848-B7D9-44C9-BE20-1CE3EC50A3E6": {
+      "summary": "The Leader of the House announces forthcoming Commons business and the date of the state opening of Parliament.",
+      "why": "A business statement three months later; it says nothing about the Finance Bill committee division."
+    },
+    "k:hum0098:E6A766B1-39EB-4481-87DD-D6BFD8071132": {
+      "summary": "In a Railways Bill committee sitting a member confirms that a point was debated in the previous group.",
+      "why": "It reads like an answer only because it is stripped of context: the subject is a railways amendment, not Diego Garcia."
+    },
+    "k:db0240:B9742DFB-6CAC-4965-924A-A82806FD6679": {
+      "summary": "The Leader of the House gives the Commons its business for the following fortnight and the date the House rises for Christmas.",
+      "why": "The right recurring debate and the right speaking role, but three months before the sitting the question asks about."
+    },
+    "k:db0290:CA626AE8-97A1-4B2E-A9EB-AFCD6508BCE3": {
+      "summary": "A justice minister replies late at night in the Sentencing Bill's committee, accepting the case on gambling addiction but resisting Amendment 95 as unnecessary.",
+      "why": "It is from the very debate asked for, on the right day and in the right House, and it names the amendment that was pressed."
+    },
+    "k:db0276:EB4C94BA-1AA7-4B17-9097-7D30272A1FB1": {
+      "summary": "An MP presents a constituents' petition urging the Government to help the Terminally Ill Adults (End of Life) Bill make progress before the Session ends.",
+      "why": "The right Bill but the wrong occasion: a petition presentation in March, not the second reading sitting the division belongs to."
+    },
+    "k:db0291:358B0EC2-2D42-4F6C-BE5A-AE626F133DA0": {
+      "summary": "The Leader of the House sets out Commons business for the first week of June 2020.",
+      "why": "Wrong House, wrong year and wrong subject entirely."
+    },
+    "k:adv0034:06F83B54-1720-4718-B792-0854CD1C7BB5": {
+      "summary": "A Conservative peer supports an amendment on accurate recording of sex in police data, arguing that self-declared identity breaks risk assessment.",
+      "why": "Richard Burgon is not in it and neither is a Government amendment; the words 'support the amendment' are the only link."
+    },
+    "k:db0234:EBD2303B-B38A-4463-84FB-3663EC68A186": {
+      "summary": "An MP argues that protecting children online is a moral imperative, drawing parallels with Victorian child protection legislation.",
+      "why": "A different debate, subject and year; nothing about the Coronavirus Bill."
+    },
+    "k:db0247:CA2BA919-F23F-4742-8E93-B682FBD43986": {
+      "summary": "An MP opens a Westminster Hall debate on a national service specification for adult cerebral palsy, drawing on his daughter's condition.",
+      "why": "It is an opening speech, but to a different debate on a different subject two years later."
+    },
+    "k:hum0072:DD0034C5-9794-4ED3-9887-1BA938D48260": {
+      "summary": "A crossbench peer moves an amendment to the leasehold bill that would let the Secretary of State set up an independent statutory regulator of property agents.",
+      "why": "A peer, the leasehold bill and property agents, with the proposal stated outright."
+    },
+    "k:hum0018:5D434CBB-1CE9-41D2-8AA0-88A8AA3A1D67": {
+      "summary": "A Conservative peer lists the injustices facing leaseholders in unsafe buildings, including that they cannot sell and move when they need to.",
+      "why": "It complains that these owners cannot move, but says nothing about first-time buyers stuck renting, so the compound claim is not there."
+    },
+    "k:adv0019:BC3F1B09-13B3-4521-A04C-714DEF336D57": {
+      "summary": "A Liberal Democrat MP demands a timeline and correspondence showing who in Government was involved in dropping the Official Secrets Act prosecution.",
+      "why": "The same China-and-security controversy, but about the collapsed espionage case, not about any decision on the Royal Mint Court embassy."
+    },
+    "k:hum0042:0A1C3341-3135-4D17-8540-05C174F75C1D": {
+      "summary": "A Labour MP contrasts money that saved jobs at Grangemouth with an SNP decision to buy buses from China rather than Falkirk.",
+      "why": "Scottish job losses and the SNP are both here, but the airline collapse the question is about is not."
+    },
+    "k:old0004:AC1EFABD-89D3-4347-B106-D745792769D6": {
+      "summary": "A Labour peer welcomes a statutory instrument extending combined authority finance powers to combined county authorities.",
+      "why": "Local government finance, but it gives no figure for transition costs and is not about reorganisation into unitary authorities."
+    },
+    "k:adv0012:9AAC7B90-B70D-46A5-8899-0F16CE818B42": {
+      "summary": "Sarah Jones asks why the Secretary of State did not consult victims' organisations before publishing a statement on Northern Ireland legacy issues.",
+      "why": "The right speaker on an unrelated subject; there is no planning decision and no Chinese embassy."
+    },
+    "k:hum0006:3D3F2F36-F605-4571-B10D-BC67905B839D": {
+      "summary": "A Conservative peer praises Margaret Thatcher's record on public spending and argues the country needs the same single-mindedness now.",
+      "why": "It is about Margaret Thatcher, but not the remark about not walking into other people's countries, so it cannot identify who quoted it."
+    },
+    "k:db0244:CF27FE0C-2B8E-442D-A066-322F8E21B0EB": {
+      "summary": "A Labour peer warns of firms failing and high unemployment, and argues the crisis calls the philosophy of universal credit into question.",
+      "why": "Strongly on the subject of unemployment support, but it is a different debate three weeks earlier and does not show who opened anything."
+    },
+    "k:db0288:B6C749F3-0B44-4D42-AB9B-6196A6BEB79C": {
+      "summary": "A crossbench peer explains why the Commons reasons for rejecting his trade union political funds amendment do not persuade him.",
+      "why": "The same ping-pong mechanism but a different Bill, House and date; the Bill the division belongs to never appears."
+    },
+    "k:hum0040:49B5EDFB-D700-4CE3-91C9-69C24413F67C": {
+      "summary": "A Conservative peer cites price competitiveness rankings and an Oxford Economics study, and asks why the Government is contemplating a holiday tax at all.",
+      "why": "A Conservative front-bencher calling the visitor levy a holiday tax, in a debate dedicated to it: that is the answer stated outright."
+    },
+    "k:db0280:182CBFF5-58C7-43FF-A423-893A90761094": {
+      "summary": "A housing minister moves the Surrey structural changes order, which would create two unitary councils for the county.",
+      "why": "It mentions 14 January 2026 only as the day the order was laid; the sitting is 2 March and no division is identified."
+    },
+    "k:hum0049:F038F4F3-E948-4258-9692-A62420882E3E": {
+      "summary": "A Labour peer marks International Women's Day and warns that low-paid women will suffer unless the Government goes beyond what it has published on statutory sick pay in the coronavirus crisis.",
+      "why": "A concern about coronavirus support for workers is stated plainly, though inside a debate about something else."
+    },
+    "k:hum0074:35085354-7B4C-41F7-A51B-4B22212AA4B6": {
+      "summary": "A Labour MP describes a constituent billed 525 pounds by a management company for an extension built 30 years before she moved in, and asks for faster leasehold reform.",
+      "why": "Leasehold abuse, but nothing about deferment rates and nothing that identifies which House debated them."
+    },
+    "k:hum0048:070AC1AD-758B-4DDA-9BE4-55530270027B": {
+      "summary": "A Labour MP argues that child poverty is not a matter of merit and describes children in cold, overcrowded homes.",
+      "why": "The right Bill and subject, but this is an MP in the Commons, so it cannot report what peers said for and against."
+    },
+    "k:adv0036:0A014465-314C-483E-838B-3B15A498E0F0": {
+      "summary": "A Conservative peer cites an academic misconduct case at Cambridge and asks whether the Government will consult on giving the Office for Students the power to intervene.",
+      "why": "Only the word 'consulting' connects it: different speaker, department and subject."
+    },
+    "k:hum0039:4DD41964-587B-4864-99BF-02D1F094B33E": {
+      "summary": "A minister winds up on the Employment Rights Bill, quoting research that stronger employment law has had pro-employment effects and attacking the Opposition's record.",
+      "why": "A minister replying in an employment debate, but no amendment is moved here and this is not a seasonal work debate."
+    },
+    "k:old0003:28D59114-EFCF-4437-8B9A-96880CDE3062": {
+      "summary": "A DUP MP asks the Minister about the Irish Government pushing returnees back to Northern Ireland and about Irish court rulings on returns to the UK.",
+      "why": "Immigration and returns, but the speaker is a backbencher and neither the Immigration Act 1971 nor deporting foreign national offenders appears."
+    },
+    "k:hum0037:B4BA20E8-F8A3-4F50-99A6-32A82953233C": {
+      "summary": "An MP describes a constructed wetland filtering phosphates and microplastics, and flood funding for Somerset.",
+      "why": "Environmental policy in the broadest sense, but no Finch judgment, no end-use emissions and no climate minister."
+    },
+    "k:hum0033:1ABBDE90-332A-4D7F-8B46-77682E8E1E9F": {
+      "summary": "A Conservative front-bencher supports the infected blood compensation regulations and asks about the timetable for affected people and estates.",
+      "why": "The right subject, but a different speaker, and nothing about how long anyone had known people who were infected."
+    },
+    "k:old0022:393A13C1-C82B-46AB-BCA6-3E93CC178E1D": {
+      "summary": "A Conservative peer distinguishes the merits of Clause 191 from the process by which it was inserted into the Crime and Policing Bill, treating the substance as a conscience matter.",
+      "why": "A different Bill and clause; the Terminally Ill Adults Bill is not mentioned at all."
+    },
+    "k:old0015:1F9C386D-7817-47BE-9E9A-7834FA20D1E7": {
+      "summary": "A justice minister says knife crime is down 8% under this Government, points to investment in early intervention and promises a cross-Government strategy.",
+      "why": "A minister states the percentage fall under this Government in a reply dedicated to knife crime, which is what the question asks for."
+    },
+    "k:hum0035:B1DE66A3-4A3B-40AE-A5BB-BB9D2FCB0034": {
+      "summary": "A Conservative peer calls the Maccabi Tel Aviv fan ban shameful and asks when the Government first learned the safety advisory group intended to advise it.",
+      "why": "The right ban and the right controversy, but this is an opposition peer questioning the Minister rather than the policing minister answering."
+    },
+    "k:db0294:0B22E82A-69C8-4324-8DDE-FAFACF97F123": {
+      "summary": "Keir Starmer asks the Prime Minister to enshrine a duty of candour in law, drawing on the infected blood scandal.",
+      "why": "The right name four years later; no Trade Bill and no division."
+    },
+    "k:db0235:E284366F-E684-455A-8498-803E30B4F7B7": {
+      "summary": "A minister opens debate on two statutory instruments strengthening alternative dispute resolution for consumers.",
+      "why": "A minister opening a Lords SI debate, but a different instrument on a different day; mesothelioma payments do not appear."
+    },
+    "k:adv0027:D1F48822-8116-4D69-AC64-D4FE42E22C85": {
+      "summary": "A Liberal Democrat MP contrasts the 4.6 billion spent on the abandoned ID card scheme with the 1.8 billion cost attached to digital ID.",
+      "why": "It gives the true figure that corrects the premise but does not attribute it to the OBR."
+    },
+    "k:adv0035:E68C5AF9-0914-47E9-A0C6-5672C5226CE1": {
+      "summary": "A Lords minister says Argentina understands the UK's position and quotes the Foreign Secretary that the Islanders' right of self-determination is paramount.",
+      "why": "The same subject and the same principle, but spoken by a Government minister, so it cannot show what Wendy Morton said."
+    },
+    "k:hum0064:9D8BA2BA-7ED0-4DF4-A22C-0DC96D39CB25": {
+      "summary": "A Conservative peer questions the power to merge local government pension funds and notes in passing that the House will soon consider local government reorganisation.",
+      "why": "Reorganisation is mentioned only as something coming later, and the passage contrasts nobody's position with anybody else's."
+    },
+    "k:db0268:87F1A65C-9E51-4CB0-9C1B-2EFA210B3C54": {
+      "summary": "The Deputy Speaker notifies the Commons of Royal Assent to four Acts, among them the Border Security, Asylum and Immigration Act 2025.",
+      "why": "It names the Bill the question is about, but as a Royal Assent notice in the other House a month later, so no debate is identified."
+    },
+    "k:hum0062:33A1AB0D-E432-4DC6-A403-DD634C0A54D6": {
+      "summary": "A Home Office minister replies on an amendment about offences against shop workers, noting his union membership and earlier attempts to legislate.",
+      "why": "The right Bill but nothing about jury trials, so there is no criticism of either kind to compare."
+    },
+    "k:hum0024:559FAAFC-B7FE-43FC-9BE4-96B503128E69": {
+      "summary": "The Work and Pensions Secretary says 1.5 billion pounds over three years will go to a youth guarantee and apprenticeships, and that youth hubs are being expanded to more areas.",
+      "why": "Exactly the right subject, but it gives neither a number of hubs nor any locations, only 'more areas of the country'."
+    },
+    "k:hum0083:A3FBD0B9-D654-4A60-BFC5-782A6E14817A": {
+      "summary": "A Conservative front-bencher accuses the Minister of misquoting business groups over scrapping a cap in the Employment Rights Bill.",
+      "why": "The phrase 'scrap the cap' is bait: this is a cap in an employment bill, not the two-child benefit cap."
+    },
+    "k:hum0101:004DC06C-973D-40C0-A2DE-904DE9F972C1": {
+      "summary": "A bishop supports an amendment on fair recovery of benefit overpayments, warning that deductions could push claimants deeper into poverty.",
+      "why": "The words 'for the record' are the only link; the Armed Forces Bill appears nowhere."
+    },
+    "k:hum0075:9449FC95-8B8E-41AE-9C47-A740DCAF7196": {
+      "summary": "An MP welcomes moving to zero high-risk vendors and asks the Minister to confirm whether the Government classifies Huawei as one.",
+      "why": "It shows MPs debating the Huawei cap in the Commons, which answers the question indirectly without discussing the Lords."
+    },
+    "k:hum0029:394562D6-0D55-445B-8C43-744244697C5A": {
+      "summary": "Dan Jarvis quotes the deputy national security adviser's statements that China poses wide-ranging threats and runs large-scale espionage operations against the UK.",
+      "why": "It is the named speaker making a point about the intelligence assessments in this row, though framed around the spying case rather than the embassy."
+    },
+    "k:db0255:DB0DB8E9-A0D1-420A-BA2D-488CEA9C935D": {
+      "summary": "A Home Office minister answers on the earned settlement pathway, blaming inherited asylum pressures and inviting consultation responses.",
+      "why": "A different debate, date and subject; China and human rights do not appear."
+    },
+    "k:hum0050:5B7C45C5-2EDA-4B52-90E4-B6B088EEDA9E": {
+      "summary": "A Foreign Office minister answers on repatriating stranded British citizens, noting that charter manifests and closed airspace constrain flights.",
+      "why": "'Air traffic' appears only as a scheduling constraint in 2020; there is no air traffic control failure here."
+    },
+    "k:db0293:7AC31FF0-B7FE-4470-94EF-9A1A92930B5A": {
+      "summary": "A culture minister moves broadcasting quota regulations, noting the Commons approved them earlier in November.",
+      "why": "Wrong House and date, and no division is identified."
+    },
+    "k:adv0027:E47A11AB-A09C-4C80-962C-435C4B312A9B": {
+      "summary": "A Conservative MP asks the Prime Minister whether an unfunded digital ID costing the public billions counts as a fair choice, alongside benefits and taxes.",
+      "why": "On the cost of digital ID, but it says only 'billions' and never mentions the OBR, so it cannot confirm or correct the figure."
+    },
+    "k:db0269:B4218942-CDD5-4758-83A9-DE309714F1D8": {
+      "summary": "A tabled Commons question from Neil Parish asking when the Government will publish the national food strategy.",
+      "why": "The right member two months earlier, but a tabled question is not the Agriculture Bill report stage."
+    },
+    "k:hum0038:820785FE-B2A8-4F13-8AE5-BFB57CE45DAF": {
+      "summary": "An MP sets out written answers he says were untrue about how many irregular migrants have absconded.",
+      "why": "Nothing about WASPI, the ombudsman or the Department for Work and Pensions."
+    },
+    "k:adv0025:5C8CFAA5-F430-49A7-989B-7934BD052D36": {
+      "summary": "Rebecca Paul attacks the overnight visitor levy as Labour's holiday tax, citing job losses and a UKHospitality estimate of 33,000 more to come.",
+      "why": "The right speaker opposing the levy, but no amendment of hers is moved or defeated anywhere in the passage."
+    },
+    "k:hum0053:6EEAE1AC-A26A-450E-9949-6A6442998224": {
+      "summary": "A Labour MP says teachers were demoralised by the former Education Secretary and welcomes the new one's broader curriculum.",
+      "why": "The right statement and debate, but the speaker is an MP and the remark about 33 years is nowhere in the text."
+    },
+    "k:hum0069:2DD87915-3828-473B-A5DF-7E50AF853008": {
+      "summary": "A Liberal Democrat MP sets out estimates of Brexit's cost to GDP, investment and tax revenue.",
+      "why": "No medical training bill and no party position on one."
+    },
+    "k:hum0030:DA8D9EA7-EFB7-4358-9141-75E4B91F4D26": {
+      "summary": "A Conservative peer asks whether treating nicotine as tobacco-derived collapses the Bill's distinction between tobacco and vaping products.",
+      "why": "The right Bill and a live drafting point, but a different speaker and no mention of the Windsor Framework."
+    },
+    "k:hum0051:1658561E-43D8-4FE6-9DA4-C4CFA7D69136": {
+      "summary": "A Conservative MP asks the consumer rights Minister to campaign on refund rights, naming travel firms refusing to refund holidays and flights.",
+      "why": "A complaint about flights and refunds, but the 2,000 cancelled flights are not in it and the passage never states a party."
+    },
+    "k:db0284:EB9BCBF8-25F6-41DD-868A-96021C425AFD": {
+      "summary": "A Labour MP discusses animal testing and the right to protest in a debate on Public Order Act regulations.",
+      "why": "A different debate five years later with no connection to a business of the House division."
+    },
+    "k:adv0034:F85A1A30-6B22-4E6F-A929-00C35059AB3D": {
+      "summary": "A Liberal Democrat MP responds to the Budget, welcoming Scottish investment while warning about oil and gas job losses.",
+      "why": "Richard Burgon appears only as the member she follows; nothing about supporting any amendment."
+    },
+    "k:adv0008:5B348130-20E1-444D-814B-067F4F3477F7": {
+      "summary": "Kemi Badenoch attacks the Chancellor over threshold freezes and quotes ExxonMobil's UK chair on industrial decline.",
+      "why": "The right speaker but nothing about Swanwick or flight processing."
+    },
+    "k:db0231:F451040B-7EF6-451E-8B35-A4176D5DF90A": {
+      "summary": "An MP quotes a petitioner on water ownership and says successive Governments failed to consider public ownership.",
+      "why": "A different debate and subject; the Public Office (Accountability) Bill is not here."
+    },
+    "k:hum0046:4D4A4F2B-159C-4346-9F48-0265841985A6": {
+      "summary": "An MP says Ministers claim there is no evidence that lower-volume fracking carries the same risk, and argues the Preston New Road earthquake in the Government's own records shows there is.",
+      "why": "It states the Government's position on fracking safety and the case against it side by side, in a debate dedicated to the ban."
+    },
+    "k:db0280:F21DC36C-E366-4CFA-BFF3-C00594DCC2C2": {
+      "summary": "A DUP peer argues that the assisted dying Bill's drafting does not guarantee informed consent, against Lord Falconer's rejection of an amendment.",
+      "why": "A Lords bill debate with contested amendments in mid-January, but on the 23rd about the 16th, so it cannot identify a division on the 14th."
+    },
+    "k:adv0020:6CE7D644-25F3-4013-AADB-A9E5B9FAC925": {
+      "summary": "An MP opens the Christmas adjournment debate with constituency matters: council spending, parking and fly-tipping.",
+      "why": "No air traffic disruption and no NATS."
+    },
+    "k:hum0072:9D3D24E3-2BB0-438F-87D3-268C04047D5C": {
+      "summary": "A Conservative peer makes second reading points on the telecoms leasehold property bill, asking about high-risk vendors and the 2025 connectivity target.",
+      "why": "'Leasehold' is in the Bill's title but the subject is telecoms infrastructure, and property agents never come up."
+    },
+    "k:old0016:B1F72377-37CB-4A38-ADD2-D27BFF14BB51": {
+      "summary": "Perran Moon closes a Westminster Hall debate on global tin availability, thanking colleagues and discussing the Cornish industrial growth fund.",
+      "why": "The right member, but summing up a debate he secured rather than raising anything at Business questions."
+    },
+    "k:db0297:B69E4125-15E0-40AD-9A98-1EA68CFB028D": {
+      "summary": "A Conservative MP speaks in a Westminster Hall debate on the under-10-metre fishing fleet, thanking rescue services and local figures.",
+      "why": "A different debate eight days earlier, with no division in it."
+    },
+    "k:hum0029:BC5F82C7-0294-4989-8FEF-E715B530C1F9": {
+      "summary": "The Security Minister responds to the collapse of the Official Secrets Act prosecution, welcoming the committee's report and saying it found no evidence of ministerial interference.",
+      "why": "The right speaker on this row, making a point about the security committees' findings, though about the prosecution rather than the embassy."
+    },
+    "k:db0252:76C141E6-3271-45FD-A1DF-5B310603BB64": {
+      "summary": "An MP raises a proposed 1,900-acre solar and battery scheme spanning his constituency.",
+      "why": "Wrong House, subject and year; craftspeople and EU travel are absent."
+    },
+    "k:db0258:7CA8292E-DD1F-48D3-829E-666CD46488AD": {
+      "summary": "A Labour MP argues in a 2020 Budget debate that regional inequality must be central to economic strategy.",
+      "why": "Shares only the word 'economy'; there is no Office for the Impact Economy here."
+    },
+    "k:db0261:15B71995-709A-4264-84A9-4EDFD91F32B0": {
+      "summary": "A Conservative MP asks how to get press coverage for backbench debates, citing an excellent Ukraine debate initiated by Sir Bernard Jenkin on 4 December.",
+      "why": "It does name who initiated a Ukraine debate, but the wrong one on the wrong date, which is exactly the trap."
+    },
+    "k:db0232:348E5375-6AF4-46E5-9203-A6670EC03863": {
+      "summary": "A Labour MP speaks on NHS workforce pressure and cancer care, thanking local fundraisers.",
+      "why": "Health in general, but nothing about the Infected Blood Inquiry's recommendations."
+    },
+    "k:db0229:8700473C-87F4-4500-ACF9-614188454649": {
+      "summary": "A peer asks whether the shared prosperity fund's objectives will survive covid-19, especially for inner cities.",
+      "why": "Wrong House and debate; 'covid-19' appears only as a passing qualifier."
+    },
+    "k:hum0002:9DCEC254-582B-48D8-B996-A60704EF6925": {
+      "summary": "An energy minister says he cannot comment on the merits of Jackdaw and Rosebank, and that the Secretary of State will decide on consent in due course.",
+      "why": "The right minister on the Rosebank consents, but the passage never says what the Scottish courts did to them."
+    }
+  },
+  "agreement": {
+    "judge_model": "deepseek-flash",
+    "graded_by": "claude (blind baseline)",
+    "calibration_pairs": 100,
+    "judge_graded_of_those": 99,
+    "verdict": {
+      "gate": 0.6,
+      "threshold": 2,
+      "four_level": {
+        "kappa": 0.5316,
+        "n": 99,
+        "agreement": 0.7071,
+        "expected_agreement": 0.3747,
+        "passes_gate": false
+      },
+      "binarised": {
+        "kappa": 0.6897,
+        "n": 99,
+        "threshold": 2,
+        "agreement": 0.9192,
+        "expected_agreement": 0.7396,
+        "both_relevant": 11,
+        "neither_relevant": 80,
+        "only_first_relevant": 8,
+        "only_second_relevant": 0,
+        "passes_gate": true
+      },
+      "usable_for_ranking": true,
+      "usable_for_graded_ndcg": false,
+      "verdict": "usable for recall, MRR and binary nDCG; NOT for graded nDCG"
+    },
+    "cohen_kappa": {
+      "kappa": 0.5316,
+      "n": 99,
+      "agreement": 0.7071,
+      "expected_agreement": 0.3747,
+      "passes_gate": false
+    },
+    "binary_agreement": {
+      "kappa": 0.6897,
+      "n": 99,
+      "threshold": 2,
+      "agreement": 0.9192,
+      "expected_agreement": 0.7396,
+      "both_relevant": 11,
+      "neither_relevant": 80,
+      "only_first_relevant": 8,
+      "only_second_relevant": 0,
+      "passes_gate": true
+    },
+    "confusion": {
+      "n": 99,
+      "table": {
+        "0": {
+          "0": 41,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "1": {
+          "0": 17,
+          "1": 22,
+          "2": 0,
+          "3": 0
+        },
+        "2": {
+          "0": 1,
+          "1": 6,
+          "2": 5,
+          "3": 0
+        },
+        "3": {
+          "0": 0,
+          "1": 1,
+          "2": 4,
+          "3": 2
+        }
+      },
+      "off_by": {
+        "0": 70,
+        "1": 27,
+        "2": 2
+      },
+      "exact": 70,
+      "adjacent_or_better": 97,
+      "severe": 2
+    },
+    "baseline_distribution": {
+      "0": 41,
+      "1": 39,
+      "2": 13,
+      "3": 7
+    },
+    "judge_distribution": {
+      "0": 59,
+      "1": 29,
+      "2": 9,
+      "3": 2
+    },
+    "gate": {
+      "threshold": 0.6,
+      "applies_to": "binarised relevance at grade >= 2, which is what recall, MRR and nDCG read",
+      "passes": true,
+      "four_level_passes": false,
+      "meaning": "the binarised gate decides whether the judge may be used for ranking metrics at all; the four-level one decides only whether graded nDCG may be reported"
+    }
+  },
+  "counts": {
+    "decided": 76,
+    "graded": 100,
+    "queue": 318
+  }
+}

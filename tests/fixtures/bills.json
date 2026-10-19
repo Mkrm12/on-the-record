@@ -1,0 +1,990 @@
+{
+ "4124": {
+  "list": {
+   "billId": 4124,
+   "shortTitle": "Health Bill",
+   "formerShortTitle": null,
+   "currentHouse": "Lords",
+   "originatingHouse": "Commons",
+   "lastUpdate": "2026-09-17T14:14:57.7063922",
+   "billWithdrawn": null,
+   "isDefeated": false,
+   "billTypeId": 1,
+   "introducedSessionId": 40,
+   "includedSessionIds": [
+    40
+   ],
+   "isAct": false,
+   "currentStage": {
+    "id": 21193,
+    "stageId": 2,
+    "sessionId": 40,
+    "description": "2nd reading",
+    "abbreviation": "2R",
+    "house": "Lords",
+    "stageSittings": [
+     {
+      "id": 18599,
+      "stageId": 2,
+      "billStageId": 21193,
+      "billId": 4124,
+      "date": "2026-10-13T00:00:00"
+     }
+    ],
+    "sortOrder": 12
+   }
+  },
+  "detail": {
+   "longTitle": "A Bill to make provision about health and social care.",
+   "summary": null,
+   "sponsors": [
+    {
+     "member": {
+      "memberId": 4504,
+      "name": "Wes Streeting",
+      "party": "Labour",
+      "partyColour": "d50000",
+      "house": "Commons",
+      "memberPhoto": "https://members-api.parliament.uk/api/Members/4504/Thumbnail",
+      "memberPage": "https://members.parliament.uk/member/4504/contact",
+      "memberFrom": "Ilford North"
+     },
+     "organisation": {
+      "name": "Department of Health and Social Care",
+      "url": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+     },
+     "sortOrder": 1
+    },
+    {
+     "member": {
+      "memberId": 347,
+      "name": "Baroness Merron",
+      "party": "Labour",
+      "partyColour": "d50000",
+      "house": "Lords",
+      "memberPhoto": "https://members-api.parliament.uk/api/Members/347/Thumbnail",
+      "memberPage": "https://members.parliament.uk/member/347/contact",
+      "memberFrom": "Life peer"
+     },
+     "organisation": {
+      "name": "Department of Health and Social Care",
+      "url": "https://www.gov.uk/government/organisations/department-of-health-and-social-care"
+     },
+     "sortOrder": 2
+    }
+   ],
+   "promoters": [],
+   "petitioningPeriod": null,
+   "petitionInformation": null,
+   "agent": null,
+   "billId": 4124,
+   "shortTitle": "Health Bill",
+   "formerShortTitle": null,
+   "currentHouse": "Lords",
+   "originatingHouse": "Commons",
+   "lastUpdate": "2026-09-17T14:14:57.7063922",
+   "billWithdrawn": null,
+   "isDefeated": false,
+   "billTypeId": 1,
+   "introducedSessionId": 40,
+   "includedSessionIds": [
+    40
+   ],
+   "isAct": false,
+   "currentStage": {
+    "id": 21193,
+    "stageId": 2,
+    "sessionId": 40,
+    "description": "2nd reading",
+    "abbreviation": "2R",
+    "house": "Lords",
+    "stageSittings": [
+     {
+      "id": 18599,
+      "stageId": 2,
+      "billStageId": 21193,
+      "billId": 4124,
+      "date": "2026-10-13T00:00:00"
+     }
+    ],
+    "sortOrder": 12
+   }
+  },
+  "stages": {
+   "items": [
+    {
+     "id": 20740,
+     "stageId": 6,
+     "sessionId": 40,
+     "description": "1st reading",
+     "abbreviation": "1R",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18102,
+       "stageId": 6,
+       "billStageId": 20740,
+       "billId": 4124,
+       "date": "2026-05-14T00:00:00"
+      }
+     ],
+     "sortOrder": 1
+    },
+    {
+     "id": 20741,
+     "stageId": 7,
+     "sessionId": 40,
+     "description": "2nd reading",
+     "abbreviation": "2R",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18103,
+       "stageId": 7,
+       "billStageId": 20741,
+       "billId": 4124,
+       "date": "2026-06-01T00:00:00"
+      }
+     ],
+     "sortOrder": 2
+    },
+    {
+     "id": 20760,
+     "stageId": 14,
+     "sessionId": 40,
+     "description": "Programme motion",
+     "abbreviation": "PM",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18129,
+       "stageId": 14,
+       "billStageId": 20760,
+       "billId": 4124,
+       "date": "2026-06-01T00:00:00"
+      }
+     ],
+     "sortOrder": 3
+    },
+    {
+     "id": 20751,
+     "stageId": 15,
+     "sessionId": 40,
+     "description": "Money resolution",
+     "abbreviation": "MR",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18118,
+       "stageId": 15,
+       "billStageId": 20751,
+       "billId": 4124,
+       "date": "2026-06-01T00:00:00"
+      }
+     ],
+     "sortOrder": 4
+    },
+    {
+     "id": 20752,
+     "stageId": 36,
+     "sessionId": 40,
+     "description": "Ways and Means resolution",
+     "abbreviation": "WAMR",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18119,
+       "stageId": 36,
+       "billStageId": 20752,
+       "billId": 4124,
+       "date": "2026-06-01T00:00:00"
+      }
+     ],
+     "sortOrder": 5
+    },
+    {
+     "id": 20769,
+     "stageId": 8,
+     "sessionId": 40,
+     "description": "Committee stage",
+     "abbreviation": "CS",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18167,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-06-16T00:00:00"
+      },
+      {
+       "id": 18168,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-06-18T00:00:00"
+      },
+      {
+       "id": 18212,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-06-23T09:25:00"
+      },
+      {
+       "id": 18214,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-06-25T09:25:00"
+      },
+      {
+       "id": 18271,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-06-30T00:00:00"
+      },
+      {
+       "id": 18272,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-07-02T00:00:00"
+      },
+      {
+       "id": 18437,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-07-07T00:00:00"
+      },
+      {
+       "id": 18438,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-07-09T00:00:00"
+      },
+      {
+       "id": 18461,
+       "stageId": 8,
+       "billStageId": 20769,
+       "billId": 4124,
+       "date": "2026-07-16T00:00:00"
+      }
+     ],
+     "sortOrder": 6
+    },
+    {
+     "id": 21155,
+     "stageId": 14,
+     "sessionId": 40,
+     "description": "Programme motion",
+     "abbreviation": "PM",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18581,
+       "stageId": 14,
+       "billStageId": 21155,
+       "billId": 4124,
+       "date": "2026-09-07T00:00:00"
+      }
+     ],
+     "sortOrder": 7
+    },
+    {
+     "id": 21130,
+     "stageId": 9,
+     "sessionId": 40,
+     "description": "Report stage",
+     "abbreviation": "RS",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18535,
+       "stageId": 9,
+       "billStageId": 21130,
+       "billId": 4124,
+       "date": "2026-09-07T15:30:00"
+      },
+      {
+       "id": 18536,
+       "stageId": 9,
+       "billStageId": 21130,
+       "billId": 4124,
+       "date": "2026-09-08T12:30:00"
+      }
+     ],
+     "sortOrder": 8
+    },
+    {
+     "id": 21179,
+     "stageId": 36,
+     "sessionId": 40,
+     "description": "Ways and Means resolution",
+     "abbreviation": "WAMR",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18582,
+       "stageId": 36,
+       "billStageId": 21179,
+       "billId": 4124,
+       "date": "2026-09-08T00:00:00"
+      }
+     ],
+     "sortOrder": 9
+    },
+    {
+     "id": 21162,
+     "stageId": 10,
+     "sessionId": 40,
+     "description": "3rd reading",
+     "abbreviation": "3R",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18567,
+       "stageId": 10,
+       "billStageId": 21162,
+       "billId": 4124,
+       "date": "2026-09-08T18:30:00"
+      }
+     ],
+     "sortOrder": 10
+    },
+    {
+     "id": 21192,
+     "stageId": 1,
+     "sessionId": 40,
+     "description": "1st reading",
+     "abbreviation": "1R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18598,
+       "stageId": 1,
+       "billStageId": 21192,
+       "billId": 4124,
+       "date": "2026-09-09T00:00:00"
+      }
+     ],
+     "sortOrder": 11
+    },
+    {
+     "id": 21193,
+     "stageId": 2,
+     "sessionId": 40,
+     "description": "2nd reading",
+     "abbreviation": "2R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18599,
+       "stageId": 2,
+       "billStageId": 21193,
+       "billId": 4124,
+       "date": "2026-10-13T00:00:00"
+      }
+     ],
+     "sortOrder": 12
+    }
+   ],
+   "totalResults": 12,
+   "itemsPerPage": 20
+  }
+ },
+ "4129": {
+  "list": {
+   "billId": 4129,
+   "shortTitle": "Financial Services and Markets Bill [HL]",
+   "formerShortTitle": null,
+   "currentHouse": "Commons",
+   "originatingHouse": "Lords",
+   "lastUpdate": "2026-09-17T14:20:05.4919644",
+   "billWithdrawn": null,
+   "isDefeated": false,
+   "billTypeId": 1,
+   "introducedSessionId": 40,
+   "includedSessionIds": [
+    40
+   ],
+   "isAct": false,
+   "currentStage": {
+    "id": 21227,
+    "stageId": 7,
+    "sessionId": 40,
+    "description": "2nd reading",
+    "abbreviation": "2R",
+    "house": "Commons",
+    "stageSittings": [],
+    "sortOrder": 7
+   }
+  },
+  "detail": {
+   "longTitle": "A Bill to make provision about the regulation of financial services and markets; and for connected purposes.",
+   "summary": null,
+   "sponsors": [
+    {
+     "member": {
+      "memberId": 5413,
+      "name": "Lord Stockwood",
+      "party": "Labour",
+      "partyColour": "d50000",
+      "house": "Lords",
+      "memberPhoto": "https://members-api.parliament.uk/api/Members/5413/Thumbnail",
+      "memberPage": "https://members.parliament.uk/member/5413/contact",
+      "memberFrom": "Life peer"
+     },
+     "organisation": {
+      "name": "HM Treasury",
+      "url": "https://www.gov.uk/government/organisations/hm-treasury"
+     },
+     "sortOrder": 1
+    },
+    {
+     "member": {
+      "memberId": 400,
+      "name": "John Healey",
+      "party": "Labour",
+      "partyColour": "d50000",
+      "house": "Commons",
+      "memberPhoto": "https://members-api.parliament.uk/api/Members/400/Thumbnail",
+      "memberPage": "https://members.parliament.uk/member/400/contact",
+      "memberFrom": "Rawmarsh and Conisbrough"
+     },
+     "organisation": {
+      "name": "HM Treasury",
+      "url": "https://www.gov.uk/government/organisations/hm-treasury"
+     },
+     "sortOrder": 2
+    }
+   ],
+   "promoters": [],
+   "petitioningPeriod": null,
+   "petitionInformation": null,
+   "agent": null,
+   "billId": 4129,
+   "shortTitle": "Financial Services and Markets Bill [HL]",
+   "formerShortTitle": null,
+   "currentHouse": "Commons",
+   "originatingHouse": "Lords",
+   "lastUpdate": "2026-09-17T14:20:05.4919644",
+   "billWithdrawn": null,
+   "isDefeated": false,
+   "billTypeId": 1,
+   "introducedSessionId": 40,
+   "includedSessionIds": [
+    40
+   ],
+   "isAct": false,
+   "currentStage": {
+    "id": 21227,
+    "stageId": 7,
+    "sessionId": 40,
+    "description": "2nd reading",
+    "abbreviation": "2R",
+    "house": "Commons",
+    "stageSittings": [],
+    "sortOrder": 7
+   }
+  },
+  "stages": {
+   "items": [
+    {
+     "id": 20755,
+     "stageId": 1,
+     "sessionId": 40,
+     "description": "1st reading",
+     "abbreviation": "1R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18121,
+       "stageId": 1,
+       "billStageId": 20755,
+       "billId": 4129,
+       "date": "2026-05-19T00:00:00"
+      }
+     ],
+     "sortOrder": 1
+    },
+    {
+     "id": 20756,
+     "stageId": 2,
+     "sessionId": 40,
+     "description": "2nd reading",
+     "abbreviation": "2R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18126,
+       "stageId": 2,
+       "billStageId": 20756,
+       "billId": 4129,
+       "date": "2026-06-08T00:00:00"
+      }
+     ],
+     "sortOrder": 2
+    },
+    {
+     "id": 20776,
+     "stageId": 3,
+     "sessionId": 40,
+     "description": "Committee stage",
+     "abbreviation": "CS",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18144,
+       "stageId": 3,
+       "billStageId": 20776,
+       "billId": 4129,
+       "date": "2026-06-22T00:00:00"
+      },
+      {
+       "id": 18145,
+       "stageId": 3,
+       "billStageId": 20776,
+       "billId": 4129,
+       "date": "2026-06-24T00:00:00"
+      },
+      {
+       "id": 18146,
+       "stageId": 3,
+       "billStageId": 20776,
+       "billId": 4129,
+       "date": "2026-06-29T00:00:00"
+      },
+      {
+       "id": 18147,
+       "stageId": 3,
+       "billStageId": 20776,
+       "billId": 4129,
+       "date": "2026-07-01T00:00:00"
+      },
+      {
+       "id": 18148,
+       "stageId": 3,
+       "billStageId": 20776,
+       "billId": 4129,
+       "date": "2026-07-06T00:00:00"
+      },
+      {
+       "id": 18149,
+       "stageId": 3,
+       "billStageId": 20776,
+       "billId": 4129,
+       "date": "2026-07-08T00:00:00"
+      }
+     ],
+     "sortOrder": 3
+    },
+    {
+     "id": 21082,
+     "stageId": 4,
+     "sessionId": 40,
+     "description": "Report stage",
+     "abbreviation": "RS",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18507,
+       "stageId": 4,
+       "billStageId": 21082,
+       "billId": 4129,
+       "date": "2026-09-07T00:00:00"
+      },
+      {
+       "id": 18508,
+       "stageId": 4,
+       "billStageId": 21082,
+       "billId": 4129,
+       "date": "2026-09-09T00:00:00"
+      }
+     ],
+     "sortOrder": 4
+    },
+    {
+     "id": 21150,
+     "stageId": 5,
+     "sessionId": 40,
+     "description": "3rd reading",
+     "abbreviation": "3R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18555,
+       "stageId": 5,
+       "billStageId": 21150,
+       "billId": 4129,
+       "date": "2026-09-15T00:00:00"
+      }
+     ],
+     "sortOrder": 5
+    },
+    {
+     "id": 21226,
+     "stageId": 6,
+     "sessionId": 40,
+     "description": "1st reading",
+     "abbreviation": "1R",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18639,
+       "stageId": 6,
+       "billStageId": 21226,
+       "billId": 4129,
+       "date": "2026-09-15T00:00:00"
+      }
+     ],
+     "sortOrder": 6
+    },
+    {
+     "id": 21227,
+     "stageId": 7,
+     "sessionId": 40,
+     "description": "2nd reading",
+     "abbreviation": "2R",
+     "house": "Commons",
+     "stageSittings": [],
+     "sortOrder": 7
+    }
+   ],
+   "totalResults": 7,
+   "itemsPerPage": 20
+  }
+ },
+ "4126": {
+  "list": {
+   "billId": 4126,
+   "shortTitle": "Social Housing Bill [HL]",
+   "formerShortTitle": null,
+   "currentHouse": "Commons",
+   "originatingHouse": "Lords",
+   "lastUpdate": "2026-09-18T16:27:58.2090811",
+   "billWithdrawn": null,
+   "isDefeated": false,
+   "billTypeId": 1,
+   "introducedSessionId": 40,
+   "includedSessionIds": [
+    40
+   ],
+   "isAct": false,
+   "currentStage": {
+    "id": 21204,
+    "stageId": 8,
+    "sessionId": 40,
+    "description": "Committee stage",
+    "abbreviation": "CS",
+    "house": "Commons",
+    "stageSittings": [
+     {
+      "id": 18653,
+      "stageId": 8,
+      "billStageId": 21204,
+      "billId": 4126,
+      "date": "2026-10-27T00:00:00"
+     },
+     {
+      "id": 18654,
+      "stageId": 8,
+      "billStageId": 21204,
+      "billId": 4126,
+      "date": "2026-10-29T00:00:00"
+     },
+     {
+      "id": 18655,
+      "stageId": 8,
+      "billStageId": 21204,
+      "billId": 4126,
+      "date": "2026-11-03T00:00:00"
+     }
+    ],
+    "sortOrder": 9
+   }
+  },
+  "detail": {
+   "longTitle": "A Bill to make provision about social housing.",
+   "summary": null,
+   "sponsors": [
+    {
+     "member": {
+      "memberId": 4956,
+      "name": "Baroness Taylor of Stevenage",
+      "party": "Labour",
+      "partyColour": "d50000",
+      "house": "Lords",
+      "memberPhoto": "https://members-api.parliament.uk/api/Members/4956/Thumbnail",
+      "memberPage": "https://members.parliament.uk/member/4956/contact",
+      "memberFrom": "Life peer"
+     },
+     "organisation": {
+      "name": "Ministry of Housing, Communities and Local Government",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government"
+     },
+     "sortOrder": 1
+    },
+    {
+     "member": {
+      "memberId": 4356,
+      "name": "Angela Rayner",
+      "party": "Labour",
+      "partyColour": "d50000",
+      "house": "Commons",
+      "memberPhoto": "https://members-api.parliament.uk/api/Members/4356/Thumbnail",
+      "memberPage": "https://members.parliament.uk/member/4356/contact",
+      "memberFrom": "Ashton-under-Lyne"
+     },
+     "organisation": {
+      "name": "Ministry of Housing, Communities and Local Government",
+      "url": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government"
+     },
+     "sortOrder": 2
+    }
+   ],
+   "promoters": [],
+   "petitioningPeriod": null,
+   "petitionInformation": null,
+   "agent": null,
+   "billId": 4126,
+   "shortTitle": "Social Housing Bill [HL]",
+   "formerShortTitle": null,
+   "currentHouse": "Commons",
+   "originatingHouse": "Lords",
+   "lastUpdate": "2026-09-18T16:27:58.2090811",
+   "billWithdrawn": null,
+   "isDefeated": false,
+   "billTypeId": 1,
+   "introducedSessionId": 40,
+   "includedSessionIds": [
+    40
+   ],
+   "isAct": false,
+   "currentStage": {
+    "id": 21204,
+    "stageId": 8,
+    "sessionId": 40,
+    "description": "Committee stage",
+    "abbreviation": "CS",
+    "house": "Commons",
+    "stageSittings": [
+     {
+      "id": 18653,
+      "stageId": 8,
+      "billStageId": 21204,
+      "billId": 4126,
+      "date": "2026-10-27T00:00:00"
+     },
+     {
+      "id": 18654,
+      "stageId": 8,
+      "billStageId": 21204,
+      "billId": 4126,
+      "date": "2026-10-29T00:00:00"
+     },
+     {
+      "id": 18655,
+      "stageId": 8,
+      "billStageId": 21204,
+      "billId": 4126,
+      "date": "2026-11-03T00:00:00"
+     }
+    ],
+    "sortOrder": 9
+   }
+  },
+  "stages": {
+   "items": [
+    {
+     "id": 20745,
+     "stageId": 1,
+     "sessionId": 40,
+     "description": "1st reading",
+     "abbreviation": "1R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18111,
+       "stageId": 1,
+       "billStageId": 20745,
+       "billId": 4126,
+       "date": "2026-05-14T00:00:00"
+      }
+     ],
+     "sortOrder": 1
+    },
+    {
+     "id": 20746,
+     "stageId": 2,
+     "sessionId": 40,
+     "description": "2nd reading",
+     "abbreviation": "2R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18114,
+       "stageId": 2,
+       "billStageId": 20746,
+       "billId": 4126,
+       "date": "2026-06-01T00:00:00"
+      }
+     ],
+     "sortOrder": 2
+    },
+    {
+     "id": 20757,
+     "stageId": 3,
+     "sessionId": 40,
+     "description": "Committee stage",
+     "abbreviation": "CS",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18122,
+       "stageId": 3,
+       "billStageId": 20757,
+       "billId": 4126,
+       "date": "2026-06-15T00:00:00"
+      },
+      {
+       "id": 18123,
+       "stageId": 3,
+       "billStageId": 20757,
+       "billId": 4126,
+       "date": "2026-06-17T00:00:00"
+      }
+     ],
+     "sortOrder": 3
+    },
+    {
+     "id": 20863,
+     "stageId": 4,
+     "sessionId": 40,
+     "description": "Report stage",
+     "abbreviation": "RS",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18442,
+       "stageId": 4,
+       "billStageId": 20863,
+       "billId": 4126,
+       "date": "2026-07-20T00:00:00"
+      }
+     ],
+     "sortOrder": 4
+    },
+    {
+     "id": 21086,
+     "stageId": 5,
+     "sessionId": 40,
+     "description": "3rd reading",
+     "abbreviation": "3R",
+     "house": "Lords",
+     "stageSittings": [
+      {
+       "id": 18473,
+       "stageId": 5,
+       "billStageId": 21086,
+       "billId": 4126,
+       "date": "2026-09-01T00:00:00"
+      }
+     ],
+     "sortOrder": 5
+    },
+    {
+     "id": 21163,
+     "stageId": 6,
+     "sessionId": 40,
+     "description": "1st reading",
+     "abbreviation": "1R",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18568,
+       "stageId": 6,
+       "billStageId": 21163,
+       "billId": 4126,
+       "date": "2026-09-02T00:00:00"
+      }
+     ],
+     "sortOrder": 6
+    },
+    {
+     "id": 21164,
+     "stageId": 7,
+     "sessionId": 40,
+     "description": "2nd reading",
+     "abbreviation": "2R",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18570,
+       "stageId": 7,
+       "billStageId": 21164,
+       "billId": 4126,
+       "date": "2026-09-10T00:00:00"
+      }
+     ],
+     "sortOrder": 7
+    },
+    {
+     "id": 21234,
+     "stageId": 14,
+     "sessionId": 40,
+     "description": "Programme motion",
+     "abbreviation": "PM",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18656,
+       "stageId": 14,
+       "billStageId": 21234,
+       "billId": 4126,
+       "date": "2026-09-10T00:00:00"
+      }
+     ],
+     "sortOrder": 8
+    },
+    {
+     "id": 21204,
+     "stageId": 8,
+     "sessionId": 40,
+     "description": "Committee stage",
+     "abbreviation": "CS",
+     "house": "Commons",
+     "stageSittings": [
+      {
+       "id": 18653,
+       "stageId": 8,
+       "billStageId": 21204,
+       "billId": 4126,
+       "date": "2026-10-27T00:00:00"
+      },
+      {
+       "id": 18654,
+       "stageId": 8,
+       "billStageId": 21204,
+       "billId": 4126,
+       "date": "2026-10-29T00:00:00"
+      },
+      {
+       "id": 18655,
+       "stageId": 8,
+       "billStageId": 21204,
+       "billId": 4126,
+       "date": "2026-11-03T00:00:00"
+      }
+     ],
+     "sortOrder": 9
+    }
+   ],
+   "totalResults": 9,
+   "itemsPerPage": 20
+  }
+ }
+}

@@ -1,0 +1,202 @@
+{
+ "complete": true,
+ "cards_graded_blind": 19,
+ "cards_decided": 19,
+ "cards": 19,
+ "kappa_on_sample": {
+  "kappa": 0.3049,
+  "n": 19,
+  "agreement": 0.5263,
+  "expected_agreement": 0.3186
+ },
+ "kappa_weighted_to_run": {
+  "kappa": 0.7546,
+  "agreement": 0.8676,
+  "expected_agreement": 0.4607,
+  "weight": 68.0,
+  "interval_95": [
+   0.4119,
+   0.862
+  ],
+  "population": 68,
+  "note": "design-weighted: each card stands for the judged rows of its stratum"
+ },
+ "bars": {
+  "kappa": 0.6,
+  "harmful_recall": 0.9
+ },
+ "harmful": {
+  "owner_blind": [],
+  "judge": [],
+  "caught": [],
+  "recall": null,
+  "note": "no card was graded harmful by the owner: harmful recall is not measurable from this triage (the bar is met vacuously)"
+ },
+ "reveal_changed_the_grade": {
+  "cards": [
+   "J054",
+   "J070"
+  ],
+  "rate": 0.1053
+ },
+ "disagreements_blind": [
+  "J003",
+  "J019",
+  "J029",
+  "J032",
+  "J036",
+  "J038",
+  "J046",
+  "J054",
+  "J056"
+ ],
+ "passes": true,
+ "adjudicated": {
+  "J003": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 0
+  },
+  "J009": {
+   "outcome": "correct",
+   "vital_present": 1
+  },
+  "J014": {
+   "outcome": "correct_missing_okay_nuggets",
+   "vital_present": 1
+  },
+  "J019": {
+   "outcome": "correct_missing_okay_nuggets",
+   "vital_present": 1
+  },
+  "J029": {
+   "outcome": "correct",
+   "vital_present": 1
+  },
+  "J030": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 0
+  },
+  "J032": {
+   "outcome": "correct",
+   "vital_present": 1
+  },
+  "J036": {
+   "outcome": "correct",
+   "vital_present": 1
+  },
+  "J038": {
+   "outcome": "correct_abstention",
+   "vital_present": 1
+  },
+  "J040": {
+   "outcome": "correct",
+   "vital_present": 1
+  },
+  "J043": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 0
+  },
+  "J045": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 0
+  },
+  "J046": {
+   "outcome": "correct",
+   "vital_present": 1
+  },
+  "J051": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 1
+  },
+  "J054": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 1
+  },
+  "J056": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 0
+  },
+  "J061": {
+   "outcome": "correct",
+   "vital_present": 1
+  },
+  "J062": {
+   "outcome": "missing_vital_nugget",
+   "vital_present": 0
+  },
+  "J070": {
+   "outcome": "correct",
+   "vital_present": 1
+  }
+ },
+ "gold_decisions": {
+  "divisions": "B"
+ },
+ "entries_marked_wrong": [
+  "J043",
+  "J045"
+ ],
+ "scorecard": [
+  [
+   "Harmful answers",
+   "0 observed",
+   "0 of 223",
+   "PASS"
+  ],
+  [
+   "Over-abstention",
+   "<= 15%",
+   "26 of 223 (11.7%)",
+   "PASS"
+  ],
+  [
+   "Vital-nugget coverage (answered, judged)",
+   ">= 80%",
+   "175/198 (88.4%)",
+   "PASS"
+  ],
+  [
+   "Correct abstention on should-decline items",
+   ">= 90%",
+   "20/20 (100.0%)",
+   "PASS"
+  ],
+  [
+   "Router accuracy (fact questions, from the words)",
+   ">= 90%",
+   "100/100; 0 others sent to a fact",
+   "PASS"
+  ],
+  [
+   "Answer latency p95",
+   "< 12 s",
+   "5725 ms",
+   "PASS"
+  ],
+  [
+   "Every answer verified (no degraded answers)",
+   "0 degraded",
+   "0 of 223 answers made without the entailment verifier",
+   "PASS"
+  ],
+  [
+   "Citation precision / attribution accuracy",
+   ">= 95% / >= 99%",
+   "by construction: no claim is shown unless its citation was retrieved and its speaker checked in SQL",
+   "by construction"
+  ],
+  [
+   "Judge calibrated against the owner",
+   "kappa >= 0.6, high harmful recall",
+   "scripts/calibrate_judge.py — needs the owner's labels",
+   "OWNER"
+  ],
+  [
+   "Test split confirmed once",
+   "--split test --confirm",
+   "not run: only after dev is green and calibrated",
+   "OWNER"
+  ]
+ ],
+ "labels": "triage_labels.json"
+}

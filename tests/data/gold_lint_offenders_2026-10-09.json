@@ -1,0 +1,2112 @@
+{
+ "frozen": "2026-10-09",
+ "source": "tests/data/gold_v2.json as it stood; classes from reports/gold_nugget_audit_dev_2026-10-09.json",
+ "note": "hum0023 is filed under L3 here: a narrow figure question whose vital bundles the figure with an unasked citer.",
+ "items": [
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0011",
+    "question": "Was there any argument that households cannot change supplier if they are unhappy?",
+    "category": "paraphrase",
+    "criticality": "minor",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Westminster Hall",
+    "date": "2026-09-14",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "C0D2A8C8-52D0-4B57-A3DD-5AE554DE52F2",
+      "quote": "People in my constituency cannot suddenly decide that they have had enough of United Utilities and switch to another water company."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Sarah Hall made that argument for public ownership of water.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "19A5FBF6-0CDA-4F25-917B-F31DC9B249A2": 0,
+     "19C4559F-AD08-499C-9D5D-BF231D395E05": 2,
+     "231F8263-65E5-4EF2-A50A-FEE182239206": 0,
+     "32A87F91-9598-4B07-A6D5-987D5F79312D": 0,
+     "33A0E84C-B864-4836-8A0A-EC1F80B0C123": 0,
+     "53277AF2-55C7-4629-AEAB-4046569F3270": 0,
+     "5B5E508B-1EDE-44E8-9826-F49DD47BDC0C": 1,
+     "6FFAC83D-9A9B-4540-8EAB-D65CAAE01668": 0,
+     "70BB340B-8481-4153-9850-1278EF38B164": 0,
+     "84067836-BAB1-4F4C-A39F-2FC14CFF56AA": 0,
+     "A292D18E-E718-4630-A5B5-CD3FB3A9749E": 2,
+     "A47A265B-E3C6-4AE2-8027-8F4AE6BB9F6E": 1,
+     "B4D4671F-A0AD-4859-BCA5-F59AD2991E15": 0,
+     "C0D2A8C8-52D0-4B57-A3DD-5AE554DE52F2": 2,
+     "D42411FC-2D60-4D23-B5D0-34AE5F0850CA": 0,
+     "EED05A75-CBD9-4A66-97D9-396450856BDD": 0,
+     "F39A172C-E9E1-475B-A253-B2E15AF8A3A4": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0018",
+    "question": "Was there a complaint that first-time buyers are stuck renting while older owners cannot move out?",
+    "category": "paraphrase",
+    "criticality": "minor",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W2",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2025-10-28",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "AFDCFA87-E050-486A-9B3C-5FD0B52E53AF",
+      "quote": "In today’s world, though, we have younger people stuck at the gatehouse, renting, unable to break through into property ownership; and we have older generations locked inside the castle towers, unable to downsize easily and get out, and last winter being cold with the sudden changes in the winter fuel allowance."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Sarah Bool, in the stamp duty debate.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "09FFD0C3-26FA-4779-8072-62EF7D8F4F35": 0,
+     "21860EAC-402E-4A42-B94B-190B43687916": 0,
+     "2460006B-E63C-40B9-BEB9-F2AC78971807": 1,
+     "2D3CA49B-3429-4416-8445-CD779942A166": 0,
+     "3BB9D10B-79FD-458B-89D5-1E34E4BFC500": 1,
+     "5D434CBB-1CE9-41D2-8AA0-88A8AA3A1D67": 0,
+     "7D94A0B1-8E73-455F-B689-146BF34E3CBA": 0,
+     "8CAB6E78-B8AD-4216-B417-DAE6B178755B": 0,
+     "AFDCFA87-E050-486A-9B3C-5FD0B52E53AF": 3,
+     "B3C732F2-E806-498C-98F5-CFF0F6B79CFF": 0,
+     "C58C6620-5A3D-488C-9CD6-0ACC26AF0761": 0,
+     "D0B47F25-72A6-4AD1-B845-7145D794C1EE": 0,
+     "FADBDFDB-1B92-4151-AEDE-291087888DBF": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "hum0023",
+    "question": "how many hospitality jobs have been lost according to the tories",
+    "category": "numeric",
+    "criticality": "minor",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-15",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "5C8CFAA5-F430-49A7-989B-7934BD052D36",
+      "quote": "Almost 89,000 hospitality jobs have gone, and now what is Labour’s answer?"
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Almost 89,000, as claimed by Rebecca Paul.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "Presenting the figure as an official statistic rather than as a claim made in debate."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "10F0C28A-CCFC-4FEB-95F3-9BB84773687F": 3,
+     "11DEE807-9106-4D7E-BDC5-9C11708B7177": 1,
+     "1B5B3A38-ABF5-49D7-B5EE-4688E038BB00": 2,
+     "2CE9E773-F5DD-4762-8F24-5EF2BF4D3CF9": 3,
+     "30A50AF1-473E-4416-B2A4-12EB63F95209": 2,
+     "3ED2FA48-BD5F-4AE9-8E28-FCC144DDB5E4": 3,
+     "509B8C7D-8AAA-46A7-9177-4BB4B37B4FCE": 3,
+     "5C8CFAA5-F430-49A7-989B-7934BD052D36": 2,
+     "5D721D0F-D1B2-4C60-B6BF-113AE3F2C003": 1,
+     "84490D6B-B0FD-4763-B24A-5DE26FD5FD4D": 1,
+     "870B97D6-9C4C-46E1-8B85-48CB8C407807": 1,
+     "B048E12D-F1F7-4E40-AFC1-5DF187C73DA2": 2,
+     "BC3B5E47-2FDF-48A7-8887-F50F131E1932": 1,
+     "BEDD5F8C-8572-4D0A-835A-2AD1F71992E3": 2,
+     "C56BF598-1F8A-44F5-8294-DFA65C55EEF0": 1,
+     "CC05F6A5-FC8E-4453-A976-951C78D5FD21": 1,
+     "DE664A4D-F3DE-4605-9342-5E385616B35B": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0046",
+    "question": "What did both sides say about fracking and whether it is safe?",
+    "category": "multi_speech",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-15",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "9BEA6E54-028C-44C0-B169-57B97A76BF1E",
+      "quote": "There are some 20 million people in the United States who live within 1 mile of fracking pads, shale gas pads or whatever one might wish to call them."
+     },
+     {
+      "speech_id": "4D4A4F2B-159C-4346-9F48-0265841985A6",
+      "quote": "The hon. Gentleman better explains the point that I was trying to make, which is that other issues, such as the potential for groundwater contamination, are different in the situation of fracking for fossil fuels."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Richard Tice pointed to millions living near US pads.",
+      "vital": true,
+      "speech_ids": []
+     },
+     {
+      "text": "Claire Young raised groundwater contamination and the thinness of the evidence base.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "04E41983-2FD6-42CA-9B4F-617AE4B8863F": 1,
+     "114F1E4D-5F12-419B-AC93-F0D30B82C358": 1,
+     "1ABCD07F-1AD2-48A2-8245-52C6CA3C6990": 1,
+     "4AB77B4B-78C7-4AAF-8AF3-0C547E5B20B6": 1,
+     "4D4A4F2B-159C-4346-9F48-0265841985A6": 2,
+     "4EB55B66-72FC-4E3B-9005-F837BB1B9707": 2,
+     "601BC1F6-DB5E-42AB-A9A3-56353207A5A2": 1,
+     "7086376B-DF43-4CFB-8D9B-C58D56D8409F": 1,
+     "7CFBCAEB-2ACD-40C0-884B-B739DF8E64A8": 1,
+     "86E18D7F-A69C-4801-AC3D-A5D3503A2D4A": 1,
+     "990FAB49-232A-43AF-BD1E-386237EA200E": 1,
+     "9BEA6E54-028C-44C0-B169-57B97A76BF1E": 2,
+     "A2B4F38B-C3C7-4D66-A2AD-352FF56DEAC1": 1,
+     "A3155F34-59C9-44A5-A291-3DDCEC4D0A5B": 1,
+     "BB4337C0-6BD0-484C-ADE7-EA611553235C": 2
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0048",
+    "question": "What did peers say for and against the two-child limit being lifted?",
+    "category": "multi_speech",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W4",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-02-03",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "070AC1AD-758B-4DDA-9BE4-55530270027B",
+      "quote": "It is interesting how people born into great wealth consider their position to be due only to their very hard work, yet they consider it to be other people’s own fault if they are born into poverty."
+     },
+     {
+      "speech_id": "174220A0-6F8D-441F-9DA2-5ABC77CC86B4",
+      "quote": "The benefits system is a safety net designed to support people in hardship, but a fair system must balance that with the needs of those who pay for it."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Lizzi Collinge argued about how poverty is attributed.",
+      "vital": true,
+      "speech_ids": []
+     },
+     {
+      "text": "Sir Ashley Fox argued the cost falls on taxpayers now or later.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "Describing this as a Lords debate; both speeches are from the Commons."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "070AC1AD-758B-4DDA-9BE4-55530270027B": 2,
+     "117539DD-E3EB-43E4-A4A2-95AC6CD705BE": 2,
+     "174220A0-6F8D-441F-9DA2-5ABC77CC86B4": 2,
+     "1F869E08-ADF6-4036-B00A-A7F7DBFC0564": 1,
+     "24E23672-FED0-4342-B442-0F90A7F93AC0": 1,
+     "33968299-33BC-4D71-B416-3B191BB090F7": 0,
+     "5299B4CC-5F0D-4593-9DAD-DD1FE5B181EC": 1,
+     "6FEBF0D4-905E-49B3-B59C-C4791E038619": 0,
+     "7E3F8815-5818-4D93-922A-5CCA4BBFF030": 1,
+     "92463E6C-B1AC-40E4-94CF-648B0471C603": 2,
+     "982F3AE3-4321-4055-A290-5533EA95670E": 1,
+     "9F2FEBA8-5FAC-44FA-B709-A2A12EEADBD5": 1,
+     "A2DA5F10-3C35-4EDD-B89C-E984522F8937": 1,
+     "B2612C34-978D-4A9A-AAB2-947BC0E8722D": 1,
+     "BBB69A44-E89C-4958-9ED1-CD09F6BB4FD2": 1,
+     "DEDC04F1-6FB0-452D-8461-0916CE654B10": 1,
+     "E1D493E5-B9C0-4BA2-A51D-547D24BA5108": 1,
+     "EADC5A3B-2ED3-498A-89ED-0C28186D44C8": 2,
+     "EFDB22DA-6F42-4FF9-9716-375805FD90BA": 1,
+     "FF076157-0A01-494B-80D7-B9A1D373DF24": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "A scoping trap inside a multi-speech item: the question says 'peers' and the record says MPs.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0072",
+    "question": "What did the Lords say about the leasehold bill and property agents?",
+    "category": "scoping",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W1",
+    "house": "Lords",
+    "section": "Lords Chamber",
+    "date": "2024-05-24",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "AF41CB09-0D7A-4BA1-A75C-44685A6CBAD9",
+      "quote": "I will start with the amendments regarding the regulation of property agents."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Lord Gascoigne responded to amendments on regulating property agents.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "07950D3F-51B9-40E8-B693-750424BE0C6C": 0,
+     "2C886C77-AF79-4485-8EBE-2EA8D9326C25": 0,
+     "47C69B47-96B8-444D-A319-61DF1ECA56B3": 1,
+     "4CB92C95-0C90-40FF-8724-FBBACF102969": 0,
+     "693C26AA-CCE1-448D-B9E7-467554C48CAD": 3,
+     "6EDFCFF7-5216-4E54-83AC-4DF11EDC652D": 1,
+     "6F072739-F8BC-41DC-92EA-223041B95B76": 1,
+     "9D3D24E3-2BB0-438F-87D3-268C04047D5C": 1,
+     "A0DC84AE-C4F4-42EF-9787-C915B7117F23": 0,
+     "AB0DF1CA-CE8A-415B-B2FD-AC201A13242F": 0,
+     "AF41CB09-0D7A-4BA1-A75C-44685A6CBAD9": 3,
+     "B69C8940-AB0A-4480-AD87-E8E9FCE9B9CE": 3,
+     "C41693A2-8B2C-4A99-86A8-622A826BC2B1": 0,
+     "CBDB382C-A264-433B-A723-6D37F9B7528D": 2,
+     "DD0034C5-9794-4ED3-9887-1BA938D48260": 3,
+     "ED2082A3-4474-4CF2-9673-FDE498B9A242": 1,
+     "F0E62A9B-9BB9-4E61-954B-86913F873583": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0079",
+    "question": "Did anyone actually use the words 'holiday tax' in the Commons?",
+    "category": "quote_verification",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-15",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "5C8CFAA5-F430-49A7-989B-7934BD052D36",
+      "quote": "Let us call this what it is—Labour’s holiday tax."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Yes: Rebecca Paul, on 15 September 2026.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "02E479EE-76A1-438D-980D-92356B598DD8": 0,
+     "1E3A9DCB-E6F0-4DDC-B751-FC1500DF8A13": 1,
+     "34DDFEBB-2854-43C0-BD7D-03868A74945C": 2,
+     "39020E0D-C833-4567-85E1-71DCEB2CCC19": 0,
+     "49B5EDFB-D700-4CE3-91C9-69C24413F67C": 1,
+     "56FBE4A8-22B7-47BF-86B5-09057DC71440": 0,
+     "5C8CFAA5-F430-49A7-989B-7934BD052D36": 2,
+     "7558F5E0-3936-43DB-BF70-75FCBE0451D7": 1,
+     "7CFB7B34-CD9A-4C67-8ADD-948889A160F6": 0,
+     "85034AF6-2387-477B-A338-A38165FD69F7": 0,
+     "9041ACA6-2AD4-48D9-A0BD-02294B42F754": 0,
+     "BF1BF14E-BDC3-49E8-B78B-F4EDB12606CB": 0,
+     "C313FC28-EE57-4A0F-BFAB-5C134A595E97": 1,
+     "E56DC90B-2B81-4D66-9192-DEFBABA49390": 1,
+     "F463BFCD-AA9D-470A-AC1A-E34DF5C0B124": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0081",
+    "question": "did the tories U-turn on fracking",
+    "category": "colloquial",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-15",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "9BEA6E54-028C-44C0-B169-57B97A76BF1E",
+      "quote": "There are some 20 million people in the United States who live within 1 mile of fracking pads, shale gas pads or whatever one might wish to call them."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "The record shows Richard Tice arguing for fracking, not a Conservative reversal.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "Asserting a U-turn the record does not show."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "114F1E4D-5F12-419B-AC93-F0D30B82C358": 1,
+     "131BD0E6-BAFE-48AF-BAFC-76F14198EA99": 0,
+     "4D407A3F-BC5B-44DC-920C-9B79454CF64A": 0,
+     "4EB55B66-72FC-4E3B-9005-F837BB1B9707": 1,
+     "64F1886F-1B5E-4BB8-832F-2C31BA938829": 0,
+     "6E8E7F02-D763-4BE7-84B9-EEF197C1278F": 0,
+     "7086376B-DF43-4CFB-8D9B-C58D56D8409F": 1,
+     "86E18D7F-A69C-4801-AC3D-A5D3503A2D4A": 1,
+     "8CB8662F-98E2-437B-8EA3-6C8530075E28": 0,
+     "9BEA6E54-028C-44C0-B169-57B97A76BF1E": 2,
+     "A97837F3-A9F1-4D10-BFAB-8FD573D54ABF": 0,
+     "ACA7D3AB-355C-4016-8FED-29D67316200C": 0,
+     "AD5656D7-D72C-4D67-A9E5-C9A008BC957A": 0,
+     "B1C9B411-6762-4E54-847D-F45C5EE934E7": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0087",
+    "question": "my nan lost out on her pension, did anyone in parliament do anything",
+    "category": "colloquial",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W1",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2024-05-16",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "3F103EDB-7B3B-442F-8866-E1FC1C42D95C",
+      "quote": "It is quite clear that plenty of work has been done by both the APPG and the ombudsman to outline what a compensation scheme should look like."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "The Commons debated the ombudsman's report on women's state pension age on 16 May 2024.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "Promising an outcome or entitlement to the questioner."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "0DB785B5-CEA1-46F0-95A9-2ADFA65C72AC": 0,
+     "1199F94E-4E4E-4CEC-B99A-86D015F39B82": 2,
+     "1CDD2667-9CA6-4D2A-A44E-8260A4CA5775": 2,
+     "3F103EDB-7B3B-442F-8866-E1FC1C42D95C": 3,
+     "4B397C0B-C79C-4FEA-9C81-B9B2AAFC7A2E": 0,
+     "6D59F263-9E0B-46D5-8192-5FA5698A778D": 0,
+     "6FA719F5-F8E4-4DF2-B06C-A17B6E7B4596": 2,
+     "70AACD78-4A47-46D7-B3A1-E190CC001C95": 0,
+     "75016986-8533-4D2C-A972-0C57FD68EF09": 1,
+     "A98693FC-D854-4ADF-B412-6495D7C7DB9E": 2,
+     "B38A35FA-F825-4A73-AC59-FB2DCEB1ADF1": 0,
+     "B5D8A76D-3648-492F-92A1-CF591F3043CB": 0,
+     "DE65B438-1CCE-421E-8BB4-841F2C25CB90": 0,
+     "E2EC8A67-F3CF-4E4B-818F-EC1FD7483DA2": 2,
+     "EBA73F7E-1D9A-4E38-AA18-86DC161F07A0": 3
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "A constituent, not a researcher. The right answer is factual and does not give advice.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "old0002",
+    "question": "Why did an opposition MP object to sending £35 billion to Mauritius?",
+    "category": "exact_term",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-09",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "FE53CA31-BF1E-4A5A-80B2-73DF66A650A5",
+      "quote": "To govern is to choose, so why is he choosing to send £35 billion to Mauritius when they cut the money to train our troops?"
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Kemi Badenoch asked why the Government was choosing to send £35 billion to Mauritius when it had cut the money to train the troops.",
+      "vital": true,
+      "speech_ids": [
+       "FE53CA31-BF1E-4A5A-80B2-73DF66A650A5"
+      ]
+     },
+     {
+      "text": "The £35 billion is her figure, put as a question at Prime Minister's Questions, not an established fact.",
+      "vital": false,
+      "speech_ids": [
+       "FE53CA31-BF1E-4A5A-80B2-73DF66A650A5"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "00EFB216-2666-4B11-AE90-3079683D3222": 3,
+     "125E1C58-CB99-41E7-8BFE-B0A680035BB8": 1,
+     "3155E2CA-5D78-4E80-A8DA-08D65EEFBA7F": 2,
+     "3F263E8F-D828-4462-BF49-EEEC696B3019": 2,
+     "3F9B31C3-E2D2-48A3-9593-CEA61D02C5E7": 3,
+     "5D11A880-3DB2-406E-A7DF-8A3AFFFFEAB8": 0,
+     "5FD881AD-5515-4F62-841B-481F9C644A53": 3,
+     "73B13A82-042E-4E72-BB28-678E270D0BD2": 0,
+     "81B3550A-4129-4B04-A6F7-C9F4E2637FB7": 2,
+     "887D285C-CAD4-40D8-8D01-801D98A14B15": 0,
+     "9320B12F-1BCB-4F12-A11A-D350B01D9437": 1,
+     "BFA7919D-53F4-4EDD-ADB8-9847F95AE1D9": 3,
+     "D2726A14-0695-4996-8FD7-4ADF914DC85E": 2,
+     "E6124344-7144-4837-AC32-EB66B424A0C4": 1,
+     "F4E97AEF-5656-426B-922D-23680C2AF853": 3,
+     "FE53CA31-BF1E-4A5A-80B2-73DF66A650A5": 3
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] Was the speaker in opposition at the date? And the 35bn is a claim made in debate, not a fact. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | The speaker is Kemi Badenoch, Leader of the Conservative Party on 9 September 2026: 'opposition MP' holds.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "old0008",
+    "question": "Do new residential developments put extra strain on doctors' surgeries?",
+    "category": "paraphrase",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-07",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "B6C0A1AC-2A97-408F-A159-2825D1C583AB",
+      "quote": "Healthcare services are of particular concern: when there is new housing, that makes it much harder for everyone to see their GP."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Lewis Cocking said new housing makes it much harder for everyone to see their GP.",
+      "vital": true,
+      "speech_ids": [
+       "B6C0A1AC-2A97-408F-A159-2825D1C583AB"
+      ]
+     },
+     {
+      "text": "It is his view, raised as a concern, not an established finding.",
+      "vital": false,
+      "speech_ids": [
+       "B6C0A1AC-2A97-408F-A159-2825D1C583AB"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "09D9C704-CD30-4939-BAA2-7AE54D9AF56B": 3,
+     "3C7AAA28-F8D2-4D5E-951B-71C86CD97D0E": 1,
+     "4815F288-DD61-4620-AF28-FACFD13C44BC": 0,
+     "5095E39E-1B5B-4C3D-9F32-F4C6868FB489": 1,
+     "55A767F0-5A59-4634-BAA8-8289A0AB9969": 1,
+     "57469D13-C047-4806-82A9-271CFD712B27": 0,
+     "67AFCFAD-18F3-40FB-A8AF-B0C280584101": 0,
+     "9CA4C41D-E204-4C86-9D8A-CE81E7A31EF1": 1,
+     "A79BDB7C-4629-455D-8719-094624647B87": 0,
+     "AADEFFE1-3325-4648-84E8-FF4175B32763": 0,
+     "B6C0A1AC-2A97-408F-A159-2825D1C583AB": 3,
+     "C4B542B8-27EB-4B32-BE2B-412686B82FBA": 2,
+     "E6DB6237-F6F0-4E20-A83E-D0D12E4FAA34": 0,
+     "F8BA9A2B-36CC-48A2-B478-CBB46B9DDDF5": 2
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "Carried from gold set v1; no audit finding. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "old0009",
+    "question": "Is there investor enthusiasm for long-term funding of council and housing association homes?",
+    "category": "paraphrase",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Lords",
+    "section": "Lords Chamber",
+    "date": "2026-09-15",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "9400ABDD-23C6-4777-B3A2-0DDFF5A45E91",
+      "quote": "When I did a workshop on this in the City, there was a great appetite for patient capital investment in social housing."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Baroness Taylor of Stevenage said there was a great appetite for patient capital investment in social housing when she held a workshop in the City.",
+      "vital": true,
+      "speech_ids": [
+       "9400ABDD-23C6-4777-B3A2-0DDFF5A45E91"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "06C82DDA-5A5E-4B0B-AFEF-AB3F8F89E7BD": 0,
+     "148C95EA-DE47-45AF-B557-4EE6FC968080": 0,
+     "152879D8-5704-4D84-BC34-5D7BAA28CBBD": 0,
+     "4C93B191-3F7D-489A-A426-478594DE270E": 1,
+     "5C065AC8-21AE-4D83-977B-88C827534352": 0,
+     "5FA2E4D1-728B-487F-BAEC-FAE97F118483": 2,
+     "6BFED35D-76C5-4CB3-93AE-F1567B83E2BF": 0,
+     "7662F840-70CF-4669-94D1-8DDF342BA70C": 0,
+     "7F34B845-6AE1-4405-A072-A4A062B0DB31": 1,
+     "876F0C58-75E2-48B6-8C44-566E41D99FB8": 0,
+     "8A0A1066-9E4F-4D3F-91F9-CAEF52A6685D": 0,
+     "9400ABDD-23C6-4777-B3A2-0DDFF5A45E91": 2,
+     "AD571447-3F75-4B18-B726-6610B45B8B27": 0,
+     "C3A5A70A-D45E-4153-B774-685D4078F020": 2,
+     "C758DA50-7655-4058-B350-2B9620D252AB": 0,
+     "D678411E-A06D-460B-B608-12BD77B47D24": 0,
+     "FABE59F7-F3B3-4339-A99F-85D39EA0613B": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "Carried from gold set v1; no audit finding. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "old0019",
+    "question": "What competing views did MPs give on whether the Rosebank oil field should go ahead?",
+    "category": "multi_speech",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-03",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "36C471F6-4590-4217-8828-FF6CDEC89C0E",
+      "quote": "I will say from the outset that I agree with my hon. Friend the Member for Bristol East (Kerry McCarthy): I am afraid I do not agree with drilling for oil in Rosebank."
+     },
+     {
+      "speech_id": "331A28E8-4A53-416D-92CE-A0FE3A640019",
+      "quote": "Does the Minister agree that the reason projects like Jackdaw and Rosebank matter so much is that they provide jobs, investment, skills and further tax revenues today, and that a just transition has to protect those workers and communities, rather than leaving them behind?"
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Catherine Fookes opposed drilling at Rosebank: it would not take a penny off bills and would blow carbon emissions targets.",
+      "vital": true,
+      "speech_ids": [
+       "36C471F6-4590-4217-8828-FF6CDEC89C0E",
+       "331A28E8-4A53-416D-92CE-A0FE3A640019"
+      ]
+     },
+     {
+      "text": "Steve Yemm argued that Jackdaw and Rosebank matter for jobs, investment, skills and tax revenue, and for a just transition.",
+      "vital": true,
+      "speech_ids": [
+       "36C471F6-4590-4217-8828-FF6CDEC89C0E",
+       "331A28E8-4A53-416D-92CE-A0FE3A640019"
+      ]
+     },
+     {
+      "text": "Kerry McCarthy is named in Catherine Fookes's speech; she is not its speaker.",
+      "vital": false,
+      "speech_ids": [
+       "36C471F6-4590-4217-8828-FF6CDEC89C0E",
+       "331A28E8-4A53-416D-92CE-A0FE3A640019"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "15908D4A-DDC2-4CEB-A42D-482D56A434AB": 1,
+     "331A28E8-4A53-416D-92CE-A0FE3A640019": 2,
+     "36C471F6-4590-4217-8828-FF6CDEC89C0E": 2,
+     "3E63349D-6488-41B2-80D3-5CD68C2CF994": 1,
+     "49851847-01AC-440F-8260-5FB4C0CF603F": 1,
+     "4EB55B66-72FC-4E3B-9005-F837BB1B9707": 0,
+     "612573F3-FF2B-4ADA-B21C-085F0EB3C839": 1,
+     "64754852-58F3-441F-909D-9C8323DBA117": 1,
+     "6E8E7F02-D763-4BE7-84B9-EEF197C1278F": 1,
+     "7086376B-DF43-4CFB-8D9B-C58D56D8409F": 0,
+     "7F86F050-0446-4AA1-80FC-A597D40AB660": 0,
+     "BC00141D-044E-414E-9FD5-2B3D19C53628": 1,
+     "D5797279-609E-4655-B051-0D25D61980CB": 0,
+     "E00157B5-B58D-4B44-8C66-4029061BA7F2": 1,
+     "E11D42E1-BC43-4629-BF79-E7652329FB46": 1,
+     "F105128A-7C5F-4300-966D-BB08D50466E9": 0,
+     "F2574743-E1A0-4892-BE86-B6401675FD7D": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] Mention-vs-speaker: the speech NAMES Kerry McCarthy but she is not the speaker. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | Mention-vs-speaker confirmed: the speech NAMES Kerry McCarthy and is Catherine Fookes's.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "old0021",
+    "question": "What concerns were raised about accountability for alleged atrocities and war crimes in Israel and Palestine?",
+    "category": "multi_speech",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-14",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "09DE5DE0-3EC0-4E42-9194-31B9260F461F",
+      "quote": "To add to the hon. Gentleman’s point, he may not be aware that the Government have also closed the atrocity prevention centre that was set up in the Cabinet Office."
+     },
+     {
+      "speech_id": "8042F811-6881-4F89-9D6D-67BDEC3DADC2",
+      "quote": "I want to ask about international collaboration and how the allegations of war crimes can be addressed and compiled so that those responsible can eventually be brought to justice."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Joe Morris asked how allegations of war crimes could be addressed and compiled so that those responsible are brought to justice, citing Gaza, the West Bank and southern Lebanon.",
+      "vital": true,
+      "speech_ids": [
+       "09DE5DE0-3EC0-4E42-9194-31B9260F461F",
+       "8042F811-6881-4F89-9D6D-67BDEC3DADC2"
+      ]
+     },
+     {
+      "text": "Alicia Kearns said the Government had closed the atrocity prevention centre set up in the Cabinet Office.",
+      "vital": false,
+      "speech_ids": [
+       "09DE5DE0-3EC0-4E42-9194-31B9260F461F",
+       "8042F811-6881-4F89-9D6D-67BDEC3DADC2"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "09DE5DE0-3EC0-4E42-9194-31B9260F461F": 2,
+     "0B4D6CBA-6C20-4B41-A396-05B6FF899A65": 1,
+     "20CD7930-B0A1-41BA-A866-639C1E5EFF8E": 1,
+     "4B0C7C0D-0910-40DB-8416-78204E395A41": 3,
+     "4BF2FFE9-8EB0-4AD9-A38E-9BEDAB6DC716": 3,
+     "65250910-B661-4201-9042-482560184B0B": 3,
+     "8042F811-6881-4F89-9D6D-67BDEC3DADC2": 3,
+     "81CAADDC-A5F9-488F-A016-5548AED9661B": 0,
+     "93421661-6F9D-417A-A18A-BDB9E6A7D814": 3,
+     "AEFC8930-9CB8-4AFE-82D6-631EE7E9E613": 0,
+     "B894AA27-CEF2-4E5F-A9D6-F05922405E58": 0,
+     "BA557698-2A4E-4208-A48D-9E179DB7047E": 2,
+     "BDE2D39C-494A-477E-B2A3-7B2F63CB9F63": 0,
+     "CA0D017F-DD50-4A6A-A13C-0025CCF305EC": 1,
+     "CCBD92DF-0223-47FB-9AA4-3446C6C523E4": 1,
+     "ED4FA84A-CE3E-4AE8-92D5-000FEA41F095": 2,
+     "F8E0DACB-D463-40CF-84F3-DB8032A59321": 1,
+     "FDB9DB21-CBF6-4CBA-A168-35A6A689E1C9": 2
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] Are both cited speeches actually on the same topic? | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | The two speeches are from two different 'Israel and Palestine' debates (8 and 14 September 2026); Alicia Kearns's never mentions war crimes, Israel or Gaza, so hers is not vital.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L1",
+   "breadth": "broad",
+   "item": {
+    "id": "old0022",
+    "question": "Was the Terminally Ill Adults Bill changed since the Lords last considered it?",
+    "category": "multi_speech",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-11",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "C5B605D3-4DAD-443B-85E9-DB68B09F18D8",
+      "quote": "She has brought forward a Bill that is exactly the same as the previous Bill, despite its sponsor in the House of Lords himself saying that there needed to be 77 amendments to make it safer."
+     },
+     {
+      "speech_id": "32A6B50A-9FBD-4811-88F1-41C5E8113BDD",
+      "quote": "It is not quite the exact same Bill; it incorporates two amendments that were agreed without a vote in the House of Lords last time."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Only slightly: Lauren Edwards said it incorporates two amendments agreed without a vote in the House of Lords last time.",
+      "vital": true,
+      "speech_ids": [
+       "C5B605D3-4DAD-443B-85E9-DB68B09F18D8",
+       "32A6B50A-9FBD-4811-88F1-41C5E8113BDD"
+      ]
+     },
+     {
+      "text": "Meg Hillier said it is exactly the same Bill, despite its Lords sponsor saying it needed 77 amendments to make it safer.",
+      "vital": true,
+      "speech_ids": [
+       "C5B605D3-4DAD-443B-85E9-DB68B09F18D8",
+       "32A6B50A-9FBD-4811-88F1-41C5E8113BDD"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "32A6B50A-9FBD-4811-88F1-41C5E8113BDD": 3,
+     "393A13C1-C82B-46AB-BCA6-3E93CC178E1D": 0,
+     "3BAFE1D5-3F7C-4001-80FD-62BC4FA6D124": 1,
+     "3EFA1EFB-C886-4B30-B99B-4765801B93CF": 1,
+     "49CA8E4B-4047-47B8-91DB-208806BC7F98": 1,
+     "50894722-B298-4894-9FEE-E34ECDE9AE56": 1,
+     "5B1AB2D2-BA3D-4190-AD46-4F190C2EA801": 1,
+     "89E38734-D942-475E-9E35-7175C6852D3F": 1,
+     "AF7EB08B-2DBF-48CC-9AC0-F817D9A103DE": 1,
+     "B358F355-6C77-4910-9E98-E8841E11E1BA": 2,
+     "BD0842C0-3DA9-4D87-8090-CFA137FD28EE": 1,
+     "C2F37E51-2015-494B-B59D-0DAD5DBB31FE": 1,
+     "C42E672D-D66A-4459-85C0-CB650DA55C7A": 1,
+     "C5B605D3-4DAD-443B-85E9-DB68B09F18D8": 2,
+     "CF1D0BE6-8200-4B32-8C67-9CCE43E47A56": 1,
+     "E95C38ED-0DBD-49B8-8CAB-F96AFD13C02F": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "Carried from gold set v1; no audit finding. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L2",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0062",
+    "question": "Who was more critical of the government on jury trials, the Conservatives or Labour backbenchers?",
+    "category": "comparison",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W4",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-01-07",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "5C530750-9B00-4C1A-867D-1B7810720AC1",
+      "quote": "I agree with trial by jury, as stated in the motion—it has validity in where it is in place—and Opposition Members think that reducing it, as the Government propose, without any assessment or guarantee of numbers, is wrong."
+     },
+     {
+      "speech_id": "EED20239-B060-4931-9157-6134AACD4301",
+      "quote": "To deal with the principle first, we have heard a number of times that justice delayed is justice denied."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Both quoted speeches are Conservative; the comparison cannot be made from them alone.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "A confident ranking of the two groups from these speeches."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "08B08811-5466-4EE3-AF36-59454AD87529": 1,
+     "1BFEE95E-021B-4E94-A8BB-9D77EDA284B6": 0,
+     "1C53D837-BFC9-46DD-A494-526C9C9FC2ED": 0,
+     "33A1AB0D-E432-4DC6-A403-DD634C0A54D6": 0,
+     "3C1B4B52-C4D1-4121-A3A5-3B287B578AAA": 1,
+     "3C7C9DF0-428F-4DFD-9C74-BEB3B5FA631D": 1,
+     "42CE379F-A1D6-45EA-8860-93A47A39C337": 1,
+     "5C530750-9B00-4C1A-867D-1B7810720AC1": 2,
+     "77BDF417-17DD-4C1B-BAD6-9DE1BBD643FA": 1,
+     "9EE848AA-36E4-4A66-9426-5474CA4EC67A": 0,
+     "A0F36F05-03F4-4FFD-8C9C-3AF2E334D274": 1,
+     "A30934E5-3B1B-41BF-BD7C-D7CBEA48498B": 1,
+     "A9676831-0952-4978-82EA-C7B9538C3454": 0,
+     "B7529449-B2FB-4B5A-9734-7410B116F885": 0,
+     "BB01E32E-EB9C-4DD1-A16C-C038D91D6037": 0,
+     "CD61F6C1-B55D-4651-B964-50D75D876F75": 1,
+     "E229719C-E6F3-443A-BDD9-30C06B3F75CD": 0,
+     "E56B2487-D5DC-4868-9CC6-AEB2F9A1857E": 1,
+     "EED20239-B060-4931-9157-6134AACD4301": 2
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "A comparison the evidence does not support. The right answer names the limit.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L2",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0063",
+    "question": "Was the reaction to the visitor levy harsher than the reaction to the stamp duty proposals?",
+    "category": "comparison",
+    "criticality": "minor",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "",
+    "house": "",
+    "section": "",
+    "date": "",
+    "subcategory": "spans_W0_W2",
+    "evidence": [
+     {
+      "speech_id": "5C8CFAA5-F430-49A7-989B-7934BD052D36",
+      "quote": "If we tax something, we get less of it, so if we tax tourism, we will get less tourism—it is not complicated."
+     },
+     {
+      "speech_id": "5B961362-CA26-409D-8A75-AA1F4F797E67",
+      "quote": "That this House calls on the Government to reduce public expenditure to fund the abolition of stamp duty land tax on primary residences purchased by UK residents, in order to get Britain working, to grow the economy and to give people a stronger stake in their communities through the security of home ownership."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "They are different debates with different movers; any comparison is impressionistic.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "Presenting a numeric or definitive comparison of 'harshness'."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "0A5DE34F-A45C-4426-96DE-ED45D05D841F": 0,
+     "2E242766-C10F-4F52-A025-8381C83333A3": 1,
+     "3955DBD7-51E4-4DE0-AFCD-191443AA268F": 1,
+     "5B961362-CA26-409D-8A75-AA1F4F797E67": 2,
+     "5C8CFAA5-F430-49A7-989B-7934BD052D36": 2,
+     "7A0955DA-3585-4B40-AD8B-86A40AA674DE": 1,
+     "7C9BC7AB-6C55-4658-8EE9-3DD84A8D8FFB": 1,
+     "804508A0-D19A-4ACB-86F3-C690690AEFE1": 1,
+     "A2AB6587-452E-44BA-909E-FE5D62225D2E": 0,
+     "AA305B8D-576C-438D-A7B5-588D63FD9EB4": 1,
+     "CF647AB5-5005-4DF2-AE73-184ECA0A1235": 1,
+     "D6CA6052-831A-4070-9DA5-03FF29C6C729": 1,
+     "EEE1C58F-DB5D-4B0F-99AA-98D4ADA7CD05": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L2",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0065",
+    "question": "Did more MPs talk about hospitality jobs or about groundwater in September 2026?",
+    "category": "comparison",
+    "criticality": "minor",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-15",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "5C8CFAA5-F430-49A7-989B-7934BD052D36",
+      "quote": "Almost 89,000 hospitality jobs have gone, and now what is Labour’s answer?"
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "A count question, not a retrieval one; it needs the whole record, not a passage.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "A count stated without saying it was computed over the whole window."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "009B4E82-A219-4091-833A-B92355A41DCF": 0,
+     "0238895F-83DC-4468-B454-77C7741CA04E": 0,
+     "0602FABC-515E-4730-B668-D01F6BAF4C3A": 1,
+     "2CE9E773-F5DD-4762-8F24-5EF2BF4D3CF9": 1,
+     "2F88F95E-1358-415D-A6BB-2EC8CBEF6B33": 1,
+     "4D77F55D-C525-4F26-9672-C51D923B0410": 0,
+     "5C8CFAA5-F430-49A7-989B-7934BD052D36": 2,
+     "5DE54ADD-DB04-41F9-A685-D72F5DB87C3C": 0,
+     "A3F627C4-9C8A-4E97-A545-340E9C4D9B8D": 0,
+     "BC3B5E47-2FDF-48A7-8887-F50F131E1932": 1,
+     "CD66DE3E-67AA-4DBD-94C7-2D5B63168F18": 0,
+     "D2226231-37EE-4AC1-A5B8-1C0C98D6D0C5": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L2",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0068",
+    "question": "Is the Conservative party in favour of the visitor levy?",
+    "category": "stance",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-15",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "5C8CFAA5-F430-49A7-989B-7934BD052D36",
+      "quote": "Let us call this what it is—Labour’s holiday tax."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "No: the Conservative speech attacks it as a holiday tax.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "1C53D837-BFC9-46DD-A494-526C9C9FC2ED": 0,
+     "343407B4-E530-4751-B829-175C34197449": 0,
+     "35CECB4D-4F0A-4539-8684-CD935848D607": 1,
+     "5C8CFAA5-F430-49A7-989B-7934BD052D36": 2,
+     "62BFD20C-BACB-4C7B-B7F6-1BF01CBF6A4C": 0,
+     "64EACE20-7E76-48E7-9596-B1048FE99359": 0,
+     "694B1651-059B-4AAD-9457-B6D3C836A709": 0,
+     "7A0955DA-3585-4B40-AD8B-86A40AA674DE": 1,
+     "83C7A885-A612-4CFD-BEAF-EE90C023D0E6": 1,
+     "94826BDF-5E2F-4CD2-939F-830638C9CFAB": 0,
+     "9EE848AA-36E4-4A66-9426-5474CA4EC67A": 0,
+     "9F367A4A-F634-4DA3-B658-12B5021B2CB6": 1,
+     "A59853DB-6106-4E7E-B061-402D7B07927E": 0,
+     "A8A4E0C7-6124-4CFD-AE4D-BA2BDDEB0907": 1,
+     "A92FD061-478E-47F4-986E-75611ED73808": 0,
+     "A9676831-0952-4978-82EA-C7B9538C3454": 0,
+     "AA305B8D-576C-438D-A7B5-588D63FD9EB4": 2,
+     "EEE1C58F-DB5D-4B0F-99AA-98D4ADA7CD05": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L2",
+   "breadth": "broad",
+   "item": {
+    "id": "hum0076",
+    "question": "What was said in Westminster Hall about water company ownership?",
+    "category": "scoping",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Westminster Hall",
+    "date": "2026-09-14",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "8F466684-7ADB-4C6D-8EE2-9BB9909122A4",
+      "quote": "I want to speak this afternoon about the River Stort, one of the globally significant chalk streams that runs right through my constituency."
+     },
+     {
+      "speech_id": "C0D2A8C8-52D0-4B57-A3DD-5AE554DE52F2",
+      "quote": "I support public ownership of our water industry."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Both speeches quoted are from the Westminster Hall debate on the water sector.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "1076077F-DA5C-4217-B049-88708293BD43": 0,
+     "18BD54CD-8E53-4DD3-8DF0-74AF2F6A6ED4": 2,
+     "24CED925-1428-476B-8AEF-0788EE8BEBD3": 2,
+     "24D1DD33-8BA8-4B93-9C80-57690E37EAE4": 1,
+     "4388B499-C4C4-4BD5-8AD6-D400CC625305": 1,
+     "44541294-3916-4265-A707-89B1F4609239": 2,
+     "701259B4-E264-4706-87EC-A4CA2C32CB14": 2,
+     "70DF373B-D49F-486F-9876-3696971CF9BF": 0,
+     "72C5C921-5B26-44DA-AB07-E0486F59161E": 1,
+     "7A27480C-16D9-4D4A-9244-4E5750CC76F4": 0,
+     "8F466684-7ADB-4C6D-8EE2-9BB9909122A4": 3,
+     "9F499E6B-2914-43DC-BAE6-777E0688EF8C": 0,
+     "A1FEBD8D-380A-4653-8C85-6176BE0D91AD": 0,
+     "A81F40AB-C5EB-4D1D-A22E-4028946CDBE7": 0,
+     "A903D94E-5589-42FC-91D2-A307AA76E747": 1,
+     "C0D2A8C8-52D0-4B57-A3DD-5AE554DE52F2": 3,
+     "C4F3121E-5C57-48EF-A32C-A39B1E2E3415": 1,
+     "C50B394D-840D-4B9C-B467-5D9368459036": 0,
+     "D0F68F1C-1D23-413C-A1E3-250B6D770E64": 0,
+     "F6B0D9F6-9F91-4A13-B514-282F483D2A35": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L2",
+   "breadth": "narrow",
+   "item": {
+    "id": "hum0094",
+    "question": "Tell me the cost of digital ID, who says so, and whether the Government accepts it.",
+    "category": "multi_part",
+    "criticality": "major",
+    "expected_behaviour": "partial",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W2",
+    "house": "Commons",
+    "section": "Westminster Hall",
+    "date": "2025-12-08",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "5003558C-5263-4847-BB68-7D86CF12814D",
+      "quote": "The OBR, as I say, reckons the scheme will cost £1.8 billion."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "1.8 billion pounds.",
+      "vital": true,
+      "speech_ids": []
+     },
+     {
+      "text": "The OBR, as cited by Julia Lopez.",
+      "vital": true,
+      "speech_ids": []
+     },
+     {
+      "text": "The passage does not record the Government accepting the figure.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "09D1D665-9C3A-4F7E-8EDA-7A3246E99354": 1,
+     "2C23B450-F0D9-4468-9F07-D04E0C275C72": 2,
+     "304DF6FC-7B62-443D-AE65-ECF13584F3EC": 1,
+     "3D831393-B64F-4A47-856F-293F0361A37B": 1,
+     "5003558C-5263-4847-BB68-7D86CF12814D": 2,
+     "64A68333-D7A7-496A-97FD-00DD1782776F": 1,
+     "734C1CDF-7878-4F8E-989E-60FF94B5F2AC": 1,
+     "9089E260-5C2C-4687-A7DB-490093A58457": 2,
+     "B1FC0A4C-5DD9-47E7-AD1B-2C20A2A15AFA": 1,
+     "B6600920-2623-4299-841A-6E5E5FA75235": 1,
+     "CB7E5081-D51C-44FD-9185-6AD06D1BAE40": 1,
+     "CDA74A6C-D4F9-4DB4-88AC-5D3A1720377B": 1,
+     "D1F48822-8116-4D69-AC64-D4FE42E22C85": 2,
+     "E47A11AB-A09C-4C80-962C-435C4B312A9B": 2,
+     "FFA6498E-A279-4A76-A337-C5394A409A76": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L2",
+   "breadth": "narrow",
+   "item": {
+    "id": "hum0095",
+    "question": "Who spoke about infected blood, what did they say, and what did the Government offer?",
+    "category": "multi_part",
+    "criticality": "major",
+    "expected_behaviour": "partial",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W1",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2024-05-21",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "DDB1530A-91D0-4171-AE23-27A6B8C3DDBD",
+      "quote": "That community gave Sir Brian Langstaff a standing ovation yesterday—a sight that will never leave me."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Chris Stephens spoke, with constituents present.",
+      "vital": true,
+      "speech_ids": []
+     },
+     {
+      "text": "The quoted passage does not set out the Government's offer.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "07CC591B-B785-4F37-B1A8-36E8BA1C7C72": 1,
+     "0C0841BE-09C5-41CB-BAF0-30F5A90D0E9E": 1,
+     "0C1CE95D-E0E0-4594-98A3-34F356068D83": 2,
+     "0FB3E72B-F29B-43A2-98A1-02DAA9F20D4F": 1,
+     "1DE9FE79-D376-468B-9C8A-94694DF7E92D": 1,
+     "30F668E0-A80B-434C-ADF8-B95803E8FB8E": 0,
+     "348E5375-6AF4-46E5-9203-A6670EC03863": 0,
+     "38517C21-799E-4E8D-AD12-7B5070C3EC2F": 1,
+     "40ED78F4-91BC-4AD8-8231-4CBEBB8EEB74": 0,
+     "4773A95F-74CF-4675-A52E-5AFAF7BD017F": 3,
+     "606136FC-A9C1-4B98-AB81-AE91954A401A": 0,
+     "70571D22-F0C3-4DCE-835D-805991EA0797": 3,
+     "7617646A-47D1-4643-BE26-3851C7E722B2": 2,
+     "BBC4EB5C-B616-4E03-B02C-6EBB9A9EB007": 0,
+     "C32CA90D-D05C-4768-98E5-2E828FCFAE69": 3,
+     "C6556F1A-2FA4-4688-B78D-A04B6E3206B2": 0,
+     "D837C970-357F-4882-96FE-738C6742AAE9": 1,
+     "DDB1530A-91D0-4171-AE23-27A6B8C3DDBD": 2,
+     "F32263E6-42AA-4526-94A7-C671C2EB34E6": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "hum0020",
+    "question": "How much did the OBR say digital ID would cost?",
+    "category": "numeric",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "passage_llm",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W2",
+    "house": "Commons",
+    "section": "Westminster Hall",
+    "date": "2025-12-08",
+    "subcategory": "",
+    "evidence": [
+     {
+      "speech_id": "5003558C-5263-4847-BB68-7D86CF12814D",
+      "quote": "The OBR, as I say, reckons the scheme will cost £1.8 billion."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "1.8 billion pounds, as cited by Julia Lopez.",
+      "vital": true,
+      "speech_ids": []
+     }
+    ],
+    "forbidden_claims": [
+     "Stating the figure as the Government's estimate rather than the OBR's, as quoted by a member."
+    ],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "2C23B450-F0D9-4468-9F07-D04E0C275C72": 1,
+     "2E19D226-A97C-4CF4-9867-83F03C713781": 0,
+     "5003558C-5263-4847-BB68-7D86CF12814D": 2,
+     "64A68333-D7A7-496A-97FD-00DD1782776F": 0,
+     "66643660-A6D5-4E92-93CA-4777AFC2DDF5": 2,
+     "66701729-D8B3-4A46-BCFF-D00C18BB4BB1": 1,
+     "73B13A82-042E-4E72-BB28-678E270D0BD2": 0,
+     "7CCD8D6B-CBCE-4968-BE4F-6D6F9FDE0D28": 1,
+     "B1FC0A4C-5DD9-47E7-AD1B-2C20A2A15AFA": 1,
+     "CDA74A6C-D4F9-4DB4-88AC-5D3A1720377B": 0,
+     "D1F48822-8116-4D69-AC64-D4FE42E22C85": 2,
+     "D5755020-3558-4B95-9CA4-066C8C8FD87C": 1,
+     "E47A11AB-A09C-4C80-962C-435C4B312A9B": 1,
+     "FFA6498E-A279-4A76-A337-C5394A409A76": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0006",
+    "question": "Which sporting event did Israeli competitors pull out of after hostile protests?",
+    "category": "paraphrase",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Westminster Hall",
+    "date": "2026-09-08",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "3B3149C2-18BA-4158-802B-6EDC60DE0D7F",
+      "quote": "Jewish athletes from Israel were forced to withdraw from the triathlon as a result of the hateful bile of these hard-left bigots."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "A triathlon: Gregory Campbell (DUP) said Jewish athletes from Israel were forced to withdraw from it.",
+      "vital": true,
+      "speech_ids": [
+       "3B3149C2-18BA-4158-802B-6EDC60DE0D7F"
+      ]
+     },
+     {
+      "text": "He blamed 'the hateful bile of these hard-left bigots'; 'hostile protests' is the question's wording, not the record's.",
+      "vital": false,
+      "speech_ids": [
+       "3B3149C2-18BA-4158-802B-6EDC60DE0D7F"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "204FF0DF-4934-4DCD-97CF-00503334CAFC": 0,
+     "3B3149C2-18BA-4158-802B-6EDC60DE0D7F": 2,
+     "3D199374-4E8D-43CD-9B0D-1B56F132ACD7": 1,
+     "4CCD56DC-E8E9-4423-9D12-9A039C3E54A8": 0,
+     "4EE18708-1F37-4700-9FA7-4B9788773C86": 1,
+     "6122B3CF-499E-4099-9AA0-0D9362501692": 0,
+     "73DB31DE-AEE9-4EB1-83A0-F4BDDD69502B": 1,
+     "84E1DD80-4AAA-402D-B770-3ED914939FD4": 1,
+     "896462A0-905A-4421-B4E8-52CA8EA6301E": 1,
+     "9AE86D8A-D291-4377-8FB1-76C7F44D5F6C": 1,
+     "B1B4FCE5-B681-404B-9EA0-F35BBD878CDC": 1,
+     "BA072C34-459D-4211-87E0-E14C30B799ED": 0,
+     "F6B7AC4D-B424-4AFD-BF22-7E946D48D834": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] Loaded wording ('hostile protests') is embedded in the question itself. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | 'protest' does not occur in the speech.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0007",
+    "question": "Which seasonal charge on tourists was announced by the new premier?",
+    "category": "paraphrase",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-03",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "9E454478-93EC-4322-9DAE-342C6B521A7A",
+      "quote": "However—there is always a “however” with me —on Tuesday the new Prime Minister committed the Government to bringing in a new holiday tax."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "A 'holiday tax' (the overnight visitor levy): Nigel Huddleston said the new Prime Minister had committed the Government to bringing one in.",
+      "vital": true,
+      "speech_ids": [
+       "9E454478-93EC-4322-9DAE-342C6B521A7A"
+      ]
+     },
+     {
+      "text": "'Seasonal', 'tourists' and 'premier' are the question's words, not the record's.",
+      "vital": false,
+      "speech_ids": [
+       "9E454478-93EC-4322-9DAE-342C6B521A7A"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "438FBBC2-DD10-416D-A7C4-0E63D3BCB355": 1,
+     "4BEE9E7A-7464-4358-B3A9-660B9F22B356": 0,
+     "5A6897AE-300E-4806-809B-A2899CA07277": 1,
+     "643A48CB-A9B5-40B1-8DF9-F192C316CAC7": 0,
+     "8A96D4C4-06CB-4DD5-B77C-C2DC0AF1549D": 0,
+     "8C302A90-BF4C-4E1C-A77A-6113FA2AC1C3": 0,
+     "9E454478-93EC-4322-9DAE-342C6B521A7A": 2,
+     "A592EF8B-4787-4F47-8B62-E65386F8C094": 1,
+     "A9B3AF8D-3B3F-420F-90B7-C4CA7F7B85F4": 1,
+     "AF84DF75-E319-46E0-820F-A08E58F10990": 0,
+     "CE5D2186-8837-4CC7-ABE3-12BF56FEFB9D": 0,
+     "D7336A5C-826D-446C-B752-26395EFF8736": 0,
+     "D7F88FB7-2A00-4076-9021-A67C5BDC0F9E": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] The source says 'holiday tax' and 'Prime Minister'; 'seasonal', 'tourists' and 'premier' are invented. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | 'tourist' does not occur in the speech.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0010",
+    "question": "Is the claim that protecting employees harms economic expansion accepted by the government?",
+    "category": "paraphrase",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "General Committees",
+    "date": "2026-09-09",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "771A43D3-903C-4946-A60D-834D2EBB5FD9",
+      "quote": "As a principle and a starting point, the argument that workers’ rights are bad for growth is just a false choice."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "No: Kate Dearden, Minister for the Future of Work, called the argument that workers' rights are bad for growth 'a false choice'.",
+      "vital": true,
+      "speech_ids": [
+       "771A43D3-903C-4946-A60D-834D2EBB5FD9"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "019A0364-3962-4B9E-8DC9-0DE66D45833F": 0,
+     "09CFC9D6-F105-419D-B5AC-11ADBDC9C8A8": 1,
+     "15CBD69F-C967-46C1-9123-1D16082BACE4": 0,
+     "204C3F87-A77C-45C3-9487-26F65C68A640": 1,
+     "2CEA99BE-1057-478D-99DA-9A18E0C2DD25": 0,
+     "349B16E0-A846-4D28-A3A3-A448B56325D4": 1,
+     "5AB5D68A-2A94-4AC7-B5F5-EBB23EFC1F4A": 0,
+     "62DD13B2-ED0A-4EA2-8233-B530364C6956": 2,
+     "771A43D3-903C-4946-A60D-834D2EBB5FD9": 2,
+     "8191144B-AF20-45C2-BEA7-5481C4C2127D": 0,
+     "8A7A89A3-D854-41A7-8715-D25AFD96CA5D": 0,
+     "9935AA46-A63B-463C-871A-AFEA4F8DF409": 0,
+     "C91A4E98-F874-498A-8E32-9E677A041CEF": 1,
+     "CD6D6A90-E775-45B7-A833-97CE3B2BA12F": 0,
+     "E647CE8A-9A83-41FF-8F97-B767C33553E9": 1,
+     "EF085C9E-F19C-42B0-A176-B264F7846590": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] Does the speaker hold a government post at the date? The question turns on it. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | Kate Dearden held a government post that day (Minister for the Future of Work): the question's turn holds.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0011",
+    "question": "Which European football body plans legal action over how the sport's world governing body is run?",
+    "category": "paraphrase",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-03",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "C57FBA74-643E-418C-9077-586F50A3912D",
+      "quote": "Given that UEFA is proposing to make a criminal complaint about the conduct of FIFA’s leadership, will the Minister join me and others in calling for a genuinely independent investigation into FIFA’s decision to try to sell off the world cup?"
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "UEFA: Gordon McKee said UEFA was proposing to make a criminal complaint about the conduct of FIFA's leadership.",
+      "vital": true,
+      "speech_ids": [
+       "C57FBA74-643E-418C-9077-586F50A3912D"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "03FF66B0-8884-44FB-936C-B56915A8BEA8": 0,
+     "15332895-9594-4D7B-83D2-433AA4DC6A51": 0,
+     "1B1E056C-C493-4630-A964-3A8E414DA3B3": 0,
+     "413820E3-2D1F-4F12-B9A0-B64BA69451F0": 0,
+     "86C7C3D7-D441-4091-8DA2-D6F9FC6F3C0C": 0,
+     "A5FBD5BE-844E-4D57-A565-46575B025767": 0,
+     "BB9E0768-2968-4217-9799-C9C8171A87F9": 1,
+     "BDC90F2E-4292-4700-9E5F-5D6D21AE198B": 0,
+     "BE589349-ABEE-428E-A4FD-41FB2F77667A": 0,
+     "C57FBA74-643E-418C-9077-586F50A3912D": 3,
+     "C6A0B833-244E-4A02-8CDC-9C237A9EFD58": 0,
+     "C9E81E9B-FA3B-4DF1-9A24-A81156504FF4": 1,
+     "E83C8734-B44E-445D-B490-04DBE865391C": 0,
+     "FF2B07C4-20E0-4FE8-B7E2-754EBB20A94B": 1
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[quote] the evidence quote is not verbatim in the speech | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | The quote is verbatim in the cleaned chunk text; the raw speech text carries a Hansard column-number <span> inside 'criminal complaint'.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0012",
+    "question": "Which local authority regards former looked-after youngsters as deserving special safeguards in its decisions?",
+    "category": "paraphrase",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Westminster Hall",
+    "date": "2026-09-03",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "832ADCCC-8F5F-4962-86EA-1A3E448C65DE",
+      "quote": "In my constituency, the care-experienced young people who live in Fulham benefit from the fact that the council recognises care-experienced as a protected characteristic."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "Hammersmith and Fulham council, which recognises care-experienced as a protected characteristic (Ben Coleman, Chelsea and Fulham).",
+      "vital": true,
+      "speech_ids": [
+       "832ADCCC-8F5F-4962-86EA-1A3E448C65DE"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "048C1A93-DE7D-4B55-9717-F42A1E78E931": 1,
+     "396B48DB-BD77-4143-AB5D-222FC9A7DC56": 1,
+     "5D854B2E-4F68-46D9-A91F-71759065C263": 1,
+     "77D4FFAC-FD16-4AB8-8097-B7D29C08F7FF": 0,
+     "832ADCCC-8F5F-4962-86EA-1A3E448C65DE": 3,
+     "89C7CAB3-7FEF-447F-82EB-C18527F94E41": 0,
+     "A8A2E41A-1C7E-453A-95A3-4ABE22FA03B8": 0,
+     "B5C03998-6FC5-43B8-8856-32D91B980C2B": 1,
+     "B8CEB795-3B9C-480F-9FBF-696E4C132929": 0,
+     "E630A6D0-6AEF-4213-9BD3-34FD6228F676": 0,
+     "E6DFB113-C6B0-4984-B2FD-9219B959DC46": 1,
+     "EB319971-03D7-4321-840F-B204C3ECF4C0": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] The passage says 'the council' and never names the authority, so the question may be unanswerable. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | The full speech names it: '...processes inside Hammersmith and Fulham have to actively check that their decisions do not disadvantage care leavers'.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0013",
+    "question": "How much gross value added did the chemistry sector contribute in 2023?",
+    "category": "numeric",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-10",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "6DC7798A-474C-4116-B896-A99BBF725D3F",
+      "quote": "In 2023, chemistry contributed £60.5 billion in gross value added, including over £64 million in Wolverhampton."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "£60.5 billion in gross value added in 2023, according to Sureena Brackenridge.",
+      "vital": true,
+      "speech_ids": [
+       "6DC7798A-474C-4116-B896-A99BBF725D3F"
+      ]
+     },
+     {
+      "text": "She added that this included over £64 million in Wolverhampton.",
+      "vital": false,
+      "speech_ids": [
+       "6DC7798A-474C-4116-B896-A99BBF725D3F"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "32E2A17E-790E-454A-AF62-5AAAA90705D3": 0,
+     "3AB68684-6E82-4D57-8D4E-6BB3EDB54BB0": 0,
+     "42F971C8-5A1B-4D32-8922-448DA7E992DE": 0,
+     "48F05078-8439-43E2-8252-F89EEA8E8D67": 0,
+     "4EF520F9-86B3-44C6-A812-B69F749C44A4": 0,
+     "6687F77A-7644-4BBE-A92E-BABEAD7CDAAC": 0,
+     "6DC7798A-474C-4116-B896-A99BBF725D3F": 2,
+     "6EF83E8B-5F9F-46C7-922C-5204EFBA53B1": 0,
+     "8F09C0A6-3EF1-4AAA-A8CB-1FA791BC41DA": 0,
+     "BBF5A648-8AAA-4488-A246-051F0BD61D0F": 0,
+     "BF30ADC5-A805-4598-ABA1-6965E2801367": 0,
+     "D0F68F1C-1D23-413C-A1E3-250B6D770E64": 0,
+     "D91DBF8C-3E72-4707-80E6-D9E7BECA8148": 0,
+     "DF25047C-419C-45A0-82AC-1CC35DE19497": 1,
+     "FCB59475-C404-4405-9F1B-FF76C2D7F5F0": 0,
+     "FF5C116F-D615-42FD-8A03-27AFA21C319A": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "Carried from gold set v1; no audit finding. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0014",
+    "question": "How much higher than the national average is the suicide risk in the construction industry?",
+    "category": "numeric",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Westminster Hall",
+    "date": "2026-09-08",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "3BDE03B9-336E-4C5F-80BF-524C9E42553E",
+      "quote": "As the chair of the all-party parliamentary group for tradespeople, and having previously served on the all-party parliamentary group on male suicide and mental health, I am concerned that the construction industry faces a suicide risk 3.7 times higher than the national average."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "3.7 times higher than the national average, according to Amanda Martin.",
+      "vital": true,
+      "speech_ids": [
+       "3BDE03B9-336E-4C5F-80BF-524C9E42553E"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "39ECE01C-5D68-43ED-BB4C-6EA469C7B90D": 0,
+     "3BDE03B9-336E-4C5F-80BF-524C9E42553E": 3,
+     "46FE791D-6A25-4588-B977-D77BEC17E6E2": 1,
+     "66C54125-494E-447E-BFE3-E3ED3C69CB8D": 0,
+     "7D217556-BEB5-4135-B9A3-B228F9F76514": 0,
+     "81A735F2-8178-4CCB-A4A9-0ABE50CFA338": 1,
+     "8D2F13AF-5FD8-4155-A09C-75EA1EAF91CE": 0,
+     "9084E97F-AC74-440C-9CB4-6FFA03995912": 1,
+     "9BD1C301-7B14-408B-9D2C-E1CF84D57A26": 0,
+     "9E8BB17D-CAEC-47EF-B173-0480AB880096": 0,
+     "C223406C-5221-40E2-AF97-3B5CDA266510": 0,
+     "C65D9207-D9BB-4AEF-951D-00F41DB95AAD": 0,
+     "C7BF4E3F-1F8A-4BCF-9C96-C4772F5E34F8": 0,
+     "D3192AB4-2673-4DCC-BD21-9AC61A9521CA": 0,
+     "ED34E3A1-EABB-46A6-B1E9-90C4D297E82C": 0,
+     "F8B33AA0-C829-457E-976C-A0977C8A94B9": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "Carried from gold set v1; no audit finding. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0015",
+    "question": "By what percentage has knife crime fallen since the Government set its ambition to halve it?",
+    "category": "numeric",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-10",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "39B6389A-FC1C-478E-9C8F-0BB09642EB53",
+      "quote": "Overall, knife crime has fallen by 11% and we have taken 63,000 knives off our streets, but I recognise how important this work is and how much more needs to be done."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "11%, according to Sir Alan Campbell, Leader of the House.",
+      "vital": true,
+      "speech_ids": [
+       "39B6389A-FC1C-478E-9C8F-0BB09642EB53"
+      ]
+     },
+     {
+      "text": "He also said 63,000 knives had been taken off the streets.",
+      "vital": false,
+      "speech_ids": [
+       "39B6389A-FC1C-478E-9C8F-0BB09642EB53"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "10CA2D90-DE55-4B8A-9DCC-7BFBBFE0B68B": 0,
+     "1F9C386D-7817-47BE-9E9A-7834FA20D1E7": 2,
+     "2377B87A-4C2C-448A-8FC2-E8E0925039BD": 0,
+     "33E15CAB-AFD9-40BE-ADCC-62FB8ED65F06": 1,
+     "39B6389A-FC1C-478E-9C8F-0BB09642EB53": 2,
+     "3BEB79F1-6CC4-454C-AE29-EC7D31F6432A": 0,
+     "47140C6F-88A8-4AF7-BE7B-CEE7CB3C70C7": 3,
+     "4BB9B272-DE32-4E10-8513-A07DE201A6DB": 1,
+     "4CD9FC48-1582-47A1-98E4-A4A3C5FF3B3D": 1,
+     "648D4A64-4FCB-41D4-AA49-2A9300AAC930": 2,
+     "69C586D0-BB51-476E-A427-384039551A37": 1,
+     "8E59F826-593E-489D-8605-67BD7CEFB047": 2,
+     "E93FC08C-86AB-4C89-B7C8-0BAA6585886C": 2,
+     "EB9E8ED6-F910-4106-B2B5-8A2FFD3F7807": 0,
+     "EF234BEC-70B3-4340-B78B-798984510C06": 0
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] The temporal anchor ('since the Government set its ambition to halve it') is not in the quote, and 11% is a ministerial claim with no stated baseline. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | The full speech gives the anchor: 'In June 2024 we set out our ambition to halve knife crime in the decade following the election.' The 11% is his statement, with no baseline given.",
+    "source_item": ""
+   }
+  },
+  {
+   "audit_class": "L3",
+   "breadth": "narrow",
+   "item": {
+    "id": "old0020",
+    "question": "What action has the Government taken to hold Capita to account for poor service?",
+    "category": "multi_speech",
+    "criticality": "major",
+    "expected_behaviour": "answer",
+    "provenance": "owner_written",
+    "status": "provisional",
+    "split": "dev",
+    "window": "W0",
+    "house": "Commons",
+    "section": "Commons Chamber",
+    "date": "2026-09-10",
+    "subcategory": "carried_from_v1",
+    "evidence": [
+     {
+      "speech_id": "2304E462-93A2-46CC-813E-E0F5C20298F4",
+      "quote": "As I said, we have deployed 147 surge staff to help during this crisis—they will not be removed until service levels are brought up to scratch—we are withholding contractual payments, and an independent Capita-funded remedial adviser has been appointed to identify further issues."
+     },
+     {
+      "speech_id": "62B1F940-AC9E-4089-BB6E-C63A31F90164",
+      "quote": "Current service levels are completely unacceptable, and we are holding Capita accountable by withholding payments in the short term and assessing the long-term viability of bringing the scheme in-house."
+     }
+    ],
+    "nuggets": [
+     {
+      "text": "The Government is withholding contractual payments from Capita (Sally Jameson, Parliamentary Secretary, Cabinet Office).",
+      "vital": true,
+      "speech_ids": [
+       "2304E462-93A2-46CC-813E-E0F5C20298F4",
+       "62B1F940-AC9E-4089-BB6E-C63A31F90164"
+      ]
+     },
+     {
+      "text": "147 surge staff deployed, an independent Capita-funded remedial adviser appointed, and bringing the scheme in-house under assessment.",
+      "vital": false,
+      "speech_ids": [
+       "2304E462-93A2-46CC-813E-E0F5C20298F4",
+       "62B1F940-AC9E-4089-BB6E-C63A31F90164"
+      ]
+     }
+    ],
+    "forbidden_claims": [],
+    "expected_structured_facts": {},
+    "graded_relevance": {
+     "0D2F17A8-B8F6-4AD9-BB84-9FCF8495023B": 1,
+     "21533473-CE90-4556-B9E1-5834F7AB813F": 1,
+     "2304E462-93A2-46CC-813E-E0F5C20298F4": 3,
+     "5D047B85-0776-4BFD-96AC-690CF3132FBA": 1,
+     "62B1F940-AC9E-4089-BB6E-C63A31F90164": 3,
+     "6AD2EE4B-5A65-4A19-9CFB-71E41A32079B": 1,
+     "85CD8026-AB2B-41C2-BD46-127374A0C1A9": 3,
+     "9F11DB4C-72EF-42DC-94E8-9B6580D8C6F8": 1,
+     "A34EA499-FC23-42DF-A5C1-96193CD892E1": 2,
+     "AED05BA4-BAD4-45E4-BA70-7F4D807FE47F": 1,
+     "B1CC1695-9088-446C-A729-0944AE689158": 1,
+     "B7730543-9395-48E7-BB2F-F3A0652BB42C": 1,
+     "B8704DDC-2E0C-4B3B-88AD-9C088995A970": 2,
+     "CB4B1717-FC5F-451A-B63C-8F25265A4D95": 1,
+     "D44D2F16-535D-4BF9-A3A6-A0D477B0BC65": 2,
+     "D46AB363-2C51-4DC2-B028-2C69937189C4": 1,
+     "DF4F09F1-588C-4128-99F2-BFC9922D3E40": 1,
+     "EC5545D1-6ADC-420D-910D-53EA07876056": 2
+    },
+    "pooled_by": [
+     "dense",
+     "hybrid",
+     "full"
+    ],
+    "reviewer": "",
+    "notes": "[brief] Ambiguous about which contract is meant. | [nuggets 2026-10-05] drafted by Claude from the cited speech(es), read in full in hansard_v2 with the speaker's office and party on the day; a DRAFT for the owner to confirm. | Both speeches are about the Civil Service Pension Scheme administration contract.",
+    "source_item": ""
+   }
+  }
+ ]
+}

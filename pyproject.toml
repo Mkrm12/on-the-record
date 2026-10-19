@@ -1,0 +1,47 @@
+[project]
+name = "on-the-record"
+version = "0.1.0"
+description = "Hansard Civic-Intelligence Platform"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.5",
+    "psycopg[binary,pool]>=3.2",
+    "pgvector>=0.3.6",
+    "httpx>=0.28.1",
+    "rich>=15.0.0",
+    "nltk>=3.10.3",
+    "mcp>=2.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/answer", "src/app", "src/eval", "src/goldset", "src/ingest", "src/procedure", "src/retrieval"]
+
+# Deliberately a small rule set: the point is to catch mistakes that are always mistakes -- a syntax error, a name that
+# does not exist, an import or a local that nothing uses, `== None` -- and not to impose a style on 30,000 lines that
+# already read consistently.
+[tool.ruff]
+line-length = 200
+extend-exclude = ["data", "reports", ".venv", "gpu/.venv"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82", "F401", "F841", "E711", "E712", "E713", "E714", "B002"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tools/mutation"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "numpy>=2.0",  # tests only: proves numpy arrays adapt to pgvector; the runtime code never imports it
+]
+
+# The GPU stack (torch, sentence-transformers) is deliberately NOT declared here.

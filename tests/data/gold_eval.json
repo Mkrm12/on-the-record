@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "description": "Benchmark questions for scoring retrieval (Block 11) and answers (Block 12). Relevance is judged at speech level: a retrieved chunk counts through chunk.speech_id. Labels are incomplete by nature, since other speeches may also answer a question, so report recall against the known-relevant speeches. status 'provisional' means drafted from the corpus and every evidence_quote machine-checked to exist, but not yet reviewed by the owner; set 'verified' after review. 25 queries is a smoke-test size: Block 12 needs 50+ for confident comparisons.",
+  "created": "2026-09-20",
+  "corpus": {
+    "first_sitting": "2026-09-01",
+    "last_sitting": "2026-09-17"
+  },
+  "categories": {
+    "exact_term": "Hinges on a distinctive name, phrase or figure: keyword search should do well.",
+    "paraphrase": "Deliberately shares almost no wording with the answer: dense (vector) search should do well.",
+    "numeric_fact": "The answer is a specific figure inside one sentence.",
+    "named_speaker": "Names the MP or peer. The name is not in chunk.body, so plain text search cannot use it.",
+    "multi_speech": "The full answer spans two or more speeches; every listed speech is relevant.",
+    "abstain": "Sounds answerable but the topic is not in the corpus: the system must say 'not in the record'."
+  },
+  "queries": [
+    {
+      "id": "g001",
+      "question": "Who were the two men who died at Seaton Carew beach while trying to save children?",
+      "category": "exact_term",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "D0DF91FC-AC64-4B55-B498-4E6D62D0449C",
+          "evidence_quote": "Wayne Taylor and Ian Pascoe were recovered from the water by the Royal National Lifeboat Institution, but despite urgent medical treatment at the scene, tragically both men died."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g002",
+      "question": "Why did an opposition MP object to sending £35 billion to Mauritius?",
+      "category": "exact_term",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "FE53CA31-BF1E-4A5A-80B2-73DF66A650A5",
+          "evidence_quote": "To govern is to choose, so why is he choosing to send £35 billion to Mauritius when they cut the money to train our troops?"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g003",
+      "question": "What did the Minister say about the Immigration Act 1971 and deporting foreign national offenders?",
+      "category": "exact_term",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "9DF46D5E-D043-48DA-8946-40F5AC3F1D56",
+          "evidence_quote": "He will know, and it is important to reiterate this, that the challenges in the Immigration Act 1971 are not merely technical, and setting them aside is not merely a technical answer."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g004",
+      "question": "How much has the Government committed for transition costs as councils are reorganised into unitary authorities?",
+      "category": "exact_term",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "19781B1E-0226-4E69-8AD5-E0012005FD40",
+          "evidence_quote": "The Government have committed £63 million for transition costs to support councils, including £900,000 per unitary."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g005",
+      "question": "Who complained that Natural England was marking its own homework?",
+      "category": "exact_term",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "E99F2B78-8461-4936-9629-88960DAD6E1B",
+          "evidence_quote": "Can we be absolutely clear that that will always be the case, particularly when Natural England is marking its own homework and deciding whether the mitigation put in place by a developer, whatever that is, is sufficient or not?"
+        }
+      ],
+      "notes": "Lords, Nature Restoration Levy Regulations."
+    },
+    {
+      "id": "g006",
+      "question": "Which sporting event did Israeli competitors pull out of after hostile protests?",
+      "category": "paraphrase",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "3B3149C2-18BA-4158-802B-6EDC60DE0D7F",
+          "evidence_quote": "Jewish athletes from Israel were forced to withdraw from the triathlon as a result of the hateful bile of these hard-left bigots."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g007",
+      "question": "Which seasonal charge on tourists was announced by the new premier?",
+      "category": "paraphrase",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "9E454478-93EC-4322-9DAE-342C6B521A7A",
+          "evidence_quote": "However—there is always a “however” with me —on Tuesday the new Prime Minister committed the Government to bringing in a new holiday tax."
+        }
+      ],
+      "notes": "The source says 'holiday tax' and 'Prime Minister'."
+    },
+    {
+      "id": "g008",
+      "question": "Do new residential developments put extra strain on doctors' surgeries?",
+      "category": "paraphrase",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "B6C0A1AC-2A97-408F-A159-2825D1C583AB",
+          "evidence_quote": "Healthcare services are of particular concern: when there is new housing, that makes it much harder for everyone to see their GP."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g009",
+      "question": "Is there investor enthusiasm for long-term funding of council and housing association homes?",
+      "category": "paraphrase",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "9400ABDD-23C6-4777-B3A2-0DDFF5A45E91",
+          "evidence_quote": "When I did a workshop on this in the City, there was a great appetite for patient capital investment in social housing."
+        }
+      ],
+      "notes": "Lords oral questions."
+    },
+    {
+      "id": "g010",
+      "question": "Is the claim that protecting employees harms economic expansion accepted by the government?",
+      "category": "paraphrase",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "771A43D3-903C-4946-A60D-834D2EBB5FD9",
+          "evidence_quote": "As a principle and a starting point, the argument that workers’ rights are bad for growth is just a false choice."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g011",
+      "question": "Which European football body plans legal action over how the sport's world governing body is run?",
+      "category": "paraphrase",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "C57FBA74-643E-418C-9077-586F50A3912D",
+          "evidence_quote": "Given that UEFA is proposing to make a criminal complaint about the conduct of FIFA’s leadership, will the Minister join me and others in calling for a genuinely independent investigation into FIFA’s decision to try to sell off the world cup?"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g012",
+      "question": "Which local authority regards former looked-after youngsters as deserving special safeguards in its decisions?",
+      "category": "paraphrase",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "832ADCCC-8F5F-4962-86EA-1A3E448C65DE",
+          "evidence_quote": "In my constituency, the care-experienced young people who live in Fulham benefit from the fact that the council recognises care-experienced as a protected characteristic."
+        }
+      ],
+      "notes": "Westminster Hall."
+    },
+    {
+      "id": "g013",
+      "question": "How much gross value added did the chemistry sector contribute in 2023?",
+      "category": "numeric_fact",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "6DC7798A-474C-4116-B896-A99BBF725D3F",
+          "evidence_quote": "In 2023, chemistry contributed £60.5 billion in gross value added, including over £64 million in Wolverhampton."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g014",
+      "question": "How much higher than the national average is the suicide risk in the construction industry?",
+      "category": "numeric_fact",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "3BDE03B9-336E-4C5F-80BF-524C9E42553E",
+          "evidence_quote": "As the chair of the all-party parliamentary group for tradespeople, and having previously served on the all-party parliamentary group on male suicide and mental health, I am concerned that the construction industry faces a suicide risk 3.7 times higher than the national average."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g015",
+      "question": "By what percentage has knife crime fallen since the Government set its ambition to halve it?",
+      "category": "numeric_fact",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "39B6389A-FC1C-478E-9C8F-0BB09642EB53",
+          "evidence_quote": "Overall, knife crime has fallen by 11% and we have taken 63,000 knives off our streets, but I recognise how important this work is and how much more needs to be done."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "g016",
+      "question": "What did Perran Moon raise at Business questions?",
+      "category": "named_speaker",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "E2E6EEF2-0EB2-45CD-8C38-EAD03D6EE4C3",
+          "evidence_quote": "In Cornwall, the percentage of adults seen by a dentist within the past two years has fallen to just 29%."
+        }
+      ],
+      "notes": "The speaker's name is not in chunk.body: needs speaker metadata (chunk_context) or a router."
+    },
+    {
+      "id": "g017",
+      "question": "What did Graham Stuart criticise the Minister for during the debate on the Energy Prices Act extension?",
+      "category": "named_speaker",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "B56595B3-B7E2-4DC7-A788-D5D837B768A4",
+          "evidence_quote": "Is my hon. Friend as astonished as I am that the Minister—I know she is new to her post—has come here to propose a six-month extension of the movement of costs from bills to the Exchequer and cannot tell the Committee how much money that will cost?"
+        }
+      ],
+      "notes": "Speaker name is not in chunk.body."
+    },
+    {
+      "id": "g018",
+      "question": "What did Alison McGovern say about social care?",
+      "category": "named_speaker",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "05AB384D-E162-4404-9A96-AAF95729D648",
+          "evidence_quote": "In my opinion, social care has been ignored for far too long—both the 1.5 million people, mainly women, who work in it and the families who need it."
+        }
+      ],
+      "notes": "Speaker name is not in chunk.body. Other sentences in her speech also discuss social care."
+    },
+    {
+      "id": "g019",
+      "question": "What competing views did MPs give on whether the Rosebank oil field should go ahead?",
+      "category": "multi_speech",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "36C471F6-4590-4217-8828-FF6CDEC89C0E",
+          "evidence_quote": "I will say from the outset that I agree with my hon. Friend the Member for Bristol East (Kerry McCarthy): I am afraid I do not agree with drilling for oil in Rosebank."
+        },
+        {
+          "speech_id": "331A28E8-4A53-416D-92CE-A0FE3A640019",
+          "evidence_quote": "Does the Minister agree that the reason projects like Jackdaw and Rosebank matter so much is that they provide jobs, investment, skills and further tax revenues today, and that a just transition has to protect those workers and communities, rather than leaving them behind?"
+        }
+      ],
+      "notes": "Two opposing speeches; full recall needs both."
+    },
+    {
+      "id": "g020",
+      "question": "What action has the Government taken to hold Capita to account for poor service?",
+      "category": "multi_speech",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "2304E462-93A2-46CC-813E-E0F5C20298F4",
+          "evidence_quote": "As I said, we have deployed 147 surge staff to help during this crisis—they will not be removed until service levels are brought up to scratch—we are withholding contractual payments, and an independent Capita-funded remedial adviser has been appointed to identify further issues."
+        },
+        {
+          "speech_id": "62B1F940-AC9E-4089-BB6E-C63A31F90164",
+          "evidence_quote": "Current service levels are completely unacceptable, and we are holding Capita accountable by withholding payments in the short term and assessing the long-term viability of bringing the scheme in-house."
+        }
+      ],
+      "notes": "Two ministerial answers on different days' questions."
+    },
+    {
+      "id": "g021",
+      "question": "What concerns were raised about accountability for alleged atrocities and war crimes in Israel and Palestine?",
+      "category": "multi_speech",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "09DE5DE0-3EC0-4E42-9194-31B9260F461F",
+          "evidence_quote": "To add to the hon. Gentleman’s point, he may not be aware that the Government have also closed the atrocity prevention centre that was set up in the Cabinet Office."
+        },
+        {
+          "speech_id": "8042F811-6881-4F89-9D6D-67BDEC3DADC2",
+          "evidence_quote": "I want to ask about international collaboration and how the allegations of war crimes can be addressed and compiled so that those responsible can eventually be brought to justice."
+        }
+      ],
+      "notes": "Two different debates."
+    },
+    {
+      "id": "g022",
+      "question": "Was the Terminally Ill Adults Bill changed since the Lords last considered it?",
+      "category": "multi_speech",
+      "status": "provisional",
+      "expected_abstain": false,
+      "relevant": [
+        {
+          "speech_id": "C5B605D3-4DAD-443B-85E9-DB68B09F18D8",
+          "evidence_quote": "She has brought forward a Bill that is exactly the same as the previous Bill, despite its sponsor in the House of Lords himself saying that there needed to be 77 amendments to make it safer."
+        },
+        {
+          "speech_id": "32A6B50A-9FBD-4811-88F1-41C5E8113BDD",
+          "evidence_quote": "It is not quite the exact same Bill; it incorporates two amendments that were agreed without a vote in the House of Lords last time."
+        }
+      ],
+      "notes": "Opposing accounts from two MPs."
+    },
+    {
+      "id": "g023",
+      "question": "What did the Government say about funding a new Antarctic research station?",
+      "category": "abstain",
+      "status": "provisional",
+      "expected_abstain": true,
+      "relevant": [],
+      "notes": "No mention of Antarctic in the corpus."
+    },
+    {
+      "id": "g024",
+      "question": "What was said about licensing the UK's first spaceport launch?",
+      "category": "abstain",
+      "status": "provisional",
+      "expected_abstain": true,
+      "relevant": [],
+      "notes": "No mention of spaceport in the corpus."
+    },
+    {
+      "id": "g025",
+      "question": "What did the Minister say about the UK's plans for lunar exploration missions?",
+      "category": "abstain",
+      "status": "provisional",
+      "expected_abstain": true,
+      "relevant": [],
+      "notes": "No mention of lunar in the corpus."
+    }
+  ]
+}

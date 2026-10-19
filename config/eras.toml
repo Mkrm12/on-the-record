@@ -1,0 +1,72 @@
+# Procedural eras across the ten years.
+
+version = 1
+
+[[era]]
+id = "evel"
+name = "English Votes for English Laws"
+house = "Commons"
+from = 2015-10-22
+to = 2021-07-13
+payload = ["evel_type", "evel_country", "double_majority_ayes", "double_majority_noes"]
+status = "cited"
+source = "House of Commons Standing Orders Nos. 83J to 83X, made 22 October 2015; repealed by the House on 13 July 2021"
+note = "A division on a certified provision also needed a majority of the MPs for constituencies in England (or England and Wales): two counts, both stated. The record's windows hold no certified division (measured 2026-10-19)."
+
+[[era]]
+id = "commons_remote_divisions"
+name = "Remote divisions in the Commons"
+house = "Commons"
+from = 2020-05-12
+to = 2020-06-01
+payload = ["is_remote", "remote_start", "remote_end"]
+status = "attested"
+seen_first = 2020-05-12
+seen_last = 2020-05-20
+source = "Commons Votes API RemoteVotingStart/RemoteVotingEnd on 10 divisions, 12 to 20 May 2020 (migration 006); the House resolved on 2 June 2020 to divide in person again"
+note = "Members voted through the House's remote voting system, not in the division lobbies."
+
+[[era]]
+id = "lords_remote_divisions"
+name = "Remote divisions in the Lords"
+house = "Lords"
+from = 2020-06-15
+payload = ["is_remote"]
+status = "cited"
+source = "House of Lords remote voting (divisionWasExclusivelyRemote in the Lords Votes API), first used in June 2020; its end is not yet attested"
+note = "Members voted through the House's remote voting system."
+
+[[era]]
+id = "commons_proxy_voting"
+name = "Proxy voting in the Commons"
+house = "Commons"
+from = 2019-01-28
+payload = ["division_vote.proxy_name"]
+status = "attested"
+seen_first = 2020-03-04
+seen_last = 2026-09-11
+source = "House of Commons resolution of 28 January 2019 (proxy voting for parental absence), extended since; 1,809 proxy votes in the record, 4 March 2020 to 11 September 2026"
+note = "A vote cast by proxy is listed under the absent member, with the name of the member who cast it."
+
+[[era]]
+id = "commons_deferred_divisions"
+name = "Deferred divisions in the Commons"
+house = "Commons"
+from = 2015-01-01
+payload = ["is_deferred"]
+status = "attested"
+seen_first = 2025-11-19
+seen_last = 2026-09-09
+source = "House of Commons Standing Order No. 41A; in force throughout the ten years (it predates them, so the era is given from the start of the span); 8 deferred divisions in the record, 19 November 2025 to 9 September 2026"
+note = "The question was put on one day and Members voted on it by ballot paper on a later Wednesday."
+
+[[era]]
+id = "prorogation_2019"
+name = "The 2019 prorogation the Supreme Court held void"
+house = "both"
+from = 2019-09-10
+to = 2019-09-24
+payload = ["sittings"]
+status = "cited"
+source = "R (Miller) v The Prime Minister [2019] UKSC 41, 24 September 2019: the prorogation was unlawful and of no effect; both Houses sat again on 25 September 2019"
+note = "Parliament did not sit while prorogued; the Supreme Court later held the prorogation void."

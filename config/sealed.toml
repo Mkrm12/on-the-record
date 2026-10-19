@@ -1,0 +1,7 @@
+# The sealed exam window.
+
+[sealed]
+window_id = "W5"
+from = 2026-04-01
+to = 2026-07-31
+statement = "April to July 2026 is not yet available in this record."

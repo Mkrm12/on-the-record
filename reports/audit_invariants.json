@@ -1,0 +1,831 @@
+[
+ {
+  "code": "R01",
+  "what": "speech.mnis_id resolves to member_id_map",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 10
+ },
+ {
+  "code": "R02",
+  "what": "division_vote.mnis_id resolves to member_id_map",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 11
+ },
+ {
+  "code": "R03",
+  "what": "chunk.debate_id resolves to debate",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 980
+ },
+ {
+  "code": "R04",
+  "what": "chunk.mnis_id resolves to member_id_map",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 387
+ },
+ {
+  "code": "R05",
+  "what": "division.debate_id resolves to debate (when set)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "R06",
+  "what": "procedure_event.debate_id resolves to debate",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 5
+ },
+ {
+  "code": "R07",
+  "what": "correction with no link decision at all (neither linked nor labelled why not)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 4
+ },
+ {
+  "code": "R08",
+  "what": "hansard_correction.mnis_id resolves to member_id_map",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "R09",
+  "what": "bill_stage_sitting.debate_id resolves to debate (when set)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "R10",
+  "what": "speech.window_id resolves to corpus_window",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 22
+ },
+ {
+  "code": "R11",
+  "what": "chunk.window_id resolves to corpus_window",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 380
+ },
+ {
+  "code": "R12",
+  "what": "member_office.mnis_id resolves (declared FK; sanity)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "R13",
+  "what": "speech.mnis_id is NULL (speaker unresolved)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 45
+ },
+ {
+  "code": "R15",
+  "what": "division.bill_link outside its vocabulary, or disagreeing with bill_stage_id",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 3
+ },
+ {
+  "code": "R14",
+  "what": "division has no debate_id (unplaced vote)",
+  "severity": "info",
+  "violations": 2,
+  "examples": [],
+  "ms": 4,
+  "examples_withheld_sealed_window": 2
+ },
+ {
+  "code": "D01",
+  "what": "chunk.debate_id = its speech's debate_id",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 370
+ },
+ {
+  "code": "D02",
+  "what": "chunk.debate_date = its debate's date",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 404
+ },
+ {
+  "code": "D03",
+  "what": "chunk.house = its debate's house",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 406
+ },
+ {
+  "code": "D04",
+  "what": "chunk.section = its debate's section",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 431
+ },
+ {
+  "code": "D05",
+  "what": "chunk.window_id = its debate's window_id",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 419
+ },
+ {
+  "code": "D06",
+  "what": "chunk.mnis_id = its speech's mnis_id",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 432
+ },
+ {
+  "code": "D07",
+  "what": "speech.window_id = its debate's window_id",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 78
+ },
+ {
+  "code": "D08",
+  "what": "a whole-boilerplate speech with a non-boilerplate sentence",
+  "severity": "info",
+  "violations": 0,
+  "examples": [],
+  "ms": 649
+ },
+ {
+  "code": "D09",
+  "what": "division.ayes_listed = count of its 'aye' votes",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 114
+ },
+ {
+  "code": "D10",
+  "what": "division.noes_listed = count of its 'no' votes",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 79
+ },
+ {
+  "code": "D11",
+  "what": "division.no_vote_count = count of its 'no_vote' rows",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 84
+ },
+ {
+  "code": "D12",
+  "what": "division.house = its debate's house",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "D13",
+  "what": "a non-deferred division on a different day from its debate",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "D13d",
+  "what": "a deferred division whose debate is not 1-60 days before the vote",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "D14",
+  "what": "hansard_correction.date = its debate's date",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "D15",
+  "what": "chunk.embedding_recipe set iff embedding set",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 326
+ },
+ {
+  "code": "D16",
+  "what": "corpus_window.speeches = actual speeches in window",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 11
+ },
+ {
+  "code": "D17",
+  "what": "corpus_window.debates = actual debates in window",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "D18",
+  "what": "corpus_window.chunks = actual chunks in window",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 4010
+ },
+ {
+  "code": "D20",
+  "what": "division with both counts but no result, and no recorded double-majority reason",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "D19",
+  "what": "bill_stage.debate_id disagrees with its earliest linked sitting's debate",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 5
+ },
+ {
+  "code": "D21",
+  "what": "division's named counts differ from the members its vote rows name (D-037)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 170
+ },
+ {
+  "code": "X23",
+  "what": "speech.seq is NULL (the API gave no order in its debate)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 31
+ },
+ {
+  "code": "X01",
+  "what": "debate.date lies inside its window's declared range",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "X02",
+  "what": "division_date lies inside some window",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "X03",
+  "what": "division result consistent with tellers: agreed => ayes>noes",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "X04",
+  "what": "division result consistent with tellers: negatived => noes>ayes",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "X05",
+  "what": "division result consistent with tellers: tied => ayes=noes",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "X06",
+  "what": "division tallies non-negative and non-trivial",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 0
+ },
+ {
+  "code": "X07",
+  "what": "division tally within a House's size (<= 900)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 0
+ },
+ {
+  "code": "X08",
+  "what": "member_office start <= end",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 0
+ },
+ {
+  "code": "X09",
+  "what": "member membership start <= end",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "X10",
+  "what": "a vote cast when the member held no membership of the division's House (history)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 134
+ },
+ {
+  "code": "X11",
+  "what": "party at the division (history) disagrees with the division list's party",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 9118
+ },
+ {
+  "code": "X12",
+  "what": "a speech made when the speaker held no membership of that House (history)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 134
+ },
+ {
+  "code": "X10s",
+  "what": "SNAPSHOT (expected >0): vote outside member_id_map's LATEST membership \u2014 why snapshot columns must not answer date questions",
+  "severity": "expected",
+  "violations": 4117,
+  "examples": [
+   [
+    "774"
+   ],
+   [
+    "775"
+   ],
+   [
+    "783"
+   ]
+  ],
+  "ms": 41
+ },
+ {
+  "code": "X13",
+  "what": "chunk embedding dimension is 384",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2246
+ },
+ {
+  "code": "X14",
+  "what": "chunk body is empty or whitespace",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 479
+ },
+ {
+  "code": "X15",
+  "what": "speech text is empty or whitespace",
+  "severity": "info",
+  "violations": 1940,
+  "examples": [],
+  "ms": 1275,
+  "examples_withheld_sealed_window": 50
+ },
+ {
+  "code": "X16",
+  "what": "debate heading is empty",
+  "severity": "info",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "X17",
+  "what": "division title is empty",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "X18",
+  "what": "bill title is empty",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "X19",
+  "what": "bill_stage_sitting date outside every window (not an error; how much the bill record reaches beyond the corpus)",
+  "severity": "info",
+  "violations": 1449,
+  "examples": [
+   [
+    "18635",
+    "2026-10-14"
+   ],
+   [
+    "18590",
+    "2026-11-13"
+   ],
+   [
+    "18613",
+    "2026-10-15"
+   ]
+  ],
+  "ms": 6
+ },
+ {
+  "code": "X20",
+  "what": "stored text contains U+FFFD (text mangled by a decoding failure before it reached us)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 596
+ },
+ {
+  "code": "X21",
+  "what": "member marked active (or given a current status) whose membership has ended",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "X22",
+  "what": "member whose profile fetch failed",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "U01",
+  "what": "duplicate speech seq within a debate",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 108
+ },
+ {
+  "code": "U02",
+  "what": "duplicate (speech, seq, sent_idx) chunk",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1501
+ },
+ {
+  "code": "U03",
+  "what": "a member voting twice in one division",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 130
+ },
+ {
+  "code": "U04",
+  "what": "duplicate division (house, date, number)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2
+ },
+ {
+  "code": "U05",
+  "what": "duplicate speech item_id",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 113
+ },
+ {
+  "code": "U06",
+  "what": "duplicate member_office interval within one source",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 3
+ },
+ {
+  "code": "U07",
+  "what": "identical speech text twice in one debate (a double-loaded contribution)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1384
+ },
+ {
+  "code": "C01",
+  "what": "debate with no speech",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 20
+ },
+ {
+  "code": "C02",
+  "what": "non-boilerplate speech with no chunk",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 302
+ },
+ {
+  "code": "C03",
+  "what": "division with no vote rows",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 5
+ },
+ {
+  "code": "C04",
+  "what": "bill with no stage",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "C05",
+  "what": "non-boilerplate chunk without an embedding",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 0
+ },
+ {
+  "code": "C06",
+  "what": "member who spoke or voted but has no party",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "C07",
+  "what": "a sitting day inside a window with debates in one House and none in the other (information)",
+  "severity": "info",
+  "violations": 37,
+  "examples": [
+   [
+    "2020-04-23",
+    "['Lords']"
+   ],
+   [
+    "2020-04-27",
+    "['Commons']"
+   ],
+   [
+    "2020-04-30",
+    "['Lords']"
+   ]
+  ],
+  "ms": 6,
+  "examples_withheld_sealed_window": 8
+ },
+ {
+  "code": "C08",
+  "what": "division naming a bill that reached no stage (bill_link none or ambiguous: honest refusals)",
+  "severity": "info",
+  "violations": 4,
+  "examples": [
+   [
+    "2141",
+    "Commons",
+    "2025-10-15",
+    "Sustainable Aviation Fuel Remaining Stages: Amendment 9",
+    "ambiguous"
+   ],
+   [
+    "1820",
+    "Commons",
+    "2024-05-21",
+    "High Speed Rail (Crewe - Manchester) Bill: Instruction (No. 3)",
+    "none"
+   ],
+   [
+    "1003147",
+    "Lords",
+    "2024-05-23",
+    "Post Office (Horizon Systems) Offences Bill",
+    "ambiguous"
+   ]
+  ],
+  "ms": 3,
+  "examples_withheld_sealed_window": 1
+ },
+ {
+  "code": "C10",
+  "what": "a window whose divisions have no voter lists in the Votes API (source_gap: the source's limit, disclosed)",
+  "severity": "info",
+  "violations": 0,
+  "examples": [],
+  "ms": 0
+ },
+ {
+  "code": "C09",
+  "what": "member with a failed optional fetch (the source's failures; a re-fetch may recover them)",
+  "severity": "info",
+  "violations": 2,
+  "examples": [
+   [
+    "4021",
+    "Chris Skidmore",
+    "['interests']"
+   ],
+   [
+    "4793",
+    "Scott Benton",
+    "['interests']"
+   ]
+  ],
+  "ms": 3
+ },
+ {
+  "code": "D22",
+  "what": "a division whose Hansard printed figures differ from the Votes API's (D-069: both are stated)",
+  "severity": "info",
+  "violations": 5,
+  "examples": [
+   [
+    "2283",
+    "Commons",
+    "2026-03-18",
+    "277",
+    "99",
+    "277",
+    "98"
+   ],
+   [
+    "2264",
+    "Commons",
+    "2026-02-23",
+    "73",
+    "256",
+    "73",
+    "286"
+   ],
+   [
+    "786",
+    "Commons",
+    "2020-05-13",
+    "56",
+    "363",
+    "56",
+    "362"
+   ]
+  ],
+  "ms": 3
+ },
+ {
+  "code": "P03",
+  "what": "a debate record with no place in its House's day, or sharing it (section_order NULL or duplicated): threads cannot be built",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 13
+ },
+ {
+  "code": "I01",
+  "what": "chunk_embedding_idx is a valid HNSW index of the form frozen retrieval queries (halfvec; switch with scripts/switch_vector_index.py)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1
+ },
+ {
+  "code": "P01",
+  "what": "a debate's opener (procedure.opener) is the Chair, by its stored role or the MR-08 oracle's printed forms (D-001)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1318
+ },
+ {
+  "code": "P02",
+  "what": "a printing of the Chair stored without a presiding role (D-064: ingest's classifier and migration 029)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 150
+ },
+ {
+  "code": "P04",
+  "what": "two debate threads under one heading with no other business between them (H-10)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 186
+ },
+ {
+  "code": "P05",
+  "what": "a debate's opener (procedure.opener) says nothing by the MR-08 oracle's reading: empty, or stage directions alone (QA pass 6)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1446
+ },
+ {
+  "code": "P06",
+  "what": "a member named as opening the Chair's own statement, by the MR-08 oracle's reading of the heading (QA pass 6)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 1294
+ },
+ {
+  "code": "P07",
+  "what": "a contribution the rule (procedure.opener.non_speech) and the MR-08 oracle read differently: says nothing or a speech (S05's real-data check)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 2744
+ },
+ {
+  "code": "E01",
+  "what": "a division flagged remote outside its House's remote-voting era (config/eras.toml)",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 122
+ },
+ {
+  "code": "E02",
+  "what": "a division with a double-majority (EVEL) count outside the EVEL era or outside the Commons",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 132
+ },
+ {
+  "code": "E03",
+  "what": "a division with votes cast by proxy outside its House's proxy-voting era",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 129
+ },
+ {
+  "code": "E04",
+  "what": "a deferred division outside the Commons' deferred-division era",
+  "severity": "hard",
+  "violations": 0,
+  "examples": [],
+  "ms": 126
+ }
+]

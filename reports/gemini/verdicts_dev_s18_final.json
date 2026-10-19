@@ -1,0 +1,663 @@
+{
+  "packet_id": "342ac61bdeec3bf4",
+  "judge_model": "expert_evaluator_v2_comprehensive",
+  "verdicts": [
+    {
+      "id": "J001",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital point regarding the proposed extension and the inability to state the cost is clearly present in the response.",
+      "evidence": ""
+    },
+    {
+      "id": "J002",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital point regarding Lewis Cocking's statement on housing making it harder to see a GP is accurately extracted.",
+      "evidence": ""
+    },
+    {
+      "id": "J003",
+      "outcome": "over_abstention",
+      "vital_present": 0,
+      "vital_total": 2,
+      "confidence": "high",
+      "why": "The expected response was to report the record neutrally and correct the premise; the system instead declined to answer, providing no vital points.",
+      "evidence": ""
+    },
+    {
+      "id": "J004",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital point identifying the Swanwick flight processing system is present, though the optional detail ruling out a cyber-attack is omitted.",
+      "evidence": ""
+    },
+    {
+      "id": "J005",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The answer accurately identifies the Border Security, Asylum and Immigration Bill as the debate topic.",
+      "evidence": ""
+    },
+    {
+      "id": "J006",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "Wendy Morton is correctly attributed as making the statement regarding the Falkland Islands.",
+      "evidence": ""
+    },
+    {
+      "id": "J007",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital figure of 89,000 lost hospitality jobs is present and attributed to members of the correct party, satisfying attribution equivalence rules.",
+      "evidence": ""
+    },
+    {
+      "id": "J008",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The debate on the National Insurance Contributions Bill is correctly identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J009",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital point regarding the establishment of youth hubs in 360 locations across the country is clearly stated.",
+      "evidence": ""
+    },
+    {
+      "id": "J010",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response accurately reports Sarah Jones updating the House regarding the intelligence assessment and away fans ban.",
+      "evidence": ""
+    },
+    {
+      "id": "J011",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response fails to identify Sarah Bool's specific complaint made during the stamp duty debate.",
+      "evidence": ""
+    },
+    {
+      "id": "J012",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 2,
+      "confidence": "high",
+      "why": "The response completely misses the specified arguments from both Lizzi Collinge and Sir Ashley Fox.",
+      "evidence": ""
+    },
+    {
+      "id": "J013",
+      "outcome": "over_abstention",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system abstained by asking which division was meant rather than providing the requested voting figures.",
+      "evidence": ""
+    },
+    {
+      "id": "J014",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The core complaint by Lord Jamieson is present, though the specific optional debate name is omitted.",
+      "evidence": ""
+    },
+    {
+      "id": "J015",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response does not mention Baroness Fox of Buckley or her non-affiliated status.",
+      "evidence": ""
+    },
+    {
+      "id": "J016",
+      "outcome": "over_abstention",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system abstained by requesting division clarification instead of answering with the voting figures.",
+      "evidence": ""
+    },
+    {
+      "id": "J017",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system successfully corrected the premise by accurately stating the figure as £1.8 billion.",
+      "evidence": ""
+    },
+    {
+      "id": "J018",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The event is correctly identified as a triathlon; the optional detail regarding the precise phrasing of the protest attribution is missing.",
+      "evidence": ""
+    },
+    {
+      "id": "J019",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The specific concerns raised by Joe Morris regarding the addressing and compiling of war crimes are not included.",
+      "evidence": ""
+    },
+    {
+      "id": "J020",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system corrects the premise by confirming Baroness Fox warmly welcomed the exemption.",
+      "evidence": ""
+    },
+    {
+      "id": "J021",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital points summarizing Alison McGovern's statement on social care and the 1.5 million workers are fully captured.",
+      "evidence": ""
+    },
+    {
+      "id": "J022",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response fails to include the explicit vital point regarding the challenges in the 1971 Act not being merely technical.",
+      "evidence": ""
+    },
+    {
+      "id": "J023",
+      "outcome": "correct_abstention",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system correctly declined to answer due to the ambiguity of the query, explicitly stating that no specific bill was named.",
+      "evidence": ""
+    },
+    {
+      "id": "J024",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response completely misses the reference to Josh Dean and the River Stort.",
+      "evidence": ""
+    },
+    {
+      "id": "J025",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Finance (No.2) Bill debate is accurately identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J026",
+      "outcome": "over_abstention",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system declined the prompt by asking which division was meant rather than providing the definitive voting outcome.",
+      "evidence": ""
+    },
+    {
+      "id": "J027",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Terminally Ill Adults (End of Life) Bill debate is accurately identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J028",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Supporting High Streets debate is correctly identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J029",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The core fact regarding the proposed site for the Chinese embassy is included; optional details are adequately filtered.",
+      "evidence": ""
+    },
+    {
+      "id": "J030",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response identifies instances from early 2026 and late 2025 but misses the explicit debate held in September 2026.",
+      "evidence": ""
+    },
+    {
+      "id": "J031",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Mental Health Bill [Lords] debate is correctly identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J032",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The £60.5 billion figure is correctly retrieved; optional localized data was effectively processed.",
+      "evidence": ""
+    },
+    {
+      "id": "J033",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Children's Wellbeing and Schools Bill debate is correctly extracted.",
+      "evidence": ""
+    },
+    {
+      "id": "J034",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system successfully overrides the false premise by stating the accurate figure of 2,000 canceled flights.",
+      "evidence": ""
+    },
+    {
+      "id": "J035",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 2,
+      "confidence": "high",
+      "why": "The response completely misses Chris Stephens and fails to explicitly report that the passage does not contain the government's offer.",
+      "evidence": ""
+    },
+    {
+      "id": "J036",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The 11% reduction is explicitly captured.",
+      "evidence": ""
+    },
+    {
+      "id": "J037",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response accurately identifies the Conservative benches.",
+      "evidence": ""
+    },
+    {
+      "id": "J038",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system avoids misattribution, clarifying that the words were read by Greg Smith rather than spoken by Martin Brundle to the House.",
+      "evidence": ""
+    },
+    {
+      "id": "J039",
+      "outcome": "over_abstention",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system declined the prompt by requesting specific division details instead of supplying the final voting figures.",
+      "evidence": ""
+    },
+    {
+      "id": "J040",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The £1.8 billion figure is correctly retrieved and accurately attributed as an OBR estimate cited by a member, avoiding endorsement.",
+      "evidence": ""
+    },
+    {
+      "id": "J041",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system properly corrects the false premise by detailing that the record shows a general debate with no recorded vote.",
+      "evidence": ""
+    },
+    {
+      "id": "J042",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The argument is successfully identified; under attribution equivalence rules, attributing it to Abtisam Mohamed is valid as the semantic argument matches.",
+      "evidence": ""
+    },
+    {
+      "id": "J043",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital reference to the private Member's Bill debated on 3 February 2026 is entirely omitted.",
+      "evidence": ""
+    },
+    {
+      "id": "J044",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "Both temporal figures (36 years and 33 years) are correctly extracted and attributed to Sir Peter Bottomley.",
+      "evidence": ""
+    },
+    {
+      "id": "J045",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The specific evidence from Baroness Taylor of Stevenage regarding the workshop in the City is completely absent.",
+      "evidence": ""
+    },
+    {
+      "id": "J046",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "While the technical issue is mentioned, the response fails to explicitly state that a cyber-attack had been ruled out.",
+      "evidence": ""
+    },
+    {
+      "id": "J047",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The requisite voting figures confirming the motion was agreed are present in the aggregated text.",
+      "evidence": ""
+    },
+    {
+      "id": "J048",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Financial Services and Markets Bill [HL] debate is accurately identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J049",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Finance (No. 2) Bill debate is accurately identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J050",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital action of withholding contractual payments is accurately detailed.",
+      "evidence": ""
+    },
+    {
+      "id": "J051",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 1,
+      "vital_total": 2,
+      "confidence": "high",
+      "why": "The point concerning groundwater contamination is successfully captured, but the argument regarding millions living near US pads is completely missed.",
+      "evidence": ""
+    },
+    {
+      "id": "J052",
+      "outcome": "over_abstention",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system abstained by asking for division clarification instead of answering with the rejection outcome and voting figures.",
+      "evidence": ""
+    },
+    {
+      "id": "J053",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Representation of the People Bill debate is accurately identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J054",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 1,
+      "vital_total": 2,
+      "confidence": "high",
+      "why": "Catherine Fookes' opposition rationale is detailed correctly, but Steve Yemm's specific counter-argument regarding jobs and tax revenue is omitted.",
+      "evidence": ""
+    },
+    {
+      "id": "J055",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The date of the away fans ban decision is accurately stated as November 6.",
+      "evidence": ""
+    },
+    {
+      "id": "J056",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response captures the objection alongside the reference to the Windsor Framework.",
+      "evidence": ""
+    },
+    {
+      "id": "J057",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "Despite requesting clarification, the system successfully extracts and reports the exact debate name (Financial Services and Markets Bill [HL]).",
+      "evidence": ""
+    },
+    {
+      "id": "J058",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 1,
+      "vital_total": 3,
+      "confidence": "high",
+      "why": "The £1.8 billion figure is present, but the response entirely misses the OBR attribution by Julia Lopez and fails to delineate the government's stance.",
+      "evidence": ""
+    },
+    {
+      "id": "J059",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The vital figures regarding transition costs are thoroughly documented.",
+      "evidence": ""
+    },
+    {
+      "id": "J060",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The term 'holiday tax' is accurately surfaced.",
+      "evidence": ""
+    },
+    {
+      "id": "J061",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The statistical extraction of 3.7 times the national average is correctly attributed.",
+      "evidence": ""
+    },
+    {
+      "id": "J062",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system hints at procedural changes but fails to explicitly extract the core objection regarding the negative procedure in clause 7(1).",
+      "evidence": ""
+    },
+    {
+      "id": "J063",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Finance (No. 2) Bill debate is accurately identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J064",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The system successfully rectifies the premise by identifying the technical issue and explicitly ruling out the cyber-attack.",
+      "evidence": ""
+    },
+    {
+      "id": "J065",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The Finance (No. 2) Bill debate is accurately identified.",
+      "evidence": ""
+    },
+    {
+      "id": "J066",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The voting intention and accompanying rationale regarding transparency are accurately detailed.",
+      "evidence": ""
+    },
+    {
+      "id": "J067",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response verifies the usage of the term 'holiday tax' by multiple members, satisfying attribution constraints.",
+      "evidence": ""
+    },
+    {
+      "id": "J068",
+      "outcome": "correct",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The specific objection connecting the £35 billion payment to cuts in troop training is accurately reported.",
+      "evidence": ""
+    },
+    {
+      "id": "J069",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The response extracts anecdotal evidence but fails to identify the core Commons debate on the ombudsman's report dated 16 May 2024.",
+      "evidence": ""
+    },
+    {
+      "id": "J070",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "Lord Gascoigne's specific response regarding property agents is entirely absent from the extraction.",
+      "evidence": ""
+    },
+    {
+      "id": "J071",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 0,
+      "vital_total": 2,
+      "confidence": "high",
+      "why": "The response fails to neutralize the premise explicitly and misses the vital technical context ruling out the cyber-attack.",
+      "evidence": ""
+    },
+    {
+      "id": "J072",
+      "outcome": "correct_missing_okay_nuggets",
+      "vital_present": 1,
+      "vital_total": 1,
+      "confidence": "high",
+      "why": "The names of the individuals are correctly isolated.",
+      "evidence": ""
+    },
+    {
+      "id": "J073",
+      "outcome": "missing_vital_nugget",
+      "vital_present": 1,
+      "vital_total": 2,
+      "confidence": "high",
+      "why": "The response captures Lauren Edwards' statement regarding the slight amendment but completely omits Meg Hillier's contradictory observation.",
+      "evidence": ""
+    }
+  ]
+}

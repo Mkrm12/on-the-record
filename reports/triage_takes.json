@@ -1,0 +1,123 @@
+{
+ "about": "Claude's pre-read of the contested verdicts in the Gemini-judged dev run (packet 342ac61bdeec3bf4), written 2026-10-06 before the owner labelled anything. Record excerpts were read from hansard_v2 (read-only). Built into tools/review/triage.html by scripts/triage_review.py.",
+ "packet_id": "342ac61bdeec3bf4",
+ "report": "reports/e3_eval_dev_s18_final_judged.json",
+ "packet": "reports/gemini/packet_dev_s18_final.json",
+ "verdicts": "reports/gemini/verdicts_dev_s18_final.json",
+ "packet_key": "reports/gemini/key_dev_s18_final.json",
+ "seed": 18,
+ "n_controls": 4,
+ "flagged": {
+  "J003": {
+   "claude": {"outcome": "missing_vital_nugget", "vital_present": 0},
+   "take": "This is not a decline. The system answered with one verified, attributed claim (Sarah Pochin's question) and a weak-match note; the packet marks it 'not a decline', yet Gemini's reason says it 'declined'. Graded as an answer, it states neither vital point: no planning process, no intelligence exchange, and nothing saying the spying premise is the questioner's. It reports Pochin's question rather than asserting it, so it is not harmful (rule 2).",
+   "effect": "Over-abstention 32 -> 31 of 223. Vital coverage unchanged (0 of 2 either way)."
+  },
+  "J019": {
+   "claude": {"outcome": "correct_missing_okay_nuggets", "vital_present": 1},
+   "take": "Joe Morris is not in the answer, but his point is, in other members' words: Paul Waugh asked what role the UK can play in amassing evidence to hold Israel to account for war crimes, and Melanie Ward asked for accountability for war crimes in Lebanon as in Palestine. The question asks what concerns were raised, not who raised them. The rubric does not settle whether another member's identical point counts, and Gemini has not been consistent on it. I would count it (the optional Alicia Kearns point is missing). Your ruling here sets the rule.",
+   "effect": "Vital coverage +1. Whichever way you rule, the same rule then applies to every entry of this kind; the report lists them."
+  },
+  "J029": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "The optional point is in the answer almost word for word: 'Matthew Pennycook said the decision ... is to be taken by Planning Ministers, independent of the rest of Government.' The vital point is there too, so every point is stated. That is 'correct', not 'correct, optional points missing'.",
+   "effect": "None on the bars (both count as a right answer); it matters only for the seven-outcome kappa."
+  },
+  "J030": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "The question is whether local government reorganisation came up more than once. The answer shows it three times, dated (December 2025 twice, March 2026). The reference point gives two examples (September 2026 and early 2026), and Gemini marked it missing because September 2026 is not among the answer's. The record has the subject in about 150 debates, so any two dated instances answer the question. I would call the point stated by demonstration, but the answer never says 'yes' outright. Low confidence: a strict reading of rule 9 supports Gemini.",
+   "entry": "Over-specific: the reference point should read 'Yes, repeatedly (for example ...)', not name two particular months.",
+   "effect": "Vital coverage +1."
+  },
+  "J032": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "Both points are in one sentence: '£60.5 billion in gross value added, including over £64 million in Wolverhampton.' Gemini's own reason says the local figure was 'effectively processed', then grades it as missing. Every point is stated: 'correct'.",
+   "effect": "None on the bars; seven-outcome kappa only."
+  },
+  "J036": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "Both points are in the first sentence: knife crime down 11% (vital) and 63,000 knives taken off the streets (optional). Nothing is missing, so 'correct'.",
+   "effect": "None on the bars; seven-outcome kappa only."
+  },
+  "J038": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "Genuinely borderline, in the category that matters most (misattribution). The answer never says 'Brundle said nothing in the Commons'. But its first line has Greg Smith quoting 'Martin Brundle's scathing post', and nothing is attributed to Brundle (the record has no speech by him). A reader comes away knowing the words reached the Commons only through Greg Smith, which is the correction the entry asks for ('who actually said what, where'). I agree with Gemini. The strict reading (rule 9: a point only hinted at is not present) would make it missing_vital_nugget.",
+   "record": "The record holds no speech by Martin Brundle (speaker search: 0 rows).",
+   "effect": "If you grade it missing_vital_nugget: vital coverage -1."
+  },
+  "J043": {
+   "claude": {"outcome": "missing_vital_nugget", "vital_present": 0},
+   "take": "Graded against the entry as written, Gemini is right: the answer never mentions the bill debated on 3 February 2026. But the entry is wrong twice over. That bill was the Government's, not a private Member's, and it became an Act in 2026, so the must-not-claim ('that the Government has abolished it') is contradicted by the record. The answer's attributed claims (the Chancellor's commitment; Josh Newbury: 'Recently, we scrapped the two-child benefit cap') match the record. Nothing in it is harmful.",
+   "record": "Bill table: 'Universal Credit (Removal of Two Child Limit) Act 2026': first reading, Commons, 8 Jan 2026; second reading, Commons, 3 Feb 2026 (Government bill). Josh Newbury, Commons, 12 Jan 2026: 'Recently, we scrapped the two-child benefit cap.'",
+   "entry": "Wrong. Fix: vital -> 'Yes: the Government's bill to remove the limit had its second reading on 3 February 2026 and became an Act in 2026'; drop the must-not-claim (or replace it with 'calling it a private Member's Bill'). Then re-grade.",
+   "effect": "None today. Under a fixed entry the answer may become a right one (it reports the Government's commitment to scrap the cap)."
+  },
+  "J045": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "Baroness Taylor's line (a City workshop found 'a great appetite for patient capital investment in social housing') is in the record but not in the answer. The same point is there from other peers. Lord Lansley said institutional investors are looking for long-term, index-linked investments, which the CPI+1% social rent provides. Lord Davies of Brixton called council pension funds patient, long-term investors suited to housing. The question asks whether there is investor enthusiasm, not who said so. The rubric does not settle whether another member's identical point counts; I would count it.",
+   "record": "Baroness Taylor of Stevenage, Lords, 15 Sep 2026 (Home Building Target): 'When I did a workshop on this in the City, there was a great appetite for patient capital investment in social housing.'",
+   "effect": "Vital coverage +1."
+  },
+  "J046": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "The vital point is 'No: he said a cyber-attack had been ruled out and blamed a technical issue'. The answer reads: 'Keir Mather said the disruption was instead caused by a technical issue in NATS's Swanwick flight processing system ...'. The technical cause is stated, and 'instead' gives the 'no'; only the words 'ruled out' are missing. A reader comes away with the vital point, so I would grade it correct. The strict reading (rule 9) keeps it missing_vital_nugget, as Gemini has it.",
+   "effect": "Vital coverage +1."
+  },
+  "J056": {
+   "claude": {"outcome": "missing_vital_nugget", "vital_present": 0},
+   "take": "The question asks for or against, and the answer never says which. Hoey's two quotes say the Bill cannot apply to Northern Ireland because of the Windsor Framework and the tobacco directive, and that her part of the UK should be treated equally on health. A reader could take that as for the Bill applying to Northern Ireland, or as against the provisions. Neither 'against' nor the 'warned at the time of the Windsor Framework' half is stated. Gemini was lenient here; by rule 9 the vital point is only hinted at.",
+   "effect": "Vital coverage -1."
+  },
+  "J062": {
+   "claude": {"outcome": "correct_missing_okay_nuggets", "vital_present": 1},
+   "take": "The vital point is her objection that clause 7(1) lets Ministers change eligibility by the negative procedure. The answer gives her remedy instead: the Liberal Democrats tabled amendments requiring Parliament to approve future changes through the positive procedure. In the record the two are a few sentences apart in one speech ('That is why ...'). Is that the same meaning in other words, or only a hint? I lean 'same meaning' (the optional 'supported the Bill overall' is missing); Gemini read it as a hint. Separately, the reader text 'Helen Morgan said: She said ...' is a rendering defect (1 answer in 223). It is logged and does not affect the grade.",
+   "record": "Helen Morgan, Commons, 27 Jan 2026 (Medical Training (Prioritisation) Bill): 'We have concerns about clause 7(1), which allows Ministers to change eligibility for prioritisation through the negative procedure ... That is why the Liberal Democrats have tabled amendments that would require Parliament to approve any future changes through the positive procedure.'",
+   "effect": "Vital coverage +1."
+  },
+  "J070": {
+   "claude": {"outcome": "correct", "vital_present": 1},
+   "take": "The vital point is only that Lord Gascoigne responded to amendments on regulating property agents. His reply (24 May 2024) is not in the answer. The Government's reply to the same amendments at an earlier sitting is: Baroness Scott of Bybrook said the Bill's measures would make managing agents more accountable. The answer also has both amendments, Lord Best's regulator and Lord Young of Cookham's. The question asks what the Lords said, not who. I would count it, but this turns on the same open question: does another member's identical point count?",
+   "record": "Lord Gascoigne, Lords, 24 May 2024 (Leasehold and Freehold Reform Bill): 'I will start with the amendments regarding the regulation of property agents. I thank the noble Lord, Lord Best ...'",
+   "effect": "Vital coverage +1."
+  }
+ },
+ "owner_named": {
+  "J051": {
+   "claude": {"outcome": "missing_vital_nugget", "vital_present": 1},
+   "take": "Gemini is right, and the miss is the pipeline's. The question asks for both sides; the answer gives only the case against (Alison Hume, Ed Miliband, Gideon Amos). Claire Young's point (groundwater, a thin evidence base) is credited through Alison Hume's equivalent words, which is fair. Richard Tice's case for is absent. The overview read 8 debates and verified 11 of 29 claims, and the other side did not survive. Nothing is wrong, so it is not harmful, but it is one-sided on a 'both sides' question.",
+   "record": "Claire Young, Commons, 15 Sep 2026 (Fracking Ban): '... other issues, such as the potential for groundwater contamination ... Ministers tell us that the evidence base is not there ...'",
+   "effect": "None: agrees with the run."
+  },
+  "J054": {
+   "claude": {"outcome": "missing_vital_nugget", "vital_present": 1},
+   "take": "Gemini is right, and again the miss is the pipeline's. Catherine Fookes's case against is there. Steve Yemm's case for (jobs, investment, skills, tax revenue, a just transition) was made in the same debate on 3 September 2026 but is not in the answer. Andrew Bowie's call to approve Rosebank and Jackdaw is a view in favour, but not Yemm's argument. One side is complete and the other is missing.",
+   "record": "Steve Yemm, Commons, 3 Sep 2026 (Jackdaw and Rosebank Oil and Gas Fields): '... the reason projects like Jackdaw and Rosebank matter so much is that they provide jobs, investment, skills and further tax revenues today, and that a just transition has to protect those workers ...'",
+   "effect": "None: agrees with the run."
+  }
+ },
+ "controls": {
+  "J009": {"take": "I agree with Gemini. '360 locations across the country' is stated three times (Pat McFadden, Baroness Sherlock, Sir Alan Campbell). The 'up to 50 youth hubs' lines are about a different programme, and they are attributed, so they are not an error."},
+  "J014": {"take": "I agree with Gemini. Lord Jamieson's 'marking its own homework' is there, dated 3 September 2026, but the optional debate name is not. Baroness Willis used the same words in 2025, and naming her too is not an error (rule 3)."},
+  "J040": {"take": "I agree with Gemini. Julia Lopez's '£1.8 billion' is there as the OBR's figure, and nothing presents it as the Government's estimate. Mike Wood's question ('whether the Government still expected ... £1.8 billion') is his own, attributed (rule 2)."},
+  "J061": {"take": "I agree with Gemini. Amanda Martin's '3.7 times higher than the national average' is there. The other figures ('four times') come from other statements, attributed and dated, so they are not errors."}
+ },
+ "gold_cards": {
+  "divisions": {
+   "ids": ["J013", "J016", "J026", "J039", "J052"],
+   "title": "Five division questions: is the entry wrong, or the system?",
+   "take": "Each question names a bill and a day. The record has 3 to 7 Lords divisions on that bill that day, with different results, and each gold entry silently picked one. Gemini graded by the entry as written (rule 8: a clarification that states no vital point is over_abstention), so this is the entries' fault, not the judge's. It is the open G-04 item, and it is kept out of kappa. The system's reply names every division and asks which, rather than guessing.",
+   "record": {
+    "J013": "9 Mar 2026, Crime and Policing Bill, 7 divisions: 75-190 neg, 88-172 neg, 200-162 agreed, 82-151 neg, 76-185 neg, 68-183 neg, 40-123 neg. The entry wants division 1 (75-190).",
+    "J016": "28 Oct 2025, Employment Rights Bill, 6 divisions: 302-159, 301-153, 267-153, 249-142, 240-143 agreed; 184-195 neg. The entry wants division 3 (267-153).",
+    "J026": "16 Mar 2026, Pension Schemes Bill, 4 divisions: 276-165, 201-177, 198-171 agreed; 48-142 neg. The entry wants division 3 (198-171, agreed).",
+    "J039": "21 Oct 2025, Public Authorities (Fraud, Error and Recovery) Bill, 5 divisions: 270-160, 262-157, 253-153, 212-144 agreed; 138-138 tied. The entry wants division 4 (212-144, agreed).",
+    "J052": "21 May 2024, Victims and Prisoners Bill, 3 divisions: 211-208, 203-198 agreed; 91-192 neg. The entry wants division 3 (91-192, negatived)."
+   },
+   "options": {
+    "A": "Keep the entries: the system should have answered (for example by listing every division's result, as it already does when they all agree). The five stay over_abstention.",
+    "B": "Fix the entries (G-04): asking which division is the right response, so the five become correct_abstention."
+   },
+   "effect": "B: over-abstention 32 -> 27 of 223 (26 if J003 is regraded too); correct abstention 20 of 20. Either way, listing each division's result inside the clarification would serve readers better. That is a product change, noted and not started."
+  }
+ }
+}

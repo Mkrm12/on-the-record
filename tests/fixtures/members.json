@@ -1,0 +1,852 @@
+{
+ "172": {
+  "profile": {
+   "value": {
+    "id": 172,
+    "nameListAs": "Abbott, Ms Diane",
+    "nameDisplayAs": "Ms Diane Abbott",
+    "nameFullTitle": "Rt Hon Diane Abbott MP",
+    "nameAddressAs": "Ms Abbott",
+    "latestParty": {
+     "id": 15,
+     "name": "Labour",
+     "abbreviation": "Lab",
+     "backgroundColour": "d50000",
+     "foregroundColour": "ffffff",
+     "isLordsMainParty": true,
+     "isLordsSpiritualParty": true,
+     "governmentType": 0,
+     "isIndependentParty": false
+    },
+    "gender": "F",
+    "latestHouseMembership": {
+     "membershipFrom": "Hackney North and Stoke Newington",
+     "membershipFromId": 4074,
+     "house": 1,
+     "membershipStartDate": "1987-06-11T00:00:00",
+     "membershipEndDate": null,
+     "membershipEndReason": null,
+     "membershipEndReasonNotes": null,
+     "membershipEndReasonId": null,
+     "membershipStatus": {
+      "statusIsActive": true,
+      "statusDescription": "Current Member",
+      "statusNotes": null,
+      "statusId": 0,
+      "status": 0,
+      "statusStartDate": "2024-07-04T00:00:00"
+     }
+    },
+    "thumbnailUrl": "https://members-api.parliament.uk/api/Members/172/Thumbnail"
+   },
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "biography": {
+   "value": {
+    "representations": [
+     {
+      "constituencyStart": "2024-05-31T00:00:00",
+      "constituencyEnd": null,
+      "house": 1,
+      "name": "Hackney North and Stoke Newington",
+      "id": 4074,
+      "startDate": "2024-07-04T00:00:00",
+      "endDate": null,
+      "additionalInfo": "Elected 1 time",
+      "additionalInfoLink": null
+     },
+     {
+      "constituencyStart": "2010-04-13T00:00:00",
+      "constituencyEnd": "2024-05-30T00:00:00",
+      "house": 1,
+      "name": "Hackney North and Stoke Newington",
+      "id": 3506,
+      "startDate": "2010-05-06T00:00:00",
+      "endDate": "2024-05-30T00:00:00",
+      "additionalInfo": "Elected 4 times",
+      "additionalInfoLink": null
+     }
+    ],
+    "electionsContested": [],
+    "houseMemberships": [
+     {
+      "house": 1,
+      "name": "Commons",
+      "id": 1,
+      "startDate": "1987-06-11T00:00:00",
+      "endDate": null,
+      "additionalInfo": "Ms Diane Abbott",
+      "additionalInfoLink": null
+     }
+    ],
+    "governmentPosts": [],
+    "oppositionPosts": [
+     {
+      "house": 1,
+      "name": "Shadow Home Secretary",
+      "id": 1171,
+      "startDate": "2016-10-06T00:00:00",
+      "endDate": "2020-04-05T00:00:00",
+      "additionalInfo": "Home Office",
+      "additionalInfoLink": "https://www.gov.uk/government/organisations/home-office"
+     },
+     {
+      "house": 1,
+      "name": "Shadow Secretary of State for Health",
+      "id": 863,
+      "startDate": "2016-06-27T00:00:00",
+      "endDate": "2016-10-06T00:00:00",
+      "additionalInfo": "Department of Health",
+      "additionalInfoLink": "http://www.dh.gov.uk"
+     }
+    ],
+    "otherPosts": [
+     {
+      "house": 1,
+      "name": "Member, Labour Party National Executive Committee",
+      "id": 803,
+      "startDate": "1994-01-01T00:00:00",
+      "endDate": "1997-01-01T00:00:00",
+      "additionalInfo": null,
+      "additionalInfoLink": null
+     }
+    ],
+    "partyAffiliations": [
+     {
+      "house": 1,
+      "name": "Labour",
+      "id": 15,
+      "startDate": "2026-07-30T00:00:00",
+      "endDate": null,
+      "additionalInfo": null,
+      "additionalInfoLink": null
+     },
+     {
+      "house": 1,
+      "name": "Independent",
+      "id": 8,
+      "startDate": "2025-07-17T00:00:00",
+      "endDate": "2026-07-30T00:00:00",
+      "additionalInfo": null,
+      "additionalInfoLink": null
+     }
+    ],
+    "committeeMemberships": [
+     {
+      "house": 1,
+      "name": "Treasury Committee",
+      "id": 158,
+      "startDate": "1995-11-15T00:00:00",
+      "endDate": "1997-03-21T00:00:00",
+      "additionalInfo": null,
+      "additionalInfoLink": null
+     },
+     {
+      "house": 1,
+      "name": "Foreign Affairs Committee",
+      "id": 78,
+      "startDate": "1997-07-16T00:00:00",
+      "endDate": "2001-05-11T00:00:00",
+      "additionalInfo": null,
+      "additionalInfoLink": null
+     }
+    ]
+   },
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/172/Biography",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "contact": {
+   "value": [
+    {
+     "type": "Parliamentary office",
+     "typeDescription": null,
+     "typeId": 1,
+     "isPreferred": false,
+     "isWebAddress": false,
+     "notes": null,
+     "line1": "House of Commons",
+     "line2": null,
+     "line3": null,
+     "line4": null,
+     "line5": "London",
+     "postcode": "SW1A 0AA",
+     "phone": null,
+     "fax": null,
+     "email": "redacted@example.invalid",
+     "website": null
+    },
+    {
+     "type": "Website",
+     "typeDescription": null,
+     "typeId": 6,
+     "isPreferred": false,
+     "isWebAddress": true,
+     "notes": null,
+     "line1": "http://www.dianeabbott.org.uk",
+     "line2": null,
+     "line3": null,
+     "line4": null,
+     "line5": null,
+     "postcode": null,
+     "phone": null,
+     "fax": null,
+     "email": null,
+     "website": null
+    },
+    {
+     "type": "X (formerly Twitter)",
+     "typeDescription": null,
+     "typeId": 7,
+     "isPreferred": false,
+     "isWebAddress": true,
+     "notes": null,
+     "line1": "https://twitter.com/HackneyAbbott",
+     "line2": null,
+     "line3": null,
+     "line4": null,
+     "line5": null,
+     "postcode": null,
+     "phone": null,
+     "fax": null,
+     "email": null,
+     "website": null
+    }
+   ],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "synopsis": {
+   "value": "The Rt Hon Ms Diane Abbott is the Labour MP for <a href='/constituency/4074/overview'>Hackney North and Stoke Newington</a>, and has been an MP continually since 11 June 1987.",
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "experience": {
+   "value": [],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/172/Experience",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "focus": {
+   "value": [
+    {
+     "category": "Countries of interest",
+     "focus": [
+      "Africa, Jamaica"
+     ]
+    },
+    {
+     "category": "Political Interests",
+     "focus": [
+      "Small businesses, education"
+     ]
+    }
+   ],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/172/Focus",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "staff": {
+   "value": [],
+   "links": [
+    {
+     "rel": "self",
+     "href": "Member/172/Staff",
+     "method": "GET"
+    }
+   ]
+  },
+  "interests": {
+   "value": [
+    {
+     "id": 12,
+     "name": "1. Employment and earnings",
+     "sortOrder": 0,
+     "interests": [
+      {
+       "id": 11317,
+       "interest": "Role, work or services: Writing an autobiography\r\nPayer: Viking- Penguin via Blake Friedmann Literary, TV & Film Agency Ltd (Book advance on first UK publication), Ground Floor, 15 Highbury Place, London, N5 1QP\r\n(Registered 20 November 2024)",
+       "createdWhen": "2024-11-27T12:25:07.4533333",
+       "lastAmendedWhen": null,
+       "deletedWhen": null,
+       "isCorrection": false,
+       "childInterests": [
+        {
+         "id": 11318,
+         "interest": "Payment: £22,500 \r\nReceived on: 24 September 2024. Hours: 24 hrs.\r\nUltimate payer: Viking - Penguin, One Embassy Gardens, 8 Viaduct Gardens, London, SW11 7BW, UK\r\n(Registered 20 November 2024)\r\nThis is a late entry to which the rectification procedure was applied on 2 October \r\n2025. Paragraph 51 of the Procedural Protocol in respect of the Code \r\nof Conduct refers.",
+         "createdWhen": "2025-11-24T14:27:42.6993086",
+         "lastAmendedWhen": "2025-10-08T13:15:41.47",
+         "deletedWhen": null,
+         "isCorrection": true,
+         "childInterests": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/172/Interests",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/172",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/172/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/172/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "election": {
+   "value": {
+    "result": "Lab Hold",
+    "isNotional": false,
+    "electorate": 77812,
+    "turnout": 40959,
+    "majority": 15080,
+    "winningParty": {
+     "id": 15,
+     "name": "Labour",
+     "abbreviation": "Lab",
+     "backgroundColour": "d50000",
+     "foregroundColour": "ffffff",
+     "isLordsMainParty": true,
+     "isLordsSpiritualParty": true,
+     "governmentType": null,
+     "isIndependentParty": false
+    },
+    "electionTitle": "2024 General Election",
+    "electionDate": "2024-07-04T00:00:00",
+    "electionId": 422,
+    "isGeneralElection": true,
+    "constituencyName": "Hackney North and Stoke Newington",
+    "candidates": [
+     {
+      "memberId": null,
+      "name": "Kombat Diva",
+      "party": {
+       "id": 8,
+       "name": "Independent",
+       "abbreviation": "Ind",
+       "backgroundColour": "909090",
+       "foregroundColour": "FFFFFF",
+       "isLordsMainParty": false,
+       "isLordsSpiritualParty": false,
+       "governmentType": null,
+       "isIndependentParty": true
+      },
+      "resultChange": "",
+      "rankOrder": 8,
+      "votes": 182,
+      "voteShare": 0.004443467858102005
+     },
+     {
+      "memberId": null,
+      "name": "Knigel Knapp",
+      "party": {
+       "id": 119,
+       "name": "Official Monster Raving Loony Party",
+       "abbreviation": "MRLP",
+       "backgroundColour": "ffff00",
+       "foregroundColour": null,
+       "isLordsMainParty": true,
+       "isLordsSpiritualParty": false,
+       "governmentType": null,
+       "isIndependentParty": false
+      },
+      "resultChange": "",
+      "rankOrder": 7,
+      "votes": 224,
+      "voteShare": 0.005468883517664005
+     }
+    ]
+   },
+   "links": [
+    {
+     "rel": "self",
+     "href": "/LatestElectionResult",
+     "method": "GET"
+    }
+   ]
+  }
+ },
+ "4972": {
+  "profile": {
+   "value": {
+    "id": 4972,
+    "nameListAs": "Hendy of Richmond Hill, L.",
+    "nameDisplayAs": "Lord Hendy of Richmond Hill",
+    "nameFullTitle": "The Lord Hendy of Richmond Hill CBE",
+    "nameAddressAs": null,
+    "latestParty": {
+     "id": 15,
+     "name": "Labour",
+     "abbreviation": "Lab",
+     "backgroundColour": "d50000",
+     "foregroundColour": "ffffff",
+     "isLordsMainParty": true,
+     "isLordsSpiritualParty": true,
+     "governmentType": 0,
+     "isIndependentParty": false
+    },
+    "gender": "M",
+    "latestHouseMembership": {
+     "membershipFrom": "Life peer",
+     "membershipFromId": 4,
+     "house": 2,
+     "membershipStartDate": "2022-11-17T00:00:00",
+     "membershipEndDate": null,
+     "membershipEndReason": null,
+     "membershipEndReasonNotes": null,
+     "membershipEndReasonId": null,
+     "membershipStatus": {
+      "statusIsActive": true,
+      "statusDescription": "Current Member",
+      "statusNotes": null,
+      "statusId": 0,
+      "status": 0,
+      "statusStartDate": "2022-11-17T00:00:00"
+     }
+    },
+    "thumbnailUrl": "https://members-api.parliament.uk/api/Members/4972/Thumbnail"
+   },
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "biography": {
+   "value": {
+    "representations": [],
+    "electionsContested": [],
+    "houseMemberships": [
+     {
+      "house": 2,
+      "name": "Lords",
+      "id": 2,
+      "startDate": "2022-11-17T00:00:00",
+      "endDate": null,
+      "additionalInfo": "Lord Hendy of Richmond Hill",
+      "additionalInfoLink": null
+     }
+    ],
+    "governmentPosts": [
+     {
+      "house": 2,
+      "name": "Minister of State (Department for Transport)",
+      "id": 1126,
+      "startDate": "2024-07-08T00:00:00",
+      "endDate": null,
+      "additionalInfo": "Department for Transport",
+      "additionalInfoLink": "https://www.gov.uk/government/organisations/department-for-transport"
+     }
+    ],
+    "oppositionPosts": [],
+    "otherPosts": [],
+    "partyAffiliations": [
+     {
+      "house": 2,
+      "name": "Labour",
+      "id": 15,
+      "startDate": "2024-07-08T00:00:00",
+      "endDate": null,
+      "additionalInfo": null,
+      "additionalInfoLink": null
+     },
+     {
+      "house": 2,
+      "name": "Crossbench",
+      "id": 6,
+      "startDate": "2022-11-17T00:00:00",
+      "endDate": "2024-07-07T00:00:00",
+      "additionalInfo": null,
+      "additionalInfoLink": null
+     }
+    ],
+    "committeeMemberships": []
+   },
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/4972/Biography",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "contact": {
+   "value": [
+    {
+     "type": "Parliamentary office",
+     "typeDescription": null,
+     "typeId": 1,
+     "isPreferred": false,
+     "isWebAddress": false,
+     "notes": null,
+     "line1": "House of Lords",
+     "line2": "London",
+     "line3": null,
+     "line4": null,
+     "line5": null,
+     "postcode": "SW1A 0PW",
+     "phone": null,
+     "fax": null,
+     "email": "redacted@example.invalid",
+     "website": null
+    }
+   ],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "synopsis": {
+   "value": "Lord Hendy of Richmond Hill's full title is The Lord Hendy of Richmond Hill CBE. His name is Peter Gerard Hendy, and he is a current member of the House of Lords.",
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "experience": {
+   "value": [
+    {
+     "id": 6263,
+     "type": "Public life",
+     "typeId": 2,
+     "title": "Chair & Director",
+     "organisation": "Heritage Railway Association",
+     "startMonth": null,
+     "startYear": 2023,
+     "endMonth": null,
+     "endYear": 2024
+    },
+    {
+     "id": 6264,
+     "type": "Public life",
+     "typeId": 2,
+     "title": "President",
+     "organisation": "National Association of Road Transport Museums",
+     "startMonth": null,
+     "startYear": 2023,
+     "endMonth": null,
+     "endYear": 2024
+    }
+   ],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/4972/Experience",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "focus": {
+   "value": [
+    {
+     "category": "Concerns: Policy Interests",
+     "focus": [
+      "Culture, media and sport",
+      "Employment and training",
+      "Housing and planning",
+      "Transport"
+     ]
+    },
+    {
+     "category": "Concerns: UK Areas",
+     "focus": [
+      "Greater London",
+      "Bath, Somerset",
+      "Imber, Wiltshire"
+     ]
+    }
+   ],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/4972/Focus",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "staff": {
+   "value": [],
+   "links": [
+    {
+     "rel": "self",
+     "href": "Member/4972/Staff",
+     "method": "GET"
+    }
+   ]
+  },
+  "interests": {
+   "value": [
+    {
+     "id": 1006,
+     "name": "Category 3: Land and property",
+     "sortOrder": 1046,
+     "interests": [
+      {
+       "id": 41335,
+       "interest": "Flat in London SW1 from which rental income is received",
+       "createdWhen": "2022-12-07T10:55:09",
+       "lastAmendedWhen": "2025-04-05T00:00:00",
+       "deletedWhen": null,
+       "isCorrection": false,
+       "childInterests": []
+      }
+     ]
+    }
+   ],
+   "links": [
+    {
+     "rel": "self",
+     "href": "/Members/4972/Interests",
+     "method": "GET"
+    },
+    {
+     "rel": "overview",
+     "href": "/Members/4972",
+     "method": "GET"
+    },
+    {
+     "rel": "synopsis",
+     "href": "/Members/4972/Synopsis",
+     "method": "GET"
+    },
+    {
+     "rel": "contactInformation",
+     "href": "/Members/4972/Contact",
+     "method": "GET"
+    }
+   ]
+  },
+  "election": null
+ }
+}
